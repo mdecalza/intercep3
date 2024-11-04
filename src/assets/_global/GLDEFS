@@ -1,0 +1,155 @@
+Glow
+{
+	Texture "GRNLITE1", FFFFFF, 128, fullbright
+
+	Texture "FLAT2", F2F2F2, 96, fullbright
+	Texture "FLAT17", FFFFFF, 128, fullbright
+	Texture "FLAT22", 0000FF, 128, fullbright
+
+	Texture "FLOOR1_7", FFEFED, 128, fullbright
+
+	Texture "CEIL1_2", FFFFFF, 88, fullbright
+	Texture "CEIL1_3", FFFFFF, 88, fullbright
+	Texture "CEIL3_4", FFE0CC, 128, fullbright
+	Texture "CEIL3_6", D3D3D3, 128, fullbright
+
+	Texture "CONS1_1", F7F7F7, 64, fullbright
+	Texture "CONS1_5", F7F7F7, 64, fullbright
+	Texture "CONS1_7", F7F7F7, 64, fullbright
+
+	Texture "TLITE6_1", FFF7EF, 128, fullbright
+	Texture "TLITE6_4", FFF7EF, 128, fullbright
+	Texture "TLITE6_5", FF0000, 128, fullbright
+	Texture "TLITE6_6", FFF0E0, 128, fullbright
+
+	Texture "LAVA1", FFFEF7, 192, fullbright
+	Texture "LAVA2", FFFCEF, 192, fullbright
+	Texture "LAVA3", FFFCE8, 192, fullbright
+	Texture "LAVA4", FFFCED, 192, fullbright
+
+	Texture "NUKAGE1", 3AE20B, 8, fullbright
+	Texture "NUKAGE2", 39D50A, 8, fullbright
+	Texture "NUKAGE3", 39FF23, 8, fullbright
+
+	Texture "STATIF01", FFFFFF, 64, fullbright
+	Texture "STATIF02", F2F2F2, 64, fullbright
+	Texture "STATIF03", EDEDED, 64, fullbright
+	Texture "STATIF04", F7F7F7, 64, fullbright
+	Texture "STATIF05", F9F9F9, 64, fullbright
+	Texture "STATIF06", F2F2F2, 64, fullbright
+	Texture "STATIF07", EFEFEF, 64, fullbright
+	Texture "STATIF08", F7F7F7, 64, fullbright
+
+	Texture "BASEBL01", E5E5E5, 64, fullbright
+	Texture "BASEBL02", E5E5E5, 64, fullbright
+	Texture "BASEBL03", E5E5E5, 64, fullbright
+	Texture "BASEBL04", E5E5E5, 64, fullbright
+	Texture "BASEBL18", E5E5E5, 64, fullbright
+	Texture "BASEBL19", E5E5E5, 64, fullbright
+	Texture "BASEBL20", E5E5E5, 64, fullbright
+	Texture "BASEBL21", E5E5E5, 64, fullbright
+	Texture "BASEBL28", FFFFFF, 128, fullbright
+
+	Texture "BLACK008", F9F9F9, 128, fullbright
+
+	Texture "COMP008", B5B5B5, 64, fullbright
+	Texture "COMP009", B5B5B5, 64, fullbright
+	Texture "COMP010", B5B5B5, 64, fullbright
+	Texture "COMP011", B5B5B5, 64, fullbright
+
+	Texture "STONE03", FFFFFF, 128, fullbright
+	Texture "STONE04", FFFFFF, 128, fullbright
+
+	Texture "LITE001", FFFFFF, 192, fullbright
+	Texture "LITE002", FFFFFF, 192, fullbright
+
+	Texture "LITE03", FFFFFF, 128, fullbright
+	Texture "LITE04", FFFFFF, 128, fullbright
+
+	Texture "CEIL3_4G", F6F6F6, 96, fullbright
+	Texture "FLAT5_4L", F6F6F6, 128, fullbright
+	Texture "FLAT19L", FBFBFB, 128, fullbright
+
+	Texture "GOLDSLM1", FFE554, 192, fullbright
+	Texture "GOLDSLM2", FFF67F, 192, fullbright
+	Texture "GOLDSLM3", FFDA77, 192, fullbright
+
+	Texture "RROCK05", FF1500, 64, fullbright
+	Texture "RROCK06", EC1500, 64, fullbright
+	Texture "RROCK07", AA1500, 64, fullbright
+	Texture "RROCK08", 651500, 64, fullbright
+
+	Texture "TLITE6_O", FF8C00, 128, fullbright
+
+	Texture "NFCNS1_8", F7F7F7, 64
+
+	Texture "LITER1", FF0000, 128, fullbright
+	Texture "LITER2", FF0000, 128, fullbright
+	Texture "LITEG1", 00FF00, 128, fullbright
+	Texture "LITEG2", 00FF00, 128, fullbright
+	Texture "LITEB1", 0000FF, 128, fullbright
+	Texture "LITEB2", 0000FF, 128, fullbright
+
+	Texture "LITEY1", FFFF00, 128, fullbright
+	Texture "LITEY2", FFFF00, 128, fullbright
+	Texture "LITEO1", FFAA00, 128, fullbright
+	Texture "LITEO2", FFAA00, 128, fullbright
+
+	Texture "LITEW1", FFFFFF, 128, fullbright
+	Texture "LITEW2", FFFFFF, 128, fullbright
+	Texture "LITEW3", FFFFFF, 128, fullbright
+	Texture "LITEW4", FFFFFF, 128, fullbright
+	Texture "LITEW5", FFFFFF, 128, fullbright
+	Texture "LITEW6", FFFFFF, 128, fullbright
+	Texture "LITEW7", FFFFFF, 128, fullbright
+	Texture "LITEW8", FFFFFF, 128, fullbright
+
+	Texture "LITGTHBF", 0000FF, 128, fullbright
+	Texture "LITGTHGF", 00FF00, 128, fullbright
+	Texture "LITGTHOF", FFAA00, 128, fullbright
+	Texture "LITGTHRF", FF0000, 128, fullbright
+	Texture "LITGTHWF", FFFFFF, 128, fullbright
+	Texture "LITGTHYF", FFFF00, 128, fullbright
+
+	Texture "LITEFL5", FFFF00, 128, fullbright
+
+	Texture "TLITE6_7", 0000FF, 128, fullbright
+
+	Texture, "SLIME22", 00FF00, 32, fullbright
+	Texture, "SLIME23", 00FD00, 32, fullbright
+	Texture, "SLIME24", 00FB00, 32, fullbright
+	Texture, "SLIME25", 00F900, 32, fullbright
+
+	Texture "TLITESB", FFEED1, 72, fullbright
+	Texture "TLITESR", FF0000, 72, fullbright
+
+	Texture "D_2013", 00FF00, 128, fullbright
+	Texture "D_2014", FF0000, 128, fullbright
+	Texture "D_2015", 0000FF, 128, fullbright
+
+	Texture "D_4000", D8F0FF, 128, fullbright
+	Texture "D_4001", D8F0FF, 128, fullbright
+	Texture "D_4002", FDFDFD, 192, fullbright
+	Texture "D_4003", FFFFFF, 192, fullbright
+	Texture "D_4004", FFFFFF, 192, fullbright
+	Texture "D_4012", 00FF00, 128, fullbright
+	Texture "D_4013", FFAA00, 128, fullbright
+	Texture "D_4014", FFFFFF, 128, fullbright
+	Texture "D_4015", FFFF00, 128, fullbright
+	Texture "D_4016", FF00FF, 128, fullbright
+	Texture "D_4017", FFEAEC, 128, fullbright
+	Texture "D_4018", EAFFCC, 128, fullbright
+	Texture "D_4019", D3EBFF, 128, fullbright
+	Texture "D_4021", 00FF00, 64, fullbright
+	Texture "D_4024", FFFFFF, 192, fullbright
+}
+
+Skybox CITYSKY1
+{
+	CITYSKYN
+	CITYSKYE
+	CITYSKYS
+	CITYSKYW
+	CITYSKYT
+	CITYSKYB
+}

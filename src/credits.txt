@@ -1,0 +1,1039 @@
+INTERCEPTION III
+RESOURCE CREDITS
+
+
+-= MUSIC =-
+
+TITLE SCREEN  * "If You Don't Intercept, No One Will" by Darman Macray
+INTERMISSION  * "Triumph of the Interception Guy" by Darman Macray
+STORY TEXT 1  * "Enter The Exposition" by Darman Macray
+STORY TEXT 2    Interception Theme by ForceTheDemo (origin: Interception I & II text screen)
+
+* This track was bespoke for Interception III.
+
+
+-= LEVELS =-
+
+LEVEL 1: STATION TO STATION by Moustachio
+ Music: "Diaphragm" by AD_79 (origin: AD_79 released MIDIs)
+
+ Geometry: Moustachio
+ Combat: Moustachio
+ Detail: Moustachio
+ Testing: DFF, valkiriforce, General Rainbow Bacon
+
+LEVEL 2: TERMINATED BLISS by Treehouseminis
+ Music: "Aquifer" by Snaxalotl (origin: Abscission MAP02)
+
+ Geometry: Treehouseminis
+ Combat: Treehouseminis
+ Detail: Treehouseminis
+ Testing: Moustachio
+
+THE MUSEUM by Moustachio
+ Music: "Casserole" by LewkForce (origin: Interception II MAP20)
+
+ Geometry: Moustachio
+ Combat: Moustachio
+ Detail: Moustachio
+ Testing: DFF, valkiriforce, General Rainbow Bacon
+
+* This track was bespoke for Interception III.
+
+
+-= WEAPONS =-
+
+FISTS
+ Dehacked: Moustachio
+ Sounds: id Software
+ Sprites: id Software, Moustachio
+
+CHAINSAW MODEL 64
+ Dehacked: Moustachio
+ Sounds: id Software
+ Sprites: Midway
+
+MODEL 1887
+ Dehacked: Moustachio
+ Sounds: Infinity Ward
+ Sprites: id Software, JoeyTD
+
+INCENDIARY SHOTGUN
+ Dehacked: Moustachio
+ Sounds: id Software, Moustachio
+ Sprites: BadMojo, Moustachio
+
+INCENDIARY PROJECTILE
+ Dehacked: Moustachio
+ Sounds: id Software
+ Sprites: Amuscaria, id Software
+
+SUPER SLUGGER
+ Dehacked: Moustachio
+ Sounds: Raven Software, Valve, Gearbox Software, Moustachio
+ Sprites: id Software, Kinsie, Finalizer, xLightningStormL, TODM, Lina
+
+MINIGUN
+ Dehacked: Moustachio
+ Sounds: id Software, Moustachio
+ Sprites: id Software, Skulltag
+
+MISSILE LAUNCHER
+ Dehacked: Moustachio
+ Sounds: id Software
+ Sprites: SoniK.O.Fan, DeVloek, id Software
+
+UNLOCKED PLASMA GUN
+ Dehacked: Moustachio
+ Sounds: from Ancient Aliens by skillsaw, id Software
+ Sprites: id Software, Moustachio
+
+BFG9000.1
+ Dehacked: Moustachio
+ Sounds: id Software
+ Sprites: id Software
+
+ Ancient Aliens Sound Credits:
+  Eriance
+  Raven Software
+  Rogue Entertainment
+  http://www.freesfx.co.uk
+
+Quick switching code adapted from Rowdy Rudy II Dehacked code by Doomkid.
+
+
+-= ENEMIES =-
+
+INCENDIARY ZOMBIE
+ Dehacked: Moustachio, Lina
+ Sounds: id Software
+ Sprites: Id Software, Eriance, 3D Realms
+ Sprite Edit: ItsNatureToDie, neoworm, Captain Toenail, Xim, Ghastly_dragon,
+              scalliano
+
+PLASMA ZOMBIE
+ Dehacked: Moustachio
+ Sounds: id Software
+ Sprites: id Software
+ Sprite Edit: Ghastly Dragon, Xim, Fuzzballfox, Tormentor667, MagicWazard,
+              Moustachio
+
+ROCKET ZOMBIE
+ Dehacked: Moustachio
+ Sounds: Moustachio, id Software
+ Sprites: id Software, the Skulltag Team
+ Sprite Edit: DavidRaven, ItsNatureToDie (altdeath)
+
+FORMER TANK
+ Dehacked: Moustachio
+ Sounds: Rogue Entertainment, id Software, Moustachio
+ Sprites: Id Software, 3DRealms
+ Sprite Edit: Enjay, Moustachio
+
+GLIDING IMP
+ Dehacked: Moustachio
+ Sounds: id Software
+ Sprites: Maelstrom
+
+SNAKE IMP
+ Dehacked: Moustachio
+ Sounds: id Software
+ Sprites: Id Software, Raven Software
+ Sprite Edit: Cyb, Vader, ItsNatureToDie
+
+
+-= HAZARDS =-
+
+NITRO BARREL
+ Dehacked: Moustachio
+ Sprites: Doom
+ SpriteEdit: Captain Toenail
+ Sounds: Moustachio, id Software
+
+FLYING SKULL MINE
+ Dehacked: Moustachio
+ Sounds: id Software
+ Sprites: 3DRealms, Id Software, Amuscaria
+ Sprite Edit: Gothic
+
+DEMONIC TURRET
+ Dehacked: Moustachio
+ Sounds: Moustachio
+ Sprites: zrrion the insect, id Software, Skulltag, Moustachio
+
+ARROW
+ Dehacked: Moustachio
+ Sounds: Bethesda (TES: Morrowind & Oblivion)
+ Sprites: Bethesda (Daggerfall), Raven Software (Hexen),
+          DonaldDuck (widescreen bow), Neoworm, Zrrion the insect (extra hands),
+          Gothic (new pickups)
+ Sprite Edit: Gothic
+
+
+-= DECORATIONS =-
+
+DEAD GENERAL
+ Dehacked: Moustachio
+ Sprites: Scuba Steve
+
+IMPALED SCIENTISTS
+ Dehacked: Moustachio
+ Sprites: scalliano
+
+SHOOTABLE IMPALED ZOMBIES
+ Dehacked: Moustachio
+ Sprites: id Software
+ Sprite Edit: DeVloek
+
+GLASS TECHNO PILLAR
+ Dehacked: Moustachio
+ Sprites: id Software, Raven Software, Mor'ladim
+ Sprite Edit: Mor'ladim
+ Sounds: Moustachio, datasoundsample
+
+FLOOR LAMP VARIATIONS
+ Dehacked: Moustachio
+ Sprites: Doom, Strife
+ SpriteEdit: Captain Toenail
+
+HANGING LAMP
+ Dehacked: Moustachio
+ Sprites: Id Software, Raven Software
+ Sprite Edit: Captain Red
+
+FLOOR LANTERNS
+ Dehacked: Moustachio
+ Sprites: id Software
+ Sprite Edit: Jimmy
+
+WORK LIGHTS
+ Dehacked: Moustachio
+ Sprites: Based on Sketchfab.com models (tall light by user "ayoung93" and small
+          light by "GabeTheSerrano")
+ Sprite Edit: elend
+
+BRONZE LAMP
+ Dehacked: Moustachio
+ Sprites: Doom
+ Sprite Edit: Captain Toenail
+
+BOX
+ Dehacked: Moustachio
+ Sprites: Duke Nukem 3D by 3D Realms
+ Sprite Edit: Captain Awesome
+
+ROCK
+ Dehacked: Moustachio
+ Sprites: Captain Toenail
+
+CZECH HEDGEHOG
+ Dehacked: Moustachio
+ Sprites: MagicWazard
+ Sprite Edit: MagicWazard
+
+MARINE HELMET & SUIT
+ Dehacked: Moustachio
+ Sprites: Strife (Rogue Entertainment), Skulltag (the Skulltag Team),
+          Doom (ID Software)
+ Sprite Edit: DavidRaven
+
+PIPES
+ Dehacked: Moustachio
+ Sprites: 3D Realms
+
+MARINE TORSO
+ Dehacked: Moustachio
+ Sprites: id Software
+ Sprite Edit: NaturalTvventy, Xaser, Jimmy, Minigunner
+
+MARINE HELMET ON POLE
+ Dehacked: Moustachio
+ Sprites: Id Software
+ Sprite Edit: Captain Toenail
+
+STALAGMITES
+ Dehacked: Moustachio
+ Sprites: Necrodome
+ 
+FIRE HYDRANT
+ Dehacked: Moustachio
+ Sprites: 3D Realms
+ Sounds: Moustachio, InspectorJ, meisterjaan, kyles
+
+STREET LIGHT
+ Dehacked: Moustachio
+ Sprites: 
+
+PILE OF BONES
+ Dehacked: Moustachio
+ Sprites: 
+
+MARBLE BRAZIER
+ Dehacked: Moustachio
+ Sprites: Xaser, Jimmy, Minigunner, Gothic, id Software
+
+BUSHES
+ Dehacked: Moustachio
+ Sprites: Xaser, Jimmy, Minigunner, id Software
+
+TRASH CAN
+ Dehacked: Moustachio
+ Sprites: 3D Realms, Moustachio
+
+
+-= TEXTURES & FLATS =-
+
+- PATCHES -
+
+By their patch name.
+
+CITY01          3D Realms
+CITY02
+CITY03
+CITY04
+CITY05
+CITY06
+CITY07
+CITY08
+CITY09
+CITY10
+CITY11
+CITY12
+CITY13
+CITYPHN1
+CITYPHN2
+
+DOOR1X7         Doom_Dude
+
+SKY5            FranckFRAG
+
+BASECOL1        Fuzzball
+BASECOL3
+BASEDOOR
+BASEWAL3
+BASEWAL5
+BASEWALL
+BASEWAR2
+BASEWARN
+SW1BASE
+SW2BASE
+SW1BASE2
+SW2BASE2
+
+BIGDOO21        LoneAlpha2401
+FAN 1-4
+SHAWN4
+
+GODISWAT        Mechadon
+SUNSETCI
+BORDERWO
+UNDERGRO
+SKY6
+
+RSKY1           Moustachio
+RSKY2           Using Mechadon's Box o' Skies
+RSKY3           and Space Engine for Saturn render & size reference
+SKY4
+SKY5B
+CITYSKY1
+SNOWSKY
+
+CITYHE1         SpaceCat_2001
+CITYHE2
+CITYYES
+CITYYES2
+WINDOW01
+
+METAL10         valkiriforce
+METALWAL
+METCOMP3
+METSPAN 2, 4-6, 8
+BROCK2
+BRONZE5
+SUPPORT6
+SW1BLU2
+SW1BNZ
+SW1BRIK4
+SW1STON2
+SW2BLU2
+SW2BNZ
+SW2BRIK4
+SW2STON2
+STARCOM2
+STARGR5
+A-RAIL2
+ASHWALL8
+LITEGRN4
+LITERED4
+LITEYEL4
+COMPTAL2
+GRAYCOM2
+METRED2
+BRICKMT2
+METAL12
+SW1COM2
+SW2COM2
+MIDBARS5
+A-RAIL4
+COMPEYE 5-8
+SHAWNR
+LAVFALL 5-8
+ARCAN 1-4
+ARCAN 21-24
+ARCAN 31-34
+METRMID2
+
+GAPEMAW         zrrion the insect
+BNNR_100
+BNNR_101
+BNNR_102
+BNNR_103
+BNNR_104
+BNNR_105
+BNNR_106
+BNNR_107
+BNNR_108
+Z_BRK000
+Z_BRK001
+Z_BRK002
+Z_BRK003
+Z_BRK004
+Z_BRK005
+Z_BRK006
+Z_BRK007
+Z_BRK008
+Z_BRK009
+Z_BRK010
+Z_BRK011
+Z_BRK012
+ZDIRT002
+ZDIRT100
+ZDIRT101
+ZDIRT102
+ZDIRT103
+ZDIRT104
+ZDIRT105
+ZDIRT202
+ZDIRT206
+ZDIRT207
+ZDIRT208
+ZDIRT300
+ZDIRT301
+ZDIRT302
+ZDIRT303
+ZDIRT400
+ZDIRT401
+ZDIRT402
+ZDIRT403
+G_MRB000
+G_MRB001
+G_MRB002
+G_MRB003
+G_MRB004
+G_MRB005
+G_MRB006
+G_MRB008
+G_MRB009
+G_MRB010
+G_MRB011
+G_MRB012
+G_MRB013
+G_MRB014
+G_MRB015
+G_MRB016
+G_MRB017
+G_MRB018
+G_MRB019
+G_MRB020
+G_MRB021
+G_MRB023
+G_MRB024
+G_MRB025
+G_MRB026
+G_MRB027
+G_MRB028
+G_MRB029
+G_MRB030
+G_MRB031
+G_MRB032
+G_MRB033
+G_MRB034
+G_MRB035
+G_MRB036
+G_MRB037
+SKIN0000
+SKIN0001
+SKIN0000
+SKIN1000
+SKIN1001
+SKIN2000
+SKIN2001
+SKIN2002
+SKIN2003
+SKIN2004
+SKIN2005
+SKIN2006
+Z_BED001
+Z_BED002
+Z_BED003
+Z_BED101
+Z_BED102
+Z_BED103
+B_MRB000
+B_MRB001
+B_MRB002
+B_MRB003
+B_MRB004
+B_MRB005
+B_MRB006
+B_MRB007
+B_MRB008
+B_MRB009
+B_MRB010
+B_MRB011
+B_MRB012
+B_MRB013
+B_MRB014
+B_MRB015
+B_MRB016
+B_MRB017
+B_MRB018
+B_MRB019
+B_MRB020
+B_MRB021
+B_MRB022
+B_MRB023
+B_MRB024
+B_MRB025
+B_MRB100
+B_MRB101
+B_MRB102
+B_MRB103
+B_MRB104
+B_MRB200
+B_MRB201
+B_MRB202
+B_MRB203
+B_MRB204
+B_MRB300
+B_MRB400
+B_MRB401
+B_MRB402
+MALTR000
+MALTR001
+MALTR002
+MALTR003
+MALTR100
+MALTR101
+MALTR102
+MALTR103
+MALTR104
+MALTR105
+MALTR106
+MALTR107
+MALTR108
+
+- FLATS -
+
+CITYF01         3D Realms
+CITYF02
+CITYF03
+CITYF04
+CITYF05
+CITYF06
+CITYF07
+CITYF08
+
+NFBRIK36		Nick Baker
+NFPP01VT		From NiGHTMARE texture WAD 1 version 1.01 (NMTEXT1.wad)
+NFSTEP05
+
+GATE4_B			id Software
+TLITE61B		Edits by Moustachio
+TLITE61D
+
+ASHFL1          valkiriforce
+LITEFL5
+COMPR
+SLIME 17-20
+
+ZDIRT001        zrrion the insect
+ZDIRT200
+ZDIRT201
+ZDIRT203
+ZDIRT204
+Z_BED000
+Z_BED100
+HXWD0000
+HXWD0001
+HXWD0002
+HXWD0003
+HXWD0004
+HXWD0005
+HXWD0006
+HXWD0007
+HXWD0008
+HXWD0009
+
+- TEXTURE PACKS -
+
+Community Chest 4 Resource Wad
+Compiled by esselfortium
+
+Includes textures by:
+NiGHTMARE
+Espi
+Eriance
+Fredrik Johansson
+Janitor
+DaGGeR
+Ola Bjorling
+Vader
+XDelusion
+esselfortium
+RottKing
+Nuxius
+Afterglow
+AgentSpork
+RottKing
+Enjay
+Huy Pham
+SargeBaldy
+Tormentor667
+The GothicDM Team
+The Requiem Team
+The Eternal Doom Team
+id Software
+Raven Software
+Rogue Entertainment
+
+
+MISCTEX.wad compiled by an_mutt
+
+TEXTURES:
+
+129th Visplane - BRI6LIT; BRI8LIT; BRICK50; BSTOLIT; CRACK01; CRACK02; CRACK03; CRACK04; CRACK05; MARBRK01; MARBRK02; MARRCK01; SKULL5_6; SNAKE01; SNAKE02; SNAKE03; SNAKE04; SNAKE05; SNAKE06; SNAKE07; SNAKE08; SNAKE09; STO6LIT; STONLIT; STONER01; STONER02; STONER03; SW1MINO; SW2MINO; TANRLIT
+abbuw - CONC001; CONC002; CONC003; CONCBL01; CONCBL02; CONCBL03; CONCBL04; CONCBL05; CONCBL06; DOOR02; DOOR03; ROCK001; ROCK002; ROCK003; ROCK004; ROCK005; ROCK006; ROCK007; ROCK008; ROCK009; ROCK010; ROCK011
+agueres - SW1SHAU1; SW2SHAU1; SW1SHAU2; SW2SHAU2; SW1SHAU3; SW2SHAU3; TREE01; TREE02
+Amuscaria - FAN001; FAN002; FAN003; FAN004; FAN005; FAN006; FAN007; FAN008; FAN009; FAN010; FAN011; FAN012; FAN013; FAN014; FAN015; FAN016
+Blox - MARBST01; MARBST02; SPCDOOR5; VENT002; VENT013; VENT0014; VENT015
+BlueShadow - BLULITE1; BLULITE2; BLULITE3; BLULITE4; GRALITE1; GRALITE2; GRALITE3; GRALITE4; GRELITE1; GRELITE2; GRELITE3; GRELITE4; ORALITE1; ORALITE2; ORALITE3; ORALITE4; REDLITE1; REDLITE2; REDLITE3; REDLITE4; YELLITE1; YELLITE2; YELLITE3; YELLITE4
+CaptainToenail - MARBL-01; MARBL-02; MARBL-03; MARBL-04; MARBL-05; MARBL-06; MARBL-07; ROCK1-01; ROCK1-02
+Chickenlegz - TECH001; TECH002; TECH003; TECH004
+daWerecat - LITE008; LITE009; STARBR3; STARGR3; STARGR4; SUPPORT4; SUPPORT5; TECH006; TECH007; TECH008; TECH009
+Earthquake - COMP001; COMP002; COMP003; COMP004; CONC004; CONC005; CONC006; CONC008; CONC009; CONC010; CONC011 CONC012; CONC013; CONC014; CONC015; DOOR01; DOORHI01; DOORHI02; PIPEWAL3; PIPEWAL4; SIGN01; SIGN02; SIGN03; SIGN04; SIGN05; SIGN06; SIGN07; SIGN08; SIGN09; SIGN10; TECH005; VENT003; VENT004; VENT005
+Ed - BASE001; BASE002; BASE003; BASE004; BASE005; BASE006; BASE007; BASE008; BASE009; BASE010; BASE011; BASE012; BASE013; BASE014; BASE015; BASE016; BASE017; BASE018; BASE019; BASE020; BASE021; BASE022; BASE023; BASE024; BASE025; BASE026; BASE027; BASE028; BASE029; BASE030; BASE031; BASE032; BASE033; BASE034; BASE035; BASE036; BASE037
+Enjay - BRICK001; BRICK002; BRICK003; COMPEYE1; COMPEYE2; COMPEYE3; COMPEYE4; COMP008; COMP009; COMPSP01; COMPSP02; COMPSP03; COMPSP04; COMPSP05; COMPSP06; COMPSP07; COMPSPF1; COMPSPF2; COMPSPF3; CONC007; DOOR04; DOOR05; DOOR06; DOOR07; DOOR08; FENCE01; FENCE02; FENCE03; FENCE04; FENCE05; FENCE06; FENCESW1; FENCESW2; METAL001; METAL002; METAL003; METAL004; SPCDOOR6; STATIC13; STATIC14; STATIC15; STATIC16; SUP2-01; SUP2-02; SUP2-03; SUP2-04; SUP2-05; SW1EYE; SW2EYE; VENT006; VENT007; VENT008; VENT009; VENT010; VENT011; VENT012
+FuzzballFox - BLACK001; BLACK002; BLACK003; BLACK004; BLACK005; BLACK006; BLACK007; BLACK008; BLACK009; BLACK010; BLACK011; BLACK012; BLACK013; BLACK014; BLACK015; BLACK016; BLACK017; BLACK018; BLACK019; BLACK020; BLACK021; BLACK022; BLACK023; BLACK024; BLOFALL1; BLOFALL2; BLOFALL3; BLOFALL4; COMP005; COMP006; COMP007; GRNBIGC; GRNBIGL; GRNBIGR; GRNSMAL1; GRNSMAL2; GRNSMALC; GRNSMALL; GRNSMALR; LAVFALL1; LAVFALL2; LAVFALL3; LAVFALL4; LITE001; LITE002; LITE003; LITE004; LITE005; LITE006; LITE0017; MID007; MID008; MID009; MID010; MOSS01; NUKFALL1; NUKFALL2; NUKFALL3; NUKFALL4; PANEL20; PANEL30; PANEL40; PANEL41; PIPES001; PIPES002; PIPES003; PIPES004; PIPES005; PIPES006; PIPES007; PIPES008; PIPES009; PIPES010; PIPES011; PIPES012; PIPES013; PIPES014; PIPES015; ROCK012; ROCK013; SLIFALL1; SLIFALL2; SLIFALL3; SLIFALL4; SLIFALL5; SLIFALL6; SLIFALL7; SLIFALL8; STATIC01; STATIC02; STATIC03; STATIC04; STATIC05; STATIC06; STATIC07; STATIC08; STATIC09; STATIC10; STATIC11; STATIC12; STONE01; STONE02; STONE03; STONE04; STONE05; STONESL1; STONESL2; STONESL3; STONEWA1; STONEWA2; STONEWA3; SW1BLAKA; SW2BLAKA; SW1BLAKB; SW2BLAKB; WATFALL1; WATFALL2; WATFALL3; WATFALL4
+Gabenslair - CRACK06
+Gez - MIDBARG1; MIDBARG3; MIDBRGRN; GRN01; GRN02; GRN03; GRN04; GRN05
+illuknisaa - MOON01; MOON02; MOON03; MOON04; MOON05; MOON06; MOON07; MOON08; MOON09; MOON10; MOON11; MOON12; MOON13; MOON14; MOON15; MOON16; MOON17; MOON18; MOON19; MOON20; MOON21; MOON22; MOON23; MOON24; MOON25; MOON26; MOON27; MOON28; MOON29; MOON30
+ItsNatureToDie - GRAYBOOK; MARBOOK; MARBOOK2; METBK1A; METBK1B; METBK2A; METBK2B; METBK3A; METBK3B STOBOOK; STOBOOK2; STONE20; STONE21; STONE22; STONE23; STONE24; STONE25; STONEPL; WOOD13; WOOD14; WOOD15; WOOD16
+JawsInSpace - SW1MET01; SW2MET01
+LoneAlpha2401 - FAN017; FAN018; FAN019; FAN020; FAN021; MOSS02; VENT16
+Marn - COMPUT10; COMPUT11; COMPUT12
+mypetrobot - GRDOOR1
+Nightfall - EXIT; SW1STAIR; SW2STAIR
+NMN_Paul - TECH010
+Novaseer - COMPSP08; COMPSP09; COMPSP10; COMPSP11
+osjclatchford - INDUSTRY; PANELGUN
+scalliano - SW1KEYB1; SW2KEYB1; SW1KEYR1; SW2KEYR1; SW1KEYY1; SW2KEYY1
+Solmyr - GSTFONT0; GSTFONT4; GSTFONT5; GSTFONT6; SKINEYE1; SKINEYE2; SKINEYE3; SKINEYE4; SKINEYE5
+timmyr0x0r - MARBFAC5; SW1MARB2; SW2MARB2
+zrrion the insect - DOORSWO1; DOORSWO2; DOORSWO3; DOORSWO4; DOORSWO5; DOORSWO6; DOORSWO7; SWBROKE; SW1BRIK1; SW1BRIK2; SW2BRIK1; SW2BRIK2; SW3BRIK1; SW3BRIK2; SW1WOOD1; SW2WOOD1; SW1WOOD2; SW2WOOD2; SW1WOOD3; SW2WOOD3; WOOD30
+
+
+(AN_MUTT'S RECOLOURS - CONCBL01; CONCBL02; CONCBL03; CONC001; ROCK002; TECH001; TECH002; VENT006;
+
+FLATS:
+
+Amuscaria - FANF01; FANF02; FANF03; FANF04; FANF05; FANF06; FANF07; FANF08
+Antares - STEP01; STEP02
+Earthquake - CONC01; CONC02; CONC03; CONC04; CONC05; CONC06; CONC07; CONC08; CONC09; CONC10; LITE03; LITE04; CONC11; CONC12; CONC13; CONC14; VENT01
+Ed - BASEBL01; BASEBL02; BASEBL03; BASEBL04; BASEBL05; BASEBL06; BASEBL07; BASEBL08; BASEBL09; BASEBL10; BASEBL11; BASEBL12; BASEBL13; BASEBL14; BASEBL15; BASEBL16; BASEBL17; BASEBL18; BASEBL19; BASEBL20; BASEBL21; BASEBL22; BASEBL23; BASEBL24; BASEBL25; BASEBL26; BASEBL27; BASEBL28; BASEBL29; BASEBL30; BASEBL31; BASEBL32; BASEBL33; BASEBL34; BASEBL35; BASEBR01; BASEBR02; BASEBR03; BASEBR04; BASEBR05; BASEBR06; BASEBR07; BASEBR08; BASEBR09; BASEBR10; BASEBR11; BASEBR12; BASEBR13; BASEBR14; BASEGR01; BASEGR02; BASEGR03; BASEGR04; BASEGR05; BASEGR06; BASEGR07; BASEGR08; BASEGR09; BASEGR10; BASEGR11; BASEGR12; BASEGR13; BASEGR14; BASEGR15; BASEGR16; BASEGR17; BASEGR18; BASEGR19; BASEGR20; BASEGR21; BASEGR22; BASEGR23; BASEGR24; BASEGR25; BASEGR26; BASEGR27; BASEGR28
+Enjay - COMP003; COMP004; COMP005; COMP006; COMP007; COMP008; COMP009; COMP010; COMP011; MET01; MET02; MET03; MET04; MET05; MET06; MET07; MET08; MET09; MET10; MET11; MET12; VENT02; VENT03
+FuzzballFox - ASPHALT1; ASPHALT2; ASPHALT3 BLACK001; BLACK002; BLACK003; BLACK004; BLACK005; BLACK006; BLACK007; BLACK008; BLACK009; COMP001; COMP002; GRASS001; MOSS01; ROCK001; SLIM17; SLIM18; SLIM19; SLIM20; STATIF01; STATIF02; STATIF03; STATIF04; STATIF05; STATIF06; STATIF07; STATIF08; STONE01; STONE02; STONE03; STONE04
+ItsNatureToDie - STONE20; STONE21; WOODF13; WOODF14; WOODF15; WOODF16; WOODF17; WOODF18; WOODF19; WOODF20
+lunoir - TEKWALF1; TEKWALF2
+Marn - COMPUT10; COMPUT11; COMPUT12; COMPUT13
+osjclatchford - CACO (w/ tiling done by Xaser)
+
+SKIES:
+
+Aquila Chrysaetos - SKYE4BLU; SKYE4BRO; SKYE4FIX; SKYE4GRA; SKYE4GRE; SKYE4RED
+Cage - SKY-R01
+Chaingunner - SKY-B02; SKY-GR01; SKY-O02; SKY-R03; SKY-R04; SKYTREE1; SKYTREE2; SKYTREE3
+elend - SKY-G03; SKY-R05
+Eradrop - SKY-G04
+Fuzzball - SKY-B01; SKY-B03; SKY-B04; SKY-B05; SKY-B06; SKY-G01; SKY-G02; SKY-GR02; SKY-GR03; SKY-O03; SKY-O04; SKY-O05; SKY-R06; SKY-Y01; SKY-Y02; SKY-Y03
+Hellstorm Archon - SKY-CIT1
+IMX - SKY-R07; SKY-ST01; SKYO01 (Fuzzball recolour)
+osjclatchford - SKYCLOU1; SKYCLOU2; SKYCLOU3; SKY-R08
+RoboNuclear Asshat - SKY-ST02
+YukiHerz - SKYSKULL
+Yuki Senmatsu - SKY_R02
+zrrion the insect - SKY1TALL; SKY3TALL
+
+KEYS: Fuzzball
+
+
+jimmy-tex by Jimmy (jimmytex.wad)
+
+
+///////////////////////////////////////////
+//	                                     //
+//				 Hellcore                //
+//                                       //
+///////////////////////////////////////////
+
+Source: Hellcore (espi_hctex.wad)
+Author: Espi (I'm pretty sure?)
+Download: "https://www.doomworld.com/afterglow/textures/"
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//			   32 in 24 - 15             //
+//                                       //
+///////////////////////////////////////////
+
+Source: 32in24-15 (32in24-15_tex.wad)
+Author: Updated/Extended by esselfortium and The Green Herring
+Download: "https://www.doomworld.com/afterglow/textures/"
+
+Credits: Based on the readme, this includes:
+
+NiGHTMARE, Espi, Eriance, Fredrik Johansson, Janitor, DaGGeR, Ola Bjorling,
+Vader, XDelusion, esselfortium, RottKing, Nuxius, Afterglow, AgentSpork,
+RottKing, Enjay, Huy Pham, SargeBaldy, Tormentor667, The GothicDM Team,
+The Requiem Team, The Eternal Doom Team, id Software, Raven Software,
+Rogue Entertainment, 3D Realms Entertainment, LucasArts, 
+H. R. Giger (converted by Stephen Renton), Skulltag Team, Robert Babor,
+The Alpha Dog Alliance, Team TNT, The Green Herring,
+32in24-7 Texture Contributors, "Operation: Biowar" Team, Rand and 
+Steven Phares, CAProduction, Paul Maurone, Kurt Kesler, Michael "Optimus" 
+Kargas, Greenwar 2 Texture Contributors, Capcom, Shaikoten, iD Software,
+Thomas van der Velden (www.rabotik.nl), Risen, Gregory H. Revera, Namco,
+Magic_Man, Stuntman 21, Windows Vista MS Paint fonts
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//				Bakers Legacy            //
+//                                       //
+///////////////////////////////////////////
+
+Conversion: JadedLexi
+Author: Captain Toenail, Enjay, Esselfortium, Evil Space Tomato, 
+Gez, Neoworm, Nightmare, Pun1sh3r, Icytux, Rottking, Tormentor667, 
+Vader, Xaser
+Submitted: Tormentor667
+Download: "https://www.realm667.com/en/repository-18489/texture-stock-mainmenu-152-97360/heretic-hexen-style-mainmenu-154-49305"
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//				UAC Ultra                //
+//                                       //
+///////////////////////////////////////////
+
+Credits: 40oz (GRSites, SlayeR, Super Jamie)
+Source: UAC Ultra (uacultra.wad)
+Download: "https://www.doomworld.com/afterglow/textures/"
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//				Cage Textures            //
+//                                       //
+///////////////////////////////////////////
+
+Source: Scratch/Doom edits
+Author: Cage
+Submitted by: Ceeb/Grymmoire
+Download: "https://www.realm667.com/en/repository-18489/texture-stock-mainmenu-152-97360/doom-style-mainmenu-153-87237"
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//			Doom 64 Variants             //
+//                                       //
+///////////////////////////////////////////
+
+Source: Doom64
+Author: DrDoctor
+Submitted: DrDoctor
+Download: "https://www.realm667.com/en/repository-18489/texture-stock-mainmenu-152-97360/other-sources-styles-mainmenu-155-26369"
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//				Valiant                  //
+//                                       //
+///////////////////////////////////////////
+
+Source: valiant.wad
+Author: Tormentor667 (T6_) and Nick Baker (N_VINE)
+Download: "https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/valiant"
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//				Demonastery              //
+//                                       //
+///////////////////////////////////////////
+
+Source: Doom edits (demonastery.wad)
+Author: Nootrac4571
+Download: "https://www.doomworld.com/idgames/levels/doom2/Ports/d-f/demonastery"
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//				JimmyTex                 //
+//                                       //
+///////////////////////////////////////////
+
+Source: Doom edits
+Author: James Paddock (Jimmy)
+Download: "https://www.doomworld.com/afterglow/textures/"
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//				Rowdy Rudy 2             //
+//                                       //
+///////////////////////////////////////////
+
+Source: Rowdy Rudy 2
+Author: Doomkid & co
+Sources: Unknown (Doom edits?)
+Download: "https://www.doomworld.com/idgames/levels/doom2/megawads/rudy2"
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//				 LostRes                 //
+//                                       //
+///////////////////////////////////////////
+
+Source: Unused/lost resources from id Software
+Author: Xaser and NaturalTvventy (compiled/fixed)
+Download: "https://www.doomworld.com/afterglow/textures/"
+
+
+
+///////////////////////////////////////////
+//	                                     //
+//			Other / Miscellaneous        //
+//                                       //
+///////////////////////////////////////////
+
+Author: Not Jabba
+From: "Post your Heretic/Hexen textures" DW thread
+NJ_WIN1 - 4 (Source: Heretic edits?)
+NJVINE series (Source: Based on CSTLBIG texture by 'zrrion the insect')
+
+
+
+Author: TravyB
+From: "Post your Heretic/Hexen textures" DW thread
+TRAV_1 (Source: Heretic edits?)
+
+
+
+Author: whirledtsar
+From: "Post your Heretic/Hexen textures" DW thread
+WHIRL_1 (Source: Hexen edit)
+
+
+
+Author: TheHambourgeois
+From: "Post your Heretic/Hexen textures" DW thread
+From: "Post your Doom textures" DW thread
+HAMB_1 - 4 (Source: Unknown (maybe an edit?))
+HAMB_R1 - 4 (Source: Unknown)
+
+
+
+Author: James Paddock (Jimmy)
+From: "Post your Doom textures" DW thread
+JIM_1 - 4 (Source: Doom edit)
+
+
+
+Author: Dragonfly
+From: "Post your Doom textures" DW thread
+DFLY_1 - 5 (Source: Doom Eternal edits?)
+There's more of these in the thread (page 18)
+
+
+
+Author: BLAZING_DUST
+From: "Post your Doom textures" DW thread
+DUST_S1 - 4 (Source: Unknown)
+
+
+
+Author: LoneAlpha2401
+From: "Post your Doom textures" DW thread
+LONE_1 - 5 (Source: Doom edits)
+
+
+
+Author: Dynamo
+From: "Post your Doom textures" DW thread
+TEKGFAN1 - 4 (Source: Doom edits, inspired by Lost Civilization)
+
+
+
+Author: Afterglow
+From: "Post your Doom textures" DW thread
+GLOW_1 - 3 (Source: Doom edits)
+
+
+
+Author: nue
+From: "Post your Doom textures" DW thread
+GRADIEN1 & 2 (Source: from scratch)
+
+
+
+Author: DooMAD
+From: "Post your Doom textures" DW thread
+MAD_1 - 8 (Source: Unknown)
+MAD_ARC1 - 3 (Source: Doom edits)
+
+
+
+Author: elend
+From: "Post your Doom textures" DW thread
+elend_1 - 7 (Source: Edits from HIDfan Doom 3 conversions)
+
+
+
+Author: NaturalTvventy
+From: "Post your Doom textures" DW thread
+NATTWEN1 - 5 (Source: Edits derived from LostRes and GothicDM)
+
+
+
+Author: Koko Ricky
+From: "Post your Doom textures" DW thread
+KOKO_1 & 2 (Source: Modified online images (unknown))
+
+
+
+Author: Shibainumaster
+From: "Post your Doom textures" DW thread
+SHIB_1 - 3 (Source: Doom edits)
+SHIB_AR1 - 7 (Source: Doom edits (including plutonia))
+
+
+
+Source: Based on textures by 'Metlslime'
+Author: MattFright
+From: "Post your Doom textures" DW thread
+MATT_A1 - 3
+
+
+
+Author: Chainie
+From: "Post your Doom textures" DW thread
+CHA_F1 - 4 (Source: Gothic edits)
+
+
+
+Author: CherryPoptartzzz
+From: "Post your Doom textures" DW thread
+QUAK_ARC (Source: Doom edit, Quake edit)
+
+
+
+Author: horselessheadsman
+From: "Post your Doom textures" DW thread
+HORSSPIN (Source: Doom edit)
+HORS_1 - 5 (Source: Doom edits)
+
+
+
+Author: ViolentBeetle
+From: "Post your Doom textures" DW thread
+BEETLE1 (Source: Doom edit?)
+
+
+
+Author: Scorpio
+From: "Post your Doom textures" DW thread
+TRUSS01 & 2 (Source: From scratch, based on OTEX)
+
+
+
+Author: kwc
+From: "Post your Doom textures" DW thread
+KWC_P1 - 13 (Source: Derived from DN:MP)
+
+
+
+Author: Krankebok
+From: "Post your Doom textures" DW thread
+KRAN_1 - 4 (Source: Unknown)
+
+
+
+Author: DELTA256
+From: "Post your Doom textures" DW thread
+DELTA_1 - 8 (Source: Edits from Ashes 2063 (not sure about original))
+
+
+AUGER;ZENITH CREDITS
+
+Author                  : Doomer Boards Community
+Additional credits      : id Software, Raven Software, 3D Realms, Banjo Software, SEGA, Konami, Engine Technology CO. LTD, 
+Team TNT, KnightCop (Mount Fuji Vaporwave graphic), NeoWorm (original Blade Runner blaster sprites), Princess Prozac (neon artwork), 
+Astolfo Alter (HOME - Resonance MIDI), Lobo, Ketmar Dark, jazzisthebestformofmusic.tumblr.com, Psyrus, Captain Toenail, Thfpjct, Jimmy, 
+xvertigox, gokuma, LoneAlpha2401, nootrac4571, doom_dude, Gez, Gifty, Solmyr, Dusk, Reactor, Realm667, MrZzul, stxvile, katarn11, MeowgiTV, 
+Colossus_afps, ozymandias81, skepticist, grrfield, galileo31dos01, P41R47, VanaheimRanger, hakros, memfis, and all of you reading this because you all deserve more credit.
+Thank you for your support!
+
+
+-= GRAPHICS =-
+
+TITLEPIC        Moustachio
+
+PLAYPAL &       WorldMachine
+COLORMAP        from DOOM+ v0.4
+                "DOOM+ v0.4.WAD"
+
+ALTERNATE       DRON12261
+COLORMAPS       from Big COLORMAP pack for Eternity Engine
+                "EECLRMPS.WAD"
+
+M_DOOM          Moustachio
+                franckFRAG
+
+STBAR           galileo31dos01
+                Moustachio
+Ultra-wide      NightFright
+STBAR
+
+
+-= PROGRAMS USED =-
+
+Ultimate Doom Builder for Level Design
+SLADE 3.2.4 for .wad File Compilation
+Doom Text File Generator by Linguica for Text File/WADINFO
+Doom Text Generator by eevee for CWILV lumps
+paint.net & SLADE 3.2.4 for Graphics
+FL Studio 20 & Audacity for sound fx
+Space Engine for Saturn render & size reference

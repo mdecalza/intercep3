@@ -1,0 +1,18 @@
+{
+  "type": "gameconf",
+  "version": "1.0.0",
+  "metadata": { },
+  "data":
+  {
+    "title": "Interception III",
+    "author": "The Interceptors",
+    "description": "The third Interception",
+    "version": "0.10",
+    "iwad": "doom2.wad",
+    "pwadfiles": null,
+    "dehfiles": null,
+    "executable": "mbf21ex",
+	"mode": "commercial",
+    "options": null
+  }
+}

@@ -1,0 +1,4568 @@
+Patch File for DeHackEd v3.0
+# by Moustachio; 2024
+# Created with WhackEd4 1.2.4 BETA
+# and a good ol' fashioned text editor
+# Note: Use the pound sign ('#') to start comment lines.
+
+Doom version = 2021
+Patch format = 6
+
+
+Thing 1 (Player)
+Splash group = 0  # Immune to splash damage from incendiary shells & BFG ball
+
+Thing 3 (Former Sergeant)
+Dropped item = 70  # Drops shells on death instead of a shotgun
+
+Thing 11 (Chaingunner)
+Dropped item = 64  # Drops bullets on death instead of a minigun
+
+Thing 12 (Imp)
+Projectile group = 1  # Imp fireball projectile group
+
+Thing 19 (Lost Soul)
+Hit points = 60
+
+Thing 21 (Arachnotron)
+Projectile group = 2  # Arachnotron plasma projectile group
+
+Thing 35 (Plasma projectile)
+Missile damage = 9
+
+Thing 36 (BFG projectile)
+Missile damage = 125
+Splash group = 0
+
+Thing 43 (BFG impact)
+Splash group = 0
+
+Thing 78 (Incendiary Shotgun)
+Initial frame = 885
+
+Thing 79 (Super Slug Shotgun)
+Initial frame = 884
+
+Thing 80 (Tall techno floor lamp)
+Height = 5242880
+
+Thing 81 (Short techno floor lamp)
+Height = 3932160
+
+Thing 82 (Floor lamp)
+Height = 3145728
+
+Thing 125 (Impaled human)
+Hit points = 20
+Injury frame = 2000
+Pain sound = 27
+Death frame = 2001
+Exploding frame = 2006
+Death sound = 60
+Width = 1048576
+Height = 3670016
+Mass = 100000
+Pain chance = 255
+Bits = SHOOTABLE+SOLID
+Dropped item = 64  # Drops bullets on death
+
+Thing 126 (Twitching impaled human)
+Hit points = 20
+Injury frame = 2029
+Death frame = 2015
+Exploding frame = 2020
+Death sound = 59
+Width = 1048576
+Height = 3670016
+Mass = 100000
+Action sound = 75
+Pain chance = 255
+Bits = SHOOTABLE+SOLID
+Dropped item = 64  # Drops bullets on death
+
+# New things
+
+Thing 151 (Incendiary projectile)
+Initial frame = 3124
+Death frame = 3121
+Hit points = 1000
+Death sound = 17
+Speed = 1638400
+Width = 851968
+Height = 524288
+Mass = 100
+Missile damage = 3
+Reaction time = 8
+Pain chance = 0
+Bits = NOBLOCKMAP+NOGRAVITY+DROPOFF+MISSILE+TRANSLUCENT
+Splash group = 0
+
+Thing 152 (Fire pit)
+ID # = 6001
+Initial frame = 1090
+Width = 1048576
+Height = 1048576
+Bits = SOLID
+
+Thing 153 (Arrow)
+Initial frame = 3117
+Death frame = 3151
+Hit points = 20
+Death sound = 531
+Speed = 1638400
+Width = 851968
+Height = 524288
+Mass = 250
+Missile damage = 3
+Reaction time = 8
+Pain chance = 0
+Bits = NOBLOCKMAP+NOGRAVITY+DROPOFF+MISSILE
+
+Thing 154 (Tall floor lamp)
+ID # = 6003
+Initial frame = 1095
+Width = 1048576
+Height = 5242880
+Bits = SOLID
+
+Thing 155 (Techbase lamp)
+ID # = 6004
+Initial frame = 1096
+Width = 1048576
+Height = 3932160
+Bits = SOLID
+
+Thing 156 (Short techno floor lamp 2)
+ID # = 6005
+Initial frame = 1097
+Width = 1048576
+Height = 3932160
+Bits = SOLID
+
+Thing 157 (Chandelier)
+ID # = 6006
+Initial frame = 1098
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 158 (Tall hanging techno lamp)
+ID # = 6007
+Initial frame = 1099
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 159 (Short hanging techno lamp)
+ID # = 6008
+Initial frame = 1100
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 160 (Chandelier 2)
+ID # = 6009
+Initial frame = 1101
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 161 (Large brown tree 2)
+ID # = 6010
+Initial frame = 1102
+Width = 1048576
+Height = 7077888
+Bits = SOLID
+
+Thing 162 (Burned-down tree)
+ID # = 6011
+Initial frame = 1110
+Width = 1048576
+Height = 3932160
+Bits = SOLID
+
+Thing 163 (Hell tree)
+ID # = 6012
+Initial frame = 1120
+Width = 1048576
+Height = 7077888
+Bits = SOLID
+
+Thing 164 (Hanging vine)
+ID # = 6013
+Initial frame = 1130
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 165 (Hanging vine 2)
+ID # = 6014
+Initial frame = 1140
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 166 (Lava cauldron)
+ID # = 6015
+Initial frame = 1150
+Width = 1572864
+Height = 1572864
+Bits = SOLID
+
+Thing 167 (Red vase)
+ID # = 6016
+Initial frame = 1160
+Width = 1048576
+Height = 2097152
+Bits = SOLID
+
+Thing 168 (Large brown tree with skulls)
+ID # = 6017
+Initial frame = 1170
+Width = 2097152
+Height = 1048576
+Bits = SOLID
+
+Thing 169 (Hanging skull lamp)
+ID # = 6018
+Initial frame = 1180
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 170 (Crystal ball on column)
+ID # = 6019
+Initial frame = 1190
+Width = 1048576
+Height = 3932160
+Bits = SOLID
+
+Thing 171 (Extra thing 20)
+Initial frame = 1200
+Width = 1048576
+Height = 10485760
+Bits = SOLID
+
+Thing 172 (Brown and gray tree)
+ID # = 6021
+Initial frame = 1210
+Width = 1048576
+Height = 10485760
+Bits = SOLID
+
+Thing 173 (Brown and gray tree 2)
+ID # = 6022
+Initial frame = 1220
+Width = 1048576
+Height = 10485760
+Bits = SOLID
+
+Thing 174 (Mossy tree)
+ID # = 6023
+Initial frame = 1230
+Width = 1048576
+Height = 10485760
+Bits = SOLID
+
+Thing 175 (Mossy tree 2)
+ID # = 6024
+Initial frame = 1240
+Width = 1048576
+Height = 7077888
+Bits = SOLID
+
+Thing 176 (Mossy log)
+ID # = 6025
+Initial frame = 1250
+Width = 1048576
+Height = 1048576
+Bits = SOLID
+
+Thing 177 (Mossy stump)
+ID # = 6026
+Initial frame = 1260
+Width = 1048576
+Height = 2097152
+Bits = SOLID
+
+Thing 178 (Mossy roots)
+ID # = 6027
+Initial frame = 1270
+Width = 1048576
+Height = 3145728
+Bits = SOLID
+
+Thing 179 (Stalagmite skulls)
+ID # = 6028
+Initial frame = 1280
+Width = 1048576
+Height = 4194304
+Bits = SOLID
+
+Thing 180 (Brown and gray tree 3)
+ID # = 6029
+Initial frame = 1290
+Width = 1048576
+Height = 10485760
+Bits = SOLID
+
+Thing 181 (Safety cone)
+ID # = 6030
+Initial frame = 1300
+Width = 1048576
+Height = 2097152
+Bits = SOLID
+
+Thing 182 (Office chair)
+ID # = 6031
+Initial frame = 1310
+Width = 1048576
+Height = 1048576
+Bits = SOLID
+
+Thing 183 (Toilet)
+ID # = 6032
+Initial frame = 1320
+Hit points = 5
+Death frame = 1321
+Width = 1048576
+Height = 2097152
+Mass = 338
+Bits = SOLID+NOBLOOD+SHOOTABLE
+
+Thing 184 (Czech hedgehog)
+ID # = 6033
+Initial frame = 1330
+Width = 1048576
+Height = 2097152
+Bits = SOLID
+
+Thing 185 (Bloody hanging hook)
+ID # = 6034
+Initial frame = 1340
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 186 (Short hedge bush)
+ID # = 6035
+Initial frame = 1350
+Width = 1048576
+Height = 3932160
+Bits = SOLID
+
+Thing 187 (Large green tree)
+ID # = 6036
+Initial frame = 1360
+Width = 1048576
+Height = 6553600
+Bits = SOLID
+
+Thing 188 (Fire hydrant)
+ID # = 6037
+Initial frame = 1370
+Hit points = 50
+Death frame = 1371
+Death sound = 502
+Width = 1048576
+Height = 1572864
+Mass = 100000
+Bits = SOLID+NOBLOOD+SHOOTABLE
+
+Thing 189 (Street lamp)
+ID # = 6038
+Initial frame = 1380
+Width = 1048576
+Height = 5242880
+Bits = SOLID
+
+Thing 190 (Hanging lamp)
+ID # = 6039
+Initial frame = 1390
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 191 (Construction light)
+ID # = 6040
+Initial frame = 1400
+Width = 1048576
+Height = 7077888
+Bits = SOLID
+
+Thing 192 (Construction light 2)
+ID # = 6041
+Initial frame = 1410
+Width = 1048576
+Height = 2097152
+Bits = SOLID
+
+Thing 193 (Blinking ceiling lamp)
+ID # = 6042
+Initial frame = 1420
+Width = 1048576
+Height = 0
+Bits = SPAWNCEILING+NOGRAVITY
+
+Thing 194 (Glass column)
+ID # = 6043
+Initial frame = 1430
+Hit points = 30
+Injury frame = 1435
+Pain chance = 255
+Pain sound = 505
+Death frame = 1436
+Death sound = 506
+Width = 1048576
+Height = 8388608
+Mass = 100000
+Bits = SOLID+NOBLOOD+SHOOTABLE
+
+Thing 195 (Dead scientist 1)
+ID # = 6044
+Initial frame = 1440
+Width = 1048576
+Height = 1048576
+Bits = SOLID
+
+Thing 196 (Dead scientist 2)
+ID # = 6045
+Initial frame = 1450
+Width = 1048576
+Height = 1048576
+Bits = SOLID
+
+Thing 197 (Dead admiral)
+ID # = 6046
+Initial frame = 1460
+Width = 1048576
+Height = 1048576
+Bits = NOBLOCKMAP
+
+Thing 198 (Marine helmet)
+ID # = 6047
+Initial frame = 1470
+Width = 1048576
+Height = 1048576
+
+Thing 199 (Orange marine suit)
+ID # = 6048
+Initial frame = 1480
+Width = 1048576
+Height = 1048576
+
+Thing 200 (Green marine suit)
+ID # = 6049
+Initial frame = 1490
+Width = 1048576
+Height = 1048576
+
+Thing 201 (Large icy stalagmite)
+ID # = 6050
+Initial frame = 1500
+Width = 1572864
+Height = 8388608
+Bits = SOLID
+
+Thing 202 (Short icy stalagmite)
+ID # = 6051
+Initial frame = 1510
+Width = 1048576
+Height = 3145728
+Bits = SOLID
+
+Thing 203 (Short icy stalagmite 2)
+ID # = 6052
+Initial frame = 1520
+Width = 1048576
+Height = 3670016
+Bits = SOLID
+
+Thing 204 (Large crystal)
+ID # = 6053
+Initial frame = 1530
+Width = 1048576
+Height = 5046272
+Bits = SOLID
+
+Thing 205 (Ceiling crystal)
+ID # = 6054
+Initial frame = 1540
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 206 (Behemoth)
+Initial frame = 1550
+Width = 1048576
+Height = 1048576
+
+Thing 207 (An unlikely friend)
+Initial frame = 1560
+Width = 1048576
+Height = 1048576
+
+Thing 208 (BarbatOS)
+Initial frame = 1570
+Width = 1048576
+Height = 1048576
+
+Thing 209 (Brown fleshy mass)
+ID # = 6058
+Initial frame = 1580
+Width = 1572864
+Height = 2621440
+Bits = SOLID
+
+Thing 210 (Red fleshy mass)
+ID # = 6059
+Initial frame = 1590
+Width = 1572864
+Height = 2621440
+Bits = SOLID
+
+Thing 211 (Green marble column)
+ID # = 6060
+Initial frame = 1600
+Width = 1048576
+Height = 7864320
+Bits = SOLID
+
+Thing 212 (Gray marble column)
+ID # = 6061
+Initial frame = 1610
+Width = 1048576
+Height = 7864320
+Bits = SOLID
+
+Thing 213 (Spiral marble column)
+ID # = 6062
+Initial frame = 1620
+Width = 1048576
+Height = 4718592
+Bits = SOLID
+
+Thing 214 (Tall metal pipe)
+ID # = 6063
+Initial frame = 1630
+Width = 1048576
+Height = 8388608
+Bits = SOLID
+
+Thing 215 (Tall metal pipe 2)
+ID # = 6064
+Initial frame = 1640
+Width = 1048576
+Height = 8388608
+Bits = SOLID
+
+Thing 216 (Extra tall column)
+ID # = 6065
+Initial frame = 1650
+Width = 1048576
+Height = 11796480
+Bits = SOLID
+
+Thing 217 (Tall destroyed column)
+ID # = 6066
+Initial frame = 1660
+Width = 1048576
+Height = 6553600
+Bits = SOLID
+
+Thing 218 (Short destroyed column)
+ID # = 6067
+Initial frame = 1670
+Width = 1048576
+Height = 3932160
+Bits = SOLID
+
+Thing 219 (Skull mine)
+ID # = 6068
+Hit points = 1000
+Initial frame = 1680
+Death frame = 1682
+Death sound = 17
+Width = 720896
+Height = 524288
+Missile damage = 1
+Bits = NOBLOCKMAP+NOGRAVITY+DROPOFF+MISSILE+TRANSLUCENT
+MBF21 Bits = RIP
+Rip sound = 55
+
+Thing 220 (Demon statue)
+ID # = 6069
+Initial frame = 1690
+Width = 1048576
+Height = 7077888
+Bits = SOLID
+
+Thing 221 (Splayed marine)
+ID # = 6070
+Initial frame = 1700
+Width = 1048576
+Height = 1048576
+
+Thing 222 (Impaled marine)
+ID # = 6071
+Initial frame = 1710
+WIDTH = 1048576
+HEIGHT = 4194304
+Bits = SOLID
+
+Thing 223 (Hanging imp (no jaw))
+ID # = 6072
+Initial frame = 1720
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 224 (Impaled marine head)
+ID # = 6073
+Initial frame = 1730
+Width = 1048576
+Height = 3670016
+Bits = SOLID
+
+Thing 225 (Impaled cyberdemon head)
+ID # = 6074
+Initial frame = 1740
+Width = 1048576
+Height = 3670016
+Bits = SOLID
+
+Thing 226 (Large pile of corpses)
+ID # = 6075
+Initial frame = 1750
+Width = 1048576
+Height = 4194304
+Bits = SOLID
+
+Thing 227 (Large pile of bones)
+ID # = 6076
+Initial frame = 1760
+Width = 1048576
+Height = 1048576
+
+Thing 228 (Hanging baron)
+ID # = 6077
+Initial frame = 1770
+Width = 1048576
+Height = 0
+Bits = NOBLOCKMAP+SPAWNCEILING+NOGRAVITY
+
+Thing 229 (Small fleshy mass)
+ID # = 6078
+Initial frame = 1780
+Width = 1048576
+Height = 1048576
+
+Thing 230 (Burning sacrifice)
+ID # = 6079
+Initial frame = 1790
+Width = 1048576
+Height = 6553600
+Bits = SOLID
+
+Thing 231 (Tall red banner)
+ID # = 6080
+Initial frame = 1800
+Width = 1048576
+Height = 8388608
+Bits = SOLID
+
+Thing 232 (Tall green banner)
+ID # = 6081
+Initial frame = 1810
+Width = 1048576
+Height = 8388608
+Bits = SOLID
+
+Thing 233 (Seaweed)
+ID # = 6082
+Initial frame = 1820
+Width = 1048576
+Height = 1048576
+
+Thing 234 (Big glowing mushroom)
+ID # = 6083
+Initial frame = 1830
+Width = 1048576
+Height = 1048576
+
+Thing 235 (Small glowing mushroom)
+ID # = 6084
+Initial frame = 1840
+Width = 1048576
+Height = 1048576
+
+Thing 236 (Gray rock)
+ID # = 6085
+Initial frame = 1850
+Width = 1048576
+Height = 1048576
+
+Thing 237 (Brown rock)
+ID # = 6086
+Initial frame = 1860
+Width = 1048576
+Height = 1048576
+
+Thing 238 (Mine)
+Initial frame = 1870
+Hit points = 1000
+Death frame = 127
+Death sound = 82
+Width = 1048576
+Height = 2097152
+Missile damage = 20
+Mass = 100
+Bits = DROPOFF+MISSILE+BOUNCES+TOUCHY
+
+Thing 239 (Box)
+ID # = 6088
+Initial frame = 1880
+Width = 1048576
+Height = 1048576
+
+Thing 240 (Trash bin)
+ID # = 6089
+Initial frame = 1890
+Width = 1048576
+Height = 2621440
+Bits = SOLID
+
+Thing 241 (Nitro barrel)
+ID # = 6090
+Initial frame = 1900
+Hit points = 40
+Injury frame = 2030
+Pain chance = 255
+Pain sound = 507
+Death frame = 1901
+Death sound = 508
+Width = 655360
+Height = 2752512
+Mass = 100
+Bits = SOLID+NOBLOOD+SHOOTABLE
+
+Thing 242 (Incendiary zombie)  # Fires a deadly incendiary round
+ID # = 6091
+Initial frame = 2031
+Hit points = 80
+First moving frame = 2033
+Alert sound = 37
+Reaction time = 8
+Injury frame = 2045
+Pain chance = 170
+Pain sound = 27
+Far attack frame = 2041
+Death frame = 2047
+Exploding frame = 2054
+Death sound = 59
+Speed = 8
+Width = 1310720
+Height = 3670016
+Mass = 100
+Bits = COUNTKILL+SHOOTABLE+SOLID
+Respawn frame = 2061
+Action sound = 75
+Dropped item = 70  # Drops shells on death
+Splash group = 0  # Immune to incendiary splash damage
+
+Thing 243 (Plasma zombie)  # Fires a spread of 3 arachnotron plasma balls
+ID # = 6092
+Initial frame = 2100
+Hit points = 40
+First moving frame = 2102
+Alert sound = 37
+Reaction time = 8
+Injury frame = 2116
+Pain chance = 170
+Pain sound = 27
+Far attack frame = 2110
+Death frame = 2118
+Exploding frame = 2123
+Death sound = 59
+Speed = 8
+Width = 1310720
+Height = 3670016
+Mass = 100
+Bits = COUNTKILL+SHOOTABLE+SOLID
+Respawn frame = 2132
+Action sound = 75
+Dropped item = 68  # Drops a cell charge on death
+Projectile group = 2  # Immune to arachnotron plasma damage
+
+Thing 244 (Rocket zombie)  # Glass cannon -- fires 1 rocket after long wind-up
+ID # = 6093
+Initial frame = 2200
+Hit points = 10
+First moving frame = 2202
+Alert sound = 37
+Reaction time = 8
+Injury frame = 2216
+Pain chance = 170
+Pain sound = 27
+Far attack frame = 2210
+Death frame = 2218
+Exploding frame = 2223
+Death sound = 60
+Speed = 8
+Width = 1310720
+Height = 3670016
+Mass = 100
+Bits = COUNTKILL+SHOOTABLE+SOLID
+Respawn frame = 2232
+Action sound = 75
+Dropped item = 66  # Drops a rocket on death
+MBF21 Bits = NORADIUSDMG
+
+Thing 245 (Former tank)  # Weaker, smaller masterminds
+ID # = 6094
+Initial frame = 2300
+Hit points = 1000
+First moving frame = 2302
+Alert sound = 527
+Reaction time = 8
+Injury frame = 2316
+Pain chance = 10
+Pain sound = 528
+Far attack frame = 2310
+Death frame = 2318
+Death sound = 525
+Speed = 12
+Width = 1572864
+Height = 4194304
+Mass = 1200
+Bits = COUNTKILL+SOLID+NOBLOOD+SHOOTABLE
+Dropped item = 65  # Drops a box of ammo on death
+MBF21 Bits = NORADIUSDMG
+
+Thing 246 (Demonic fireball turret)  # Shoots one arrow every second
+ID # = 6095
+Initial frame = 2400
+Hit points = 1500
+Death frame = 2418
+Death sound = 501
+Width = 1048576
+Height = 1048576
+Mass = 100000
+Bits = SOLID
+
+Thing 247 (Gliding imp)  # Can jump up and down ledges
+ID # = 6096
+Initial frame = 2500
+Hit points = 60
+First moving frame = 2502
+Alert sound = 39
+Reaction time = 8
+Injury frame = 2516
+Pain chance = 200
+Pain sound = 27
+Close attack frame = 2510
+Far attack frame = 2510
+Death frame = 2518
+Exploding frame = 462
+Death sound = 62
+Speed = 8
+Width = 1310720
+Height = 3670016
+Mass = 75
+Bits = COUNTKILL+SHOOTABLE+SOLID+FLOAT+BOUNCES+DROPOFF
+Respawn frame = 2532
+Action sound = 76
+Projectile group = 1  # Immune to imp fireball damage
+MBF21 Bits = LOGRAV+HIGHERMPROB
+
+Thing 248 (Snake imp)  # Strong imp variant that fires a volley of 3 fireballs
+ID # = 6097
+Initial frame = 2600
+Hit points = 200
+First moving frame = 2602
+Alert sound = 39
+Reaction time = 8
+Injury frame = 2616
+Pain chance = 200
+Pain sound = 27
+Close attack frame = 2610
+Far attack frame = 2610
+Death frame = 2618
+Exploding frame = 2624
+Death sound = 62
+Speed = 10
+Width = 1310720
+Height = 3670016
+Mass = 125
+Bits = COUNTKILL+SHOOTABLE+SOLID
+Respawn frame = 2632
+Action sound = 76
+Projectile group = 1  # Immune to imp fireball damage
+
+Thing 249 (Fleshspawn)  # Fast little buggers that charge at you (crashes game)
+Initial frame = 2700
+Hit points = 160
+First moving frame = 2702
+Alert sound = 513
+Reaction time = 8
+Injury frame = 2710
+Pain chance = 200
+Pain sound = 511
+Close attack frame = 2706
+Far attack frame = 2706
+Attack sound = 510
+Death frame = 2712
+Exploding frame = 2719
+Death sound = 512
+Speed = 10
+Width = 1048576
+Height = 2097152
+Mass = 45
+Missile damage = 3
+Bits = COUNTKILL+SHOOTABLE+SOLID
+Respawn frame = 2725
+Action sound = 509
+
+# Modified standard frames
+
+Frame 2
+Sprite subnumber = 7
+
+Frame 3
+Sprite subnumber = 7
+
+Frame 4
+Sprite subnumber = 7
+Next frame = 3209
+Unknown 1 = 1
+Unknown 2 = 52
+
+Frame 7  # 1st punch, 1st frame; (WeaponMeleeAttack)
+Duration = 2
+Args1 = 0
+Args4 = 56
+Args5 = 4718592
+
+Frame 8  # 1st punch, 2nd frame; (WeaponMeleeAttack)
+Args3 = 655360
+Args4 = 83
+Args5 = 4718592
+
+Frame 9  # 1st punch, 3rd frame; MBF21 RefireTo action
+Duration = 0
+Next frame = 3128  # Switches to this frame and back to allow weapon switching
+Args1 = 3129
+
+Frame 12
+Next frame = 3210
+Unknown 1 = 1
+Unknown 2 = 52
+
+Frame 14  # Model 1887 firing frame 1 (WeaponBulletAttack)
+Sprite subnumber = 32770
+Duration = 3
+Next frame = 3110
+Args1 = 245760  # spread horizontal (floating point)
+Args2 = 245760  # spread vertical (floating point)
+Args3 = 7  # number of pellets
+
+Frame 16
+Sprite subnumber = 0
+Duration = 1
+Next frame = 15
+
+Frame 17
+Next frame = 3136
+Duration = 2
+
+Frame 18
+Sprite number = 6
+
+Frame 19
+Sprite number = 6
+
+Frame 20
+Sprite number = 6
+Next frame = 3211
+Unknown 1 = 1
+Unknown 2 = 52
+
+Frame 21  # Incendiary shotgun weapon sound
+Duration = 0
+Next frame = 3132
+Args1 = 518
+
+Frame 22  # Incendiary shotgun fire
+Duration = 0
+Next frame = 3102
+Args1 = 151
+
+Frame 23
+Sprite subnumber = 1
+Duration = 4
+
+Frame 24
+Duration = 6
+
+Frame 25
+Duration = 8
+
+Frame 26
+Duration = 8
+
+Frame 27
+Duration = 8
+
+Frame 28
+Duration = 8
+
+Frame 29
+Next frame = 32
+
+Frame 30
+Duration = 7
+
+Frame 31
+Duration = 4
+
+Frame 32
+Sprite number = 1
+
+Frame 33
+Sprite number = 1
+
+Frame 34
+Sprite number = 1
+Next frame = 3217
+Unknown 1 = 1
+Unknown 2 = 52
+
+Frame 36  # Slug rifle fire 1
+Sprite subnumber = 32773
+Duration = 3
+Next frame = 3108
+Args1 = 0
+Args2 = 0
+Args3 = 3
+Args4 = 80
+Args5 = 2
+
+Frame 37
+Sprite subnumber = 1
+Duration = 3
+
+Frame 38
+Sprite subnumber = 2
+Duration = 4
+
+Frame 39
+Sprite subnumber = 3
+Duration = 8
+
+Frame 40
+Sprite subnumber = 4
+Duration = 10
+
+Frame 41
+Sprite subnumber = 3
+Duration = 8
+
+Frame 42
+Sprite subnumber = 2
+Duration = 3
+
+Frame 43
+Sprite subnumber = 1
+Duration = 2
+
+Frame 44
+Next frame = 18
+
+Frame 47
+Sprite subnumber = 4
+Duration = 7
+
+Frame 48
+Sprite subnumber = 5
+Duration = 7
+
+Frame 51
+Next frame = 3212
+Unknown 1 = 1
+Unknown 2 = 52
+
+Frame 52  # Minigun firing frame 1 (WeaponBulletAttack)
+Duration = 1
+Next frame = 3089
+Args1 = 327680
+Args2 = 327680
+Args3 = 2
+Args4 = 10
+
+Frame 53  # Minigun firing frame 2 (WeaponBulletAttack)
+Duration = 1
+
+Frame 54  # Minigun refire
+Next frame = 3090
+
+Frame 55  # Minigun muzzle flash
+Duration = 2
+Next frame = 3135
+
+Frame 59
+Next frame = 3213
+Unknown 1 = 1
+Unknown 2 = 38
+
+Frame 67
+Duration = 1
+
+Frame 68
+Duration = 1
+
+Frame 70
+Next frame = 3216
+Unknown 1 = 1
+Unknown 2 = 52
+
+Frame 71  # Chainsaw attack (WeaponMeleeAttack)
+Duration = 1
+Args2 = 12       # random damage multiplier
+Args3 = 117965   # attack berserk multiplier
+Args4 = 13       # attack hit sound
+Args5 = 4784128  # attack range (4784128 = 65536 * 73 = 73.0 units away)
+
+Frame 72
+Duration = 1
+Args1 = 12
+
+Frame 76
+Next frame = 3214
+Unknown 1 = 1
+Unknown 2 = 52
+
+Frame 77
+Next frame = 74
+
+Frame 83
+Next frame = 3215
+Unknown 1 = 1
+Unknown 2 = 52
+
+Frame 115  # BFG ball active 1 (RadiusDamage)
+Args1 = 64
+Args2 = 512
+
+Frame 116  # BFG ball active 2 (RadiusDamage)
+Args1 = 64
+Args2 = 512
+
+Frame 117  # BFG ball explode (RadiusDamage)
+Args1 = 256
+Args2 = 512
+
+Frame 123  # BFG impact explode (RadiusDamage)
+Args1 = 32
+Args2 = 64
+
+Frame 127  # Rocket explode (RadiusDamage)
+Args1 = 384
+Args2 = 128
+
+# Decoration Frames 
+
+Frame 1090
+Sprite number = 146
+Sprite subnumber = 32768
+Duration = 4
+Next frame = 1091
+
+Frame 1091
+Sprite number = 146
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1092
+
+Frame 1092
+Sprite number = 146
+Sprite subnumber = 32770
+Duration = 4
+Next frame = 1090
+
+Frame 1094
+Sprite number = 147
+Sprite subnumber = 32768
+Duration = 4
+Next frame = 1115
+
+Frame 1095
+Sprite number = 148
+Sprite subnumber = 32768
+
+Frame 1096
+Sprite number = 149
+Sprite subnumber = 32768
+
+Frame 1097
+Sprite number = 150
+Sprite subnumber = 32768
+
+Frame 1098
+Sprite number = 151
+Sprite subnumber = 32768
+Duration = 4
+Next frame = 1112
+
+Frame 1099
+Sprite number = 152
+Sprite subnumber = 32768
+Duration = 4
+Next frame = 1103
+
+Frame 1100
+Sprite number = 153
+Sprite subnumber = 32768
+Duration = 4
+Next frame = 1105
+
+Frame 1101
+Sprite number = 154
+Sprite subnumber = 32768
+
+Frame 1102
+Sprite number = 155
+
+Frame 1103
+Sprite number = 152
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1104
+
+Frame 1104
+Sprite number = 152
+Sprite subnumber = 32770
+Duration = 4
+Next frame = 1111
+
+Frame 1105
+Sprite number = 153
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1106
+
+Frame 1106
+Sprite number = 153
+Sprite subnumber = 32770
+Duration = 4
+Next frame = 1107
+
+Frame 1107
+Sprite number = 153
+Sprite subnumber = 32771
+Duration = 4
+Next frame = 1100
+
+Frame 1108
+Sprite number = 101
+Sprite subnumber = 1
+Duration = 4
+
+Frame 1109
+Sprite number = 177
+Duration = 4
+
+Frame 1110
+Sprite number = 156
+
+Frame 1111
+Sprite number = 152
+Sprite subnumber = 32771
+Duration = 4
+Next frame = 1099
+
+Frame 1112
+Sprite number = 151
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1113
+
+Frame 1113
+Sprite number = 151
+Sprite subnumber = 32770
+Duration = 4
+Next frame = 1114
+
+Frame 1114
+Sprite number = 151
+Sprite subnumber = 32771
+Duration = 4
+Next frame = 1098
+
+Frame 1115
+Sprite number = 147
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1116
+
+Frame 1116
+Sprite number = 147
+Sprite subnumber = 32770
+Duration = 4
+Next frame = 1117
+
+Frame 1117
+Sprite number = 147
+Sprite subnumber = 32771
+Duration = 4
+Next frame = 1094
+
+Frame 1118
+Sprite number = 3
+Sprite subnumber = 2
+Duration = 1
+Next frame = 1119
+
+Frame 1119
+Sprite number = 3
+Sprite subnumber = 1
+Duration = 1
+Next frame = 1121
+
+Frame 1120
+Sprite number = 157
+
+Frame 1121
+Sprite number = 3
+Sprite subnumber = 2
+Duration = 1
+Next frame = 1122
+
+Frame 1122
+Sprite number = 3
+Sprite subnumber = 1
+Duration = 3
+Next frame = 15
+
+Frame 1123
+Sprite number = 2
+Sprite subnumber = 6
+Duration = 0
+Next frame = 1124
+
+Frame 1124
+Sprite number = 2
+Sprite subnumber = 6
+Duration = 0
+Next frame = 1125
+
+Frame 1125
+Sprite number = 2
+Sprite subnumber = 6
+Duration = 0
+Next frame = 1126
+
+Frame 1126
+Sprite number = 2
+Sprite subnumber = 6
+Duration = 0
+Next frame = 1127
+
+Frame 1127
+Sprite number = 2
+Sprite subnumber = 6
+Duration = 12
+Next frame = 1128
+
+Frame 1128
+Sprite number = 2
+Sprite subnumber = 5
+Duration = 3
+Next frame = 1129
+
+Frame 1129
+Sprite number = 2
+Sprite subnumber = 4
+Duration = 5
+Next frame = 2101
+
+Frame 1130
+Sprite number = 158
+
+Frame 1131
+Sprite number = 18
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 97
+
+Frame 1132
+Sprite number = 18
+Sprite subnumber = 32772
+Duration = 6
+Next frame = 0
+
+Frame 1140
+Sprite number = 159
+
+Frame 1150
+Sprite number = 160
+Sprite subnumber = 32768
+Duration = 16
+Next frame = 1151
+
+Frame 1151
+Sprite number = 160
+Sprite subnumber = 32769
+Duration = 16
+Next frame = 1152
+
+Frame 1152
+Sprite number = 160
+Sprite subnumber = 32770
+Duration = 16
+Next frame = 1150
+
+Frame 1160
+Sprite number = 161
+
+Frame 1170
+Sprite number = 162
+
+Frame 1180 # fireball dissipate frame 1
+Sprite number = 163
+Sprite subnumber = 32768
+Duration = 4
+Next frame = 1181
+
+Frame 1181 # fireball dissipate frame 2
+Sprite number = 163
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1182
+
+Frame 1182 # fireball dissipate frame 3
+Sprite number = 163
+Sprite subnumber = 32770
+Duration = 4
+Next frame = 1183
+
+Frame 1183 # fireball dissipate frame 4
+Sprite number = 163
+Sprite subnumber = 32771
+Duration = 4
+Next frame = 1180
+
+Frame 1190
+Sprite number = 164
+
+Frame 1200
+Sprite number = 165
+
+Frame 1210
+Sprite number = 166
+
+Frame 1220
+Sprite number = 167
+
+Frame 1230
+Sprite number = 168
+
+Frame 1240
+Sprite number = 169
+
+Frame 1250
+Sprite number = 170
+
+Frame 1260
+Sprite number = 171
+
+Frame 1270
+Sprite number = 172
+
+Frame 1280
+Sprite number = 173
+
+Frame 1290
+Sprite number = 174
+
+Frame 1300
+Sprite number = 175
+
+Frame 1310
+Sprite number = 176
+
+Frame 1320
+Sprite number = 177
+Duration = 4
+
+Frame 1321
+Sprite number = 177
+Sprite subnumber = 1
+Duration = 4
+Next frame = 1322
+
+Frame 1322
+Sprite number = 177
+Sprite subnumber = 2
+Duration = 4
+Next frame = 1323
+
+Frame 1323
+Sprite number = 177
+Sprite subnumber = 3
+Duration = 4
+Next frame = 1324
+
+Frame 1324
+Sprite number = 177
+Sprite subnumber = 4
+Duration = 4
+Next frame = 1325
+
+Frame 1325
+Sprite number = 177
+Sprite subnumber = 5
+Duration = 4
+Next frame = 1326
+
+Frame 1326
+Sprite number = 177
+Sprite subnumber = 7
+Duration = 4
+Next frame = 1327
+
+Frame 1327
+Sprite number = 177
+Sprite subnumber = 8
+Duration = 4
+Next frame = 1328
+
+Frame 1328
+Sprite number = 177
+Sprite subnumber = 9
+Duration = 4
+Next frame = 1329
+
+Frame 1329
+Sprite number = 177
+Sprite subnumber = 10
+Duration = 4
+Next frame = 1326
+
+Frame 1330
+Sprite number = 178
+
+Frame 1340
+Sprite number = 179
+
+Frame 1350
+Sprite number = 180
+
+Frame 1360
+Sprite number = 181
+
+Frame 1370
+Sprite number = 182
+
+Frame 1371
+Sprite number = 182
+Sprite subnumber = 1
+Duration = 3
+Next frame = 1372
+
+Frame 1372
+Sprite number = 182
+Sprite subnumber = 2
+Duration = 3
+Next frame = 1373
+
+Frame 1373
+Sprite number = 182
+Sprite subnumber = 3
+Duration = 3
+Next frame = 1374
+
+Frame 1374
+Sprite number = 182
+Sprite subnumber = 4
+Duration = 3
+Next frame = 1375
+
+Frame 1375
+Sprite number = 182
+Sprite subnumber = 5
+Duration = 3
+Next frame = 1376
+
+Frame 1376
+Sprite number = 182
+Sprite subnumber = 6
+Duration = 3
+Next frame = 1377
+
+Frame 1377
+Sprite number = 182
+Sprite subnumber = 7
+Duration = 3
+Next frame = 1374
+
+Frame 1380
+Sprite number = 183
+Sprite subnumber = 32768
+
+Frame 1390
+Sprite number = 184
+Sprite subnumber = 32768
+
+Frame 1400
+Sprite number = 185
+
+Frame 1410
+Sprite number = 186
+
+Frame 1420
+Sprite number = 187
+Duration = 31
+Next frame = 1421
+
+Frame 1421
+Sprite number = 187
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1420
+
+Frame 1430  # Initial state for glass column
+Sprite number = 188
+Duration = 31
+Next frame = 1431
+
+Frame 1431
+Sprite number = 188
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1430
+
+Frame 1432
+Sprite number = 188
+Sprite subnumber = 2
+Duration = 31
+Next frame = 1433
+
+Frame 1433
+Sprite number = 188
+Sprite subnumber = 32771
+Duration = 4
+Next frame = 1432
+
+Frame 1435  # Pain state for glass column
+Sprite number = 188
+Sprite subnumber = 32769
+Duration = 0
+Next frame = 1430
+
+Frame 1436  # Death state for glass column
+Sprite number = 188
+Sprite subnumber = 32771
+Duration = 0
+Next frame = 1432
+
+Frame 1440
+Sprite number = 189
+
+Frame 1450
+Sprite number = 190
+
+Frame 1460
+Sprite number = 191
+
+Frame 1470
+Sprite number = 192
+
+Frame 1480
+Sprite number = 193
+
+Frame 1490
+Sprite number = 194
+
+Frame 1500
+Sprite number = 195
+
+Frame 1510
+Sprite number = 196
+
+Frame 1520
+Sprite number = 197
+
+Frame 1530
+Sprite number = 198
+
+Frame 1540
+Sprite number = 199
+
+Frame 1550
+Sprite number = 200
+
+Frame 1560
+Sprite number = 201
+
+Frame 1570
+Sprite number = 202
+
+Frame 1580
+Sprite number = 203
+
+Frame 1590
+Sprite number = 204
+
+Frame 1600
+Sprite number = 205
+
+Frame 1610
+Sprite number = 206
+
+Frame 1620
+Sprite number = 207
+
+Frame 1630
+Sprite number = 208
+
+Frame 1640
+Sprite number = 209
+
+Frame 1650
+Sprite number = 210
+
+Frame 1660
+Sprite number = 211
+
+Frame 1670
+Sprite number = 212
+
+Frame 1680  # Skull mine initial frame
+Sprite number = 213
+Sprite subnumber = 32768
+Duration = 2
+Next frame = 1681
+
+Frame 1681  # Skull mine spawn rotated self (SpawnObject)
+Sprite number = 213
+Sprite subnumber = 32768
+Duration = 0
+Next frame = 0
+Args1 = 219
+Args2 = 360448
+Args3 = 327680
+Args4 = 327680
+Args5 = 0
+Args6 = 327680
+Args7 = -196608
+Args8 = 0
+
+Frame 1682  # Skull mine explode 1
+Sprite number = 213
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1683
+
+Frame 1683  # Skull mine explode 2
+Sprite number = 213
+Sprite subnumber = 32770
+Duration = 4
+Next frame = 1684
+
+Frame 1684  # Skull mine explode 3
+Sprite number = 213
+Sprite subnumber = 32771
+Duration = 4
+Next frame = 1685
+
+Frame 1685  # Skull mine explode 4
+Sprite number = 213
+Sprite subnumber = 32772
+Duration = 4
+Next frame = 1686
+
+Frame 1686  # Skull mine explode 5
+Sprite number = 213
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 1687
+
+Frame 1687  # Skull mine explode 6
+Sprite number = 213
+Sprite subnumber = 32774
+Duration = 4
+Next frame = 0
+
+Frame 1690
+Sprite number = 214
+
+Frame 1700
+Sprite number = 215
+
+Frame 1710
+Sprite number = 216
+
+Frame 1720
+Sprite number = 217
+
+Frame 1730
+Sprite number = 218
+
+Frame 1740
+Sprite number = 219
+
+Frame 1750
+Sprite number = 220
+
+Frame 1760
+Sprite number = 221
+
+Frame 1770
+Sprite number = 222
+
+Frame 1780
+Sprite number = 223
+
+Frame 1790
+Sprite number = 224
+Sprite subnumber = 32768
+Duration = 4
+Next frame = 1791
+
+Frame 1791
+Sprite number = 224
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1792
+
+Frame 1792
+Sprite number = 224
+Sprite subnumber = 32770
+Duration = 4
+Next frame = 1793
+
+Frame 1793
+Sprite number = 224
+Sprite subnumber = 32771
+Duration = 4
+Next frame = 1790
+
+Frame 1800
+Sprite number = 225
+
+Frame 1810
+Sprite number = 226
+
+Frame 1820
+Sprite number = 227
+
+Frame 1830
+Sprite number = 228
+Sprite subnumber = 32768
+
+Frame 1840
+Sprite number = 229
+Sprite subnumber = 32768
+
+Frame 1850
+Sprite number = 230
+
+Frame 1860
+Sprite number = 231
+
+Frame 1870  # Mine frame 1 (PlaySound)
+Sprite number = 232
+Sprite subnumber = 32768
+Duration = 4
+Next frame = 1871
+Unknown 1 = 95
+
+Frame 1871  # Mine frame 2
+Sprite number = 232
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 1872
+
+Frame 1872  # Mine frame 3
+Sprite number = 232
+Sprite subnumber = 32770
+Duration = 4
+Next frame = 1873
+
+Frame 1873  # Mine frame 4
+Sprite number = 232
+Sprite subnumber = 32771
+Duration = 4
+Next frame = 1874
+
+Frame 1874  # Mine frame 5
+Sprite number = 232
+Sprite subnumber = 32772
+Duration = 4
+Next frame = 1870
+
+Frame 1880
+Sprite number = 233
+
+Frame 1890
+Sprite number = 234
+
+Frame 1900
+Sprite number = 235
+
+Frame 1901  # Nitro barrel explode frame 1
+Sprite number = 235
+Sprite subnumber = 32768
+Duration = 5
+Next frame = 1902
+
+Frame 1902  # Nitro barrel explode frame 2 (Scream)
+Sprite number = 235
+Sprite subnumber = 32768
+Duration = 5
+Next frame = 1903
+
+Frame 1903  # Nitro barrel explode frame 3 (RadiusDamage)
+Sprite number = 235
+Sprite subnumber = 32769
+Duration = 5
+Next frame = 1908
+Args1 = 640
+Args2 = 128
+
+Frame 1904  # Nitro barrel explode frame 4
+Sprite number = 235
+Sprite subnumber = 32770
+Duration = 0
+Next frame = 1905
+
+Frame 1905  # Nitro barrel explode frame 5
+Sprite number = 235
+Sprite subnumber = 32770
+Duration = 0
+Next frame = 1906
+
+Frame 1906  # Nitro barrel explode frame 6
+Sprite number = 235
+Sprite subnumber = 32770
+Duration = 0
+Next frame = 1907
+
+Frame 1907  # Nitro barrel explode frame 7
+Sprite number = 235
+Sprite subnumber = 32770
+Duration = 0
+Next frame = 1908
+
+Frame 1908  # Nitro barrel explode frame 8
+Sprite number = 235
+Sprite subnumber = 32770
+Duration = 10
+Next frame = 1909
+
+Frame 1909  # Nitro barrel explode frame 9
+Sprite number = 235
+Sprite subnumber = 32771
+Duration = 10
+Next frame = 0
+
+Frame 2000  # Impaled human (static) pain frame
+Sprite number = 101
+Sprite subnumber = 1
+Duration = 4
+Next frame = 899
+
+Frame 2001  # Impaled human (static) death frame 1
+Sprite number = 101
+Sprite subnumber = 2
+Duration = 4
+Next frame = 2002
+
+Frame 2002  # Impaled human (static) death frame 2
+Sprite number = 101
+Sprite subnumber = 3
+Duration = 4
+Next frame = 2003
+
+Frame 2003  # Impaled human (static) death frame 3
+Sprite number = 101
+Sprite subnumber = 4
+Duration = 4
+Next frame = 2004
+
+Frame 2004  # Impaled human (static) death frame 4
+Sprite number = 101
+Sprite subnumber = 5
+Duration = 4
+Next frame = 2005
+
+Frame 2005  # Impaled human (static) death frame 5
+Sprite number = 101
+Sprite subnumber = 6
+Next frame = 0
+
+Frame 2006  # Impaled human (static) explode frame 1
+Sprite number = 101
+Sprite subnumber = 7
+Duration = 4
+Next frame = 2007
+
+Frame 2007  # Impaled human (static) explode frame 2
+Sprite number = 101
+Sprite subnumber = 8
+Duration = 4
+Next frame = 2008
+
+Frame 2008  # Impaled human (static) explode frame 3
+Sprite number = 101
+Sprite subnumber = 9
+Duration = 4
+Next frame = 2009
+
+Frame 2009  # Impaled human (static) explode frame 4
+Sprite number = 101
+Sprite subnumber = 10
+Duration = 4
+Next frame = 2010
+
+Frame 2010  # Impaled human (static) explode frame 5
+Sprite number = 101
+Sprite subnumber = 11
+Duration = 4
+Next frame = 2011
+
+Frame 2011  # Impaled human (static) explode frame 6
+Sprite number = 101
+Sprite subnumber = 12
+Duration = 4
+Next frame = 2012
+
+Frame 2012  # Impaled human (static) explode frame 7
+Sprite number = 101
+Sprite subnumber = 13
+Duration = 4
+Next frame = 2013
+
+Frame 2013  # Impaled human (static) explode frame 8
+Sprite number = 101
+Sprite subnumber = 14
+Duration = 4
+Next frame = 2014
+
+Frame 2014  # Impaled human (static) explode frame 9
+Sprite number = 101
+Sprite subnumber = 15
+Next frame = 0
+
+Frame 2015  # Twitching impaled human death frame 1
+Sprite number = 102
+Sprite subnumber = 2
+Duration = 4
+Next frame = 2016
+
+Frame 2016  # Twitching impaled human death frame 2
+Sprite number = 102
+Sprite subnumber = 3
+Duration = 4
+Next frame = 2017
+
+Frame 2017  # Twitching impaled human death frame 3
+Sprite number = 102
+Sprite subnumber = 4
+Duration = 4
+Next frame = 2018
+
+Frame 2018  # Twitching impaled human death frame 4
+Sprite number = 102
+Sprite subnumber = 5
+Duration = 4
+Next frame = 2019
+
+Frame 2019  # Twitching impaled human death frame 5
+Sprite number = 102
+Sprite subnumber = 6
+Next frame = 0
+
+Frame 2020  # Twitching impaled human explode 1
+Sprite number = 102
+Sprite subnumber = 7
+Duration = 4
+Next frame = 2021
+
+Frame 2021  # Twitching impaled human explode 2
+Sprite number = 102
+Sprite subnumber = 8
+Duration = 4
+Next frame = 2022
+
+Frame 2022  # Twitching impaled human explode 3
+Sprite number = 102
+Sprite subnumber = 9
+Duration = 4
+Next frame = 2023
+
+Frame 2023  # Twitching impaled human explode 4
+Sprite number = 102
+Sprite subnumber = 10
+Duration = 4
+Next frame = 2024
+
+Frame 2024  # Twitching impaled human explode 5
+Sprite number = 102
+Sprite subnumber = 11
+Duration = 4
+Next frame = 2025
+
+Frame 2025  # Twitching impaled human explode 6
+Sprite number = 102
+Sprite subnumber = 12
+Duration = 4
+Next frame = 2026
+
+Frame 2026  # Twitching impaled human explode 7
+Sprite number = 102
+Sprite subnumber = 13
+Duration = 4
+Next frame = 2027
+
+Frame 2027  # Twitching impaled human explode 8
+Sprite number = 102
+Sprite subnumber = 14
+Duration = 4
+Next frame = 2028
+
+Frame 2028  # Twitching impaled human explode 9
+Sprite number = 102
+Sprite subnumber = 15
+Next frame = 0
+
+Frame 2029  # Pain state for twitching impaled human
+Sprite number = 102
+Sprite subnumber = 1
+Duration = 4
+Next frame = 900
+
+Frame 2030  # Pain state for nitro barrel
+Sprite number = 235
+Sprite subnumber = 0
+Duration = 0
+Next frame = 1900
+
+# Incendiary Zombie Frames 
+
+Frame 2031  # Incendiary zombie: idle state 1 (Look)
+Sprite number = 236
+Sprite subnumber = 0
+Duration = 10
+Next frame = 2032
+
+Frame 2032  # Incendiary zombie: idle state 2 (Look)
+Sprite number = 236
+Sprite subnumber = 1
+Duration = 10
+Next frame = 2031
+
+Frame 2033  # Incendiary zombie: move state 1 (Chase)
+Sprite number = 236
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2034
+
+Frame 2034  # Incendiary zombie: move state 2 (Chase)
+Sprite number = 236
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2035
+
+Frame 2035  # Incendiary zombie: move state 3 (Chase)
+Sprite number = 236
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2036
+
+Frame 2036  # Incendiary zombie: move state 4 (Chase)
+Sprite number = 236
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2037
+
+Frame 2037  # Incendiary zombie: move state 5 (Chase)
+Sprite number = 236
+Sprite subnumber = 2
+Duration = 3
+Next frame = 2038
+
+Frame 2038  # Incendiary zombie: move state 6 (Chase)
+Sprite number = 236
+Sprite subnumber = 2
+Duration = 3
+Next frame = 2039
+
+Frame 2039  # Incendiary zombie: move state 7 (Chase)
+Sprite number = 236
+Sprite subnumber = 3
+Duration = 3
+Next frame = 2040
+
+Frame 2040  # Incendiary zombie: move state 8 (Chase)
+Sprite number = 236
+Sprite subnumber = 3
+Duration = 3
+Next frame = 2033
+
+Frame 2041  # Incendiary zombie: attack frame 1 (FaceTarget)
+Sprite number = 236
+Sprite subnumber = 4
+Duration = 10
+Next frame = 2042
+
+Frame 2042  # Incendiary zombie: attack frame 2 (PlaySound)
+Sprite number = 236
+Sprite subnumber = 4
+Duration = 0
+Next frame = 2043
+Unknown 1 = 4
+
+Frame 2043  # Incendiary zombie: attack frame 3 (MonsterProjectile)
+Sprite number = 236
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 2044
+Args1 = 151
+
+Frame 2044  # Incendiary zombie: attack frame 4
+Sprite number = 236
+Sprite subnumber = 3
+Duration = 1
+Next frame = 2078
+
+Frame 2045  # Incendiary zombie: pain state 1
+Sprite number = 236
+Sprite subnumber = 6
+Duration = 3
+Next frame = 2046
+
+Frame 2046  # Incendiary zombie: pain state 2 (Pain)
+Sprite number = 236
+Sprite subnumber = 6
+Duration = 3
+Next frame = 2033
+
+Frame 2047  # Incendiary zombie: death frame 1
+Sprite number = 236
+Sprite subnumber = 7
+Duration = 5
+Next frame = 2048
+
+Frame 2048  # Incendiary zombie: death frame 2 (Scream)
+Sprite number = 236
+Sprite subnumber = 8
+Duration = 5
+Next frame = 2049
+
+Frame 2049  # Incendiary zombie: death frame 3 (Fall)
+Sprite number = 236
+Sprite subnumber = 9
+Duration = 5
+Next frame = 2050
+
+Frame 2050  # Incendiary zombie: death frame 4
+Sprite number = 236
+Sprite subnumber = 10
+Duration = 5
+Next frame = 2051
+
+Frame 2051  # Incendiary zombie: death frame 5
+Sprite number = 236
+Sprite subnumber = 11
+Duration = 5
+Next frame = 2052
+
+Frame 2052  # Incendiary zombie: death frame 6
+Sprite number = 236
+Sprite subnumber = 12
+Duration = 5
+Next frame = 2053
+
+Frame 2053  # Incendiary zombie: death frame 7
+Sprite number = 236
+Sprite subnumber = 13
+Duration = -1
+Next frame = 0
+
+Frame 2054  # Incendiary zombie: explode frame 1
+Sprite number = 236
+Sprite subnumber = 14
+Duration = 5
+Next frame = 2055
+
+Frame 2055  # Incendiary zombie: explode frame 2 (XScream)
+Sprite number = 236
+Sprite subnumber = 15
+Duration = 5
+Next frame = 2056
+
+Frame 2056  # Incendiary zombie: explode frame 3 (Fall)
+Sprite number = 236
+Sprite subnumber = 16
+Duration = 5
+Next frame = 2057
+
+Frame 2057  # Incendiary zombie: explode frame 4
+Sprite number = 236
+Sprite subnumber = 17
+Duration = 5
+Next frame = 2058
+
+Frame 2058  # Incendiary zombie: explode frame 5
+Sprite number = 236
+Sprite subnumber = 18
+Duration = 5
+Next frame = 2059
+
+Frame 2059  # Incendiary zombie: explode frame 6
+Sprite number = 236
+Sprite subnumber = 19
+Duration = -1
+Next frame = 0
+
+Frame 2061  # Incendiary zombie: resurrect frame 1
+Sprite number = 236
+Sprite subnumber = 11
+Duration = 5
+Next frame = 2062
+
+Frame 2062  # Incendiary zombie: resurrect frame 2
+Sprite number = 236
+Sprite subnumber = 10
+Duration = 5
+Next frame = 2063
+
+Frame 2063  # Incendiary zombie: resurrect frame 3
+Sprite number = 236
+Sprite subnumber = 9
+Duration = 5
+Next frame = 2064
+
+Frame 2064  # Incendiary zombie: resurrect frame 4
+Sprite number = 236
+Sprite subnumber = 8
+Duration = 5
+Next frame = 2065
+
+Frame 2065  # Incendiary zombie: resurrect frame 5
+Sprite number = 236
+Sprite subnumber = 7
+Duration = 5
+Next frame = 2033
+
+Frame 2078 # Incendiary zombie: attack frame 5 (MonsterProjectile)
+Sprite number = 236
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 2079
+Args1 = 151
+Args2 = -983040
+
+Frame 2079  # Incendiary zombie: attack frame 6
+Sprite number = 236
+Sprite subnumber = 3
+Duration = 1
+Next frame = 2080
+
+Frame 2080  # Incendiary zombie: attack frame 7 (MonsterProjectile)
+Sprite number = 236
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 2081
+Args1 = 151
+Args2 = -655360
+
+Frame 2081  # Incendiary zombie: attack frame 8
+Sprite number = 236
+Sprite subnumber = 3
+Duration = 1
+Next frame = 2082
+
+Frame 2082  # Incendiary zombie: attack frame 9 (MonsterProjectile)
+Sprite number = 236
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 2083
+Args1 = 151
+Args2 = -327680
+
+Frame 2083  # Incendiary zombie: attack frame 10
+Sprite number = 236
+Sprite subnumber = 3
+Duration = 1
+Next frame = 2084
+
+Frame 2084  # Incendiary zombie: attack frame 11 (MonsterProjectile)
+Sprite number = 236
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 2085
+Args1 = 151
+
+Frame 2085  # Incendiary zombie: attack frame 12
+Sprite number = 236
+Sprite subnumber = 3
+Duration = 1
+Next frame = 2086
+
+Frame 2086  # Incendiary zombie: attack frame 13 (MonsterProjectile)
+Sprite number = 236
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 2087
+Args1 = 151
+Args2 = 983040
+
+Frame 2087  # Incendiary zombie: attack frame 14
+Sprite number = 236
+Sprite subnumber = 3
+Duration = 1
+Next frame = 2088
+
+Frame 2088  # Incendiary zombie: attack frame 15 (MonsterProjectile)
+Sprite number = 236
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 2089
+Args1 = 151
+Args2 = 655360
+
+Frame 2089  # Incendiary zombie: attack frame 16
+Sprite number = 236
+Sprite subnumber = 3
+Duration = 1
+Next frame = 2090
+
+Frame 2090  # Incendiary zombie: attack frame 17 (MonsterProjectile)
+Sprite number = 236
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 2091
+Args1 = 151
+Args2 = 327680
+
+Frame 2091  # Incendiary zombie: attack frame 18
+Sprite number = 236
+Sprite subnumber = 3
+Duration = 1
+Next frame = 2092
+
+Frame 2092  # Incendiary zombie: attack frame 19 (MonsterProjectile)
+Sprite number = 236
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 2033
+Args1 = 151
+
+# Plasma Zombie Frames 
+
+Frame 2100  # Plasma zombie: idle frame 1 (Look)
+Sprite number = 237
+Sprite subnumber = 0
+Duration = 10
+Next frame = 2101
+
+Frame 2101  # Plasma zombie: idle frame 2 (Look)
+Sprite number = 237
+Sprite subnumber = 1
+Duration = 10
+Next frame = 2100
+
+Frame 2102  # Plasma zombie: move frame 1 (Chase)
+Sprite number = 237
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2103
+
+Frame 2103  # Plasma zombie: move frame 2 (Chase)
+Sprite number = 237
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2104
+
+Frame 2104  # Plasma zombie: move frame 3 (Chase)
+Sprite number = 237
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2105
+
+Frame 2105  # Plasma zombie: move frame 4 (Chase)
+Sprite number = 237
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2106
+
+Frame 2106  # Plasma zombie: move frame 5 (Chase)
+Sprite number = 237
+Sprite subnumber = 2
+Duration = 3
+Next frame = 2107
+
+Frame 2107  # Plasma zombie: move frame 6 (Chase)
+Sprite number = 237
+Sprite subnumber = 2
+Duration = 3
+Next frame = 2108
+
+Frame 2108  # Plasma zombie: move frame 7 (Chase)
+Sprite number = 237
+Sprite subnumber = 3
+Duration = 3
+Next frame = 2109
+
+Frame 2109  # Plasma zombie: move frame 8 (Chase)
+Sprite number = 237
+Sprite subnumber = 3
+Duration = 3
+Next frame = 2102
+
+Frame 2110  # Plasma zombie: attack frame 1 (FaceTarget)
+Sprite number = 237
+Sprite subnumber = 4
+Duration = 10
+Next frame = 2111
+
+Frame 2111  # Plasma zombie: attack frame 2 (PlaySound)
+Sprite number = 237
+Sprite subnumber = 4
+Duration = 0
+Next frame = 2112
+# Unknown 1 = 8
+
+Frame 2112  # Plasma zombie: attack frame 3 (MonsterProjectile left)
+Sprite number = 237
+Sprite subnumber = 32773
+Duration = 0
+Next frame = 2113
+Args1 = 37
+Args2 = 393216
+
+Frame 2113  # Plasma zombie: attack frame 4 (MonsterProjectile middle)
+Sprite number = 237
+Sprite subnumber = 32773
+Duration = 0
+Next frame = 2114
+Args1 = 37
+
+Frame 2114  # Plasma zombie: attack frame 5 (MonsterProjectile right)
+Sprite number = 237
+Sprite subnumber = 32773
+Duration = 10
+Next frame = 2115
+Args1 = 37
+Args2 = -393216
+
+Frame 2115  # Plasma zombie: attack frame 6
+Sprite number = 237
+Sprite subnumber = 4
+Duration = 10
+Next frame = 2102
+
+Frame 2116  # Plasma zombie: pain frame 1
+Sprite number = 237
+Sprite subnumber = 6
+Duration = 3
+Next frame = 2117
+
+Frame 2117  # Plasma zombie: pain frame 2 (Pain)
+Sprite number = 237
+Sprite subnumber = 6
+Duration = 3
+Next frame = 2102
+
+Frame 2118  # Plasma zombie: death frame 1
+Sprite number = 237
+Sprite subnumber = 7
+Duration = 5
+Next frame = 2119
+
+Frame 2119  # Plasma zombie: death frame 2 (Scream)
+Sprite number = 237
+Sprite subnumber = 8
+Duration = 5
+Next frame = 2120
+
+Frame 2120  # Plasma zombie: death frame 3 (Fall)
+Sprite number = 237
+Sprite subnumber = 9
+Duration = 5
+Next frame = 2121
+
+Frame 2121  # Plasma zombie: death frame 4
+Sprite number = 237
+Sprite subnumber = 10
+Duration = 5
+Next frame = 2122
+
+Frame 2122  # Plasma zombie: death frame 5
+Sprite number = 237
+Sprite subnumber = 13
+Duration = -1
+Next frame = 0
+
+Frame 2123  # Plasma zombie: explode frame 1
+Sprite number = 237
+Sprite subnumber = 14
+Duration = 5
+Next frame = 2124
+
+Frame 2124  # Plasma zombie: explode frame 2 (XScream)
+Sprite number = 237
+Sprite subnumber = 15
+Duration = 5
+Next frame = 2125
+
+Frame 2125  # Plasma zombie: explode frame 3 (Fall)
+Sprite number = 237
+Sprite subnumber = 16
+Duration = 5
+Next frame = 2126
+
+Frame 2126  # Plasma zombie: explode frame 4
+Sprite number = 237
+Sprite subnumber = 17
+Duration = 5
+Next frame = 2127
+
+Frame 2127  # Plasma zombie: explode frame 5
+Sprite number = 237
+Sprite subnumber = 18
+Duration = 5
+Next frame = 2128
+
+Frame 2128  # Plasma zombie: explode frame 6
+Sprite number = 237
+Sprite subnumber = 19
+Duration = 5
+Next frame = 2129
+
+Frame 2129  # Plasma zombie: explode frame 7
+Sprite number = 237
+Sprite subnumber = 20
+Duration = 5
+Next frame = 2130
+
+Frame 2130  # Plasma zombie: explode frame 8
+Sprite number = 237
+Sprite subnumber = 21
+Duration = 5
+Next frame = 2131
+
+Frame 2131  # Plasma zombie: explode frame 9
+Sprite number = 237
+Sprite subnumber = 22
+Duration = -1
+Next frame = 0
+
+Frame 2132  # Plasma zombie: resurrect frame 1
+Sprite number = 237
+Sprite subnumber = 11
+Duration = 5
+Next frame = 2133
+
+Frame 2133  # Plasma zombie: resurrect frame 2
+Sprite number = 237
+Sprite subnumber = 10
+Duration = 5
+Next frame = 2134
+
+Frame 2134  # Plasma zombie: resurrect frame 3
+Sprite number = 237
+Sprite subnumber = 9
+Duration = 5
+Next frame = 2135
+
+Frame 2135  # Plasma zombie: resurrect frame 4
+Sprite number = 237
+Sprite subnumber = 8
+Duration = 5
+Next frame = 2136
+
+Frame 2136  # Plasma zombie: resurrect frame 5
+Sprite number = 237
+Sprite subnumber = 7
+Duration = 5
+Next frame = 2102
+
+# Rocket Zombie Frames 
+
+Frame 2200  # Rocket zombie: idle frame 1 (Look)
+Sprite number = 238
+Sprite subnumber = 0
+Duration = 10
+Next frame = 2201
+
+Frame 2201  # Rocket zombie: idle frame 2 (Look)
+Sprite number = 238
+Sprite subnumber = 1
+Duration = 10
+Next frame = 2200
+
+Frame 2202  # Rocket zombie: move frame 1 (Chase)
+Sprite number = 238
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2203
+
+Frame 2203  # Rocket zombie: move frame 2 (Chase)
+Sprite number = 238
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2204
+
+Frame 2204  # Rocket zombie: move frame 3 (Chase)
+Sprite number = 238
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2205
+
+Frame 2205  # Rocket zombie: move frame 4 (Chase)
+Sprite number = 238
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2206
+
+Frame 2206  # Rocket zombie: move frame 5 (Chase)
+Sprite number = 238
+Sprite subnumber = 2
+Duration = 3
+Next frame = 2207
+
+Frame 2207  # Rocket zombie: move frame 6 (Chase)
+Sprite number = 238
+Sprite subnumber = 2
+Duration = 3
+Next frame = 2208
+
+Frame 2208  # Rocket zombie: move frame 7 (Chase)
+Sprite number = 238
+Sprite subnumber = 3
+Duration = 3
+Next frame = 2209
+
+Frame 2209  # Rocket zombie: move frame 8 (Chase)
+Sprite number = 238
+Sprite subnumber = 3
+Duration = 3
+Next frame = 2202
+
+Frame 2210  # Rocket zombie: attack frame 1 (FaceTarget)
+Sprite number = 238
+Sprite subnumber = 4
+Duration = 10
+Next frame = 2211
+
+Frame 2211  # Rocket zombie: attack frame 2 (FaceTarget)
+Sprite number = 238
+Sprite subnumber = 4
+Duration = 10
+Next frame = 2212
+Unknown 1 = 8
+
+Frame 2212  # Rocket zombie: attack frame 3 (FaceTarget)
+Sprite number = 238
+Sprite subnumber = 4
+Duration = 10
+Next frame = 2213
+
+Frame 2213  # Rocket zombie: attack frame 4 (FaceTarget)
+Sprite number = 238
+Sprite subnumber = 4
+Duration = 10
+Next frame = 2214
+
+Frame 2214  # Rocket zombie: attack frame 5 (CyberAttack)
+Sprite number = 238
+Sprite subnumber = 32773
+Duration = 10
+Next frame = 2215
+
+Frame 2215  # Rocket zombie: attack frame 6
+Sprite number = 238
+Sprite subnumber = 4
+Duration = 10
+Next frame = 2202
+
+Frame 2216  # Rocket zombie: pain frame 1
+Sprite number = 238
+Sprite subnumber = 6
+Duration = 3
+Next frame = 2217
+
+Frame 2217  # Rocket zombie: pain frame 2 (Pain)
+Sprite number = 238
+Sprite subnumber = 6
+Duration = 3
+Next frame = 2202
+
+Frame 2218  # Rocket zombie: death frame 1
+Sprite number = 238
+Sprite subnumber = 7
+Duration = 5
+Next frame = 2219
+
+Frame 2219  # Rocket zombie: death frame 2 (Scream)
+Sprite number = 238
+Sprite subnumber = 8
+Duration = 5
+Next frame = 2220
+
+Frame 2220  # Rocket zombie: death frame 3 (Fall)
+Sprite number = 238
+Sprite subnumber = 9
+Duration = 5
+Next frame = 2221
+
+Frame 2221  # Rocket zombie: death frame 4
+Sprite number = 238
+Sprite subnumber = 10
+Duration = 5
+Next frame = 2222
+
+Frame 2222  # Rocket zombie: death frame 5
+Sprite number = 238
+Sprite subnumber = 13
+Duration = -1
+Next frame = 0
+
+Frame 2223  # Rocket zombie: explode frame 1
+Sprite number = 238
+Sprite subnumber = 14
+Duration = 5
+Next frame = 2224
+
+Frame 2224  # Rocket zombie: explode frame 2 (XScream)
+Sprite number = 238
+Sprite subnumber = 15
+Duration = 5
+Next frame = 2225
+
+Frame 2225  # Rocket zombie: explode frame 3 (Fall)
+Sprite number = 238
+Sprite subnumber = 16
+Duration = 5
+Next frame = 2226
+
+Frame 2226  # Rocket zombie: explode frame 4
+Sprite number = 238
+Sprite subnumber = 17
+Duration = 5
+Next frame = 2227
+
+Frame 2227  # Rocket zombie: explode frame 5
+Sprite number = 238
+Sprite subnumber = 18
+Duration = 5
+Next frame = 2228
+
+Frame 2228  # Rocket zombie: explode frame 6
+Sprite number = 238
+Sprite subnumber = 19
+Duration = 5
+Next frame = 2229
+
+Frame 2229  # Rocket zombie: explode frame 7
+Sprite number = 238
+Sprite subnumber = 20
+Duration = 5
+Next frame = 2230
+
+Frame 2230  # Rocket zombie: explode frame 8
+Sprite number = 238
+Sprite subnumber = 21
+Duration = 5
+Next frame = 2231
+
+Frame 2231  # Rocket zombie: explode frame 9
+Sprite number = 238
+Sprite subnumber = 22
+Duration = -1
+Next frame = 0
+
+Frame 2232  # Rocket zombie: resurrect frame 1
+Sprite number = 238
+Sprite subnumber = 11
+Duration = 5
+Next frame = 2233
+
+Frame 2233  # Rocket zombie: resurrect frame 2
+Sprite number = 238
+Sprite subnumber = 10
+Duration = 5
+Next frame = 2234
+
+Frame 2234  # Rocket zombie: resurrect frame 3
+Sprite number = 238
+Sprite subnumber = 9
+Duration = 5
+Next frame = 2235
+
+Frame 2235  # Rocket zombie: resurrect frame 4
+Sprite number = 238
+Sprite subnumber = 8
+Duration = 5
+Next frame = 2236
+
+Frame 2236  # Rocket zombie: resurrect frame 5
+Sprite number = 238
+Sprite subnumber = 7
+Duration = 5
+Next frame = 2202
+
+# Former Tank Frames 
+
+Frame 2300  # Former tank: idle frame 1 (Look)
+Sprite number = 239
+Sprite subnumber = 0
+Duration = 10
+Next frame = 2301
+
+Frame 2301  # Former tank: idle frame 2 (Look)
+Sprite number = 239
+Sprite subnumber = 1
+Duration = 10
+Next frame = 2300
+
+Frame 2302  # Former tank: move frame 1 (Chase)
+Sprite number = 239
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2303
+
+Frame 2303  # Former tank: move frame 2 (Chase)
+Sprite number = 239
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2304
+
+Frame 2304  # Former tank: move frame 3 (Chase)
+Sprite number = 239
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2305
+
+Frame 2305  # Former tank: move frame 4 (PlaySound)
+Sprite number = 239
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2306
+Unknown 1 = 524
+
+Frame 2306  # Former tank: move frame 5 (Chase)
+Sprite number = 239
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2307
+
+Frame 2307  # Former tank: move frame 6 (Chase)
+Sprite number = 239
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2308
+
+Frame 2308  # Former tank: move frame 7 (Chase)
+Sprite number = 239
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2309
+
+Frame 2309  # Former tank: move frame 8 (PlaySound)
+Sprite number = 239
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2302
+Unknown 1 = 524
+
+Frame 2310  # Former tank: attack frame 1 (FaceTarget)
+Sprite number = 239
+Sprite subnumber = 32768
+Duration = 20
+Next frame = 2311
+
+Frame 2311  # Former tank: attack frame 2 (SPosAttack)
+Sprite number = 239
+Sprite subnumber = 32771
+Duration = 4
+Next frame = 2312
+Unknown 1 = 8
+
+Frame 2312  # Former tank: attack frame 3 (SPosAttack)
+Sprite number = 239
+Sprite subnumber = 32772
+Duration = 4
+Next frame = 2313
+
+Frame 2313  # Former tank: attack frame 4 (SpidRefire)
+Sprite number = 239
+Sprite subnumber = 0
+Duration = 1
+Next frame = 2311
+
+Frame 2316  # Former tank: pain frame 1
+Sprite number = 239
+Sprite subnumber = 5
+Duration = 3
+Next frame = 2317
+
+Frame 2317  # Former tank: pain frame 2 (Pain)
+Sprite number = 239
+Sprite subnumber = 5
+Duration = 3
+Next frame = 2302
+
+Frame 2318  # Former tank: death frame 1
+Sprite number = 239
+Sprite subnumber = 32773
+Duration = 10
+Next frame = 2319
+
+Frame 2319  # Former tank: death frame 2 (Scream)
+Sprite number = 239
+Sprite subnumber = 32777
+Duration = 10
+Next frame = 2320
+
+Frame 2320  # Former tank: death frame 3 (Fall)
+Sprite number = 239
+Sprite subnumber = 32778
+Duration = 8
+Next frame = 2321
+
+Frame 2321  # Former tank: death frame 4 (SpawnObject)
+Sprite number = 239
+Sprite subnumber = 32778
+Duration = 0
+Next frame = 2322
+Args1 = 2
+Args2 = 0
+Args3 = 0
+Args4 = 0
+Args5 = 0
+Args6 = -131072
+Args7 = 0
+Args8 = 0
+
+Frame 2322  # Former tank: death frame 5 (Explode)
+Sprite number = 239
+Sprite subnumber = 32779
+Duration = 6
+Next frame = 2323
+
+Frame 2323  # Former tank: death frame 6
+Sprite number = 239
+Sprite subnumber = 32780 
+Duration = 4
+Next frame = 2324
+
+Frame 2324  # Former tank: death frame 7
+Sprite number = 239
+Sprite subnumber = 13
+Duration = -1
+Next frame = 0
+
+# Demon Fireball Turret Frames
+
+Frame 2400  # Demonic fireball turret frame 1
+Duration = 35
+Next frame = 2401
+
+Frame 2401  # Demonic fireball turret frame 12 (PlaySound)
+Duration = 0
+Next frame = 2402
+Unknown 1 = 56
+
+Frame 2402  # Demonic fireball turret frame 13 (SpawnObject)
+Duration = 0
+Next frame = 2400
+Args1 = 153
+Args2 = 0
+Args3 = 0
+Args4 = 0
+Args5 = 524288
+Args6 = 1638400
+Args7 = 0
+Args8 = 0
+
+Frame 2418  # Demonic turret: death frame 1
+Sprite number = 240
+Sprite subnumber = 32777
+Duration = 10
+Next frame = 2419
+
+Frame 2419  # Demonic turret: death frame 2 (Fall)
+Sprite number = 240
+Sprite subnumber = 32777
+Duration = 10
+Next frame = 2420
+
+Frame 2420  # Demonic turret: death frame 3 (Scream)
+Sprite number = 240
+Sprite subnumber = 32778
+Duration = 10
+Next frame = 2421
+
+Frame 2421  # Demonic turret: death frame 4
+Sprite number = 240
+Sprite subnumber = 32779
+Duration = 10
+Next frame = 2422
+
+Frame 2422  # Demonic turret: death frame 5 (RadiusDamage)
+Sprite number = 240
+Sprite subnumber = 32780
+Duration = 10
+Next frame = 2423
+Args1 = 64
+Args2 = 128
+
+Frame 2423  # Demonic turret: death frame 6
+Sprite number = 240
+Sprite subnumber = 13
+Duration = -1
+Next frame = 0
+
+# Gliding Imp Frames 
+
+Frame 2500  # Gliding imp: idle frame 1 (Look)
+sprite number = 241
+Sprite subnumber = 0
+Duration = 10
+Next frame = 2501
+
+Frame 2501  # Gliding imp: idle frame 2 (Look)
+sprite number = 241
+Sprite subnumber = 1
+Duration = 10
+Next frame = 2500
+
+Frame 2502  # Gliding imp: move frame 1 (Chase)
+sprite number = 241
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2503
+
+Frame 2503  # Gliding imp: move frame 2 (Chase)
+sprite number = 241
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2504
+
+Frame 2504  # Gliding imp: move frame 3 (Chase)
+sprite number = 241
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2505
+
+Frame 2505  # Gliding imp: move frame 4 (Chase)
+sprite number = 241
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2506
+
+Frame 2506  # Gliding imp: move frame 5 (Chase)
+sprite number = 241
+Sprite subnumber = 2
+Duration = 3
+Next frame = 2507
+
+Frame 2507  # Gliding imp: move frame 6 (Chase)
+sprite number = 241
+Sprite subnumber = 2
+Duration = 3
+Next frame = 2508
+
+Frame 2508  # Gliding imp: move frame 7 (Chase)
+sprite number = 241
+Sprite subnumber = 3
+Duration = 3
+Next frame = 2509
+
+Frame 2509  # Gliding imp: move frame 8 (Chase)
+sprite number = 241
+Sprite subnumber = 3
+Duration = 3
+Next frame = 2502
+
+Frame 2510  # Gliding imp: attack frame 1 (FaceTarget)
+sprite number = 241
+Sprite subnumber = 4
+Duration = 8
+Next frame = 2511
+
+Frame 2511  # Gliding imp: attack frame 2 (FaceTarget)
+sprite number = 241
+Sprite subnumber = 4
+Duration = 8
+Next frame = 2512
+Unknown 1 = 8
+
+Frame 2512  # Gliding imp: attack frame 3 (FaceTarget)
+sprite number = 241
+Sprite subnumber = 5
+Duration = 8
+Next frame = 2513
+
+Frame 2513  # Gliding imp: attack frame 4 (TroopAttack)
+sprite number = 241
+Sprite subnumber = 5
+Duration = 8
+Next frame = 2502
+
+Frame 2516  # Gliding imp: pain frame 1
+sprite number = 241
+Sprite subnumber = 6
+Duration = 3
+Next frame = 2517
+
+Frame 2517  # Gliding imp: pain frame 2 (Pain)
+sprite number = 241
+Sprite subnumber = 6
+Duration = 3
+Next frame = 2502
+
+Frame 2518  # Gliding imp: death frame 1
+sprite number = 241
+Sprite subnumber = 8
+Duration = 5
+Next frame = 2519
+
+Frame 2519  # Gliding imp: death frame 2 (Scream)
+sprite number = 241
+Sprite subnumber = 9
+Duration = 5
+Next frame = 2520
+
+Frame 2520  # Gliding imp: death frame 3 (Fall)
+sprite number = 241
+Sprite subnumber = 10
+Duration = 5
+Next frame = 2521
+
+Frame 2521  # Gliding imp: death frame 4
+sprite number = 241
+Sprite subnumber = 11
+Duration = 5
+Next frame = 2522
+
+Frame 2522  # Gliding imp: death frame 5
+sprite number = 241
+Sprite subnumber = 12
+Duration = 5
+Next frame = 2523
+
+Frame 2523  # Gliding imp: death frame 6
+sprite number = 241
+Sprite subnumber = 13
+Duration = -1
+Next frame = 0
+
+Frame 2532  # Gliding imp: resurrect frame 1
+sprite number = 241
+Sprite subnumber = 12
+Duration = 5
+Next frame = 2533
+
+Frame 2533  # Gliding imp: resurrect frame 2
+sprite number = 241
+Sprite subnumber = 11
+Duration = 5
+Next frame = 2534
+
+Frame 2534  # Gliding imp: resurrect frame 3
+sprite number = 241
+Sprite subnumber = 10
+Duration = 5
+Next frame = 2535
+
+Frame 2535  # Gliding imp: resurrect frame 4
+sprite number = 241
+Sprite subnumber = 9
+Duration = 5
+Next frame = 2536
+
+Frame 2536  # Gliding imp: resurrect frame 5
+sprite number = 241
+Sprite subnumber = 8
+Duration = 5
+Next frame = 2502
+
+# Snake Imp Frames 
+
+Frame 2600  # Snake imp: idle frame 1 (Look)
+Sprite number = 242
+Sprite subnumber = 0
+Duration = 10
+Next frame = 2601
+
+Frame 2601  # Snake imp: idle frame 2 (Look)
+Sprite number = 242
+Sprite subnumber = 1
+Duration = 10
+Next frame = 2600
+
+Frame 2602  # Snake imp: move frame 1 (Chase)
+Sprite number = 242
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2603
+
+Frame 2603  # Snake imp: move frame 2 (Chase)
+Sprite number = 242
+Sprite subnumber = 0
+Duration = 3
+Next frame = 2604
+
+Frame 2604  # Snake imp: move frame 3 (Chase)
+Sprite number = 242
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2605
+
+Frame 2605  # Snake imp: move frame 4 (Chase)
+Sprite number = 242
+Sprite subnumber = 1
+Duration = 3
+Next frame = 2606
+
+Frame 2606  # Snake imp: move frame 5 (Chase)
+Sprite number = 242
+Sprite subnumber = 2
+Duration = 3
+Next frame = 2607
+
+Frame 2607  # Snake imp: move frame 6 (Chase)
+Sprite number = 242
+Sprite subnumber = 2
+Duration = 3
+Next frame = 2608
+
+Frame 2608  # Snake imp: move frame 7 (Chase)
+Sprite number = 242
+Sprite subnumber = 3
+Duration = 3
+Next frame = 2609
+
+Frame 2609  # Snake imp: move frame 8 (Chase)
+Sprite number = 242
+Sprite subnumber = 3
+Duration = 3
+Next frame = 2602
+
+Frame 2610  # Snake imp: attack frame 1 (FaceTarget)
+Sprite number = 242
+Sprite subnumber = 4
+Duration = 8
+Next frame = 2611
+
+Frame 2611  # Snake imp: attack frame 2 (MonsterProjectile)
+Sprite number = 242
+Sprite subnumber = 5
+Duration = 0
+Next frame = 2612
+Args1 = 32
+Args2 = -1179648
+Args3 = 0
+Args4 = 0
+Args5 = 0
+
+Frame 2612  # Snake imp: attack frame 3 (MonsterProjectile)
+Sprite number = 242
+Sprite subnumber = 5
+Duration = 8
+Next frame = 2613
+Args1 = 32
+Args2 = 1179648
+Args3 = 0
+Args4 = 0
+Args5 = 0
+
+Frame 2613  # Snake imp: attack frame 4 (TroopAttack)
+Sprite number = 242
+Sprite subnumber = 6
+Duration = 8
+Next frame = 2602
+
+Frame 2616  # Snake imp: pain frame 1
+Sprite number = 242
+Sprite subnumber = 7
+Duration = 3
+Next frame = 2617
+
+Frame 2617  # Snake imp: pain frame 2 (Pain)
+Sprite number = 242
+Sprite subnumber = 7
+Duration = 3
+Next frame = 2602
+
+Frame 2618  # Snake imp: death frame 1
+Sprite number = 242
+Sprite subnumber = 8
+Duration = 8
+Next frame = 2619
+
+Frame 2619  # Snake imp: death frame 2 (Scream)
+Sprite number = 242
+Sprite subnumber = 9
+Duration = 8
+Next frame = 2620
+
+Frame 2620  # Snake imp: death frame 3 (Fall)
+Sprite number = 242
+Sprite subnumber = 10
+Duration = 8
+Next frame = 2621
+
+Frame 2621  # Snake imp: death frame 4
+Sprite number = 242
+Sprite subnumber = 11
+Duration = 8
+Next frame = 2622
+
+Frame 2622  # Snake imp: death frame 5
+Sprite number = 242
+Sprite subnumber = 12
+Duration = -1
+Next frame = 2623
+
+Frame 2623  # Snake imp: explode frame 1
+sprite number = 242
+Sprite subnumber = 13
+Duration = 6
+Next frame = 2624
+
+Frame 2624  # Snake imp: explode frame 2
+sprite number = 242
+Sprite subnumber = 14
+Duration = 6
+Next frame = 2625
+
+Frame 2625  # Snake imp: explode frame 3
+sprite number = 242
+Sprite subnumber = 15
+Duration = 6
+Next frame = 2626
+
+Frame 2626  # Snake imp: explode frame 4
+sprite number = 242
+Sprite subnumber = 16
+Duration = 6
+Next frame = 2627
+
+Frame 2627  # Snake imp: explode frame 5
+sprite number = 242
+Sprite subnumber = 17
+Duration = 6
+Next frame = 2628
+
+Frame 2628  # Snake imp: explode frame 6
+sprite number = 242
+Sprite subnumber = 18
+Duration = 6
+Next frame = 2629
+
+Frame 2629  # Snake imp: explode frame 7
+sprite number = 242
+Sprite subnumber = 19
+Duration = 6
+Next frame = 2630
+
+Frame 2630  # Snake imp: explode frame 8
+sprite number = 242
+Sprite subnumber = 20
+Duration = -1
+Next frame = 0
+
+Frame 2632  # Snake imp: resurrect frame 1
+sprite number = 242
+Sprite subnumber = 12
+Duration = 8
+Next frame = 2633
+
+Frame 2633  # Snake imp: resurrect frame 2
+sprite number = 242
+Sprite subnumber = 11
+Duration = 8
+Next frame = 2634
+
+Frame 2634  # Snake imp: resurrect frame 3
+sprite number = 242
+Sprite subnumber = 10
+Duration = 8
+Next frame = 2635
+
+Frame 2635  # Snake imp: resurrect frame 4
+sprite number = 242
+Sprite subnumber = 9
+Duration = 8
+Next frame = 2636
+
+Frame 2636  # Snake imp: resurrect frame 5
+sprite number = 242
+Sprite subnumber = 8
+Duration = 8
+Next frame = 2602
+
+# Fleshspawn Frames 
+
+Frame 2700  # Fleshspawn idle 1 (Look)
+Sprite number = 243
+Sprite subnumber = 0
+Duration = 8
+Next frame = 2701
+
+Frame 2701  # Fleshspawn idle 2 (Look)
+Sprite number = 243
+Sprite subnumber = 1
+Duration = 8
+Next frame = 2700
+
+Frame 2702  # Fleshspawn chase 1 (Chase)
+Sprite number = 243
+Sprite subnumber = 0
+Duration = 2
+Next frame = 2703
+
+Frame 2703  # Fleshspawn chase 2 (Chase)
+Sprite number = 243
+Sprite subnumber = 0
+Duration = 2
+Next frame = 2704
+
+Frame 2704  # Fleshspawn chase 3 (Chase)
+Sprite number = 243
+Sprite subnumber = 1
+Duration = 2
+Next frame = 2705
+
+Frame 2705  # Fleshspawn chase 4 (Chase)
+Sprite number = 243
+Sprite subnumber = 1
+Duration = 2
+Next frame = 2702
+
+Frame 2706  # Fleshspawn attack 1 (FaceTarget)
+Sprite number = 243
+Sprite subnumber = 4
+Duration = 4
+Next frame = 2707
+
+Frame 2707  # Fleshspawn attack 2 (FaceTarget)
+Sprite number = 243
+Sprite subnumber = 5
+Duration = 4
+Next frame = 2708
+
+Frame 2708  # Fleshspawn attack 3 (FaceTarget)
+Sprite number = 243
+Sprite subnumber = 1
+Duration = 4
+Next frame = 2709
+
+Frame 2709  # Fleshspawn attack 4 (SkullAttack)
+Sprite number = 243
+Sprite subnumber = 3
+Duration = 4
+Next frame = 2702
+
+Frame 2710  # Fleshspawn pain 1
+Sprite number = 243
+Sprite subnumber = 8
+Duration = 3
+Next frame = 2711
+
+Frame 2711  # Fleshspawn pain 2 (Pain)
+Sprite number = 243
+Sprite subnumber = 8
+Duration = 3
+Next frame = 2702
+
+Frame 2712  # Fleshspawn death 1 (Scream)
+Sprite number = 243
+Sprite subnumber = 8
+Duration = 5
+Next frame = 2713
+
+Frame 2713  # Fleshspawn death 2
+Sprite number = 243
+Sprite subnumber = 9
+Duration = 5
+Next frame = 2714
+
+Frame 2714  # Fleshspawn death 3
+Sprite number = 243
+Sprite subnumber = 10
+Duration = 5
+Next frame = 2715
+
+Frame 2715  # Fleshspawn death 4 (Fall)
+Sprite number = 243
+Sprite subnumber = 11
+Duration = 5
+Next frame = 2716
+
+Frame 2716  # Fleshspawn death 5
+Sprite number = 243
+Sprite subnumber = 12
+Duration = 5
+Next frame = 2717
+
+Frame 2717  # Fleshspawn death 6
+Sprite number = 243
+Sprite subnumber = 13
+Duration = 5
+Next frame = 2718
+
+Frame 2718  # Fleshspawn death 7
+Sprite number = 243
+Sprite subnumber = 14
+Duration = -1
+Next frame = 0
+
+Frame 2719  # Fleshspawn gib 1
+Sprite number = 243
+Sprite subnumber = 15
+Duration = 8
+Next frame = 2720
+
+Frame 2720  # Fleshspawn gib 2 (XScream)
+Sprite number = 243
+Sprite subnumber = 16
+Duration = 8
+Next frame = 2721
+
+Frame 2721  # Fleshspawn gib 3 (Fall)
+Sprite number = 243
+Sprite subnumber = 17
+Duration = 8
+Next frame = 2722
+
+Frame 2722  # Fleshspawn gib 4
+Sprite number = 243
+Sprite subnumber = 18
+Duration = 8
+Next frame = 2723
+
+Frame 2723  # Fleshspawn gib 5
+Sprite number = 243
+Sprite subnumber = 19
+Duration = 8
+Next frame = 2724
+
+Frame 2724  # Fleshspawn gib 6
+Sprite number = 243
+Sprite subnumber = 20
+Duration = 8
+Next frame = 0
+
+Frame 2725  # Fleshspawn respawn 1
+Sprite number = 243
+Sprite subnumber = 14
+Duration = 5
+Next frame = 2726
+
+Frame 2726  # Fleshspawn respawn 2
+Sprite number = 243
+Sprite subnumber = 13
+Duration = 5
+Next frame = 2727
+
+Frame 2727  # Fleshspawn respawn 3
+Sprite number = 243
+Sprite subnumber = 12
+Duration = 5
+Next frame = 2728
+
+Frame 2728  # Fleshspawn respawn 4
+Sprite number = 243
+Sprite subnumber = 11
+Duration = 5
+Next frame = 2729
+
+Frame 2729  # Fleshspawn respawn 5
+Sprite number = 243
+Sprite subnumber = 10
+Duration = 5
+Next frame = 2730
+
+Frame 2730  # Fleshspawn respawn 6
+Sprite number = 243
+Sprite subnumber = 9
+Duration = 5
+Next frame = 2731
+
+Frame 2731  # Fleshspawn respawn 7
+Sprite number = 243
+Sprite subnumber = 8
+Duration = 5
+Next frame = 2702
+
+# Weapon Frames 
+
+Frame 3089  # Minigun consume ammo
+Sprite number = 7
+Duration = 0
+Next frame = 3097
+
+Frame 3090  # Minigun slowdown (WeaponSound)
+Sprite number = 7
+Duration = 1
+Next frame = 3091
+Args1 = 529
+
+Frame 3091  # Minigun slowdown
+Sprite number = 7
+Sprite subnumber = 2
+Duration = 1
+Next frame = 3092
+
+Frame 3092  # Minigun slowdown
+Sprite number = 7
+Duration = 2
+Next frame = 3093
+
+Frame 3093  # Minigun slowdown
+Sprite number = 7
+Sprite subnumber = 2
+Duration = 3
+Next frame = 3094
+
+Frame 3094  # Minigun slowdown
+Sprite number = 7
+Duration = 5
+Next frame = 3095
+
+Frame 3095  # Minigun slowdown
+Sprite number = 7
+Sprite subnumber = 2
+Duration = 8
+Next frame = 3096
+
+Frame 3096  # Minigun slowdown
+Sprite number = 7
+Duration = 13
+Next frame = 3109
+
+Frame 3097  # Minigun weapon sound
+Sprite number = 7
+Duration = 0
+Next frame = 53
+Args1 = 530
+Args2 = 0
+
+Frame 3098
+Sprite number = 48
+Sprite subnumber = 32772
+Duration = 1
+
+Frame 3099
+Sprite number = 48
+Sprite subnumber = 32771
+Duration = 3
+Next frame = 3100
+Args1 = 500
+Args2 = 192
+
+Frame 3100
+Sprite number = 48
+Sprite subnumber = 32770
+Duration = 3
+Next frame = 3101
+
+Frame 3101
+Sprite number = 48
+Sprite subnumber = 32769
+Duration = 3
+Next frame = 0
+
+Frame 3102  # Incendiary shotgun spread 2
+Sprite number = 1
+Sprite subnumber = 0
+Duration = 0
+Next frame = 3103
+Args1 = 151
+Args2 = 655360
+
+Frame 3103  # Incendiary shotgun spread 3
+Sprite number = 1
+Sprite subnumber = 0
+Duration = 0
+Next frame = 3104
+Args1 = 151
+Args2 = 22937600
+
+Frame 3104  # Incendiary shotgun spread 4
+Sprite number = 1
+Sprite subnumber = 0
+Duration = 0
+Next frame = 3105
+Args1 = 151
+Args3 = 163840
+
+Frame 3105  # Incendiary shotgun spread 5
+Sprite number = 1
+Sprite subnumber = 3
+Duration = 7
+Next frame = 23
+Args1 = 151
+Args3 = 23429120
+
+Frame 3106  # Incendiary shotgun weapon sound -- UNUSED
+Sprite number = 1
+Sprite subnumber = 3
+Duration = 7
+Next frame = 23
+Args1 = 92
+
+Frame 3107  # Incendiary shotgun spread 7 -- UNUSED
+Sprite number = 1
+Sprite subnumber = 3
+Duration = 7
+Next frame = 23
+Args1 = 151
+Args2 = 23265280
+
+Frame 3108  # Slug rifle consume ammo
+Sprite number = 6
+Sprite subnumber = 0
+Duration = 4
+Next frame = 37
+
+Frame 3109  # Minigun slowdown last frame
+Sprite number = 7
+Sprite subnumber = 1
+Duration = 21
+Next frame = 49
+
+Frame 3110  # Model 1887 firing frame 2 (ConsumeAmmo)
+Sprite number = 3
+Sprite subnumber = 32769
+Duration = 4
+Next frame = 3140
+
+Frame 3111  # Incendiary projectile flying frame 1 (RadiusDamage)
+Sprite number = 165
+Sprite subnumber = 32768
+Duration = 5
+Next frame = 3112
+Args1 = 80
+Args2 = 56
+
+Frame 3112  # Incendiary projectile flying frame 2 (RadiusDamage)
+Sprite number = 165
+Sprite subnumber = 32769
+Duration = 5
+Next frame = 3138
+Args1 = 72
+Args2 = 56
+
+Frame 3113  # Slug rifle weapon sound (WeaponSound)
+Sprite number = 1
+Sprite subnumber = 0
+Duration = 0
+Next frame = 36
+Args1 = 521
+
+Frame 3114  # Model 1887 weapon sound (WeaponSound)
+Sprite number = 3
+Sprite subnumber = 32770
+Duration = 0
+Next frame = 14
+Args1 = 522
+
+Frame 3115  # Incendiary shotgun consume ammo
+Sprite number = 1
+Sprite subnumber = 0
+Duration = 0
+Next frame = 21
+
+Frame 3117  # Arrow in flight
+Sprite number = 145
+Sprite subnumber = 0
+Duration = 4
+Next frame = 3117
+
+Frame 3118  # Railgun bullet attack 1
+Sprite number = 6  
+Sprite subnumber = 32773
+Duration = 0
+Next frame = 3119
+Args1 = 0  # WeaponBulletAttack args
+Args2 = 0  # Fires one high damage bullet that will gib lower tiers in front
+Args4 = 100
+
+Frame 3119  # Railgun bullet attack 2
+Sprite number = 6
+Sprite subnumber = 32773
+Duration = 0
+Next frame = 3120
+Args1 = 0  # WeaponBulletAttack args
+Args2 = 0  # Fires 14 regular damage bullets that will hit enemies in the back
+Args3 = 14
+
+Frame 3120  # Railgun consume ammo
+Sprite number = 6
+Sprite subnumber = 32773
+Duration = 7
+Next frame = 74
+
+Frame 3121  # Incendiary projectile explosion 1 (RadiusDamage)
+Sprite number = 18
+Sprite subnumber = 32770
+Duration = 8
+Next frame = 3122
+Args1 = 96
+Args2 = 64
+
+Frame 3122  # Incendiary projectile explosion 2
+Sprite number = 18
+Sprite subnumber = 32771
+Duration = 6
+Next frame = 3123
+
+Frame 3123  # Incendiary projectile explosion 3
+Sprite number = 18
+Sprite subnumber = 32772
+Duration = 4
+Next frame = 0
+
+Frame 3124  # Incendiary projectile new initial frame (PlaySound)
+Sprite number = 165
+Sprite subnumber = 32769
+Duration = 0
+Next frame = 3111
+Unknown 1 = 16
+
+Frame 3125  # Incendiary projectile explosion 5 -- UNUSED
+Sprite number = 22
+Sprite subnumber = 32773
+Duration = 4
+Next frame = 0
+
+Frame 3127  # Pistol muzzle flash frame (MBF21 GunFlashTo)
+Sprite number = 3
+Sprite subnumber = 32770
+Duration = 0
+Next frame = 14
+Args1 = 17
+
+Frame 3128  # 1st punch weapon ready frame (needed to switch out from fists)
+Sprite number = 2
+Sprite subnumber = 7
+Duration = 1
+Next frame = 9
+
+Frame 3129  # 2nd punch 1st frame (WeaponMeleeAttack)
+Sprite number = 2
+Sprite subnumber = 6
+Duration = 2
+Next frame = 3130
+Args1 = 0
+Args4 = 56
+Args5 = 4718592
+
+Frame 3130  # 2nd punch 2nd frame (WeaponMeleeAttack)
+Sprite number = 2
+Sprite subnumber = 5
+Duration = 4
+Next frame = 3131
+Args3 = 655360
+Args4 = 83
+Args5 = 4718592
+
+Frame 3131  # 2nd punch 3rd frame (WeaponReady)
+Sprite number = 2
+Sprite subnumber = 7
+Duration = 1
+Next frame = 3131
+
+Frame 3132  # Incendiary shotgun muzzle flash (MBF21 GunFlashTo action)
+Sprite number = 1
+Sprite subnumber = 0
+Duration = 0
+Next frame = 22
+Args1 = 30
+
+Frame 3133  # Incendiary shotgun muzzle flash (MBF21 GunFlashTo action)
+Sprite number = 6
+Sprite subnumber = 0
+Duration = 0
+Next frame = 36
+Args1 = 47
+
+Frame 3134  # Minigun muzzle flash (MBF21 GunFlashTo action)
+Sprite number = 7
+Sprite subnumber = 0
+Duration = 0
+Next frame = 52
+Args1 = 55
+
+Frame 3135  # Minigun muzzle flash frame 2
+Sprite number = 8
+Sprite subnumber = 32769
+Duration = 1
+Next frame = 1
+
+Frame 3136  # Pistol muzzle frame 2
+Sprite number = 3
+Sprite subnumber = 2
+Duration = 2
+Next frame = 3137
+
+Frame 3137  # Pistol muzzle frame 2
+Sprite number = 3
+Sprite subnumber = 0
+Duration = 2
+Next frame = 1
+
+Frame 3138  # Incendiary projectile flying frame 3 (RadiusDamage)
+Sprite number = 165
+Sprite subnumber = 32770
+Duration = 5
+Next frame = 3139
+Args1 = 64
+Args2 = 56
+
+Frame 3139  # Incendiary projectile flying frame 4 (RadiusDamage)
+Sprite number = 165
+Sprite subnumber = 32771
+Duration = 5
+Next frame = 0
+Args1 = 56
+Args2 = 56
+
+Frame 3140 # Model 1887 firing frame 2
+Sprite number = 3
+Sprite subnumber = 0
+Duration = 3
+Next frame = 3141
+
+Frame 3141 # Model 1887 firing frame 3
+Sprite number = 3
+Sprite subnumber = 0
+Duration = 3
+Next frame = 3142
+
+Frame 3142 # Model 1887 refire frame (ReFire)
+Sprite number = 3
+Sprite subnumber = 0
+Duration = 3
+Next frame = 3143
+
+Frame 3143  # Model 1887 reloading frame 1
+Sprite number = 3
+Sprite subnumber = 3
+Duration = 3
+Next frame = 3144
+
+Frame 3144  # Model 1887 reloading frame 2
+Sprite number = 3
+Sprite subnumber = 4
+Duration = 4
+Next frame = 3145
+
+Frame 3145  # Model 1887 reloading frame 3
+Sprite number = 3
+Sprite subnumber = 5
+Duration = 6
+Next frame = 3146
+
+Frame 3146  # Model 1887 reloading frame 4 (WeaponSound)
+Sprite number = 3
+Sprite subnumber = 6
+Duration = 6
+Next frame = 3147
+Args1 = 523
+
+Frame 3147  # Model 1887 reloading frame 5
+Sprite number = 3
+Sprite subnumber = 5
+Duration = 4
+Next frame = 3148
+
+Frame 3148  # Model 1887 reloading frame 6
+Sprite number = 3
+Sprite subnumber = 4
+Duration = 3
+Next frame = 3149
+
+Frame 3149  # Model 1887 reloading frame 7
+Sprite number = 3
+Sprite subnumber = 3
+Duration = 3
+Next frame = 10
+
+Frame 3150  # Slug rifle fire 2
+Sprite number = 6
+Sprite subnumber = 32770
+Duration = 0
+Next frame = 3108
+Args1 = 393216
+Args2 = 393216
+Args3 = 20
+
+Frame 3151  # Arrow death 1 (Scream)
+Sprite number = 145
+Sprite subnumber = 1
+Duration = 4
+Next frame = 3152
+
+Frame 3152  # Arrow death 2
+Sprite number = 145
+Sprite subnumber = 2
+Duration = 4
+Next frame = 3153
+
+Frame 3153  # Arrow death 3
+Sprite number = 145
+Sprite subnumber = 3
+Duration = 4
+Next frame = 3154
+
+Frame 3154  # Arrow death 4
+Sprite number = 145
+Sprite subnumber = 4
+Duration = 4
+Next frame = 0
+
+Frame 3200  # Fists select frame
+Sprite number = 2
+Sprite subnumber = 7
+Duration = 1
+Next frame = 3
+Unknown 1 = 1
+Unknown 2 = 92
+
+Frame 3201  # Model 1887 select frame
+Sprite number = 3
+Sprite subnumber = 0
+Duration = 1
+Next frame = 11
+Unknown 1 = 1
+Unknown 2 = 92
+
+Frame 3202  # Super slugger select frame
+Sprite number = 6
+Sprite subnumber = 0
+Duration = 1
+Next frame = 19
+Unknown 1 = 1
+Unknown 2 = 92
+
+Frame 3203  # Minigun select frame
+Sprite number = 7
+Sprite subnumber = 0
+Duration = 1
+Next frame = 50
+Unknown 1 = 1
+Unknown 2 = 92
+
+Frame 3204  # Rocket launcher select frame
+Sprite number = 9
+Sprite subnumber = 0
+Duration = 1
+Next frame = 58
+Unknown 1 = 1
+Unknown 2 = 92
+
+Frame 3205  # Unlocked plasma gun select frame
+Sprite number = 12
+Sprite subnumber = 0
+Duration = 1
+Next frame = 75
+Unknown 1 = 1
+Unknown 2 = 92
+
+Frame 3206  # BFG9000.1 select frame
+Sprite number = 14
+Sprite subnumber = 0
+Duration = 1
+Next frame = 82
+Unknown 1 = 1
+Unknown 2 = 92
+
+Frame 3207  # Chainsaw Model 64 select frame
+Sprite number = 11
+Sprite subnumber = 0
+Duration = 1
+Next frame = 69
+Unknown 1 = 1
+Unknown 2 = 92
+
+Frame 3208  # Incendiary shotgun select frame
+Sprite number = 6
+Sprite subnumber = 0
+Duration = 1
+Next frame = 33
+Unknown 1 = 1
+Unknown 2 = 92
+
+Frame 3209  # Fists deselect frame
+Sprite number = 2
+Sprite subnumber = 7
+Duration = 1
+Next frame = 2
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 3210  # Model 1887 deselect frame
+Sprite number = 3
+Sprite subnumber = 0
+Duration = 1
+Next frame = 10
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 3211  # Super slugger deselect frame
+Sprite number = 6
+Sprite subnumber = 0
+Duration = 1
+Next frame = 18
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 3212  # Minigun deselect frame
+Sprite number = 7
+Sprite subnumber = 0
+Duration = 1
+Next frame = 49
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 3213  # Rocket launcher deselect frame
+Sprite number = 9
+Sprite subnumber = 0
+Duration = 1
+Next frame = 57
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 3214  # Unlocked plasma gun deselect frame
+Sprite number = 12
+Sprite subnumber = 0
+Duration = 1
+Next frame = 74
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 3215  # BFG9000.1 deselect frame
+Sprite number = 14
+Sprite subnumber = 0
+Duration = 1
+Next frame = 81
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 3216  # Chainsaw Model 64 deselect frame
+Sprite number = 11
+Sprite subnumber = 2
+Duration = 1
+Next frame = 67
+Unknown 1 = 1
+Unknown 2 = 32
+
+Frame 3217  # Incendiary shotgun deselect frame
+Sprite number = 1
+Sprite subnumber = 0
+Duration = 1
+Next frame = 32
+Unknown 1 = 1
+Unknown 2 = 32
+
+# Ammo types
+# 0 - Bullets
+# 1 - Shells
+# 2 - Cells
+# 3 - Rockets
+
+Ammo 0
+Per ammo = 8
+
+Weapon 0 (Fists)
+Select frame = 3200
+Shooting frame = 7
+
+Weapon 1 (Model 1887)
+Ammo type = 1
+Select frame = 3201
+Shooting frame = 3114
+
+Weapon 2 (Super slugger)
+Select frame = 3202
+Shooting frame = 3113
+Firing frame = 47
+Ammo per shot = 2
+
+Weapon 3 (Minigun)
+Select frame = 3203
+Shooting frame = 3134
+Ammo per shot = 2
+
+Weapon 4 (Rocket launcher)
+Select frame = 3204
+
+Weapon 5 (Unlocked plasma gun)
+Select frame = 3205
+
+Weapon 6 (BFG9000.1)
+Select frame = 3206
+
+Weapon 7 (Chainsaw Model 64)
+Select frame = 3207
+
+Weapon 8 (Incendiary shotgun)
+Select frame = 3208
+Shooting frame = 3115
+Firing frame = 30
+
+Misc 0
+Initial Bullets = 0
+
+[CODEPTR]
+FRAME 6 = NULL
+FRAME 7 = WeaponMeleeAttack
+FRAME 8 = WeaponMeleeAttack
+FRAME 9 = RefireTo
+FRAME 14 = WeaponBulletAttack
+FRAME 16 = NULL
+FRAME 21 = WeaponSound
+FRAME 22 = WeaponProjectile
+FRAME 25 = OpenShotgun2
+FRAME 26 = LoadShotgun2
+FRAME 28 = CloseShotgun2
+FRAME 36 = WeaponBulletAttack
+FRAME 39 = NULL
+FRAME 41 = NULL
+FRAME 43 = NULL
+FRAME 52 = WeaponBulletAttack
+FRAME 53 = NULL
+FRAME 71 = WeaponMeleeAttack
+FRAME 72 = WeaponSound
+FRAME 115 = RadiusDamage
+FRAME 116 = RadiusDamage
+FRAME 117 = RadiusDamage
+FRAME 123 = RadiusDamage
+FRAME 127 = RadiusDamage
+FRAME 1371 = Scream
+FRAME 1372 = Fall
+FRAME 1435 = Pain
+FRAME 1436 = Scream
+FRAME 1681 = SpawnObject
+FRAME 1870 = PlaySound
+FRAME 1902 = Scream
+FRAME 1903 = RadiusDamage
+FRAME 2000 = Pain
+FRAME 2001 = Scream
+FRAME 2002 = Fall
+FRAME 2006 = XScream
+FRAME 2007 = Fall
+FRAME 2015 = Scream
+FRAME 2016 = Fall
+FRAME 2020 = XScream
+FRAME 2021 = Fall
+FRAME 2029 = Pain
+FRAME 2030 = Pain
+FRAME 2031 = Look
+FRAME 2032 = Look
+FRAME 2033 = Chase
+FRAME 2034 = Chase
+FRAME 2035 = Chase
+FRAME 2036 = Chase
+FRAME 2037 = Chase
+FRAME 2038 = Chase
+FRAME 2039 = Chase
+FRAME 2040 = Chase
+FRAME 2041 = FaceTarget
+FRAME 2042 = PlaySound
+FRAME 2043 = MonsterProjectile
+FRAME 2066 = MonsterProjectile
+FRAME 2068 = MonsterProjectile
+FRAME 2070 = MonsterProjectile
+FRAME 2072 = MonsterProjectile
+FRAME 2074 = MonsterProjectile
+FRAME 2076 = MonsterProjectile
+FRAME 2078 = MonsterProjectile
+FRAME 2080 = MonsterProjectile
+FRAME 2082 = MonsterProjectile
+FRAME 2084 = MonsterProjectile
+FRAME 2086 = MonsterProjectile
+FRAME 2088 = MonsterProjectile
+FRAME 2090 = MonsterProjectile
+FRAME 2092 = MonsterProjectile
+FRAME 2046 = Pain
+FRAME 2048 = Scream
+FRAME 2049 = Fall
+FRAME 2055 = XScream
+FRAME 2056 = Fall
+FRAME 2100 = Look
+FRAME 2101 = Look
+FRAME 2102 = Chase
+FRAME 2103 = Chase
+FRAME 2104 = Chase
+FRAME 2105 = Chase
+FRAME 2106 = Chase
+FRAME 2107 = Chase
+FRAME 2108 = Chase
+FRAME 2109 = Chase
+FRAME 2110 = FaceTarget
+FRAME 2111 = NULL
+FRAME 2112 = MonsterProjectile
+FRAME 2113 = MonsterProjectile
+FRAME 2114 = MonsterProjectile
+FRAME 2117 = Pain
+FRAME 2119 = Scream
+FRAME 2120 = Fall
+FRAME 2124 = XScream
+FRAME 2125 = Fall
+FRAME 2200 = Look
+FRAME 2201 = Look
+FRAME 2202 = Chase
+FRAME 2203 = Chase
+FRAME 2204 = Chase
+FRAME 2205 = Chase
+FRAME 2206 = Chase
+FRAME 2207 = Chase
+FRAME 2208 = Chase
+FRAME 2209 = Chase
+FRAME 2210 = FaceTarget
+FRAME 2211 = FaceTarget
+FRAME 2212 = FaceTarget
+FRAME 2213 = FaceTarget
+FRAME 2214 = CyberAttack
+FRAME 2217 = Pain
+FRAME 2219 = Scream
+FRAME 2220 = Fall
+FRAME 2224 = XScream
+FRAME 2225 = Fall
+FRAME 2300 = Look
+FRAME 2301 = Look
+FRAME 2302 = Chase
+FRAME 2303 = Chase
+FRAME 2304 = Chase
+FRAME 2305 = PlaySound
+FRAME 2306 = Chase
+FRAME 2307 = Chase
+FRAME 2308 = Chase
+FRAME 2309 = PlaySound
+FRAME 2310 = FaceTarget
+FRAME 2311 = SPosAttack
+FRAME 2312 = SPosAttack
+FRAME 2313 = SpidRefire
+FRAME 2317 = Pain
+FRAME 2319 = Scream
+FRAME 2320 = Fall
+FRAME 2321 = SpawnObject
+FRAME 2322 = Explode
+FRAME 2401 = PlaySound
+FRAME 2402 = SpawnObject
+FRAME 2413 = SpawnObject
+FRAME 2414 = SpawnObject
+FRAME 2415 = SpawnObject
+FRAME 2416 = SpawnObject
+FRAME 2417 = SpawnObject
+FRAME 2419 = Fall
+FRAME 2420 = Scream
+FRAME 2422 = RadiusDamage
+FRAME 2500 = Look
+FRAME 2501 = Look
+FRAME 2502 = Chase
+FRAME 2503 = Chase
+FRAME 2504 = Chase
+FRAME 2505 = Chase
+FRAME 2506 = Chase
+FRAME 2507 = Chase
+FRAME 2508 = Chase
+FRAME 2509 = Chase
+FRAME 2510 = FaceTarget
+FRAME 2511 = FaceTarget
+FRAME 2512 = FaceTarget
+FRAME 2513 = TroopAttack
+FRAME 2517 = Pain
+FRAME 2519 = Scream
+FRAME 2520 = Fall
+FRAME 2524 = XScream
+FRAME 2525 = Fall
+FRAME 2600 = Look
+FRAME 2601 = Look
+FRAME 2602 = Chase
+FRAME 2603 = Chase
+FRAME 2604 = Chase
+FRAME 2605 = Chase
+FRAME 2606 = Chase
+FRAME 2607 = Chase
+FRAME 2608 = Chase
+FRAME 2609 = Chase
+FRAME 2610 = FaceTarget
+FRAME 2611 = MonsterProjectile
+FRAME 2612 = MonsterProjectile
+FRAME 2613 = TroopAttack
+FRAME 2617 = Pain
+FRAME 2619 = Scream
+FRAME 2620 = Fall
+FRAME 2624 = XScream
+FRAME 2625 = Fall
+FRAME 2700 = Look
+FRAME 2701 = Look
+FRAME 2702 = Chase
+FRAME 2703 = Chase
+FRAME 2704 = Chase
+FRAME 2705 = Chase
+FRAME 2706 = FaceTarget
+FRAME 2707 = FaceTarget
+FRAME 2708 = FaceTarget
+FRAME 2709 = SkullAttack
+FRAME 2711 = Pain
+FRAME 2712 = Scream
+FRAME 2715 = Fall
+FRAME 2720 = Xscream
+FRAME 2721 = Fall
+FRAME 3089 = ConsumeAmmo
+FRAME 3090 = WeaponSound
+FRAME 3097 = WeaponSound
+FRAME 3099 = RadiusDamage
+FRAME 3102 = WeaponProjectile
+FRAME 3103 = WeaponProjectile
+FRAME 3104 = WeaponProjectile
+FRAME 3105 = WeaponProjectile
+FRAME 3106 = WeaponSound
+FRAME 3107 = WeaponProjectile
+FRAME 3108 = ConsumeAmmo
+FRAME 3110 = ConsumeAmmo
+FRAME 3111 = RadiusDamage
+FRAME 3112 = RadiusDamage
+FRAME 3113 = WeaponSound
+FRAME 3114 = WeaponSound
+FRAME 3115 = ConsumeAmmo
+FRAME 3116 = WeaponSound
+FRAME 3118 = WeaponBulletAttack
+FRAME 3119 = WeaponBulletAttack
+FRAME 3120 = ConsumeAmmo
+FRAME 3121 = RadiusDamage
+FRAME 3124 = PlaySound
+FRAME 3126 = ConsumeAmmo
+FRAME 3127 = GunFlashTo
+FRAME 3128 = WeaponReady
+FRAME 3129 = WeaponMeleeAttack
+FRAME 3130 = WeaponMeleeAttack
+FRAME 3131 = WeaponReady
+FRAME 3132 = GunFlashTo
+FRAME 3133 = GunFlashTo
+FRAME 3134 = GunFlashTo
+FRAME 3138 = RadiusDamage
+FRAME 3139 = RadiusDamage
+FRAME 3142 = ReFire
+FRAME 3146 = WeaponSound
+FRAME 3150 = WeaponBulletAttack
+FRAME 3151 = Scream
+
+[STRINGS]
+GOTCHAINGUN = You got the minigun!
+GOTCHAINSAW = A Model 64 Chainsaw!  Put the devil to work!
+GOTSHOTGUN = You got the super slugger!
+GOTSHOTGUN2 = You got the incendiary shotgun!
+GOTPLASMA = You got the unlocked plasma rifle!
+GOTBFG9000 = You got the BFG9000.1! Kill 'em all!

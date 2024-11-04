@@ -1,0 +1,3 @@
+iwad = "DOOM2.WAD"
+startuptitle = "Doom: Interception III"
+startupcolors = "000000", "FFF023"
