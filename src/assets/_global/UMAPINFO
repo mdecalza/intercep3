@@ -20,7 +20,7 @@ map MAP00
 	interbackdrop = "RROCK19K"
 	intermusic = "D_TEXT01"
 
-	next = "MAP01"
+	next = "MAP50"
 }
 
 map MAP10
@@ -54,7 +54,7 @@ map MAP10
 	intermusic = "D_TEXT01"
 
 	next = "MAP11"
-	nextsecret = "MAP99"
+	nextsecret = "MAP00"
 }
 
 map MAP11
@@ -83,7 +83,7 @@ map MAP11
 	interbackdrop = "RROCK19K"
 	intermusic = "D_TEXT01"
 
-	next = "MAP12"
+	next = "MAP50"
 }
 
 map MAP50
@@ -109,5 +109,5 @@ map MAP50
 	interbackdrop = "RROCK19K"
 	intermusic = "D_TEXT02"
 	
-	next = "MAP51"
+	next = "MAP10"
 }
