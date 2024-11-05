@@ -47,11 +47,6 @@ doommake.file.patch.src=
 ## Leave blank for default.
 doommake.file.assets=
 
-## Textures WAD
-## Sets the name of the output WAD for textures. Created in build directory.
-## Leave blank for default.
-doommake.file.textures=
-
 ## Map WAD
 ## Sets the name of the output maps WAD. Created in build directory.
 ## Leave blank for default.
