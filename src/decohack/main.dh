@@ -1900,9 +1900,12 @@ thing 242 "Incendiary zombie"
 			SP91 AABB 5 A_Look
 			Loop
 		See:
-			SP91 AABBCCDD 3 A_Chase
+			SP91 AABBCCDD 3 {
+				A_Chase
+				A_JumpIfTargetCloser(Missile,192.0)
+			}
 			Loop
-		Melee:
+		Missile:
 			SP91 E 8 A_FaceTarget
 			SP91 E 0 A_RandomJump(Flip,127)
 			SP91 F 3 Bright {
