@@ -1,0 +1,93 @@
+/*****************************************************************************
+ * DECOHack Patch File
+ * Weapons
+ * 2024 Matthew DeCalzadilla
+ ****************************************************************************/
+
+#include <dsdhacked>
+
+#include "projectiles.dh"
+
+// Rename pickup in editor
+thing 78 "Incendiary Shotgun"
+{
+	health 1001
+}
+
+// Rename pickup in editor
+thing 79 "Super Slug Shotgun"
+{
+	health 1001
+}
+
+weapon 0 "Fists"
+{
+	States
+	{
+		Ready:
+			PUNG H 1 A_WeaponReady
+			Loop
+		Deselect:
+			PUNG H 1 A_Lower
+			Loop
+		Select:
+			PUNG H 1 A_Raise
+			Loop
+		Fire:
+			PUNG B 1 A_WeaponMeleeAttack(0,10,10.0, "SKESWG",72.0)
+			PUNG D 5 A_WeaponMeleeAttack(2,10,10.0, "PUNCH",72.0)
+			PUNG C 2
+			PUNG C 0 A_RefireTo(RightFistHold)
+			Goto RightFistReady
+		RightFistHold:
+			PUNG H 1
+			PUNG H 1 A_RefireTo(RightFistHold)
+			Goto RightFistReady
+		RightFistReady:
+			PUNG H 0 A_RefireTo(RightFistFire)
+			PUNG H 1 A_WeaponReady
+			Loop
+		RightFistFire:
+			PUNG E 1 A_WeaponMeleeAttack(0,10,10.0, "SKESWG",72.0)
+			PUNG G 5 A_WeaponMeleeAttack(2,10,10.0, "PUNCH",72.0)
+			PUNG F 2
+			PUNG F 0 A_RefireTo(LeftFistHold)
+			Goto Ready
+		LeftFistHold:
+			PUNG H 1
+			PUNG H 1 A_RefireTo(LeftFistHold)
+			Goto Ready
+	}
+}
+
+weapon 1 "Model 1887"
+{
+}
+
+weapon 2 "Super slugger"
+{
+}
+
+weapon 3 "Minigun"
+{
+}
+
+weapon 4 "Missile launcher"
+{
+}
+
+weapon 5 "Unlocked plasma gun"
+{
+}
+
+weapon 6 "BFG9000.1"
+{
+}
+
+weapon 7 "Model 64 chainsaw"
+{
+}
+
+weapon 8 "Incendiary shotgun"
+{
+}
