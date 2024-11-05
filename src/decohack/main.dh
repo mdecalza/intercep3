@@ -1165,3 +1165,347 @@ thing 200 "Green marine suit"
 			Stop
 	}
 }
+
+thing 201 "Large icy stalagmite"
+{
+	ednum 6050
+
+	radius 24
+	height 128
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP50 A -1
+			Stop
+	}
+}
+
+thing 202 "Short icy stalagmite"
+{
+	ednum 6051
+
+	radius 16
+	height 48
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP51 A -1
+			Stop
+	}
+}
+
+thing 203 "Short icy stalagmite 2"
+{
+	ednum 6052
+
+	radius 16
+	height 56
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP52 A -1
+			Stop
+	}
+}
+
+thing 204 "Large crystal"
+{
+	ednum 6053
+
+	radius 16
+	height 77
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP53 A -1
+			Stop
+	}
+}
+
+thing 205 "Ceiling crystal"
+{
+	ednum 6054
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP54 A -1
+			Stop
+	}
+}
+
+thing 206 "Behemoth"
+{
+	radius 16
+	height 16
+}
+
+thing 207 "An unlikely friend..."
+{
+	radius 16
+	height 16
+}
+
+thing 208 "Barbat-OS"
+{
+	radius 16
+	height 16
+}
+
+thing 209 "Brown fleshy mass"
+{
+	ednum 6058
+
+	radius 24
+	height 40
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP58 A -1
+			Stop
+	}
+}
+
+thing 210 "Red fleshy mass"
+{
+	ednum 6059
+
+	radius 24
+	height 40
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP59 A -1
+			Stop
+	}
+}
+
+thing 211 "Green marble column"
+{
+	ednum 6060
+
+	radius 16
+	height 120
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP60 A -1
+			Stop
+	}
+}
+
+thing 212 "Gray (grey) marble column"
+{
+	ednum 6061
+
+	radius 16
+	height 120
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP61 A -1
+			Stop
+	}
+}
+
+thing 213 "Spiral marble column"
+{
+	ednum 6062
+
+	radius 16
+	height 72
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP62 A -1
+			Stop
+	}
+}
+
+thing 214 "Tall metal pipe"
+{
+	ednum 6063
+
+	radius 16
+	height 128
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP63 A -1
+			Stop
+	}
+}
+
+thing 215 "Tall metal pipe 2"
+{
+	ednum 6064
+
+	radius 16
+	height 128
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP64 A -1
+			Stop
+	}
+}
+
+thing 216 "Extra tall column"
+{
+	ednum 6065
+
+	radius 16
+	height 180
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP65 A -1
+			Stop
+	}
+}
+
+thing 217 "Tall destroyed column"
+{
+	ednum 6066
+
+	radius 16
+	height 100
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP66 A -1
+			Stop
+	}
+}
+
+thing 218 "Short destroyed column"
+{
+	ednum 6067
+
+	radius 16
+	height 60
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP67 A -1
+			Stop
+	}
+}
+
+thing 219 "Skull mine"
+{
+	ednum 6068
+
+	health 10000
+	radius 11
+	height 8
+	damage 1
+
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+DROPOFF
+	+MISSILE
+	+TRANSLUCENT
+
+	// MBF21 Flags (MBF21 feature set only)
+	+RIP
+
+	deathsound "FIRXPL"
+
+	// MBF21 Properties (MBF21 feature set and later)
+	ripsound "CLAW"
+
+	States
+	{
+		Spawn:
+			SP68 A 2 Bright
+			SP68 A 0 Bright A_SpawnObject(219,5.5,5.0,5.0,0.0,5.0,3.0,0.0)
+			Stop
+		Death:
+			SP68 BCDEFG 4 Bright
+			Stop
+	}
+}
+
+thing 220 "Demon statue"
+{
+	ednum 6069
+
+	radius 16
+	height 108
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP69 A -1
+			Stop
+	}
+}
+
+thing 221 "Splayed marine"
+{
+	ednum 6070
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP70 A -1
+			Stop
+	}
+}
