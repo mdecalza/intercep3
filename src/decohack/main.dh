@@ -10,7 +10,7 @@
 #include "enemies.dh"
 #include "weapons.dh"
 #include "decoration.dh"
-#include "sceneprops.dh"
+#include "cutsceneprops.dh"
 
 // make all of the hanging bodies non-solid
 each thing from 129 to 134

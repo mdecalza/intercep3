@@ -34,27 +34,25 @@ weapon 0 "Fists"
 			PUNG H 1 A_Raise
 			Loop
 		Fire:
-			PUNG B 1 A_WeaponMeleeAttack(0,10,10.0, "SKESWG",72.0)
-			PUNG D 4 A_WeaponMeleeAttack(2,10,10.0, "PUNCH",72.0)
-			PUNG C 1
-			PUNG C 1 A_RefireTo(RightFistHold)
-			Goto RightFistReady
-		RightFistHold:
-			PUNG H 1
-			PUNG H 1 A_RefireTo(RightFistHold)
-			Goto RightFistReady
-		RightFistReady:
-			PUNG H 1 A_RefireTo(RightFistFire)
-			Loop
-		RightFistFire:
-			PUNG E 1 A_WeaponMeleeAttack(0,10,10.0, "SKESWG",72.0)
-			PUNG G 4 A_WeaponMeleeAttack(2,10,10.0, "PUNCH",72.0)
-			PUNG F 1
-			PUNG F 1 A_RefireTo(LeftFistHold)
+			PUNG B 1 {
+				A_WeaponJump(RightFistFire,112)
+				A_WeaponSound("SKESWG")
+				A_WeaponMeleeAttack(0,10,10.0, "SKESWG",72.0)
+			}
+			PUNG D 4 A_WeaponMeleeAttack(3,10,10.0, "PUNCH",72.0)
+			PUNG C 2 A_RefireTo(FireHold)
 			Goto Ready
-		LeftFistHold:
+		RightFistFire:
+			PUNG E 1 {
+				A_WeaponSound("SKESWG")
+				A_WeaponMeleeAttack(0,10,10.0, "SKESWG",72.0)
+			}	
+			PUNG G 4 A_WeaponMeleeAttack(3,10,10.0, "PUNCH",72.0)
+			PUNG F 2 A_RefireTo(FireHold)
+			Goto Ready
+		FireHold:
 			PUNG H 1
-			PUNG H 1 A_RefireTo(LeftFistHold)
+			PUNG H 1 A_RefireTo(FireHold)
 			Goto Ready
 	}
 }
