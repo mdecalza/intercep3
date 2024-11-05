@@ -1,12 +1,27 @@
 /*****************************************************************************
  * DECOHack Patch File
- * Decoration, obstacle, & other editor objects
+ * Decoration,  obstacle,  & other editor objects
  * 2024 Matthew DeCalzadilla
  ****************************************************************************/
 
 #include <dsdhacked>
 
 /* Doom II decorations */
+
+// Barrel
+thing 31
+{
+	painchance 256
+
+	painsound "FRE007"
+
+	States
+	{
+		Pain:
+			BAR1 A 0 A_Pain
+			Goto Spawn
+	}
+}
 
 thing 80 "Tall techno floor lamp"
 {
@@ -635,7 +650,7 @@ thing 183 "Toilet"
 			SP32 A -1
 			Stop
 		Pain:
-			SP32 A 4 A_Pain
+			SP32 A 0 A_Pain
 			Goto Spawn
 		Death:
 			SP32 B 4 {
@@ -743,10 +758,14 @@ thing 188 "Fire hydrant"
 			SP37 A -1
 			Stop
 		Pain:
-			SP37 A 4
+			SP37 A 0 A_Pain
 			Goto Spawn
 		Death:
-			SP37 BCD 4
+			SP37 B 4 {
+				A_Fall
+				A_Scream
+			}
+			SP37 CD 4
 			Goto DeadLoop
 		DeadLoop:
 			SP37 EFGH 4
@@ -1272,7 +1291,7 @@ thing 219 "Skull mine"
 	{
 		Spawn:
 			SP68 A 2 Bright
-			SP68 A 0 Bright A_SpawnObject(219,5.5,5.0,5.0,0.0,5.0,3.0,0.0)
+			SP68 A 0 Bright A_SpawnObject(219, 5.5, 5.0, 5.0, 0.0, 5.0, 3.0, 0.0)
 			Stop
 		Death:
 			SP68 BCDEFG 4 Bright
@@ -1693,10 +1712,10 @@ thing 241 "Nitro barrel"
 			SP90 B 5 Bright
 			SP90 B 5 Bright A_Scream
 			SP90 C 5 Bright
-			SP90 D 10 Bright A_RadiusDamage(640,128)
+			SP90 D 10 Bright A_RadiusDamage(640, 128)
 			BEXP E 10 Bright
 			Stop
 	}
 }
 
-// things 242-248 defined in enemies.dh
+// things 242+ defined in enemies.dh

@@ -49,19 +49,24 @@ thing 151 "Incendiary projectile"
 	// MBF21 Properties (MBF21 feature set and later)
 	splashgroup 1
 
+	deathsound "STNMOV"
+
 	States
 	{
 		Spawn:
 			SP20 A 5 Bright {
 				A_PlaySound("FIRSHT")
-				A_RadiusDamage(80,56)
+				A_RadiusDamage(80, 56)
 			}
-			SP20 B 5 Bright A_RadiusDamage(72,56)
-			SP20 C 5 Bright A_RadiusDamage(64,56)
-			SP20 D 5 Bright A_RadiusDamage(56,56)
+			SP20 B 5 Bright A_RadiusDamage(72, 56)
+			SP20 C 5 Bright A_RadiusDamage(64, 56)
+			SP20 D 5 Bright A_RadiusDamage(56, 56)
 			Stop
 		Death:
-			BAL1 C 8 Bright A_RadiusDamage(96,64)
+			BAL1 C 8 Bright {
+				A_RadiusDamage(96, 64)
+				A_Scream
+			}
 			BAL1 D 6 Bright
 			BAL1 E 4 Bright
 			Stop
