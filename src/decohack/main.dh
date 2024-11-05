@@ -594,6 +594,476 @@ thing 170 "Crystal ball on column"
 	}
 }
 
+thing 171 "Extra thing 20"
+{
+	radius 16
+	height 160
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP20 A -1
+			Stop
+	}
+}
+
+thing 172 "Brown and gray tree"
+{
+	ednum 6021
+
+	radius 16
+	height 160
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP21 A -1
+			Stop
+	}
+}
+
+thing 173 "Brown and gray tree 2"
+{
+	ednum 6022
+
+	radius 16
+	height 160
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP22 A -1
+			Stop
+	}
+}
+
+thing 174 "Mossy tree"
+{
+	ednum 6023
+
+	radius 16
+	height 160
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP23 A -1
+			Stop
+	}
+}
+
+thing 175 "Mossy tree 2"
+{
+	ednum 6024
+
+	radius 16
+	height 108
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP24 A -1
+			Stop
+	}
+}
+
+thing 176 "Mossy log"
+{
+	ednum 6025
+
+	radius 16
+	height 16
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP25 A -1
+			Stop
+	}
+}
+
+thing 177 "Mossy stump"
+{
+	ednum 6026
+
+	radius 16
+	height 32
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP26 A -1
+			Stop
+	}
+}
+
+thing 178 "Mossy roots"
+{
+	ednum 6027
+
+	radius 16
+	height 48
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP27 A -1
+			Stop
+	}
+}
+
+thing 179 "Stalagmite skulls"
+{
+	ednum 6028
+
+	radius 16
+	height 64
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP28 A -1
+			Stop
+	}
+}
+
+thing 180 "Brown and gray tree 3"
+{
+	ednum 6029
+
+	radius 16
+	height 160
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP29 A -1
+			Stop
+	}
+}
+
+thing 181 "Safety cone"
+{
+	ednum 6030
+
+	radius 16
+	height 32
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP30 A -1
+			Stop
+	}
+}
+
+thing 182 "Office chair"
+{
+	ednum 6031
+
+	radius 16
+	height 16
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP31 A -1
+			Stop
+	}
+}
+
+thing 183 "Toilet"
+{
+	ednum 6032
+
+	health 5
+	radius 16
+	height 32
+	painchance 256
+	mass 338
+
+	+SOLID
+	+NOBLOOD
+	+SHOOTABLE
+
+	deathsound "FRE002"
+	painsound "FRE005"
+
+	States
+	{
+		Spawn:
+			SP32 A -1
+			Stop
+		Pain:
+			SP32 A 4 A_Pain
+			Goto Spawn
+		Death:
+			SP32 B 4 {
+				A_Fall
+				A_Scream
+			}
+			SP32 CDEF 4
+			Goto DeadLoop
+		DeadLoop:
+			SP32 GHIJ 4
+			Loop
+	}
+}
+
+thing 184 "Czech hedgehog"
+{
+	ednum 6033
+
+	radius 16
+	height 32
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP33 A -1
+			Stop
+	}
+}
+
+thing 185 "Bloody hanging hook"
+{
+	ednum 6034
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP34 A -1
+			Stop
+	}
+}
+
+thing 186 "Short hedge bush"
+{
+	ednum 6035
+
+	radius 16
+	height 60
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP35 A -1
+			Stop
+	}
+}
+
+thing 187 "Large green tree"
+{
+	ednum 6036
+
+	radius 16
+	height 100
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP36 A -1
+			Stop
+	}
+}
+
+thing 188 "Fire hydrant"
+{
+	ednum 6037
+
+	health 50
+	radius 16
+	height 24
+	painchance 256
+	mass 100000
+
+	+SOLID
+	+NOBLOOD
+	+SHOOTABLE
+
+	deathsound "FRE002"
+	painsound "FRE005"
+
+	States
+	{
+		Spawn:
+			SP37 A -1
+			Stop
+		Pain:
+			SP37 A 4
+			Goto Spawn
+		Death:
+			SP37 BCD 4
+			Goto DeadLoop
+		DeadLoop:
+			SP37 EFGH 4
+			Loop
+	}
+}
+
+thing 189 "Street lamp"
+{
+	ednum 6038
+
+	radius 16
+	height 80
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP38 A -1
+			Stop
+	}
+}
+
+thing 190 "Hanging lamp"
+{
+	ednum 6039
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP39 A -1
+			Stop
+	}
+}
+
+thing 191 "Construction light"
+{
+	ednum 6040
+
+	radius 16
+	height 108
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP40 A -1
+			Stop
+	}
+}
+
+thing 192 "Construction light 2"
+{
+	ednum 6041
+
+	radius 16
+	height 32
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP41 A -1
+			Stop
+	}
+}
+
+thing 193 "Blinking ceiling lamp"
+{
+	ednum 6042
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP42 A 31
+			SP42 B 4 Bright
+			Loop
+	}
+}
+
+thing 194 "Glass column"
+{
+	ednum 6043
+
+	health 30
+	radius 16
+	height 128
+	painchance 256
+	mass 100000
+
+	+SOLID
+	+NOBLOOD
+	+SHOOTABLE
+
+	deathsound "FRE006"
+	painsound "FRE005"
+
+	States
+	{
+		Spawn:
+			SP43 A 31
+			SP43 B 4 Bright
+			Loop
+		Pain:
+			SP43 A 0 A_Pain
+			Goto Spawn
+		Death:
+			SP43 C 0 A_Scream
+			Goto DeadLoop
+		DeadLoop:
+			SP43 C 31
+			SP43 D 4 Bright
+			Loop
+	}
+}
+
 thing 195 "Dead scientist 1"
 {
 	ednum 6044
@@ -624,6 +1094,74 @@ thing 196 "Dead scientist 2"
 	{
 		Spawn:
 			SP45 A -1
+			Stop
+	}
+}
+
+thing 197 "Dead admiral"
+{
+	ednum 6046
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP46 A -1
+			Stop
+	}
+}
+
+thing 198 "Marine helmet"
+{
+	ednum 6047
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP47 A -1
+			Stop
+	}
+}
+
+thing 199 "Orange marine suit"
+{
+	ednum 6048
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP48 A -1
+			Stop
+	}
+}
+
+thing 200 "Green marine suit"
+{
+	ednum 6049
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP49 A -1
 			Stop
 	}
 }
