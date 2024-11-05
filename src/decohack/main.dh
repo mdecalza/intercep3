@@ -398,6 +398,201 @@ thing 159 "Short hanging techno lamp"
 	}
 }
 
+thing 160 "Chandelier 2"
+{
+	ednum 6009
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP09 A -1 Bright
+			Stop
+	}
+}
+
+thing 161 "Large brown tree 2"
+{
+	ednum 6010
+
+	radius 16
+	height 108
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP10 A -1
+			Stop
+	}
+}
+
+thing 162 "Burned-down tree"
+{
+	ednum 6011
+
+	radius 16
+	height 60
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP11 A -1
+			Stop
+	}
+}
+
+thing 163 "Hell tree"
+{
+	ednum 6012
+
+	radius 16
+	height 108
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP12 A -1
+			Stop
+	}
+}
+
+thing 164 "Hanging vine"
+{
+	ednum 6013
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP13 A -1
+			Stop
+	}
+}
+
+thing 165 "Hanging vine 2"
+{
+	ednum 6014
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP14 A -1
+			Stop
+	}
+}
+
+thing 166 "Lava cauldron"
+{
+	ednum 6015
+
+	radius 24
+	height 24
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP15 ABC 16 Bright
+			Loop
+	}
+}
+
+thing 167 "Red vase"
+{
+	ednum 6016
+
+	radius 16
+	height 32
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP16 A -1
+			Stop
+	}
+}
+
+thing 168 "Large brown tree with skulls"
+{
+	ednum 6017
+
+	radius 32
+	height 16
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP17 A -1
+			Stop
+	}
+}
+
+thing 169 "Hanging skull lamp"
+{
+	ednum 6018
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP18 ABCD 4 Bright
+			Loop
+	}
+}
+
+thing 170 "Crystal ball on column"
+{
+	ednum 6019
+
+	radius 16
+	height 60
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP19 A -1
+			Stop
+	}
+}
+
 thing 195 "Dead scientist 1"
 {
 	ednum 6044
