@@ -6,5 +6,428 @@
 #include <dsdhacked>
 #include <friendly>
 
-// Your DECOHack code here ...
+misc
+{
+	initialBullets 0
+}
 
+// Bullets
+ammo 0
+{
+	pickup 8
+}
+
+strings
+{
+	GOTCHAINGUN "You got the minigun!"
+	GOTCHAINSAW "A Model 64 chainsaw! Put the devil to work!"
+	GOTSHOTGUN "You got the super slugger!"
+	GOTSHOTGUN2 "You got the incendiary shotgun!"
+	GOTPLASMA "You got the unlocked plasma rifle!"
+	GOTBFG9000 "You got the BFG9000.1! Kill 'em all!"
+}
+
+weapon 0 "Fists"
+{
+}
+
+weapon 1 "Model 1887"
+{
+}
+
+weapon 2 "Super slugger"
+{
+}
+
+weapon 3 "Minigun"
+{
+}
+
+weapon 4 "Missile launcher"
+{
+}
+
+weapon 5 "Unlocked plasma gun"
+{
+}
+
+weapon 6 "BFG9000.1"
+{
+}
+
+weapon 7 "Model 64 chainsaw"
+{
+}
+
+weapon 8 "Incendiary shotgun"
+{
+}
+
+// Player
+thing 1
+{
+	splashgroup 0  // Immune to splash damage from incendiary shells & BFG ball
+}
+
+thing 3 "Former Sergeant"
+{
+	dropitem 70  // Drops shells on death instead of a shotgun
+}
+
+thing 11 "Chaingunner"
+{
+	dropitem 64  // Drops bullets on death instead of a minigun
+}
+
+// Imp
+thing 12
+{
+	projectilegroup 1  // Imp fireball projectile group
+}
+
+// Lost Soul
+thing 19
+{
+	health 60
+}
+
+// Arachnotron
+thing 21
+{
+	projectilegroup 2  // Arachnotron plasma projectile group
+}
+
+// Plasma projectile
+thing 35
+{
+	damage 9
+}
+
+// BFG projectile
+thing 36
+{
+	damage 125
+
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 0
+}
+
+// BFG impact
+thing 43
+{
+	splashgroup 0
+}
+
+thing 78 "Incendiary Shotgun"
+{
+	health 1001
+}
+
+thing 79 "Super Slug Shotgun"
+{
+	health 1001
+}
+
+thing 80 "Tall techno floor lamp"
+{
+	height 80
+}
+
+thing 81 "Short techno floor lamp"
+{
+	height 60
+}
+
+thing 82 "Floor lamp"
+{
+	height 48
+}
+
+thing 125 "Impaled human"
+{
+	health 20
+	radius 16
+	height 56
+	mass 100000
+	painchance 255
+
+	+SHOOTABLE
+
+	painsound "POPAIN"
+	deathsound "PODTH2"
+
+	// Extended Properties (Extended/DEHEXTRA feature set and later)
+	dropitem 64  // Drops bullets on death
+
+	States
+	{
+		Pain:
+			POL1 B 4
+			Goto Spawn
+		Death:
+			POL1 CDEFG 4
+			Stop
+		XDeath:
+			POL1 HIJKLMNOP 4
+			Stop
+	}
+}
+
+thing 126 "Twitching impaled human"
+{
+	health 20
+	radius 16
+	height 56
+	mass 100000
+	painchance 255
+
+	+SHOOTABLE
+
+	activesound "POSACT"
+	painsound "POPAIN"
+	deathsound "PODTH1"
+
+	// Extended Properties (Extended/DEHEXTRA feature set and later)
+	dropitem 64  // Drops bullets on death
+
+	States
+	{
+		Pain:
+			POL6 B 4
+			Goto Spawn
+		Death:
+			POL6 CDEFG 4
+			Stop
+		XDeath:
+			POL6 HIJKLMNOP 4
+			Stop
+	}
+}
+
+// New things
+
+thing 151 "Incendiary projectile"
+{
+	health 1000
+	speed 25
+	radius 13
+	height 8
+	damage 3
+	reactiontime 8
+	painchance 0
+
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+DROPOFF
+	+MISSILE
+	+TRANSLUCENT
+
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 0
+
+	States
+	{
+		Spawn:
+			SP20 A 5 Bright {
+				A_PlaySound("FIRSHT")
+				A_RadiusDamage(80,56)
+			}
+			SP20 B 5 Bright A_RadiusDamage(72,56)
+			SP20 C 5 Bright A_RadiusDamage(64,56)
+			SP20 D 5 Bright A_RadiusDamage(56,56)
+			Stop
+		Death:
+			BAL1 C 8 Bright A_RadiusDamage(96,64)
+			BAL1 D 6 Bright
+			BAL1 E 4 Bright
+			Stop
+	}
+}
+
+thing 152 "Fire pit"
+{
+	ednum 6001
+
+	radius 16
+	height 16
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP01 ABC 4 Bright
+			Loop
+	}
+}
+
+thing 153 "Arrow"
+{
+	health 20
+	speed 25
+	radius 13
+	height 8
+	mass 250
+	damage 3
+	reactiontime 8
+	painchance 0
+
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+DROPOFF
+	+MISSILE
+
+	deathsound "FRE031"
+
+	States
+	{
+		Spawn:
+			SP00 A 4
+			Loop
+		Death:
+			SP00 B 4 A_Scream
+			SP00 CDE 4
+			Stop
+	}
+}
+
+thing 154 "Tall floor lamp"
+{
+	ednum 6003
+
+	radius 16
+	height 80
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP03 A -1 Bright
+			Stop
+	}
+}
+
+thing 155 "Techbase lamp"
+{
+	ednum 6004
+
+	radius 16
+	height 60
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP04 A -1 Bright
+			Stop
+	}
+}
+
+thing 156 "Short techno floor lamp 2"
+{
+	ednum 6005
+
+	radius 16
+	height 60
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP05 A -1 Bright
+			Stop
+	}
+}
+
+thing 157 "Chandelier"
+{
+	ednum 6006
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		SP06 ABCDEFGH 4 Bright
+		Loop
+	}
+}
+
+thing 158 "Tall hanging techno lamp"
+{
+	ednum 6007
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP07 ABCD 4 Bright
+			Loop
+	}
+}
+
+thing 159 "Short hanging techno lamp"
+{
+	ednum 6008
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP08 ABCD 4 Bright
+			Loop
+	}
+}
+
+thing 195 "Dead scientist 1"
+{
+	ednum 6044
+
+	radius 16
+	height 16
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP44 A -1
+			Stop
+	}
+}
+
+thing 196 "Dead scientist 2"
+{
+	ednum 6045
+
+	radius 16
+	height 16
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP45 A -1
+			Stop
+	}
+}
