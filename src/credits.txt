@@ -44,52 +44,52 @@ THE MUSEUM by Moustachio
 -= WEAPONS =-
 
 FISTS
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software
  Sprites: id Software, Moustachio
 
 CHAINSAW MODEL 64
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software
  Sprites: Midway
 
 MODEL 1887
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: Infinity Ward
  Sprites: id Software, JoeyTD
 
 INCENDIARY SHOTGUN
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software, Moustachio
  Sprites: BadMojo, Moustachio
 
 INCENDIARY PROJECTILE
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software
  Sprites: Amuscaria, id Software
 
 SUPER SLUGGER
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: Raven Software, Valve, Gearbox Software, Moustachio
  Sprites: id Software, Kinsie, Finalizer, xLightningStormL, TODM, Lina
 
 MINIGUN
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software, Moustachio
  Sprites: id Software, Skulltag
 
 MISSILE LAUNCHER
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software
  Sprites: SoniK.O.Fan, DeVloek, id Software
 
 UNLOCKED PLASMA GUN
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: from Ancient Aliens by skillsaw, id Software
  Sprites: id Software, Moustachio
 
 BFG9000.1
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software
  Sprites: id Software
 
@@ -105,38 +105,38 @@ Quick switching code adapted from Rowdy Rudy II Dehacked code by Doomkid.
 -= ENEMIES =-
 
 INCENDIARY ZOMBIE
- Dehacked: Moustachio, Lina
+ DECOHack: Moustachio, Lina
  Sounds: id Software
  Sprites: Id Software, Eriance, 3D Realms
  Sprite Edit: ItsNatureToDie, neoworm, Captain Toenail, Xim, Ghastly_dragon,
               scalliano
 
 PLASMA ZOMBIE
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software
  Sprites: id Software
  Sprite Edit: Ghastly Dragon, Xim, Fuzzballfox, Tormentor667, MagicWazard,
               Moustachio
 
 ROCKET ZOMBIE
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: Moustachio, id Software
  Sprites: id Software, the Skulltag Team
  Sprite Edit: DavidRaven, ItsNatureToDie (altdeath)
 
 FORMER TANK
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: Rogue Entertainment, id Software, Moustachio
  Sprites: Id Software, 3DRealms
  Sprite Edit: Enjay, Moustachio
 
 GLIDING IMP
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software
  Sprites: Maelstrom
 
 SNAKE IMP
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software
  Sprites: Id Software, Raven Software
  Sprite Edit: Cyb, Vader, ItsNatureToDie
@@ -145,24 +145,24 @@ SNAKE IMP
 -= HAZARDS =-
 
 NITRO BARREL
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Doom
  SpriteEdit: Captain Toenail
  Sounds: Moustachio, id Software
 
 FLYING SKULL MINE
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: id Software
  Sprites: 3DRealms, Id Software, Amuscaria
  Sprite Edit: Gothic
 
 DEMONIC TURRET
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: Moustachio
  Sprites: zrrion the insect, id Software, Skulltag, Moustachio
 
 ARROW
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sounds: Bethesda (TES: Morrowind & Oblivion)
  Sprites: Bethesda (Daggerfall), Raven Software (Hexen),
           DonaldDuck (widescreen bow), Neoworm, Zrrion the insect (extra hands),
@@ -173,111 +173,111 @@ ARROW
 -= DECORATIONS =-
 
 DEAD GENERAL
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Scuba Steve
 
 IMPALED SCIENTISTS
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: scalliano
 
 SHOOTABLE IMPALED ZOMBIES
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: id Software
  Sprite Edit: DeVloek
 
 GLASS TECHNO PILLAR
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: id Software, Raven Software, Mor'ladim
  Sprite Edit: Mor'ladim
  Sounds: Moustachio, datasoundsample
 
 FLOOR LAMP VARIATIONS
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Doom, Strife
  SpriteEdit: Captain Toenail
 
 HANGING LAMP
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Id Software, Raven Software
  Sprite Edit: Captain Red
 
 FLOOR LANTERNS
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: id Software
  Sprite Edit: Jimmy
 
 WORK LIGHTS
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Based on Sketchfab.com models (tall light by user "ayoung93" and small
           light by "GabeTheSerrano")
  Sprite Edit: elend
 
 BRONZE LAMP
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Doom
  Sprite Edit: Captain Toenail
 
 BOX
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Duke Nukem 3D by 3D Realms
  Sprite Edit: Captain Awesome
 
 ROCK
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Captain Toenail
 
 CZECH HEDGEHOG
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: MagicWazard
  Sprite Edit: MagicWazard
 
 MARINE HELMET & SUIT
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Strife (Rogue Entertainment), Skulltag (the Skulltag Team),
           Doom (ID Software)
  Sprite Edit: DavidRaven
 
 PIPES
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: 3D Realms
 
 MARINE TORSO
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: id Software
  Sprite Edit: NaturalTvventy, Xaser, Jimmy, Minigunner
 
 MARINE HELMET ON POLE
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Id Software
  Sprite Edit: Captain Toenail
 
 STALAGMITES
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Necrodome
  
 FIRE HYDRANT
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: 3D Realms
  Sounds: Moustachio, InspectorJ, meisterjaan, kyles
 
 STREET LIGHT
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: 
 
 PILE OF BONES
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: 
 
 MARBLE BRAZIER
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Xaser, Jimmy, Minigunner, Gothic, id Software
 
 BUSHES
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: Xaser, Jimmy, Minigunner, id Software
 
 TRASH CAN
- Dehacked: Moustachio
+ DECOHack: Moustachio
  Sprites: 3D Realms, Moustachio
 
 

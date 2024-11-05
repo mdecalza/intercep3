@@ -73,7 +73,7 @@ weapon 8 "Incendiary shotgun"
 // Player
 thing 1
 {
-	splashgroup 0  // Immune to splash damage from incendiary shells & BFG ball
+	splashgroup 1  // Immune to splash damage from incendiary shells & BFG ball
 }
 
 thing 3 "Former Sergeant"
@@ -116,13 +116,13 @@ thing 36
 	damage 125
 
 	// MBF21 Properties (MBF21 feature set and later)
-	splashgroup 0
+	splashgroup 1
 }
 
 // BFG impact
 thing 43
 {
-	splashgroup 0
+	splashgroup 1
 }
 
 thing 78 "Incendiary Shotgun"
@@ -229,7 +229,7 @@ thing 151 "Incendiary projectile"
 	+TRANSLUCENT
 
 	// MBF21 Properties (MBF21 feature set and later)
-	splashgroup 0
+	splashgroup 1
 
 	States
 	{
@@ -1862,5 +1862,106 @@ thing 240 "Trash bin"
 				A_Scream
 			}
 			Stop
+	}
+}
+
+// Fires a deadly incendiary round
+thing 242 "Incendiary zombie"
+{
+	ednum 6091
+
+	health 80
+	radius 20
+	height 56
+	speed 8
+	mass 100
+	reactiontime 8
+	painchance 170
+
+	// Extended Properties (Extended/DEHEXTRA feature set and later)
+	dropitem 70
+
+	// MBF21 Properties (MBF21 feature set and later)
+	meleerange 192
+	splashgroup 1
+
+	+COUNTKILL
+	+SHOOTABLE
+	+SOLID
+
+	seesound "POSIT2"
+	painsound "POPAIN"
+	deathsound "PODTH1"
+	activesound "POSACT"
+
+	States
+	{
+		Spawn:
+			SP91 AABB 5 A_Look
+			Loop
+		See:
+			SP91 AABBCCDD 3 A_Chase
+			Loop
+		Melee:
+			SP91 E 8 A_FaceTarget
+			SP91 E 0 A_RandomJump(Flip,127)
+			SP91 F 3 Bright {
+				A_MonsterProjectile(151,-10.0)
+				A_PlaySound("DSHTGN")
+			}
+			SP91 F 3 Bright A_MonsterProjectile(151,-6.0)
+			SP91 F 3 Bright A_MonsterProjectile(151,-2.0)
+			SP91 F 3 Bright A_MonsterProjectile(151,2.0)
+			SP91 F 3 Bright {
+				A_MonsterProjectile(151,6.0)
+				A_PlaySound("FLAME")
+			}
+			SP91 F 3 Bright A_MonsterProjectile(151,10.0)
+			SP91 F 3 Bright A_MonsterProjectile(151,6.0)
+			SP91 F 3 Bright A_MonsterProjectile(151,2.0)
+			SP91 F 3 Bright A_MonsterProjectile(151,-2.0)
+			SP91 F 0 Bright A_PlaySound("SGCOCK")
+			SP91 C 12 A_FaceTarget
+			Goto See
+		Flip:
+			SP91 F 3 Bright {
+				A_MonsterProjectile(151,10.0)
+				A_PlaySound("DSHTGN")
+			}
+			SP91 F 3 Bright A_MonsterProjectile(151,6.0)
+			SP91 F 3 Bright A_MonsterProjectile(151,2.0)
+			SP91 F 3 Bright A_MonsterProjectile(151,-2.0)
+			SP91 F 3 Bright {
+				A_MonsterProjectile(151,-6.0)
+				A_PlaySound("FLAME")
+			}
+			SP91 F 3 Bright A_MonsterProjectile(151,-10.0)
+			SP91 F 3 Bright A_MonsterProjectile(151,-6.0)
+			SP91 F 3 Bright A_MonsterProjectile(151,-2.0)
+			SP91 F 3 Bright A_MonsterProjectile(151,2.0)
+			SP91 F 0 Bright A_PlaySound("SGCOCK")
+			SP91 E 12 A_FaceTarget
+			Goto See
+		Pain:
+			SP91 G 3
+			SP91 G 3 A_Pain
+			Goto See
+		Death:
+			SP91 H 5
+			SP91 I 5 A_Scream
+			SP91 J 5 A_Fall
+			SP91 KLM 5
+			SP91 N -1
+			Stop
+		XDeath:
+			SP91 O 5
+			SP91 P 5 A_XScream
+			SP91 Q 5 A_Fall
+			SP91 RS 5
+			SP91 T -1
+			Stop
+		Raise:
+			SP91 NMLKJIH 5
+			Goto See
 	}
 }
