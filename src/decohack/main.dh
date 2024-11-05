@@ -6,6 +6,13 @@
 #include <dsdhacked>
 #include <friendly>
 
+// make all of the hanging bodies non-solid
+each thing from 129 to 134
+{
+    -SOLID
+    +NOBLOCKMAP
+}
+
 misc
 {
 	initialBullets 0
@@ -149,7 +156,7 @@ thing 125 "Impaled human"
 	radius 16
 	height 56
 	mass 100000
-	painchance 255
+	painchance 256
 
 	+SHOOTABLE
 
@@ -179,7 +186,7 @@ thing 126 "Twitching impaled human"
 	radius 16
 	height 56
 	mass 100000
-	painchance 255
+	painchance 256
 
 	+SHOOTABLE
 
@@ -213,7 +220,6 @@ thing 151 "Incendiary projectile"
 	radius 13
 	height 8
 	damage 3
-	reactiontime 8
 	painchance 0
 
 	+NOBLOCKMAP
@@ -269,7 +275,6 @@ thing 153 "Arrow"
 	height 8
 	mass 250
 	damage 3
-	reactiontime 8
 	painchance 0
 
 	+NOBLOCKMAP
@@ -919,7 +924,7 @@ thing 188 "Fire hydrant"
 	+SHOOTABLE
 
 	deathsound "FRE002"
-	painsound "FRE005"
+	painsound "FRE031"
 
 	States
 	{
@@ -1506,6 +1511,356 @@ thing 221 "Splayed marine"
 	{
 		Spawn:
 			SP70 A -1
+			Stop
+	}
+}
+
+thing 222 "Impaled marine"
+{
+	ednum 6071
+
+	radius 16
+	height 64
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP71 A -1
+			Stop
+	}
+}
+
+thing 223 "Hanging imp (no jaw)"
+{
+	ednum 6072
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP72 A -1
+			Stop
+	}
+}
+
+thing 224 "Impaled marine head"
+{
+	ednum 6073
+
+	radius 16
+	height 56
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP73 A -1
+			Stop
+	}
+}
+
+thing 225 "Impaled cyberdemon head"
+{
+	ednum 6074
+
+	radius 16
+	height 56
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP74 A -1
+			Stop
+	}
+}
+
+thing 226 "Large pile of corpses"
+{
+	ednum 6075
+
+	radius 16
+	height 64
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP75 A -1
+			Stop
+	}
+}
+
+thing 227 "Large pile of bones"
+{
+	ednum 6076
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP76 A -1
+			Stop
+	}
+}
+
+thing 228 "Hanging baron"
+{
+	ednum 6077
+
+	radius 16
+	height 0
+
+	+NOBLOCKMAP
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP77 A -1
+			Stop
+	}
+}
+
+thing 229 "Small fleshy mass"
+{
+	ednum 6078
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP78 A -1
+			Stop
+	}
+}
+
+thing 230 "Burning sacrifice"
+{
+	ednum 6079
+
+	radius 16
+	height 100
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP79 ABCD 4
+			Loop
+	}
+}
+
+thing 231 "Tall red banner"
+{
+	ednum 6080
+
+	radius 16
+	height 128
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP80 A -1
+			Stop
+	}
+}
+
+thing 232 "Tall green banner"
+{
+	ednum 6081
+
+	radius 16
+	height 128
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP81 A -1
+			Stop
+	}
+}
+
+thing 233 "Seaweed"
+{
+	ednum 6082
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP82 AB 16
+			Loop
+	}
+}
+
+thing 234 "Big glowing mushroom"
+{
+	ednum 6083
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP83 A -1 Bright
+			Stop
+	}
+}
+
+thing 235 "Small glowing mushroom"
+{
+	ednum 6084
+
+	radius 16
+	radius 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP84 A -1 Bright
+			Stop
+	}
+}
+
+thing 236 "Gray (grey) rock"
+{
+	ednum 6085
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP85 A -1
+			Stop
+	}
+}
+
+thing 237 "Brown rock"
+{
+	ednum 6086
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP86 A -1
+			Stop
+	}
+}
+
+thing 238 "Mine"
+{
+	health 1000
+	radius 16
+	height 32
+	damage 20
+	mass 100
+
+	+DROPOFF
+	+MISSILE
+	+BOUNCES
+	+TOUCHY
+
+	deathsound "BAREXP"
+
+	States
+	{
+		Spawn:
+			SP87 A -1
+			Stop
+	}
+}
+
+thing 239 "Box"
+{
+	ednum 6088
+
+	radius 16
+	height 16
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			SP88 A -1
+			Stop
+	}
+}
+
+thing 240 "Trash bin"
+{
+	ednum 6089
+
+	health 10
+	radius 16
+	height 40
+	painchance 256
+	mass 100
+
+	// Extended Properties (Extended/DEHEXTRA feature set and later)
+	dropitem 70  // Drops shells on death
+
+	+SOLID
+	+NOBLOOD
+	+SHOOTABLE
+
+	deathsound "FRE007"
+	painsound "FRE007"
+
+	States
+	{
+		Spawn:
+			SP89 A -1
+			Stop
+		Death:
+			SP89 A 1 {
+				A_Fall
+				A_Scream
+			}
 			Stop
 	}
 }
