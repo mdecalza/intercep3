@@ -355,8 +355,9 @@ thing 157 "Chandelier"
 
 	States
 	{
-		SP06 ABCDEFGH 4 Bright
-		Loop
+		Spawn:
+			SP06 ABCDEFGH 4 Bright
+			Loop
 	}
 }
 
