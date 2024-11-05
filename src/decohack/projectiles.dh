@@ -1,0 +1,98 @@
+/*****************************************************************************
+ * DECOHack Patch File
+ * Projectiles
+ * 2024 Matthew DeCalzadilla
+ ****************************************************************************/
+
+#include <dsdhacked>
+
+/* Doom II projectiles */
+
+// Plasma projectile
+thing 35
+{
+	damage 9
+}
+
+// BFG projectile
+thing 36
+{
+	damage 125
+
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 1
+}
+
+// BFG impact
+thing 43
+{
+	splashgroup 1
+}
+
+/* New projectiles */
+
+thing 151 "Incendiary projectile"
+{
+	health 1000
+	speed 25
+	radius 13
+	height 8
+	damage 3
+	painchance 0
+
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+DROPOFF
+	+MISSILE
+	+TRANSLUCENT
+
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 1
+
+	States
+	{
+		Spawn:
+			SP20 A 5 Bright {
+				A_PlaySound("FIRSHT")
+				A_RadiusDamage(80,56)
+			}
+			SP20 B 5 Bright A_RadiusDamage(72,56)
+			SP20 C 5 Bright A_RadiusDamage(64,56)
+			SP20 D 5 Bright A_RadiusDamage(56,56)
+			Stop
+		Death:
+			BAL1 C 8 Bright A_RadiusDamage(96,64)
+			BAL1 D 6 Bright
+			BAL1 E 4 Bright
+			Stop
+	}
+}
+
+thing 153 "Arrow"
+{
+	health 20
+	speed 25
+	radius 13
+	height 8
+	mass 250
+	damage 3
+	painchance 0
+
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+DROPOFF
+	+MISSILE
+
+	deathsound "FRE031"
+
+	States
+	{
+		Spawn:
+			SP00 A 4
+			Loop
+		Death:
+			SP00 B 4 A_Scream
+			SP00 CDE 4
+			Stop
+	}
+}

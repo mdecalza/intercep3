@@ -1,0 +1,15 @@
+/*****************************************************************************
+ * DECOHack Patch File
+ * Props for in-game "cutscenes"
+ * 2024 Matthew DeCalzadilla
+ ****************************************************************************/
+
+#include <dsdhacked>
+
+// Things are beginning to make sense...
+// More on that later.
+thing 207 "An unlikely friend..."
+{
+	radius 16
+	height 16
+}
