@@ -56,7 +56,7 @@ weapon 0 "Fists"
 				A_WeaponMeleeAttack(0, 10, 10.0, "SKESWG", 72.0)
 			}
 			PUNG D 4 A_WeaponMeleeAttack(3, 10, 10.0, "PUNCH", 72.0)
-			PUNG C 2 A_RefireTo(FireHold)
+			PUNG C 3 A_RefireTo(FireHold)
 			Goto Ready
 		RightFistFire:
 			PUNG E 1 {
@@ -64,7 +64,7 @@ weapon 0 "Fists"
 				A_WeaponMeleeAttack(0, 10, 10.0, "SKESWG", 72.0)
 			}	
 			PUNG G 4 A_WeaponMeleeAttack(3, 10, 10.0, "PUNCH", 72.0)
-			PUNG F 2 A_RefireTo(FireHold)
+			PUNG F 3 A_RefireTo(FireHold)
 			Goto Ready
 		FireHold:
 			PUNG H 1
