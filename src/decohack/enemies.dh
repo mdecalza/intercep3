@@ -55,17 +55,11 @@ thing 208 "Barbat-OS"
 }
 
 // Fires a deadly incendiary round
-thing 242 "Incendiary zombie"
+thing 242 : thing 11 "Incendiary zombie"
 {
 	ednum 6091
 
 	health 80
-	radius 20
-	height 56
-	speed 8
-	mass 100
-	reactiontime 8
-	painchance 170
 
 	// Extended Properties (Extended/DEHEXTRA feature set and later)
 	dropitem 70  // Drops shells on death
@@ -73,15 +67,6 @@ thing 242 "Incendiary zombie"
 	// MBF21 Properties (MBF21 feature set and later)
 	meleerange 192
 	splashgroup 1  // Immune to incendiary splash damage
-
-	+COUNTKILL
-	+SHOOTABLE
-	+SOLID
-
-	seesound "POSIT3"
-	painsound "POPAIN"
-	deathsound "PODTH1"
-	activesound "POSACT"
 
 	States
 	{
@@ -159,32 +144,17 @@ thing 242 "Incendiary zombie"
 }
 
 // Fires a spread of 3 arachnotron plasma balls
-thing 243 "Plasma zombie"
+thing 243 : thing 3 "Plasma zombie"
 {
 	ednum 6092
 
 	health 40
-	speed 8
-	radius 20
-	height 56
-	painchance 170
-	reactiontime 8
-	mass 100
 
 	// Extended Properties (Extended/DEHEXTRA feature set and later)
 	dropitem 68  // Drops a cell charge on death
 
 	// MBF21 Properties (MBF21 feature set and later)
 	projectilegroup 2  // Immune to arachnotron plasma damage
-
-	+COUNTKILL
-	+SHOOTABLE
-	+SOLID
-
-	seesound "POSIT1"
-	painsound "POPAIN"
-	deathsound "PODTH3"
-	activesound "POSACT"
 
 	States
 	{
@@ -223,27 +193,17 @@ thing 243 "Plasma zombie"
 			SP92 U -1
 			Stop
 		Raise:
-			SP92 LKJIH 5
+			SP92 KJIH 5
 			Goto See
 	}
 }
 
 // Glass cannon -- fires 1 rocket after long wind-up
-thing 244 "Rocket zombie"
+thing 244 : thing 2 "Rocket zombie"
 {
 	ednum 6093
 
 	health 10
-	speed 8
-	radius 20
-	height 56
-	reactiontime 8
-	painchance 170
-	mass 100
-
-	+COUNTKILL
-	+SHOOTABLE
-	+SOLID
 
 	// MBF21 Flags (MBF21 feature set only)
 	+NORADIUSDMG
@@ -251,10 +211,8 @@ thing 244 "Rocket zombie"
 	// Extended Properties (Extended/DEHEXTRA feature set and later)
     dropitem 66  // Drops a rocket on death
 
-	seesound "POSIT2"
-	painsound "POPAIN"
-	deathsound "PODTH2"
-	activesound "POSACT"
+	// MBF21 Properties (MBF21 feature set and later)
+	projectilegroup 1  // Immune to arachnotron plasma damage
 
 	States
 	{
@@ -288,7 +246,112 @@ thing 244 "Rocket zombie"
 			SP93 U -1
 			Stop
 		Raise:
-			SP93 LKJIH 5
+			SP93 KJIH 5
+			Goto See
+	}
+}
+
+thing 247 : thing 12 "Gliding imp"
+{
+	ednum 6096
+
+	mass 75
+
+	+FLOAT
+	+BOUNCES
+	+DROPOFF
+
+	// MBF21 Flags (MBF21 feature set only)
+	+LOGRAV
+	+HIGHERMPROB
+
+	States
+	{
+		Spawn:
+			SP96 AB 10 A_Look
+			Loop
+		See:
+			SP96 AABBCCDD 3 A_Chase
+			Loop
+		Melee:
+		Missile:
+			SP96 EF 8 A_FaceTarget
+			SP96 G 6 A_TroopAttack
+			Goto See
+		Pain:
+			SP96 H 2
+			SP96 H 2 A_Pain
+			Goto See
+		Death:
+			SP96 I 8
+			SP96 J 8 A_Scream
+			SP96 K 6
+			SP96 L 6 A_Fall
+			SP96 M -1
+			Stop
+		XDeath:
+			SP96 N 5
+			SP96 O 5 A_XScream
+			SP96 P 5
+			SP96 Q 5 A_Fall
+			SP96 RST 5
+			SP96 U -1
+			Stop
+		Raise:
+			SP96 ML 8
+			SP96 KJI 6
+			Goto See
+	}
+}
+
+thing 247 : thing 12 "Snake imp"
+{
+	ednum 6097
+
+	health 200
+	speed 10
+	mass 125
+
+	States
+	{
+		Spawn:
+			SP97 AB 10 A_Look
+			Loop
+		See:
+			SP97 AABBCCDD 3 A_Chase
+			Loop
+		Melee:
+		Missile:
+			SP97 E 8 A_FaceTarget
+			SP97 F 8 {
+				A_FaceTarget
+				A_MonsterProjectile(32,18.0)
+				A_MonsterProjectile(32,-18.0)
+			}
+			SP97 G 6 A_TroopAttack
+			Goto See
+		Pain:
+			SP97 H 2
+			SP97 H 2 A_Pain
+			Goto See
+		Death:
+			SP97 I 8
+			SP97 J 8 A_Scream
+			SP97 K 6
+			SP97 L 6 A_Fall
+			SP97 M -1
+			Stop
+		XDeath:
+			SP97 N 5
+			SP97 O 5 A_XScream
+			SP97 P 5
+			SP97 Q 5 A_Fall
+			SP97 RST 5
+			SP97 U -1
+			Stop
+		Raise:
+			SP97 ML 8
+			SP97 KJI 6
 			Goto See
 	}
 }

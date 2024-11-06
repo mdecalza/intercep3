@@ -654,8 +654,8 @@ thing 183 "Toilet"
 			Goto Spawn
 		Death:
 			SP32 B 4 {
-				A_Fall
 				A_Scream
+				A_Fall
 			}
 			SP32 CDEF 4
 			Goto DeadLoop
@@ -762,8 +762,8 @@ thing 188 "Fire hydrant"
 			Goto Spawn
 		Death:
 			SP37 B 4 {
-				A_Fall
 				A_Scream
+				A_Fall
 			}
 			SP37 CD 4
 			Goto DeadLoop
@@ -1674,10 +1674,13 @@ thing 240 "Trash bin"
 		Spawn:
 			SP89 A -1
 			Stop
+		Pain:
+			SP89 A 2 A_Pain
+			Goto Spawn
 		Death:
-			SP89 A 2 {
-				A_Fall
+			SP89 A 3 {
 				A_Scream
+				A_Fall
 			}
 			Stop
 	}
