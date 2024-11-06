@@ -68,17 +68,17 @@ thing 242 "Incendiary zombie"
 	painchance 170
 
 	// Extended Properties (Extended/DEHEXTRA feature set and later)
-	dropitem 70
+	dropitem 70  // Drops shells on death
 
 	// MBF21 Properties (MBF21 feature set and later)
 	meleerange 192
-	splashgroup 1
+	splashgroup 1  // Immune to incendiary splash damage
 
 	+COUNTKILL
 	+SHOOTABLE
 	+SOLID
 
-	seesound "POSIT2"
+	seesound "POSIT3"
 	painsound "POPAIN"
 	deathsound "PODTH1"
 	activesound "POSACT"
@@ -154,6 +154,141 @@ thing 242 "Incendiary zombie"
 			Stop
 		Raise:
 			SP91 NMLKJIH 5
+			Goto See
+	}
+}
+
+// Fires a spread of 3 arachnotron plasma balls
+thing 243 "Plasma zombie"
+{
+	ednum 6092
+
+	health 40
+	speed 8
+	radius 20
+	height 56
+	painchance 170
+	reactiontime 8
+	mass 100
+
+	// Extended Properties (Extended/DEHEXTRA feature set and later)
+	dropitem 68  // Drops a cell charge on death
+
+	// MBF21 Properties (MBF21 feature set and later)
+	projectilegroup 2  // Immune to arachnotron plasma damage
+
+	+COUNTKILL
+	+SHOOTABLE
+	+SOLID
+
+	seesound "POSIT1"
+	painsound "POPAIN"
+	deathsound "PODTH3"
+	activesound "POSACT"
+
+	States
+	{
+		Spawn:
+			SP92 AABB 5 A_Look
+			Loop
+		See:
+			SP92 AABBCCDD 3 A_Chase
+			Loop
+		Missile:
+			SP92 E 10 A_FaceTarget
+			SP92 F 10 Bright {
+				A_MonsterProjectile(37, 6.0)
+				A_MonsterProjectile(37)
+				A_MonsterProjectile(37, -6.0)
+				A_PlaySound("PLASMA")
+			}
+			SP92 E 10
+			Goto See
+		Pain:
+			SP92 G 3
+			SP92 G 3 A_Pain
+			Goto See
+		Death:
+			SP92 H 5
+			SP92 I 5 A_Scream
+			SP92 J 5 A_Fall
+			SP92 K 5
+			SP92 L -1
+			Stop
+		XDeath:
+			SP92 M 5
+			SP92 N 5 A_XScream
+			SP92 O 5 A_Fall
+			SP92 PQRST 5
+			SP92 U -1
+			Stop
+		Raise:
+			SP92 LKJIH 5
+			Goto See
+	}
+}
+
+// Glass cannon -- fires 1 rocket after long wind-up
+thing 244 "Rocket zombie"
+{
+	ednum 6093
+
+	health 10
+	speed 8
+	radius 20
+	height 56
+	reactiontime 8
+	painchance 170
+	mass 100
+
+	+COUNTKILL
+	+SHOOTABLE
+	+SOLID
+
+	// MBF21 Flags (MBF21 feature set only)
+	+NORADIUSDMG
+
+	// Extended Properties (Extended/DEHEXTRA feature set and later)
+    dropitem 66  // Drops a rocket on death
+
+	seesound "POSIT2"
+	painsound "POPAIN"
+	deathsound "PODTH2"
+	activesound "POSACT"
+
+	States
+	{
+		Spawn:
+			SP93 AABB 5 A_Look
+			Loop
+		See:
+			SP93 AABBCCDD 3 A_Chase
+			Loop
+		Missile:
+			SP93 EEEE 10 A_FaceTarget
+			SP93 F 10 Bright A_CyberAttack
+			SP93 E 10
+			Goto See
+		Pain:
+			SP93 G 3
+			SP93 G 3 A_Pain
+			Goto See
+		Death:
+			SP93 H 5
+			SP93 I 5 A_Scream
+			SP93 J 5 A_Fall
+			SP93 K 5
+			SP93 L -1
+			Stop
+		XDeath:
+			SP93 M 5
+			SP93 N 5 A_XScream
+			SP93 O 5 A_Fall
+			SP93 PQRST 5
+			SP93 U -1
+			Stop
+		Raise:
+			SP93 LKJIH 5
 			Goto See
 	}
 }
