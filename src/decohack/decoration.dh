@@ -44,26 +44,23 @@ thing 125 "Impaled human"
 	radius 16
 	height 56
 	mass 100000
-	painchance 256
 
 	+SHOOTABLE
-
-	painsound "POPAIN"
-	deathsound "PODTH2"
 
 	// Extended Properties (Extended/DEHEXTRA feature set and later)
 	dropitem 64  // Drops bullets on death
 
 	States
 	{
-		Pain:
-			POL1 B 4
-			Goto Spawn
 		Death:
-			POL1 CDEFG 4
+			POL1 CDEF 4
+			POL1 G -1
 			Stop
 		XDeath:
-			POL1 HIJKLMNOP 4
+			POL1 H 4
+			POL1 I 4 A_XScream
+			POL1 JKLMNO 4
+			POL1 P -1
 			Stop
 	}
 }
@@ -78,9 +75,8 @@ thing 126 "Twitching impaled human"
 
 	+SHOOTABLE
 
-	activesound "POSACT"
 	painsound "POPAIN"
-	deathsound "PODTH1"
+	deathsound "PODTH3"
 
 	// Extended Properties (Extended/DEHEXTRA feature set and later)
 	dropitem 64  // Drops bullets on death
@@ -88,13 +84,19 @@ thing 126 "Twitching impaled human"
 	States
 	{
 		Pain:
-			POL6 B 4
+			POL6 B 0 A_Pain
 			Goto Spawn
 		Death:
-			POL6 CDEFG 4
+			POL6 C 4
+			POL6 D 4 A_Scream
+			POL6 EF 4
+			POL6 G -1
 			Stop
 		XDeath:
-			POL6 HIJKLMNOP 4
+			POL6 H 4
+			POL6 I 4 A_XScream
+			POL6 JKLMNO 4
+			POL6 P -1
 			Stop
 	}
 }
