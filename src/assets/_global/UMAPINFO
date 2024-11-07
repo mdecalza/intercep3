@@ -1,31 +1,3 @@
-map MAP00
-{
-	levelname = "The Museum"  // MIDI: Casserole by LewkForce
-	author = "Moustachio"
-	label = clear
-	levelpic = "CWILV00"
-	skytexture = "SKYM1"
-	music = "D_LVL00"
-	partime = 0
-
-	episode = clear
-	episode = "M_CAMP", "Campaign", "c"
-
-	intertext = "You're at the heart of the city.",
-		"Up ahead you see the warped",
-		"silhouette of the UAC building.",
-		"",
-		"This has to be the source.",
-		"Never one to shy away from doing",
-		"what you must, you rush into",
-		"the near-unrecognizable edifice,",
-		"hoping to buy humanity some time."
-	interbackdrop = "RROCK19K"
-	intermusic = "D_TEXT01"
-
-	next = "MAP10"
-}
-
 map MAP10
 {
 	levelname = "Station to Station"  // MIDI: Diaphragm by AD_79
@@ -35,6 +7,9 @@ map MAP10
 	skytexture = "CITYSKY1"
 	music = "D_LVL10"
 	partime = 95
+
+	episode = clear
+	episode = "M_CAMP", "Campaign", "c"
 
 	intertext = "There's a mysterious infection",
 		"spreading across the city, and it's",
@@ -55,7 +30,32 @@ map MAP10
 	intermusic = "D_TEXT01"
 
 	next = "MAP11"
-	nextsecret = "MAP50"
+	nextsecret = "MAP00"
+}
+
+map MAP00
+{
+	levelname = "The Museum"  // MIDI: Casserole by LewkForce
+	author = "Moustachio"
+	label = clear
+	levelpic = "CWILV00"
+	skytexture = "SKYM1"
+	music = "D_LVL00"
+	partime = 0
+
+	intertext = "You're at the heart of the city.",
+		"Up ahead you see the warped",
+		"silhouette of the UAC building.",
+		"",
+		"This has to be the source.",
+		"Never one to shy away from doing",
+		"what you must, you rush into",
+		"the near-unrecognizable edifice,",
+		"hoping to buy humanity some time."
+	interbackdrop = "RROCK19K"
+	intermusic = "D_TEXT01"
+
+	next = "MAP11"
 }
 
 map MAP11
@@ -63,7 +63,7 @@ map MAP11
 	levelname = "Corporate Hell II"  // MIDI: 
 	author = "sincity2100"
 	label = clear
-	levelpic = "CWILV00"
+	levelpic = "CWILV11"
 	skytexture = "SKY1"
 	music = "D_LVL11"
 	partime = 0
@@ -110,5 +110,5 @@ map MAP50
 	interbackdrop = "RROCK19K"
 	intermusic = "D_TEXT02"
 	
-	next = "MAP00"
+	next = "MAP10"
 }
