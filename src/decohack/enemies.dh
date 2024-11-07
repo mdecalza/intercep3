@@ -251,6 +251,87 @@ thing 244 : thing 2 "Rocket zombie"
 	}
 }
 
+// Weaker, smaller masterminds
+thing 245 : thing 20 "Former tank"
+{
+	ednum 6094
+
+	health 1000
+	radius 24
+	height 64
+	painchance 10
+	mass 1200
+
+	+NOBLOOD
+
+	// MBF21 Flags (MBF21 feature set only)
+	+NORADIUSDMG
+
+	// Extended Properties (Extended/DEHEXTRA feature set and later)
+	dropitem 65  // Drops a box of ammo on death
+
+	seesound "FRE027"
+	painsound "FRE028"
+	deathsound "FRE025"
+
+	States
+	{
+		Spawn:
+			SP94 AABB 5 A_Look
+			Loop
+		See:
+			SP94 AAB 3 A_Chase
+			SP94 B 3 A_PlaySound("FRE024")
+			Loop
+		Missile:
+			SP94 B 20 Bright A_FaceTarget
+		MissileRefire:
+			SP94 DE 4 Bright A_SPosAttack
+			SP94 A 1 A_SpidRefire
+			Goto MissileRefire
+		Pain:
+			SP94 F 3
+			SP94 F 3 A_Pain
+			Goto See
+		Death:
+			SP94 G 10 Bright
+			SP94 K 10 Bright A_Scream
+			SP94 L 8 Bright A_Fall
+			SP94 M 6 Bright {
+				A_SpawnObject(2, 0.0, 0.0, 0.0, 0.0, -2.0, 0.0, 0.0)
+				A_Explode
+			}
+			SP94 N 4 Bright
+			SP94 O -1
+			Stop
+	}
+}
+
+// Shoots one arrow every two seconds
+thing 246 "Arrow turret"
+{
+	ednum 6095
+
+	health 1000
+	radius 16
+	height 16
+	mass 1000
+
+	+NOBLOCKMAP
+
+	States
+	{
+		Spawn:
+			TNT1 A 70
+			TNT1 A 0 {
+				A_PlaySound("SKESWG")
+				A_SpawnObject(153, 0.0, 0.0, 0.0, 8.0, 25.0, 0.0, 0.0)
+			}
+			Loop
+	}
+}
+
+// Can jump up and down ledges
 thing 247 : thing 12 "Gliding imp"
 {
 	ednum 6096
@@ -287,15 +368,8 @@ thing 247 : thing 12 "Gliding imp"
 			SP96 J 8 A_Scream
 			SP96 K 6
 			SP96 L 6 A_Fall
-			SP96 M -1
-			Stop
-		XDeath:
-			SP96 N 5
-			SP96 O 5 A_XScream
-			SP96 P 5
-			SP96 Q 5 A_Fall
-			SP96 RST 5
-			SP96 U -1
+			SP96 M 6
+			SP96 N -1
 			Stop
 		Raise:
 			SP96 ML 8
@@ -304,7 +378,7 @@ thing 247 : thing 12 "Gliding imp"
 	}
 }
 
-thing 247 : thing 12 "Snake imp"
+thing 248 : thing 12 "Snake imp"
 {
 	ednum 6097
 
