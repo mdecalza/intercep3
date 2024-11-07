@@ -7,8 +7,9 @@
 #include <dsdhacked>
 #include <friendly>
 
-#include "enemies.dh"
 #include "weapons.dh"
+#include "enemies.dh"
+#include "hazards.dh"
 #include "decoration.dh"
 #include "cutsceneprops.dh"
 

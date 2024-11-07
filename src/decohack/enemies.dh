@@ -267,12 +267,12 @@ thing 245 : thing 20 "Former tank"
 	// MBF21 Flags (MBF21 feature set only)
 	+NORADIUSDMG
 
-	// Extended Properties (Extended/DEHEXTRA feature set and later)
-	dropitem 65  // Drops a box of ammo on death
-
 	seesound "FRE027"
 	painsound "FRE028"
 	deathsound "FRE025"
+
+	// Extended Properties (Extended/DEHEXTRA feature set and later)
+	dropitem 65  // Drops a box of ammo on death
 
 	States
 	{
@@ -307,29 +307,7 @@ thing 245 : thing 20 "Former tank"
 	}
 }
 
-// Shoots one arrow every two seconds
-thing 246 "Arrow turret"
-{
-	ednum 6095
-
-	health 1000
-	radius 16
-	height 16
-	mass 1000
-
-	+NOBLOCKMAP
-
-	States
-	{
-		Spawn:
-			TNT1 A 70
-			TNT1 A 0 {
-				A_PlaySound("SKESWG")
-				A_SpawnObject(153, 0.0, 0.0, 0.0, 8.0, 25.0, 0.0, 0.0)
-			}
-			Loop
-	}
-}
+// thing 246 defined in hazards.dh
 
 // Can jump up and down ledges
 thing 247 : thing 12 "Gliding imp"
@@ -338,9 +316,10 @@ thing 247 : thing 12 "Gliding imp"
 
 	mass 75
 
+	+DROPOFF
 	+FLOAT
 	+BOUNCES
-	+DROPOFF
+	+TRANSLUCENT
 
 	// MBF21 Flags (MBF21 feature set only)
 	+LOGRAV

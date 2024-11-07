@@ -8,6 +8,9 @@ map MAP00
 	music = "D_LVL00"
 	partime = 0
 
+	episode = clear
+	episode = "M_CAMP", "Campaign", "c"
+
 	intertext = "You're at the heart of the city.",
 		"Up ahead you see the warped",
 		"silhouette of the UAC building.",
@@ -20,7 +23,7 @@ map MAP00
 	interbackdrop = "RROCK19K"
 	intermusic = "D_TEXT01"
 
-	next = "MAP50"
+	next = "MAP10"
 }
 
 map MAP10
@@ -32,8 +35,6 @@ map MAP10
 	skytexture = "CITYSKY1"
 	music = "D_LVL10"
 	partime = 95
-
-	episode = "M_CAMP", "Campaign", "c"
 
 	intertext = "There's a mysterious infection",
 		"spreading across the city, and it's",
@@ -54,7 +55,7 @@ map MAP10
 	intermusic = "D_TEXT01"
 
 	next = "MAP11"
-	nextsecret = "MAP00"
+	nextsecret = "MAP50"
 }
 
 map MAP11
@@ -109,5 +110,5 @@ map MAP50
 	interbackdrop = "RROCK19K"
 	intermusic = "D_TEXT02"
 	
-	next = "MAP10"
+	next = "MAP00"
 }
