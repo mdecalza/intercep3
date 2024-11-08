@@ -22,10 +22,19 @@ map MAP10
 		"going to have to go to the source.",
 		"Time to follow their accursed trail",
 		"and plug their entry portal."
-	intertextsecret = "You've found yourself in a dark realm",
-		"escape from the dark heart of this",
-		"hell, and you may have a chance at",
-		"turning back the clock on Barbat-OS."		
+	intertextsecret = "Scouring every building for info...",
+		"and demons.",
+		"",
+		"You look from atop a tall skyscraper,",
+		"at the edge of a bay, you can make out",
+		"a nest in the distance, enveloping the",
+		"Union Aerospace Corporation.",
+		"",
+		"Naturally.",
+		"",
+		"It's time to right their wrongs once",
+		"again. Earth is lucky to have you on",
+		"their side."
 	interbackdrop = "TEXTPIC1"
 	intermusic = "D_TEXT01"
 
@@ -52,7 +61,7 @@ map MAP00
 		"what you must, you rush into",
 		"the near-unrecognizable edifice,",
 		"hoping to buy humanity some time."
-	interbackdrop = "RROCK19K"
+	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
 	next = "MAP11"
@@ -68,20 +77,12 @@ map MAP11
 	music = "D_LVL11"
 	partime = 0
 
-	intertext = "Scouring every building for info...",
-		"and demons.",
+	intertext = "You've found yourself in a dark realm",
 		"",
-		"You look from atop a tall skyscraper,",
-		"at the edge of a bay, you can make out",
-		"a nest in the distance, enveloping the",
-		"Union Aerospace Corporation.",
-		"",
-		"Naturally.",
-		"",
-		"It's time to right their wrongs once",
-		"again. Earth is lucky to have you on",
-		"their side."
-	interbackdrop = "RROCK19K"
+		"Escape from the dark heart of this",
+		"hell, and you may have a chance at",
+		"turning back the clock on Barbat-OS."
+	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
 	next = "MAP50"
@@ -107,7 +108,7 @@ map MAP50
 		"in chains, writhing,",
 		"",
 		"and grinning back at you..."
-	interbackdrop = "RROCK19K"
+	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 	
 	next = "MAP10"
