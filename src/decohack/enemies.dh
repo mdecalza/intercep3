@@ -266,6 +266,7 @@ thing 245 : thing 20 "Former tank"
 
 	// MBF21 Flags (MBF21 feature set only)
 	+NORADIUSDMG
+	-FULLVOLSOUNDS
 
 	seesound "FRE027"
 	painsound "FRE028"
