@@ -85,6 +85,38 @@ map MAP11
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
+	next = "MAP12"
+}
+
+map MAP12
+{
+	levelname = "Die Garrison"  // MIDI: MIDI rendition "Rave On" from Killer7
+	author = "Yisue"
+	label = clear
+	levelpic = "CWILV12"
+	skytexture = "SKY1"
+	music = "D_LVL12"
+	partime = 0
+
+	intertext = "Seems like the demonic forces",
+		"have corrupted Barbat-OS,",
+		"the UAC's watchful AI. Somehow,",
+		"they're using him to corrupt",
+		"huge chunks of Earth en masse.",
+		"",
+		"Could it be that our worlds are",
+		"colliding?",
+		"",
+		"It couldn't be. There's only one",
+		"being so foul, so vile, and with",
+		"the know-how to accomplish such",
+		"a dastardly act.",
+		"",
+		"Alright, hero. Time to get to the",
+		"bottom of this."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT02"
+
 	next = "MAP50"
 }
 
