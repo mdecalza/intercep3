@@ -8,7 +8,8 @@ Release date            : Mnth. Day, Year
 Author                  : The Interceptors
 Other Files By Author   : intercep.wad, intercep2.wad
 Misc. Author Info       : The Interceptors are:
-                          Moustachio, LewkForce, Treehouseminis
+                          Moustachio, Darman Macray, Treehouseminis,
+                          sincity2100, Yisue, PeccatumMihzamiz
 
 Description             : ADD DESCRIPTION HERE
 

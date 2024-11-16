@@ -14,7 +14,7 @@ STORY TEXT 2    Interception Theme by ForceTheDemo (origin: Interception I & II 
 
 -= LEVELS =-
 
-LEVEL 1: STATION TO STATION by Moustachio
+E1M1: STATION TO STATION by Moustachio
  Music: "Diaphragm" by AD_79 (origin: AD_79 released MIDIs)
 
  Geometry: Moustachio
@@ -22,7 +22,23 @@ LEVEL 1: STATION TO STATION by Moustachio
  Detail: Moustachio
  Testing: DFF, valkiriforce, General Rainbow Bacon
 
-LEVEL 2: TERMINATED BLISS by Treehouseminis
+E1M2: Corporate Hell II by sincity2100
+ Music: "The Hornet" by Jimmy (origin: TNT II: Devilution)
+
+ Geometry: sincity2100
+ Combat: sincity2100
+ Detail: sincity2100
+ Testing: Moustachio
+
+E1M3: Die Garrison by Yisue
+ Music: "Rave On" by Masafumi Takada (origin: killer7)
+
+ Geometry: Yisue
+ Combat: Yisue
+ Detail: Yisue
+ Testing: Moustachio
+
+E5M1: TERMINATED BLISS by Treehouseminis
  Music: "Aquifer" by Snaxalotl (origin: Abscission MAP02)
 
  Geometry: Treehouseminis
@@ -30,7 +46,7 @@ LEVEL 2: TERMINATED BLISS by Treehouseminis
  Detail: Treehouseminis
  Testing: Moustachio
 
-THE MUSEUM by Moustachio
+Secret 1: THE MUSEUM by Moustachio
  Music: "Casserole" by LewkForce (origin: Interception II MAP20)
 
  Geometry: Moustachio
@@ -1026,6 +1042,8 @@ STBAR           galileo31dos01
                 Moustachio
 Ultra-wide      NightFright
 STBAR
+
+ENDOOM          PeccatumMihzamiz
 
 
 -= PROGRAMS USED =-
