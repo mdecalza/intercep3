@@ -11,7 +11,7 @@
 // Plasma projectile
 thing 35
 {
-	damage 9
+	damage 8
 }
 
 // BFG projectile
@@ -33,26 +33,26 @@ thing 43
 state free 115 to 116
 state fill 115
 {
-	BFS1 AB 4 Bright A_RadiusDamage(64, 512)
+	BFS1 AB 4 Bright A_RadiusDamage(32, 512)
 	Loop
 }
 
 // BFG collision gives splash damage
 state 117
 {
-	BFE1 A 8 Bright A_RadiusDamage(256, 512)
+	BFE1 A 8 Bright A_RadiusDamage(128, 512)
 }
 
 // BFG tracers give splash damage
 state 123
 {
-	BFE2 A 8 Bright A_RadiusDamage(128, 128)
+	BFE2 A 8 Bright A_RadiusDamage(48, 128)
 }
 
 // Increase rocket explosion damage
 state 127
 {
-	MISL B 8 Bright A_RadiusDamage(384, 128)
+	MISL B 8 Bright A_RadiusDamage(192, 128)
 }
 
 /* New projectiles */

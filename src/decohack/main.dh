@@ -31,10 +31,21 @@ misc
 	initialBullets 0
 }
 
-// Bullets
+// Lower bullet pickups to:
+// 4 per dropped clip
+// 8 per placed clip
+// 40 per box
 ammo 0
 {
 	pickup 8
+}
+
+// Raise cell pickups to
+// 25 per dropped/placed cell
+// 125 per cell charge
+ammo 2
+{
+	pickup 25
 }
 
 strings
