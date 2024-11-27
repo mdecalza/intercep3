@@ -11,18 +11,7 @@ map MAP10
 	episode = clear
 	episode = "M_CAMP", "Campaign", "c"
 
-	intertext = "There's a mysterious infection",
-		"spreading across the city, and it's",
-		"turning everyone into the same fiends",
-		"you fought ages ago.",
-		"",
-		"You thought you had wiped them out...",
-		"",
-		"If you want to stop a flood, you\'re",
-		"going to have to go to the source.",
-		"Time to follow their accursed trail",
-		"and plug their entry portal."
-	intertextsecret = "Scouring every building for info...",
+	intertext = "Scouring every building for info...",
 		"and demons.",
 		"",
 		"You look from atop a tall skyscraper,",
@@ -35,6 +24,17 @@ map MAP10
 		"It's time to right their wrongs once",
 		"again. Earth is lucky to have you on",
 		"their side."
+	intertextsecret = "There's a mysterious infection",
+		"spreading across the city, and it's",
+		"turning everyone into the same fiends",
+		"you fought ages ago.",
+		"",
+		"You thought you had wiped them out...",
+		"",
+		"If you want to stop a flood, you\'re",
+		"going to have to go to the source.",
+		"Time to follow their accursed trail",
+		"and plug their entry portal."
 	interbackdrop = "TEXTPIC1"
 	intermusic = "D_TEXT01"
 
@@ -77,27 +77,6 @@ map MAP11
 	music = "D_LVL11"
 	partime = 0
 
-	intertext = "You've found yourself in a dark realm",
-		"",
-		"Escape from the dark heart of this",
-		"hell, and you may have a chance at",
-		"turning back the clock on Barbat-OS."
-	interbackdrop = "ALLBLAKF"
-	intermusic = "D_TEXT01"
-
-	next = "MAP12"
-}
-
-map MAP12
-{
-	levelname = "Die Garrison"  // MIDI: MIDI rendition "Rave On" from Killer7
-	author = "Yisue"
-	label = clear
-	levelpic = "CWILV12"
-	skytexture = "SKY1"
-	music = "D_LVL12"
-	partime = 0
-
 	intertext = "Seems like the demonic forces",
 		"have corrupted Barbat-OS,",
 		"the UAC's watchful AI. Somehow,",
@@ -114,6 +93,27 @@ map MAP12
 		"",
 		"Alright, hero. Time to get to the",
 		"bottom of this."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT01"
+
+	next = "MAP12"
+}
+
+map MAP12
+{
+	levelname = "Die Garrison"  // MIDI: MIDI rendition "Rave On" from Killer7
+	author = "Yisue"
+	label = clear
+	levelpic = "CWILV12"
+	skytexture = "SKY1"
+	music = "D_LVL12"
+	partime = 0
+
+	intertext = "You've found yourself in a dark realm",
+		"",
+		"Escape from the dark heart of this",
+		"hell, and you may have a chance at",
+		"turning back the clock on Barbat-OS."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 

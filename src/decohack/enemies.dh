@@ -165,7 +165,7 @@ thing 243 : thing 3 "Plasma zombie"
 			SP92 AABBCCDD 3 A_Chase
 			Loop
 		Missile:
-			SP92 E 10 A_FaceTarget
+			SP92 EEE 8 A_FaceTarget
 			SP92 F 10 Bright {
 				A_MonsterProjectile(37, 6.0)
 				A_MonsterProjectile(37)

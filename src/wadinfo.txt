@@ -18,6 +18,8 @@ Additional Credits to   : Darman Macray for bespoke title, text, and
 
                           ForceTheDemo, AD_79, Snaxalotl, and LewkForce
                           for music sourced from other wads/music packs.
+						  
+						  Masafumi Takada for the track "Rave On" from killer7.
 
                           Lina for detailed feedback on the resource pack.
 
