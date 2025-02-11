@@ -11,21 +11,8 @@ map MAP10
 	episode = clear
 	episode = "M_CAMP", "Campaign", "c"
 
-	intertext = "Scouring every building for info...",
-		"and demons.",
-		"",
-		"You look from atop a tall skyscraper,",
-		"at the edge of a bay, you can make out",
-		"a nest in the distance, enveloping the",
-		"Union Aerospace Corporation.",
-		"",
-		"Naturally.",
-		"",
-		"It's time to right their wrongs once",
-		"again. Earth is lucky to have you on",
-		"their side."
-	intertextsecret = "There's a mysterious infection",
-		"spreading across the city, and it's",
+	intertext = "There's a mysterious infection",
+		"spreading through the city, and it's",
 		"turning everyone into the same fiends",
 		"you fought ages ago.",
 		"",
@@ -35,6 +22,22 @@ map MAP10
 		"going to have to go to the source.",
 		"Time to follow their accursed trail",
 		"and plug their entry portal."
+	intertextsecret = "Seems like the demonic forces",
+		"have corrupted Barbat-OS,",
+		"the UAC's watchful AI. Somehow,",
+		"they're using him to corrupt",
+		"huge chunks of Earth en masse.",
+		"",
+		"Could it be that our worlds are",
+		"colliding?",
+		"",
+		"It couldn't be. There's only one",
+		"being so foul, so vile, and with",
+		"the know-how to accomplish such",
+		"a dastardly act.",
+		"",
+		"Alright, hero. Time to get to the",
+		"bottom of this."
 	interbackdrop = "TEXTPIC1"
 	intermusic = "D_TEXT01"
 
@@ -77,22 +80,23 @@ map MAP11
 	music = "D_LVL11"
 	partime = 0
 
-	intertext = "Seems like the demonic forces",
-		"have corrupted Barbat-OS,",
-		"the UAC's watchful AI. Somehow,",
-		"they're using him to corrupt",
-		"huge chunks of Earth en masse.",
+	intertext = "Scouring every building for info...",
+		"and demons.",
 		"",
-		"Could it be that our worlds are",
-		"colliding?",
+		"Peering out from atop a tall skyscraper,",
+		"you spot a mountain of flesh and blood",
+		"at the edge of the bay, enveloping",
+		"the Union Aerospace Corporation's",
+		"underwater processing center.",
 		"",
-		"It couldn't be. There's only one",
-		"being so foul, so vile, and with",
-		"the know-how to accomplish such",
-		"a dastardly act.",
+		"The UAC uses the bay water to cool",
+		"down the intense heat from Barbat-OS'",
+		"logical processors. Outright flooding",
+		"each of the computer cores, however,",
+		"might disable the possessed Barbat-OS.",
 		"",
-		"Alright, hero. Time to get to the",
-		"bottom of this."
+		"You'll crush every bone in your body,",
+		"but at least you'll save Earth doing it..."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
