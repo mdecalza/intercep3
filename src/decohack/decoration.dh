@@ -1623,7 +1623,7 @@ thing 240 "Trash bin"
 	ednum 6089
 
 	health 30
-	radius 16
+	radius 10
 	height 40
 	painchance 256
 	mass 45
