@@ -1,11 +1,11 @@
-map MAP10
+map MAP11
 {
 	levelname = "Station to Station"  // MIDI: Diaphragm by AD_79
 	author = "Moustachio"
 	label = clear
-	levelpic = "CWILV10"
+	levelpic = "CWILV11"
 	skytexture = "CITYSKY1"
-	music = "D_LVL10"
+	music = "D_LVL11"
 	partime = 95
 
 	episode = clear
@@ -41,7 +41,7 @@ map MAP10
 	interbackdrop = "TEXTPIC1"
 	intermusic = "D_TEXT01"
 
-	next = "MAP11"
+	next = "MAP12"
 	nextsecret = "MAP00"
 }
 
@@ -67,17 +67,17 @@ map MAP00
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP11"
+	next = "MAP12"
 }
 
-map MAP11
+map MAP12
 {
-	levelname = "Corporate Hell II"  // MIDI: 
+	levelname = "Corporate Hell II"  // MIDI: "The Hornet" by Jimmy (origin: TNT II: Devilution)
 	author = "sincity2100"
 	label = clear
-	levelpic = "CWILV11"
+	levelpic = "CWILV12"
 	skytexture = "SKY1"
-	music = "D_LVL11"
+	music = "D_LVL12"
 	partime = 0
 
 	intertext = "Scouring every building for info...",
@@ -100,17 +100,17 @@ map MAP11
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP12"
+	next = "MAP13"
 }
 
-map MAP12
+map MAP13
 {
-	levelname = "Die Garrison"  // MIDI: MIDI rendition "Rave On" from Killer7
+	levelname = "Die Garrison"  // MIDI: rendition of "Rave On" from Killer7 by Masafumi Takada
 	author = "Yisue"
 	label = clear
-	levelpic = "CWILV12"
+	levelpic = "CWILV13"
 	skytexture = "SKY1"
-	music = "D_LVL12"
+	music = "D_LVL13"
 	partime = 0
 
 	intertext = "You've found yourself in a dark realm",
@@ -121,17 +121,17 @@ map MAP12
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 
-	next = "MAP50"
+	next = "MAP51"
 }
 
-map MAP50
+map MAP51
 {
 	levelname = "Terminated Bliss"  // MIDI: Aquifer by Snaxalotl
 	author = "Treehouseminis"
 	label = clear
-	levelpic = "CWILV50"
+	levelpic = "CWILV51"
 	skytexture = "ALLBLACK"
-	music = "D_LVL50"
+	music = "D_LVL51"
 	partime = 2435
 
 	intertext = "You've entered the innermost pustule",
@@ -147,5 +147,5 @@ map MAP50
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 	
-	next = "MAP10"
+	next = "MAP11"
 }
