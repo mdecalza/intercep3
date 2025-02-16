@@ -31,7 +31,7 @@ E1M2: Corporate Hell II by sincity2100
  Testing: Moustachio
 
 E1M3: Die Garrison by Yisue
- Music: "Rave On" by Masafumi Takada (origin: killer7)
+ Music: "Bloody Skies" by Maxime Tondreau
 
  Geometry: Yisue
  Combat: Yisue
