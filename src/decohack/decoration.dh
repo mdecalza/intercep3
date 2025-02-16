@@ -1622,11 +1622,11 @@ thing 240 "Trash bin"
 {
 	ednum 6089
 
-	health 40
+	health 30
 	radius 16
 	height 40
 	painchance 256
-	mass 100
+	mass 45
 
 	// Extended Properties (Extended/DEHEXTRA feature set and later)
 	dropitem 70  // Drops shells on death
@@ -1647,11 +1647,10 @@ thing 240 "Trash bin"
 			SP89 A 2 A_Pain
 			Goto Spawn
 		Death:
-			SP89 A 3 {
-				A_Scream
-				A_Fall
-			}
-			Stop
+			SP89 B 3 A_Scream
+			SP89 C 4 A_Fall
+			SP89 D 5
+			SP89 E -1
 	}
 }
 
