@@ -79,6 +79,9 @@ weapon 1 "Model 1887"
 {
 	ammotype 1
 
+	// MBF21 Flags (MBF21 feature set only)
+	-AUTOSWITCHFROM
+
 	States
 	{
 		Fire:
