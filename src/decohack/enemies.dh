@@ -223,7 +223,11 @@ thing 244 : thing 2 "Rocket zombie"
 			SP93 AABBCCDD 3 A_Chase
 			Loop
 		Missile:
-			SP93 EEEE 10 A_FaceTarget
+			SP93 EE 5 Bright A_FaceTarget
+			SP93 EE 5 A_FaceTarget
+			SP93 EE 5 Bright A_FaceTarget
+			SP93 EE 5 A_FaceTarget
+			SP93 EE 5 Bright A_FaceTarget
 			SP93 F 10 Bright A_CyberAttack
 			SP93 E 10
 			Goto See
