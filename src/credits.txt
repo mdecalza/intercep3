@@ -22,7 +22,7 @@ E1M1: STATION TO STATION by Moustachio
  Detail: Moustachio
  Testing: DFF, valkiriforce, General Rainbow Bacon
 
-E1M2: Corporate Hell II by sincity2100
+E1M2: CORPORATE HELL II by sincity2100
  Music: "The Hornet" by Jimmy (origin: TNT II: Devilution)
 
  Geometry: sincity2100
@@ -30,7 +30,7 @@ E1M2: Corporate Hell II by sincity2100
  Detail: sincity2100
  Testing: Moustachio
 
-E1M3: Die Garrison by Yisue
+E1M3: DIE GARRISON by Yisue
  Music: "Bloody Skies" by Maxime Tondreau
 
  Geometry: Yisue
@@ -53,6 +53,14 @@ Secret 1: THE MUSEUM by Moustachio
  Combat: Moustachio
  Detail: Moustachio
  Testing: DFF, valkiriforce, General Rainbow Bacon
+
+Secret 2: MANIFESTATION by sincity2100
+ Music: "Kaguya﻿" by Brayden "AD_79" Hart (origin: Akeldama MAP26)
+
+ Geometry: sincity2100
+ Combat: sincity2100
+ Detail: sincity2100
+ Testing: Moustachio
 
 * This track was bespoke for Interception III.
 

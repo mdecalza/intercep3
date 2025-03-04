@@ -1,3 +1,45 @@
+// SECRET/BONUS LEVELS
+
+map MAP00
+{
+	levelname = "The Museum"  // MIDI: Casserole by LewkForce
+	author = "Moustachio"
+	label = clear
+	levelpic = "CWILV00"
+	skytexture = "SKYM1"
+	music = "D_E0M0"
+	partime = 0
+
+	intertext = "You're at the heart of the city.",
+		"Up ahead you see the warped",
+		"silhouette of the UAC building.",
+		"",
+		"This has to be the source.",
+		"Never one to shy away from doing",
+		"what you must, you rush into",
+		"the near-unrecognizable edifice,",
+		"hoping to buy humanity some time."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT01"
+
+	next = "MAP12"
+}
+
+map MAP01
+{
+	levelname = "Manifestation"
+	author = "sincity2100"
+	label = clear
+	levelpic = "CWILV01"
+	skytexture = "SKY-B02"
+	music = "D_E0M1"
+	partime = 0
+	
+	next = "MAP12"
+}
+
+// EPISODE 1
+
 map MAP11
 {
 	levelname = "Station to Station"  // MIDI: Diaphragm by AD_79
@@ -5,7 +47,7 @@ map MAP11
 	label = clear
 	levelpic = "CWILV11"
 	skytexture = "CITYSKY1"
-	music = "D_LVL11"
+	music = "D_E1M1"
 	partime = 95
 
 	episode = clear
@@ -42,32 +84,7 @@ map MAP11
 	intermusic = "D_TEXT01"
 
 	next = "MAP12"
-	nextsecret = "MAP00"
-}
-
-map MAP00
-{
-	levelname = "The Museum"  // MIDI: Casserole by LewkForce
-	author = "Moustachio"
-	label = clear
-	levelpic = "CWILV00"
-	skytexture = "SKYM1"
-	music = "D_LVL00"
-	partime = 0
-
-	intertext = "You're at the heart of the city.",
-		"Up ahead you see the warped",
-		"silhouette of the UAC building.",
-		"",
-		"This has to be the source.",
-		"Never one to shy away from doing",
-		"what you must, you rush into",
-		"the near-unrecognizable edifice,",
-		"hoping to buy humanity some time."
-	interbackdrop = "ALLBLAKF"
-	intermusic = "D_TEXT01"
-
-	next = "MAP12"
+	nextsecret = "MAP01"
 }
 
 map MAP12
@@ -77,7 +94,7 @@ map MAP12
 	label = clear
 	levelpic = "CWILV12"
 	skytexture = "SKY1"
-	music = "D_LVL12"
+	music = "D_E1M2"
 	partime = 0
 
 	intertext = "Scouring every building for info...",
@@ -110,7 +127,7 @@ map MAP13
 	label = clear
 	levelpic = "CWILV13"
 	skytexture = "SKY1"
-	music = "D_LVL13"
+	music = "D_E1M3"
 	partime = 0
 
 	intertext = "You've found yourself in a dark realm",
@@ -124,6 +141,20 @@ map MAP13
 	next = "MAP51"
 }
 
+// EPISODE 2
+
+
+
+// EPISODE 3
+
+
+
+// EPISODE 4
+
+
+
+// EPISODE 5
+
 map MAP51
 {
 	levelname = "Terminated Bliss"  // MIDI: Aquifer by Snaxalotl
@@ -131,7 +162,7 @@ map MAP51
 	label = clear
 	levelpic = "CWILV51"
 	skytexture = "ALLBLACK"
-	music = "D_LVL51"
+	music = "D_E5M1"
 	partime = 2435
 
 	intertext = "You've entered the innermost pustule",
@@ -149,3 +180,6 @@ map MAP51
 	
 	next = "MAP11"
 }
+
+// EPISODE 6
+
