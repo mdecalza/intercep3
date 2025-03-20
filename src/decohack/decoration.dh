@@ -1628,9 +1628,6 @@ thing 240 "Trash bin"
 	painchance 256
 	mass 45
 
-	// Extended Properties (Extended/DEHEXTRA feature set and later)
-	dropitem 70  // Drops shells on death
-
 	+SOLID
 	+NOBLOOD
 	+SHOOTABLE
@@ -1648,7 +1645,60 @@ thing 240 "Trash bin"
 			Goto Spawn
 		Death:
 			SP89 B 3 A_Scream
-			SP89 C 4 A_Fall
+			SP89 C 4 {
+				A_Fall
+				A_RandomJump(SpawnShells, 192)  // 75% chance
+				A_RandomJump(SpawnClip, 128)  // 50% chance
+				A_RandomJump(SpawnCell, 90)  // ~35% chance
+				A_RandomJump(SpawnStimpack, 77)  // ~30% chance
+				A_RandomJump(SpawnMedikit, 51)  // ~20% chance
+				A_RandomJump(SpawnShellBox, 38)  // ~15% chance
+				A_RandomJump(SpawnRocket, 31)  // ~12% chance
+				A_RandomJump(SpawnAmmoBox, 26)  // ~10% chance
+				A_RandomJump(SpawnBackpack, 26)  // ~10% chance
+				A_RandomJump(SpawnRocketBox, 20)  // ~8% chance
+				A_RandomJump(SpawnCellPack, 10)  // ~4% chance
+				A_RandomJump(SpawnMegaarmor, 1)  // ~0.4% chance
+				A_SpawnObject(229, 0, 0, 0, 0, 0, 0, 10)  // Spawns rotten flesh if all rolls fail
+			}
+			Goto FinishDeath
+		SpawnShells:
+			SP89 C 0 A_SpawnObject(70, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnClip:
+			SP89 C 0 A_SpawnObject(64, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnCell:
+			SP89 C 0 A_SpawnObject(68, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnStimpack:
+			SP89 C 0 A_SpawnObject(54, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnMedikit:
+			SP89 C 0 A_SpawnObject(55, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnShellBox:
+			SP89 C 0 A_SpawnObject(71, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnRocket:
+			SP89 C 0 A_SpawnObject(66, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnAmmoBox:
+			SP89 C 0 A_SpawnObject(65, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnBackpack:
+			SP89 C 0 A_SpawnObject(72, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnRocketBox:
+			SP89 C 0 A_SpawnObject(67, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnCellPack:
+			SP89 C 0 A_SpawnObject(69, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		SpawnMegaarmor:
+			SP89 C 0 A_SpawnObject(45, 0, 0, 0, 0, 0, 0, 10)
+			Goto FinishDeath
+		FinishDeath:
 			SP89 D 5
 			SP89 E -1
 	}
