@@ -303,6 +303,7 @@ BUSHES
 TRASH CAN
  DECOHack: Moustachio
  Sprites: 3D Realms, Moustachio
+ Sounds: Moustachio, JustinAmolsch, RutgerMuller
 
 
 -= TEXTURES & FLATS =-
