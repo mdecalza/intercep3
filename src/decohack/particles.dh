@@ -6,16 +6,46 @@
 
 #include <dsdhacked>
 
-// Rocket in flight spawns trail
-state 114
+// Imp fireball spawns ashes
+state 97
 {
-	MISL A 5 bright a_spawnobject(259,0,-8,0,6,8)
+	BAL1 A 4 Bright A_SpawnObject(254, 0, -8, 0, 0, 0, 0, 0.25)
+}
+
+// Caco fireball spawns ashes
+state 102
+{
+	BAL2 A 4 Bright A_SpawnObject(254, 0, -8, 0, 0, 0, 0, 0.25)
 }
 
 // Plasma impact spawns yellow arcs
 state 109
 {
 	PLSE A 6 Bright A_SpawnObject(260)
+}
+
+// Rocket in flight spawns trail
+state 114
+{
+	MISL A 5 bright a_spawnobject(259,0,-8,0,6,8)
+}
+
+// Mancubus fireball spawns ashes
+state 357
+{
+	MANF A 4 Bright A_SpawnObject(254, 0, -8, 0, 0, 0, 0, 0.25)
+}
+
+// Baron/hell knight fireball spawns ashes
+state 522
+{
+	BAL7 A 4 Bright A_SpawnObject(254, 0, -8, 0, 0, 0, 0, 0.25)
+}
+
+// Lost soul spawns embers on charge
+state 591
+{
+	SKUL C 4 Bright A_SpawnObject(250, 0, -8, 0, 15, 0, 0, 0.5)
 }
 
 // Arachnotron plasma impact spawns green arcs
@@ -675,35 +705,35 @@ thing 261 "Green plasma arc"
 			Stop
 		Spawn2:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 30, -30, 0, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(261, 0, 30, -30, 0, 0, 0, 0)
 			Goto Die
 		Spawn3:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, -30, -30, 0, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(261, 0, -30, -30, 0, 0, 0, 0)
 			Goto Die
 		Spawn4:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, 30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(261, 0, 0, 30, 30, 0, 0, 0)
 			Goto Die
 		Spawn5:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(261, 0, 0, 30, -30, 0, 0, 0)
 			Goto Die
 		Spawn6:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 30, 0, 30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(261, 0, 30, 0, 30, 0, 0, 0)
 			Goto Die
 		Spawn7:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, -30, 0, -30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(261, 0, -30, 0, -30, 0, 0, 0)
 			Goto Die
 		Spawn8:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(261, 0, 0, 30, -30, 0, 0, 0)
 			Goto Die
 		Spawn9:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(261, 0, 0, 30, -30, 0, 0, 0)
 			Goto Die
 		Die:
 			APBX EDCDE 5 Bright
