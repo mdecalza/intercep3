@@ -32,7 +32,7 @@ map MAP01
 	label = clear
 	levelpic = "CWILV01"
 	skytexture = "SKY-B02"
-	music = "D_E0M1"
+	music = "D_RUNNIN"
 	partime = 0
 	
 	next = "MAP12"
@@ -44,7 +44,7 @@ map MAP11
 {
 	levelname = "Station to Station"  // MIDI: Diaphragm by AD_79
 	author = "Moustachio"
-	label = clear
+	label = "E1M1"
 	levelpic = "CWILV11"
 	skytexture = "CITYSKY1"
 	music = "D_E1M1"
@@ -91,10 +91,26 @@ map MAP12
 {
 	levelname = "Corporate Hell II"  // MIDI: "The Hornet" by Jimmy (origin: TNT II: Devilution)
 	author = "sincity2100"
-	label = clear
+	label = "E1M2"
 	levelpic = "CWILV12"
 	skytexture = "SKY1"
 	music = "D_E1M2"
+	partime = 0
+
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT01"
+
+	next = "MAP13"
+}
+
+map MAP13
+{
+	levelname = "Die Garrison"  // MIDI: rendition of "Rave On" from Killer7 by Masafumi Takada
+	author = "Yisue"
+	label = "E1M3"
+	levelpic = "CWILV13"
+	skytexture = "SKY1"
+	music = "D_E1M3"
 	partime = 0
 
 	intertext = "Scouring every building for info...",
@@ -115,19 +131,25 @@ map MAP12
 		"You'll crush every bone in your body,",
 		"but at least you'll save Earth doing it..."
 	interbackdrop = "ALLBLAKF"
-	intermusic = "D_TEXT01"
+	intermusic = "D_TEXT02"
 
-	next = "MAP13"
+	next = "MAP31"
 }
 
-map MAP13
+// EPISODE 2
+
+
+
+// EPISODE 3
+
+map MAP31
 {
-	levelname = "Die Garrison"  // MIDI: rendition of "Rave On" from Killer7 by Masafumi Takada
-	author = "Yisue"
-	label = clear
-	levelpic = "CWILV13"
-	skytexture = "SKY1"
-	music = "D_E1M3"
+	levelname = "Eleftheria"
+	author = "cannonball"
+	label = "E3M1"
+	levelpic = "CWILV31"
+	skytexture = "SKY-B02"
+	music = "D_E3M1"
 	partime = 0
 
 	intertext = "You've found yourself in a dark realm",
@@ -140,14 +162,6 @@ map MAP13
 
 	next = "MAP51"
 }
-
-// EPISODE 2
-
-
-
-// EPISODE 3
-
-
 
 // EPISODE 4
 
