@@ -12,6 +12,18 @@ state 114
 	MISL A 5 bright a_spawnobject(259,0,-8,0,6,8)
 }
 
+// Plasma impact spawns yellow arcs
+state 109
+{
+	PLSE A 6 Bright A_SpawnObject(260)
+}
+
+// Arachnotron plasma impact spawns green arcs
+state 669
+{
+	APBX A 5 Bright A_SpawnObject(261)
+}
+
 thing 249 "Embers"
 {
 	//$category VFX
@@ -564,5 +576,137 @@ thing 259 "Rocket trail"
 		long2:
 			SPA3 CDEF 4 bright
 			stop
+	}
+}
+
+thing 260 "Yellow plasma arc"
+{
+	health 1000
+	speed 20
+	radius 1
+	height 1
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+
+	+NOGRAVITY
+	+NOBLOCKMAP
+	+TRANSLUCENT
+
+	states
+	{
+		Spawn:
+			TNT1 A 1
+			TNT1 A 0 Bright A_RandomJump(spawn2, 15)
+			TNT1 A 0 Bright A_RandomJump(spawn3, 15)
+			TNT1 A 0 Bright A_RandomJump(spawn4, 15)
+			TNT1 A 0 Bright A_RandomJump(spawn5, 15)
+			TNT1 A 0 Bright A_RandomJump(spawn6, 15)
+			TNT1 A 0 Bright A_RandomJump(spawn7, 15)
+			TNT1 A 0 Bright A_RandomJump(spawn8, 15)
+			TNT1 A 0 Bright A_RandomJump(spawn9, 15)
+			Stop
+		Spawn2:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 30, -30, 0, 0, 0, 0)
+			Goto Die
+		Spawn3:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, -30, -30, 0, 0, 0, 0)
+			Goto Die
+		Spawn4:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, 30, 0, 0, 0)
+			Goto Die
+		Spawn5:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			Goto Die
+		Spawn6:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 30, 0, 30, 0, 0, 0)
+			Goto Die
+		Spawn7:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, -30, 0, -30, 0, 0, 0)
+			Goto Die
+		Spawn8:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			Goto Die
+		Spawn9:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			Goto Die
+		Die:
+			PLSE EDE 5 Bright
+			Stop
+	}
+}
+
+thing 261 "Green plasma arc"
+{
+	health 1000
+	speed 20
+	radius 1
+	height 1
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+
+	+NOGRAVITY
+	+NOBLOCKMAP
+	+TRANSLUCENT
+
+	states
+	{
+		Spawn:
+			TNT1 A 1
+			TNT1 A 0 Bright A_RandomJump(spawn2, 12)
+			TNT1 A 0 Bright A_RandomJump(spawn3, 12)
+			TNT1 A 0 Bright A_RandomJump(spawn4, 12)
+			TNT1 A 0 Bright A_RandomJump(spawn5, 12)
+			TNT1 A 0 Bright A_RandomJump(spawn6, 12)
+			TNT1 A 0 Bright A_RandomJump(spawn7, 12)
+			TNT1 A 0 Bright A_RandomJump(spawn8, 12)
+			TNT1 A 0 Bright A_RandomJump(spawn9, 12)
+			Stop
+		Spawn2:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 30, -30, 0, 0, 0, 0)
+			Goto Die
+		Spawn3:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, -30, -30, 0, 0, 0, 0)
+			Goto Die
+		Spawn4:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, 30, 0, 0, 0)
+			Goto Die
+		Spawn5:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			Goto Die
+		Spawn6:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 30, 0, 30, 0, 0, 0)
+			Goto Die
+		Spawn7:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, -30, 0, -30, 0, 0, 0)
+			Goto Die
+		Spawn8:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			Goto Die
+		Spawn9:
+			TNT1 A 1
+			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			Goto Die
+		Die:
+			APBX EDCDE 5 Bright
+			Stop
 	}
 }
