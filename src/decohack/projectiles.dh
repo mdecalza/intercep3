@@ -6,12 +6,20 @@
 
 #include <dsdhacked>
 
+#include "particles.dh"
+
 /* Doom II projectiles */
 
-// Plasma projectile
-thing 35
+// Rocket in flight
+thing 34
 {
-	damage 8
+	clear state spawn
+	states
+	{
+		spawn:
+			MISL A 5 bright a_spawnobject(259,0,-8,0,6,8)
+			loop
+	}
 }
 
 // BFG projectile
