@@ -1,0 +1,562 @@
+/*****************************************************************************
+ * DECOHack Main Patch
+ * Particle
+ * 2025 Lina, Matthew DeCalzadilla
+ *****************************************************************************/
+
+#include <dsdhacked>
+
+thing 249 "Embers"
+{
+	//$category VFX
+	ednum 200
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+nogravity
+	states
+	{
+		spawn: 
+			TNT1 A 69
+			TNT1 A 1 a_randomjump(risepick,50)
+			TNT1 A 1 a_randomjump(risepick,63)
+			TNT1 A 1 a_randomjump(risepick,85)
+			TNT1 A 1 a_randomjump(risepick,127)
+			goto risepick
+		risepick:
+			TNT1 A 1
+			TNT1 A 0 a_randomjump(rise2,27)
+			TNT1 A 0 a_randomjump(rise3,31)
+			TNT1 A 0 a_randomjump(rise4,36)
+			TNT1 A 0 a_randomjump(rise5,42)
+			TNT1 A 0 a_randomjump(rise6,50)
+			TNT1 A 0 a_randomjump(rise7,63)
+			TNT1 A 0 a_randomjump(rise8,85)
+			TNT1 A 0 a_randomjump(rise9,127)
+			goto rise1
+		rise1:
+			TNT1 A 1 a_spawnobject(250,0,0,0,0,0,0,0.5)
+			goto spawn
+		rise2:
+			TNT1 A 1 a_spawnobject(250,0,42,0,0,0,0,0.5)
+			goto spawn
+		rise3:
+			TNT1 A 1 a_spawnobject(250,0,-42,0,0,0,0,0.5)
+			goto spawn
+		rise4:
+			TNT1 A 1 a_spawnobject(250,0,0,42,0,0,0,0.5)
+			goto spawn
+		rise5:
+			TNT1 A 1 a_spawnobject(250,0,0,-42,0,0,0,0.5)
+			goto spawn
+		rise6:
+			TNT1 A 1 a_spawnobject(250,0,42,42,0,0,0,0.5)
+			goto spawn
+		rise7:
+			TNT1 A 1 a_spawnobject(250,0,-42,42,0,0,0,0.5)
+			goto spawn
+		rise8:
+			TNT1 A 1 a_spawnobject(250,0,42,-42,0,0,0,0.5)
+			goto spawn
+		rise9:
+			TNT1 A 1 a_spawnobject(250,0,-42,-42,0,0,0,0.5)
+			goto spawn
+	}
+}
+
+thing 250 "Ember"
+{
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+missile
+	+noblockmap
+	+nogravity
+	+translucent
+	states
+	{
+		spawn:
+			TNT1 A 1
+			goto pick
+		pick:
+			TNT1 A 0 {
+			a_randomjump(type2,85)
+			a_randomjump(type3,127)
+			}
+			goto type1
+		type1:
+			SP98 EDCB 2 bright
+			SP98 A 10 bright a_removeflags(translucent)
+			SP98 BC 8 bright
+			SP98 C 6 bright a_addflags(translucent)
+			SP98 DE 6 bright
+			goto xdeath
+		type2:
+			SP98 JIHG 2 bright
+			SP98 F 13 bright a_removeflags(translucent)
+			SP98 GH 11 bright
+			SP98 H 9 bright a_addflags(translucent)
+			SP98 IJ 9 bright
+			goto xdeath
+		type3:
+			SP98 ONML 2 bright
+			SP98 K 16 bright a_removeflags(translucent)
+			SP98 LM 14 bright
+			SP98 M 12 bright a_addflags(translucent)
+			SP98 NO 12 bright
+			goto xdeath
+		death:
+			TNT1 A 1
+			stop
+		xdeath:
+			TNT1 A 1
+			stop
+	}
+}
+
+thing 251 "Rain"
+{
+	//$category VFX
+	ednum 201
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+spawnceiling
+	+nogravity
+	states
+	{
+		spawn: 
+			TNT1 A 34
+			TNT1 A 1 a_randomjump(fallpick,50)
+			TNT1 A 1 a_randomjump(fallpick,63)
+			TNT1 A 1 a_randomjump(fallpick,85)
+			TNT1 A 1 a_randomjump(fallpick,127)
+			goto fallpick
+		fallpick:
+			TNT1 A 1
+			TNT1 A 0 a_randomjump(fall2,27)
+			TNT1 A 0 a_randomjump(fall3,31)
+			TNT1 A 0 a_randomjump(fall4,36)
+			TNT1 A 0 a_randomjump(fall5,42)
+			TNT1 A 0 a_randomjump(fall6,50)
+			TNT1 A 0 a_randomjump(fall7,63)
+			TNT1 A 0 a_randomjump(fall8,85)
+			TNT1 A 0 a_randomjump(fall9,127)
+			goto fall1
+		fall1:
+			TNT1 A 1 a_spawnobject(252,0,0,0,0,0,0,-16)
+			goto spawn
+		fall2:
+			TNT1 A 1 a_spawnobject(252,0,42,0,0,0,0,-16)
+			goto spawn
+		fall3:
+			TNT1 A 1 a_spawnobject(252,0,-42,0,0,0,0,-16)
+			goto spawn
+		fall4:
+			TNT1 A 1 a_spawnobject(252,0,0,42,0,0,0,-16)
+			goto spawn
+		fall5:
+			TNT1 A 1 a_spawnobject(252,0,0,-42,0,0,0,-16)
+			goto spawn
+		fall6:
+			TNT1 A 1 a_spawnobject(252,0,42,42,0,0,0,-16)
+			goto spawn
+		fall7:
+			TNT1 A 1 a_spawnobject(252,0,-42,42,0,0,0,-16)
+			goto spawn
+		fall8:
+			TNT1 A 1 a_spawnobject(252,0,42,-42,0,0,0,-16)
+			goto spawn
+		fall9:
+			TNT1 A 1 a_spawnobject(252,0,-42,-42,0,0,0,-16)
+			goto spawn
+	}
+}
+
+thing 252 "Raindrop"
+{
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+missile
+	+noblockmap
+	states
+	{
+		spawn:
+			SP99 A 8
+			loop
+		death:
+			SP99 BCDEFGH 1
+			stop
+	}
+}
+
+thing 253 "Ash"
+{
+	//$category VFX
+	ednum 202
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+nogravity
+	states
+	{
+		spawn: 
+			TNT1 A 69
+			TNT1 A 1 a_randomjump(risepick,50)
+			TNT1 A 1 a_randomjump(risepick,63)
+			TNT1 A 1 a_randomjump(risepick,85)
+			TNT1 A 1 a_randomjump(risepick,127)
+			goto risepick
+		risepick:
+			TNT1 A 1
+			TNT1 A 0 a_randomjump(rise2,27)
+			TNT1 A 0 a_randomjump(rise3,31)
+			TNT1 A 0 a_randomjump(rise4,36)
+			TNT1 A 0 a_randomjump(rise5,42)
+			TNT1 A 0 a_randomjump(rise6,50)
+			TNT1 A 0 a_randomjump(rise7,63)
+			TNT1 A 0 a_randomjump(rise8,85)
+			TNT1 A 0 a_randomjump(rise9,127)
+			goto rise1
+		rise1:
+			TNT1 A 1 a_spawnobject(254,0,0,0,0,1,0,1)
+			goto spawn
+		rise2:
+			TNT1 A 1 a_spawnobject(254,0,42,0,0,1,0,1)
+			goto spawn
+		rise3:
+			TNT1 A 1 a_spawnobject(254,0,-42,0,0,1,0,1)
+			goto spawn
+		rise4:
+			TNT1 A 1 a_spawnobject(254,0,0,42,0,1,0,1)
+			goto spawn
+		rise5:
+			TNT1 A 1 a_spawnobject(254,0,0,-42,0,1,0,1)
+			goto spawn
+		rise6:
+			TNT1 A 1 a_spawnobject(254,0,42,42,0,1,0,1)
+			goto spawn
+		rise7:
+			TNT1 A 1 a_spawnobject(254,0,-42,42,0,1,0,1)
+			goto spawn
+		rise8:
+			TNT1 A 1 a_spawnobject(254,0,42,-42,0,1,0,1)
+			goto spawn
+		rise9:
+			TNT1 A 1 a_spawnobject(254,0,-42,-42,0,1,0,1)
+			goto spawn
+	}
+}
+
+thing 254 "Ash particle"
+{
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+nogravity
+	+noblockmap
+	+bounces
+	+translucent
+	states
+	{
+		spawn:
+			TNT1 A 1
+			goto pick
+		pick:
+			TNT1 A 0 {
+			a_randomjump(type2,85)
+			a_randomjump(type3,127)
+			}
+			goto type1
+		type1:
+			SPA0 EDCB 2 bright
+			SPA0 A 10 bright a_removeflags(translucent)
+			SPA0 BC 8 bright
+			SPA0 C 6 bright a_addflags(translucent)
+			SPA0 DE 6 bright
+			goto xdeath
+		type2:
+			SPA0 JIHG 2 bright
+			SPA0 F 13 bright a_removeflags(translucent)
+			SPA0 GH 11 bright
+			SPA0 H 9 bright a_addflags(translucent)
+			SPA0 IJ 9 bright
+			goto xdeath
+		type3:
+			SPA0 ONML 2 bright
+			SPA0 K 16 bright a_removeflags(translucent)
+			SPA0 LM 14 bright
+			SPA0 M 12 bright a_addflags(translucent)
+			SPA0 NO 12 bright
+			goto xdeath
+		death:
+			TNT1 A 1
+			stop
+		xdeath:
+			TNT1 A 1
+			stop
+	}
+}
+
+thing 255 "Blood drip"
+{
+	//$category VFX
+	ednum 203
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+spawnceiling
+	+nogravity
+	states
+	{
+		spawn: 
+			TNT1 A 34
+			TNT1 A 1 a_randomjump(fallpick,50)
+			TNT1 A 1 a_randomjump(fallpick,63)
+			TNT1 A 1 a_randomjump(fallpick,85)
+			TNT1 A 1 a_randomjump(fallpick,127)
+			goto fallpick
+		fallpick:
+			TNT1 A 1
+			TNT1 A 0 a_randomjump(fall2,27)
+			TNT1 A 0 a_randomjump(fall3,31)
+			TNT1 A 0 a_randomjump(fall4,36)
+			TNT1 A 0 a_randomjump(fall5,42)
+			TNT1 A 0 a_randomjump(fall6,50)
+			TNT1 A 0 a_randomjump(fall7,63)
+			TNT1 A 0 a_randomjump(fall8,85)
+			TNT1 A 0 a_randomjump(fall9,127)
+			goto fall1
+		fall1:
+			TNT1 A 1 a_spawnobject(256,0,0,0,0,0,0,-16)
+			goto spawn
+		fall2:
+			TNT1 A 1 a_spawnobject(256,0,42,0,0,0,0,-16)
+			goto spawn
+		fall3:
+			TNT1 A 1 a_spawnobject(256,0,-42,0,0,0,0,-16)
+			goto spawn
+		fall4:
+			TNT1 A 1 a_spawnobject(256,0,0,42,0,0,0,-16)
+			goto spawn
+		fall5:
+			TNT1 A 1 a_spawnobject(256,0,0,-42,0,0,0,-16)
+			goto spawn
+		fall6:
+			TNT1 A 1 a_spawnobject(256,0,42,42,0,0,0,-16)
+			goto spawn
+		fall7:
+			TNT1 A 1 a_spawnobject(256,0,-42,42,0,0,0,-16)
+			goto spawn
+		fall8:
+			TNT1 A 1 a_spawnobject(256,0,42,-42,0,0,0,-16)
+			goto spawn
+		fall9:
+			TNT1 A 1 a_spawnobject(256,0,-42,-42,0,0,0,-16)
+			goto spawn
+	}
+}
+
+thing 256 "Blood droplet"
+{
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+missile
+	+noblockmap
+	states
+	{
+		spawn:
+			SPA1 A 8
+			loop
+		death:
+			SPA1 BCDEFGH 1
+			stop
+	}
+}
+
+thing 257 "Nukage burble"
+{
+	//$category VFX
+	ednum 204
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+nogravity
+	states
+	{
+		spawn: 
+			TNT1 A 105
+			TNT1 A 7 a_randomjump(risepick,50)
+			TNT1 A 7 a_randomjump(risepick,63)
+			TNT1 A 7 a_randomjump(risepick,85)
+			TNT1 A 7 a_randomjump(risepick,127)
+			goto risepick
+		risepick:
+			TNT1 A 1
+			TNT1 A 0 a_randomjump(rise2,27)
+			TNT1 A 0 a_randomjump(rise3,31)
+			TNT1 A 0 a_randomjump(rise4,36)
+			TNT1 A 0 a_randomjump(rise5,42)
+			TNT1 A 0 a_randomjump(rise6,50)
+			TNT1 A 0 a_randomjump(rise7,63)
+			TNT1 A 0 a_randomjump(rise8,85)
+			TNT1 A 0 a_randomjump(rise9,127)
+			goto rise1
+		rise1:
+			TNT1 A 1 a_spawnobject(258,0,0,0,0,0,0,2.5)
+			goto spawn
+		rise2:
+			TNT1 A 1 a_spawnobject(258,0,42,0,0,0,0,2.5)
+			goto spawn
+		rise3:
+			TNT1 A 1 a_spawnobject(258,0,-42,0,0,0,0,2.5)
+			goto spawn
+		rise4:
+			TNT1 A 1 a_spawnobject(258,0,0,42,0,0,0,2.5)
+			goto spawn
+		rise5:
+			TNT1 A 1 a_spawnobject(258,0,0,-42,0,0,0,2.5)
+			goto spawn
+		rise6:
+			TNT1 A 1 a_spawnobject(258,0,42,42,0,0,0,2.5)
+			goto spawn
+		rise7:
+			TNT1 A 1 a_spawnobject(258,0,-42,42,0,0,0,2.5)
+			goto spawn
+		rise8:
+			TNT1 A 1 a_spawnobject(258,0,42,-42,0,0,0,2.5)
+			goto spawn
+		rise9:
+			TNT1 A 1 a_spawnobject(258,0,-42,-42,0,0,0,2.5)
+			goto spawn
+	}
+}
+
+thing 258 "Nukage droplet"
+{
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+lograv
+	states
+	{
+		spawn:
+			TNT1 A 1
+			goto pick
+		pick:
+			TNT1 A 0 {
+			a_randomjump(type2,85)
+			a_randomjump(type3,127)
+			}
+			goto type1
+		type1:
+			SPA2 A 8
+			SPA2 BC 6
+			SPA2 C 5 a_addflags(translucent)
+			SPA2 DE 5
+			goto xdeath
+		type2:
+			SPA2 F 8
+			SPA2 GH 6
+			SPA2 H 5 a_addflags(translucent)
+			SPA2 IJ 5
+			goto xdeath
+		type3:
+			SPA2 K 8
+			SPA2 LM 6
+			SPA2 M 5 a_addflags(translucent)
+			SPA2 NO 5
+			goto xdeath
+		death:
+			TNT1 A 1
+			stop
+		xdeath:
+			TNT1 A 1
+			stop
+	}
+}
+
+thing 259 "Rocket trail"
+{
+	health 1000
+	speed 0
+	radius 0
+	height 0
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 100
+	+nogravity
+	+noblockmap
+	+translucent
+	states
+	{
+		spawn:
+			TNT1 A 2
+			SPA3 A 2 bright
+			SPA3 B 2 bright {
+			a_randomjump(long1,85)
+			a_randomjump(long2,127)
+			}
+			SPA3 CDEF 2 bright
+			stop
+		long1:
+			SPA3 CDEF 3 bright
+			stop
+		long2:
+			SPA3 CDEF 4 bright
+			stop
+	}
+}
