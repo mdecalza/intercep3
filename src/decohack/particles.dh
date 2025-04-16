@@ -58,31 +58,31 @@ thing 249 "Embers"
 			TNT1 A 0 a_randomjump(rise9,127)
 			goto rise1
 		rise1:
-			TNT1 A 1 a_spawnobject(250,0,0,0,0,0,0,0.2)
+			TNT1 A 1 a_spawnobject(250,0,0,0,0,0,0,0.5)
 			goto spawn
 		rise2:
-			TNT1 A 1 a_spawnobject(250,0,42,0,0,0,0,0.2)
+			TNT1 A 1 a_spawnobject(250,0,42,0,0,0,0,0.5)
 			goto spawn
 		rise3:
-			TNT1 A 1 a_spawnobject(250,0,-42,0,0,0,0,0.2)
+			TNT1 A 1 a_spawnobject(250,0,-42,0,0,0,0,0.5)
 			goto spawn
 		rise4:
-			TNT1 A 1 a_spawnobject(250,0,0,42,0,0,0,0.2)
+			TNT1 A 1 a_spawnobject(250,0,0,42,0,0,0,0.5)
 			goto spawn
 		rise5:
-			TNT1 A 1 a_spawnobject(250,0,0,-42,0,0,0,0.2)
+			TNT1 A 1 a_spawnobject(250,0,0,-42,0,0,0,0.5)
 			goto spawn
 		rise6:
-			TNT1 A 1 a_spawnobject(250,0,42,42,0,0,0,0.2)
+			TNT1 A 1 a_spawnobject(250,0,42,42,0,0,0,0.5)
 			goto spawn
 		rise7:
-			TNT1 A 1 a_spawnobject(250,0,-42,42,0,0,0,0.2)
+			TNT1 A 1 a_spawnobject(250,0,-42,42,0,0,0,0.5)
 			goto spawn
 		rise8:
-			TNT1 A 1 a_spawnobject(250,0,42,-42,0,0,0,0.2)
+			TNT1 A 1 a_spawnobject(250,0,42,-42,0,0,0,0.5)
 			goto spawn
 		rise9:
-			TNT1 A 1 a_spawnobject(250,0,-42,-42,0,0,0,0.2)
+			TNT1 A 1 a_spawnobject(250,0,-42,-42,0,0,0,0.5)
 			goto spawn
 	}
 }
@@ -263,31 +263,31 @@ thing 253 "Ash"
 			TNT1 A 0 a_randomjump(rise9,127)
 			goto rise1
 		rise1:
-			TNT1 A 1 a_spawnobject(254,0,0,0,0,1,0,20)
+			TNT1 A 1 a_spawnobject(254,0,0,0,0,1,0,1)
 			goto spawn
 		rise2:
-			TNT1 A 1 a_spawnobject(254,0,42,0,0,1,0,20)
+			TNT1 A 1 a_spawnobject(254,0,42,0,0,1,0,1)
 			goto spawn
 		rise3:
-			TNT1 A 1 a_spawnobject(254,0,-42,0,0,1,0,20)
+			TNT1 A 1 a_spawnobject(254,0,-42,0,0,1,0,1)
 			goto spawn
 		rise4:
-			TNT1 A 1 a_spawnobject(254,0,0,42,0,1,0,20)
+			TNT1 A 1 a_spawnobject(254,0,0,42,0,1,0,1)
 			goto spawn
 		rise5:
-			TNT1 A 1 a_spawnobject(254,0,0,-42,0,1,0,20)
+			TNT1 A 1 a_spawnobject(254,0,0,-42,0,1,0,1)
 			goto spawn
 		rise6:
-			TNT1 A 1 a_spawnobject(254,0,42,42,0,1,0,20)
+			TNT1 A 1 a_spawnobject(254,0,42,42,0,1,0,1)
 			goto spawn
 		rise7:
-			TNT1 A 1 a_spawnobject(254,0,-42,42,0,1,0,20)
+			TNT1 A 1 a_spawnobject(254,0,-42,42,0,1,0,1)
 			goto spawn
 		rise8:
-			TNT1 A 1 a_spawnobject(254,0,42,-42,0,1,0,20)
+			TNT1 A 1 a_spawnobject(254,0,42,-42,0,1,0,1)
 			goto spawn
 		rise9:
-			TNT1 A 1 a_spawnobject(254,0,-42,-42,0,1,0,20)
+			TNT1 A 1 a_spawnobject(254,0,-42,-42,0,1,0,1)
 			goto spawn
 	}
 }
@@ -468,31 +468,31 @@ thing 257 "Nukage burble"
 			TNT1 A 0 a_randomjump(rise9,127)
 			goto rise1
 		rise1:
-			TNT1 A 1 a_spawnobject(258,0,0,0,0,0,0,2.20)
+			TNT1 A 1 a_spawnobject(258,0,0,0,0,0,0,2.5)
 			goto spawn
 		rise2:
-			TNT1 A 1 a_spawnobject(258,0,42,0,0,0,0,2.20)
+			TNT1 A 1 a_spawnobject(258,0,42,0,0,0,0,2.5)
 			goto spawn
 		rise3:
-			TNT1 A 1 a_spawnobject(258,0,-42,0,0,0,0,2.20)
+			TNT1 A 1 a_spawnobject(258,0,-42,0,0,0,0,2.5)
 			goto spawn
 		rise4:
-			TNT1 A 1 a_spawnobject(258,0,0,42,0,0,0,2.20)
+			TNT1 A 1 a_spawnobject(258,0,0,42,0,0,0,2.5)
 			goto spawn
 		rise5:
-			TNT1 A 1 a_spawnobject(258,0,0,-42,0,0,0,2.20)
+			TNT1 A 1 a_spawnobject(258,0,0,-42,0,0,0,2.5)
 			goto spawn
 		rise6:
-			TNT1 A 1 a_spawnobject(258,0,42,42,0,0,0,2.20)
+			TNT1 A 1 a_spawnobject(258,0,42,42,0,0,0,2.5)
 			goto spawn
 		rise7:
-			TNT1 A 1 a_spawnobject(258,0,-42,42,0,0,0,2.20)
+			TNT1 A 1 a_spawnobject(258,0,-42,42,0,0,0,2.5)
 			goto spawn
 		rise8:
-			TNT1 A 1 a_spawnobject(258,0,42,-42,0,0,0,2.20)
+			TNT1 A 1 a_spawnobject(258,0,42,-42,0,0,0,2.5)
 			goto spawn
 		rise9:
-			TNT1 A 1 a_spawnobject(258,0,-42,-42,0,0,0,2.20)
+			TNT1 A 1 a_spawnobject(258,0,-42,-42,0,0,0,2.5)
 			goto spawn
 	}
 }
