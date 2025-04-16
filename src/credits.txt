@@ -306,6 +306,39 @@ TRASH CAN
  Sounds: Moustachio, JustinAmolsch, RutgerMuller
 
 
+-= PARTICLE EFFECTS =-
+
+EMBERS
+ DECOHack: Lina
+ Sprites: Lina
+
+RAIN
+ DECOHack: Lina
+ Sprites: 
+
+ASH
+ DECOHack: Lina
+ Sprites: Lina
+
+BLOOD DRIP
+ DECOHack: Lina
+ Sprites:
+
+NUKAGE BURBLE
+ DECOHack: Lina
+ Sprites: Lina
+
+ROCKET TRAIL
+ DECOHack: Lina
+ Sprites: Lina
+
+GREEN & BLUE PLASMA ARCS
+ DECOHack: Moustachio
+ Sprites: id Software
+
+Projectile particle DECOHack by Lina and Moustachio.
+
+
 -= TEXTURES & FLATS =-
 
 - PATCHES -
