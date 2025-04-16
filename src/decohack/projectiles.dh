@@ -10,16 +10,10 @@
 
 /* Doom II projectiles */
 
-// Rocket in flight
-thing 34
+// Plasma projectile
+thing 35
 {
-	clear state spawn
-	states
-	{
-		spawn:
-			MISL A 5 bright a_spawnobject(259,0,-8,0,6,8)
-			loop
-	}
+	damage 8
 }
 
 // BFG projectile
