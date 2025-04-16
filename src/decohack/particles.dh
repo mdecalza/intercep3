@@ -6,6 +6,13 @@
 
 #include <dsdhacked>
 
+// Rocket in flight spawns trail
+state free 114
+state 114
+{
+	MISL A 5 bright a_spawnobject(259,0,-8,0,6,8)
+}
+
 thing 249 "Embers"
 {
 	//$category VFX
