@@ -30,6 +30,29 @@ state 114
 	MISL A 5 bright a_spawnobject(259,0,-8,0,6,8)
 }
 
+// BFG ball spawns particles
+state 116
+{
+	BFS1 B 4 Bright A_SpawnObject(263)
+}
+
+// BFG impact spawns particles
+state 118
+{
+	BFE1 B 8 Bright A_SpawnObject(263)
+}
+
+state 120
+{
+	BFE1 D 8 Bright A_SpawnObject(263)
+}
+
+// Teleport fog spawns particles
+state 131
+{
+	TFOG B 6 Bright A_SpawnObject(263)
+}
+
 // Mancubus fireball spawns ashes
 state 357
 {
@@ -628,14 +651,14 @@ thing 260 "Yellow plasma arc"
 	{
 		Spawn:
 			TNT1 A 1
-			TNT1 A 0 Bright A_RandomJump(spawn2, 15)
-			TNT1 A 0 Bright A_RandomJump(spawn3, 15)
-			TNT1 A 0 Bright A_RandomJump(spawn4, 15)
-			TNT1 A 0 Bright A_RandomJump(spawn5, 15)
-			TNT1 A 0 Bright A_RandomJump(spawn6, 15)
-			TNT1 A 0 Bright A_RandomJump(spawn7, 15)
-			TNT1 A 0 Bright A_RandomJump(spawn8, 15)
-			TNT1 A 0 Bright A_RandomJump(spawn9, 15)
+			TNT1 A 0 Bright A_RandomJump(Spawn2, 15)
+			TNT1 A 0 Bright A_RandomJump(Spawn3, 15)
+			TNT1 A 0 Bright A_RandomJump(Spawn4, 15)
+			TNT1 A 0 Bright A_RandomJump(Spawn5, 15)
+			TNT1 A 0 Bright A_RandomJump(Spawn6, 15)
+			TNT1 A 0 Bright A_RandomJump(Spawn7, 15)
+			TNT1 A 0 Bright A_RandomJump(Spawn8, 15)
+			TNT1 A 0 Bright A_RandomJump(Spawn9, 15)
 			Stop
 		Spawn2:
 			TNT1 A 1
@@ -694,14 +717,14 @@ thing 261 "Green plasma arc"
 	{
 		Spawn:
 			TNT1 A 1
-			TNT1 A 0 Bright A_RandomJump(spawn2, 12)
-			TNT1 A 0 Bright A_RandomJump(spawn3, 12)
-			TNT1 A 0 Bright A_RandomJump(spawn4, 12)
-			TNT1 A 0 Bright A_RandomJump(spawn5, 12)
-			TNT1 A 0 Bright A_RandomJump(spawn6, 12)
-			TNT1 A 0 Bright A_RandomJump(spawn7, 12)
-			TNT1 A 0 Bright A_RandomJump(spawn8, 12)
-			TNT1 A 0 Bright A_RandomJump(spawn9, 12)
+			TNT1 A 0 Bright A_RandomJump(Spawn2, 12)
+			TNT1 A 0 Bright A_RandomJump(Spawn3, 12)
+			TNT1 A 0 Bright A_RandomJump(Spawn4, 12)
+			TNT1 A 0 Bright A_RandomJump(Spawn5, 12)
+			TNT1 A 0 Bright A_RandomJump(Spawn6, 12)
+			TNT1 A 0 Bright A_RandomJump(Spawn7, 12)
+			TNT1 A 0 Bright A_RandomJump(Spawn8, 12)
+			TNT1 A 0 Bright A_RandomJump(Spawn9, 12)
 			Stop
 		Spawn2:
 			TNT1 A 1
@@ -737,6 +760,89 @@ thing 261 "Green plasma arc"
 			Goto Die
 		Die:
 			APBX EDCDE 5 Bright
+			Stop
+	}
+}
+
+thing 262 "BFG particle 1"
+{
+	health 1000
+	speed 20
+	radius 1
+	height 1
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 10
+
+	+NOGRAVITY
+	+NOBLOCKMAP
+	+TRANSLUCENT
+	+NOCLIP
+
+	states
+	{
+		Spawn:
+			TFOG GHIJIHG 5 Bright
+			Stop
+	}
+}
+
+thing 263 "BFG particle 2"
+{
+	health 1000
+	speed 20
+	radius 1
+	height 1
+	damage 0
+	reactiontime 8
+	painchance 0
+	mass 10
+
+	+NOGRAVITY
+	+NOBLOCKMAP
+	+TRANSLUCENT
+	+NOCLIP
+
+	states
+	{
+		Spawn:
+			TNT1 A 1
+			TNT1 A 1 Bright {
+				A_RandomJump(Die, 30)
+				A_SpawnObject(262, 0, 30, 30, -5, -1, 0, 0)
+			}
+			TNT1 A 1 Bright {
+				A_RandomJump(Die, 60)
+				A_SpawnObject(262, 0, -30, -30, -5, -1, -1, 0.5)
+			}
+			TNT1 A 1 Bright {
+				A_RandomJump(Die, 90)
+				A_SpawnObject(262, 0, 0, -30, 30, -1, 0, 0)
+			}
+			TNT1 A 1 Bright {
+				A_RandomJump(Die, 120)
+				A_SpawnObject(262, 0, 0, 30, -30, -0.5, -1, 0.5)
+			}
+			TNT1 A 1 Bright {
+				A_RandomJump(Die, 150)
+				A_SpawnObject(262, 0, 30, 0, 30, 1, -1, 0)
+			}
+			TNT1 A 1 Bright {
+				A_RandomJump(Die, 180)
+				A_SpawnObject(262, 0, -30, 0, -30, 0, 1, 1)
+			}
+			TNT1 A 1 Bright {
+				A_RandomJump(Die, 210)
+				A_SpawnObject(262, 0, 0, 30, -30, 1, -1, 0)
+			}
+			TNT1 A 1 Bright {
+				A_RandomJump(Die, 240)
+				A_SpawnObject(262, 0, 0, -30, 30, -1, 1, 0.5)
+			}
+			Goto Die
+		Die:
+			TNT1 A 0 Bright
 			Stop
 	}
 }

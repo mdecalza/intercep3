@@ -31,12 +31,10 @@ thing 43
 	splashgroup 1
 }
 
-// BFG ball gives splash damage
-state free 115 to 116
-state fill 115
+// BFG ball gives splash damage and spawns particles
+state 115
 {
-	BFS1 AB 4 Bright A_RadiusDamage(32, 512)
-	Loop
+	BFS1 A 4 Bright A_RadiusDamage(64, 512)
 }
 
 // BFG collision gives splash damage
