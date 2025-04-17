@@ -230,7 +230,7 @@ weapon 7 "Model 64 chainsaw"
 weapon 8 "Incendiary shotgun"
 {
 	// MBF21 fields
-	ammopershot 5
+	ammopershot 3
 
 	States
 	{
