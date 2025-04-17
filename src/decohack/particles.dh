@@ -36,10 +36,10 @@ state 357
 	MANF A 4 Bright A_SpawnObject(254, 0, -8, 0, 0, 0, 0, 0.25)
 }
 
-// Baron/hell knight fireball spawns ashes
+// Baron/hell knight fireball spawns nukage droplet
 state 522
 {
-	BAL7 A 4 Bright A_SpawnObject(254, 0, -8, 0, 0, 0, 0, 0.25)
+	BAL7 A 4 Bright A_SpawnObject(258, 0, -8, 0, 0, 0, 0, 0.25)
 }
 
 // Lost soul spawns embers on charge

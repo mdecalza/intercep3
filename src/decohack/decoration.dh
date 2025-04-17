@@ -1647,7 +1647,7 @@ thing 240 "Trash bin"
 			SP89 B 8 A_Scream
 			SP89 C 8 {
 				A_Fall
-				A_RandomJump(SpawnShells, 192)  // 75% chance
+				A_RandomJump(SpawnShells, 160)  // 62.5% chance
 				A_RandomJump(SpawnClip, 128)  // 50% chance
 				A_RandomJump(SpawnCell, 90)  // ~35% chance
 				A_RandomJump(SpawnStimpack, 77)  // ~30% chance
