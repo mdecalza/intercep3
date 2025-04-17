@@ -286,7 +286,7 @@ FIRE HYDRANT
 
 STREET LIGHT
  DECOHack: Moustachio
- Sprites: 
+ Sprites: Midway
 
 PILE OF BONES
  DECOHack: Moustachio
@@ -314,7 +314,7 @@ EMBERS
 
 RAIN
  DECOHack: Lina
- Sprites: 
+ Sprites: Gutawer
 
 ASH
  DECOHack: Lina
@@ -322,7 +322,7 @@ ASH
 
 BLOOD DRIP
  DECOHack: Lina
- Sprites:
+ Sprites: Gutawer
 
 NUKAGE BURBLE
  DECOHack: Lina

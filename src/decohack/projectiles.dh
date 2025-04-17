@@ -121,8 +121,8 @@ thing 153 "Arrow"
 	States
 	{
 		Spawn:
-			SP00 A 4
-			Loop
+			SP00 A -1
+			Stop
 		Death:
 			SP00 B 4 A_Scream
 			SP00 CDE 4
