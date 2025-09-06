@@ -665,8 +665,166 @@ id Software
 Raven Software
 Rogue Entertainment
 
+KDiTex Curated 1.0
+Credits and Attributions List
+
+------------------------------------------------------------------------------------------------------
+TEXTURES
+------------------------------------------------------------------------------------------------------
+
+BRGR browngrn clones:
+by esselfortium, from scratch (aside from the header strips in BRGRBR04 and similar)
+
+BRON brown96 edits:
+by esselfortium, derived from iwad BROWN96 texture
+
+CABLESL cables:
+by esselfortium, from scratch
+
+COMPERID computers:
+created by Amuscaria, recolored by esselfortium (and edited to include the infamous KDiZD "Die!" computer)
+
+COMPGRT grates:
+by Espi, based on iwad textures (originally from SID.WAD)
+
+COMPOD compohso edits:
+simple edits by esselfortium, derived from Doom alpha textures in LOSTRES (backdrop darkened for contrast and compblue parts recolored for variations)
+
+COMPSPA computer supports and trims:
+edits by esselfortium, derived from iwad comp textures
+
+COMPUTE4 and 5 computer strips:
+simple edits by esselfortium, derived from iwad computers
+
+CRAT48 medium-sized crates:
+edits by esselfortium, derived from iwad crates
+
+DOORLK 72/88 tall lock strips:
+edits by esselfortium, derived from iwad and kdizd lock textures
+
+GSTONE32:
+edit by esselfortium, derived from iwad gstone
+
+MARB strips:
+edits by esselfortium, derived from iwad marble textures
+
+N5MTWL metal supports:
+edits by NiGHTMARE, originally from KDiZD, derived from iwad metal and support3
+
+PLAT192:
+edit by esselfortium, derived from iwad plat texture
+
+SHAWNCM silver computers:
+by esselfortium, derived from iwad computers and shawn2
+
+SLBN brown1 clones:
+by esselfortium, completely from scratch
+
+SLSPINE1:
+edited by esselfortium, derived from iwad flesh textures
+
+SP_HOT32:
+edit by esselfortium, derived from iwad sp_hot texture
+
+STARSL:
+edits and recolors by esselfortium
+derived from iwad star textures for basic panels
+derived from NiGHTMARE's 5th Episode for the simplified panel and strip layouts
+derived from iwad marble textures where relevant
+
+STONE2 and STONE3 brick variants:
+edits by NiGHTMARE
+
+STONEB and STONEG brown and green brick sets:
+edits by esselfortium, derived from iwad floor7_1
+
+WOOD:
+edits by esselfortium, derived from Freedoom remakes of Doom2 wood
+
+XWLIT colored lights:
+edits by esselfortium, derived from iwad lights
+
+Y5COMP02 comp pillars:
+edit by esselfortium, derived from iwad comp textures
+
+Z4STAR edits:
+edits by esselfortium, derived from iwad star panels (these ones are useful for fitting star panels to common sector heights!)
+
+Z8BLOD:
+edits by esselfortium, derived from iwad textures and NiGHTMARE edits (the metal supports)
+
+Z8FADE:
+edits by esselfortium, derived from iwad textures
+
+SNAKS and SPINS flesh animations:
+by esselfortium, derived from iwad textures
+
+
+
+------------------------------------------------------------------------------------------------------
+FLATS
+------------------------------------------------------------------------------------------------------
+
+COMPFT:
+13 and 14 by Espi, 15 by Espi and esselfortium, all derived from iwad textures
+
+DIAM diamonds:
+by esselfortium, backdrops derived from iwad textures and from some KDiZD textures by NiGHTMARE and Nmn
+
+DOORST:
+by Espi, derived from iwad textures
+
+FLAT5WRN:
+edit by esselfortium, derived from iwad flat5
+
+FLOOR0_W:
+edit by esselfortium, derived from iwad flats
+
+HEXY hexagons:
+by esselfortium, backdrops derived from iwad textures and from some KDiZD textures by NiGHTMARE and Nmn
+
+MARB tiles:
+based on iwad marble edits by NiGHTMARE
+
+NFFL marble:
+iwad marble edits by NiGHTMARE
+
+RED2:
+Doom alpha texture
+
+RROCK:
+originals by Nmn, edited and tiling-fixed versions by esselfortium
+
+STON2/STON3:
+derived from NiGHTMARE's iwad texture edits
+
+TESS tesselated patterns:
+by esselfortium, backdrops derived from iwad textures and from some KDiZD textures by NiGHTMARE and Nmn
+
+VINE:
+edits by esselfortium, derived from iwad flats and NiGHTMARE's flat recolors
+
+WARNFLT:
+warning stripes derived from a NiGHTMARE iwad edit, 32-wide strip edits by esselfortium
+
+WOODFT:
+by esselfortium, derived from Freedoom wood
+
+XLITE:
+edits by esselfortium, derived from iwad lights
+
+Z8DIAM:
+by esselfortium, derived from iwad and Doom alpha flats
+
+DBP36 RESOURCE CREDITS (from dbp36.txt)
+DooMAD for 95% of the new textures, taken from StalungCraeft.
+Realm667 for the sprites.
 
 MISCTEX.wad compiled by an_mutt
+
+COMTEX by Foxhead﻿
+
+CELTIC TEXTURES from CELTICSH.WAD by Crista Forest, aka "CD Warrior"
 
 TEXTURES:
 
