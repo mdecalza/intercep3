@@ -816,16 +816,6 @@ edits by esselfortium, derived from iwad lights
 Z8DIAM:
 by esselfortium, derived from iwad and Doom alpha flats
 
-DBP36 RESOURCE CREDITS (from dbp36.txt)
-DooMAD for 95% of the new textures, taken from StalungCraeft.
-Realm667 for the sprites.
-
-MISCTEX.wad compiled by an_mutt
-
-COMTEX by Foxhead﻿
-
-CELTIC TEXTURES from CELTICSH.WAD by Crista Forest, aka "CD Warrior"
-
 TEXTURES:
 
 129th Visplane - BRI6LIT; BRI8LIT; BRICK50; BSTOLIT; CRACK01; CRACK02; CRACK03; CRACK04; CRACK05; MARBRK01; MARBRK02; MARRCK01; SKULL5_6; SNAKE01; SNAKE02; SNAKE03; SNAKE04; SNAKE05; SNAKE06; SNAKE07; SNAKE08; SNAKE09; STO6LIT; STONLIT; STONER01; STONER02; STONER03; SW1MINO; SW2MINO; TANRLIT
@@ -1213,7 +1203,6 @@ DELTA_1 - 8 (Source: Edits from Ashes 2063 (not sure about original))
 
 
 AUGER;ZENITH CREDITS
-
 Author                  : Doomer Boards Community
 Additional credits      : id Software, Raven Software, 3D Realms, Banjo Software, SEGA, Konami, Engine Technology CO. LTD, 
 Team TNT, KnightCop (Mount Fuji Vaporwave graphic), NeoWorm (original Blade Runner blaster sprites), Princess Prozac (neon artwork), 
@@ -1221,6 +1210,40 @@ Astolfo Alter (HOME - Resonance MIDI), Lobo, Ketmar Dark, jazzisthebestformofmus
 xvertigox, gokuma, LoneAlpha2401, nootrac4571, doom_dude, Gez, Gifty, Solmyr, Dusk, Reactor, Realm667, MrZzul, stxvile, katarn11, MeowgiTV, 
 Colossus_afps, ozymandias81, skepticist, grrfield, galileo31dos01, P41R47, VanaheimRanger, hakros, memfis, and all of you reading this because you all deserve more credit.
 Thank you for your support!
+
+
+DBP36 RESOURCE CREDITS (from dbp36.txt)
+DooMAD for 95% of the new textures, taken from StalungCraeft.
+Realm667 for the sprites.
+
+
+RFHELLTX.WAD CREDITS
+credits:
+me
+id software
+(who did the starbrn)
+Tom Mustaine (perdition gate metal textures)
+Fairfax Sheild McCandlish IV (Mackey) (from DMF)
+Staffan SHL Linderoth (icy metal textures from egypt.wad)
+Cage (caco marble)
+Gothic (patch ideas)
+Deskspace, NASA, G Dan Mitchell (base resources for moon textures)
+Espi (couple door textures from SiD)
+
+
+BIOTEX.WAD by Rick Clark
+
+
+MISCTEX.wad compiled by an_mutt
+
+
+COMTEX by Foxhead﻿
+
+
+CELTIC TEXTURES (celticsh.wad) by Crista Forest, aka "CD Warrior"
+
+
+PSYREN TEXTURES (psytex.wad) by J.S.Graham (aka psyren)
 
 
 -= GRAPHICS =-
