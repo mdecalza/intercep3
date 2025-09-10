@@ -57,7 +57,7 @@ thing 208 "Barbat-OS"
 // Fires a deadly incendiary round
 thing 242 : thing 11 "Incendiary zombie"
 {
-	//$category Enemies/Fodder
+	//$category Monsters/Fodder
 	ednum 6091
 
 	health 80
@@ -147,7 +147,7 @@ thing 242 : thing 11 "Incendiary zombie"
 // Fires a spread of 3 arachnotron plasma balls
 thing 243 : thing 3 "Plasma zombie"
 {
-	//$category Enemies/Fodder
+	//$category Monsters/Fodder
 	ednum 6092
 
 	health 40
@@ -203,7 +203,7 @@ thing 243 : thing 3 "Plasma zombie"
 // Glass cannon -- fires 1 rocket after long wind-up
 thing 244 : thing 2 "Rocket zombie"
 {
-	//$category Enemies/Fodder
+	//$category Monsters/Fodder
 	ednum 6093
 
 	health 10
@@ -261,7 +261,7 @@ thing 244 : thing 2 "Rocket zombie"
 // Weaker, smaller masterminds
 thing 245 : thing 20 "Former tank"
 {
-	//$category Enemies/Mid-tier
+	//$category Monsters/Heavy
 	ednum 6094
 
 	health 1000
@@ -321,7 +321,7 @@ thing 245 : thing 20 "Former tank"
 // Can jump up and down ledges
 thing 247 : thing 12 "Gliding imp"
 {
-	//$category Enemies/Fodder
+	//$category Monsters/Fodder
 	ednum 6096
 
 	mass 75
@@ -369,7 +369,7 @@ thing 247 : thing 12 "Gliding imp"
 
 thing 248 : thing 12 "Snake imp"
 {
-	//$category Enemies/Mid-tier
+	//$category Monsters/Mid-tier
 	ednum 6097
 
 	health 200
