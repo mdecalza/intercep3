@@ -11,6 +11,7 @@
 // Flies around in a circle with a radius of 160 map units
 thing 219 "Skull mine"
 {
+	//$category Hazards
 	ednum 6068
 
 	health 10000
@@ -48,6 +49,7 @@ thing 219 "Skull mine"
 // Delivers extreme amounts of damage when blown up
 thing 241 : thing 31 "Nitro barrel"
 {
+	//$category Hazards
 	ednum 6090
 
 	health 40
@@ -77,6 +79,7 @@ thing 241 : thing 31 "Nitro barrel"
 // Shoots one arrow every two seconds
 thing 246 "Arrow turret"
 {
+	//$category Hazards
 	ednum 6095
 
 	health 1000
