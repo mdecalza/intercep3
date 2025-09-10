@@ -107,6 +107,7 @@ thing 126 "Twitching impaled human"
 
 thing 152 "Fire pit"
 {
+	//$category Decoration
 	ednum 6001
 
 	radius 16
@@ -126,6 +127,7 @@ thing 152 "Fire pit"
 
 thing 154 "Tall floor lamp"
 {
+	//$category Decoration/Lights
 	ednum 6003
 
 	radius 16
@@ -143,6 +145,7 @@ thing 154 "Tall floor lamp"
 
 thing 155 "Techbase lamp"
 {
+	//$category Decoration/Lights
 	ednum 6004
 
 	radius 16
@@ -160,6 +163,7 @@ thing 155 "Techbase lamp"
 
 thing 156 "Short techno floor lamp 2"
 {
+	//$category Decoration/Lights
 	ednum 6005
 
 	radius 16
@@ -177,6 +181,7 @@ thing 156 "Short techno floor lamp 2"
 
 thing 157 "Chandelier"
 {
+	//$category Decoration/Lights
 	ednum 6006
 
 	radius 16
@@ -196,6 +201,7 @@ thing 157 "Chandelier"
 
 thing 158 "Tall hanging techno lamp"
 {
+	//$category Decoration/Lights
 	ednum 6007
 
 	radius 16
@@ -215,6 +221,7 @@ thing 158 "Tall hanging techno lamp"
 
 thing 159 "Short hanging techno lamp"
 {
+	//$category Decoration/Lights
 	ednum 6008
 
 	radius 16
@@ -234,6 +241,7 @@ thing 159 "Short hanging techno lamp"
 
 thing 160 "Chandelier 2"
 {
+	//$category Decoration/Lights
 	ednum 6009
 
 	radius 16
@@ -253,6 +261,7 @@ thing 160 "Chandelier 2"
 
 thing 161 "Large brown tree 2"
 {
+	//$category Decoration/Nature
 	ednum 6010
 
 	radius 16
@@ -270,6 +279,7 @@ thing 161 "Large brown tree 2"
 
 thing 162 "Burned-down tree"
 {
+	//$category Decoration/Nature
 	ednum 6011
 
 	radius 16
@@ -287,6 +297,7 @@ thing 162 "Burned-down tree"
 
 thing 163 "Hell tree"
 {
+	//$category Decoration/Hell
 	ednum 6012
 
 	radius 16
