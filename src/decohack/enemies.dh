@@ -261,7 +261,7 @@ thing 244 : thing 2 "Rocket zombie"
 // Weaker, smaller masterminds
 thing 245 : thing 20 "Former tank"
 {
-	//$category Monsters/Mid-tier
+	//$category Monsters/Heavy
 	ednum 6094
 
 	health 1000
