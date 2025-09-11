@@ -8,6 +8,26 @@
 
 #include "projectiles.dh"
 
+// Deals small amount of damage when very close
+thing 166 "Lava cauldron"
+{
+	//$category Hazards
+	ednum 6015
+
+	radius 24
+	height 24
+
+	+SOLID
+
+	States
+	{
+		Spawn:
+			SP15 A 16 Bright A_RadiusDamage(10, 48)
+			SP15 BC 16 Bright
+			Loop
+	}
+}
+
 // Flies around in a circle with a radius of 160 map units
 thing 219 "Skull mine"
 {
@@ -46,10 +66,42 @@ thing 219 "Skull mine"
 	}
 }
 
+// Explodes on contact
+thing 238 "Mine"
+{
+	//$category Hazards
+	ednum 6087
+
+	health 1000
+	radius 16
+	height 32
+	damage 20
+	mass 100
+
+	+DROPOFF
+	+MISSILE
+	+BOUNCES
+	+TOUCHY
+
+	deathsound "BAREXP"
+
+	States
+	{
+		Spawn:
+			SP87 ABCDE 2
+			Loop
+		Death:
+			MISL B 8 A_Mushroom
+			MISL C 6
+			MISL D 4
+			Stop
+	}
+}
+
 // Delivers extreme amounts of damage when blown up
 thing 241 : thing 31 "Nitro barrel"
 {
-	//$category Hazards
+	//$category Obstacles
 	ednum 6090
 
 	health 40

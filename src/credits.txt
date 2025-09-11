@@ -316,6 +316,10 @@ RAIN
  DECOHack: Lina
  Sprites: Gutawer
 
+SNOW
+ DECOHack: Moustachio
+ Sprites: Moustachio
+
 ASH
  DECOHack: Lina
  Sprites: Lina
@@ -336,7 +340,37 @@ GREEN & BLUE PLASMA ARCS
  DECOHack: Moustachio
  Sprites: id Software
 
-Projectile particle DECOHack by Lina and Moustachio.
+AIR BUBBLES
+ DECOHack: Moustachio
+ Sprites: Realm667 (found in DBP36.wad)
+
+WANDERING SPIRITS
+ DECOHack: Moustachio
+ Sprites: Doom, unsplash.com, Captain Toenail
+
+Projectile particle DECOHack by Moustachio and Lina.
+
+
+-= WILDLIFE =-
+
+FLY
+ DECOHack: Moustachio
+ Sprites: Monolith Productions, Doomedarchviledemon
+ Sounds: FreeSounds
+
+CROW
+ DECOHack: Moustachio
+ Sprites: Konami, Mor'ladim
+ Sounds: Mor'ladim, Jojikiba
+
+RAT
+ DECOHack: Moustachio
+ Sprites: Capstone Software
+ Sounds: FindSounds.com
+
+POND FROG
+ DECOHack: Moustachio
+ Sprites: zrrion the insect
 
 
 -= TEXTURES & FLATS =-
