@@ -27,7 +27,7 @@ state 109
 // Rocket in flight spawns trail
 state 114
 {
-	MISL A 5 bright a_spawnobject(259, 0.0, -8.0, 0.0, 6.0, 8.0)
+	MISL A 5 Bright A_SpawnObject(259, 0.0, -8.0, 0.0, 6.0, 8.0)
 }
 
 // BFG ball spawns particles
@@ -77,6 +77,8 @@ state 669
 	APBX A 5 Bright A_SpawnObject(261)
 }
 
+// Custom particle spawners
+
 thing 249 "Embers"
 {
 	//$category VFX
@@ -89,54 +91,56 @@ thing 249 "Embers"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+nogravity
-	states
+
+	+NOGRAVITY
+
+	States
 	{
-		spawn: 
+		Spawn: 
 			TNT1 A 69
-			TNT1 A 1 a_randomjump(risepick, 50)
-			TNT1 A 1 a_randomjump(risepick, 63)
-			TNT1 A 1 a_randomjump(risepick, 85)
-			TNT1 A 1 a_randomjump(risepick, 127)
-			goto risepick
-		risepick:
+			TNT1 A 1 A_RandomJump(RisePick, 50)
+			TNT1 A 1 A_RandomJump(RisePick, 63)
+			TNT1 A 1 A_RandomJump(RisePick, 85)
+			TNT1 A 1 A_RandomJump(RisePick, 127)
+			Goto RisePick
+		RisePick:
 			TNT1 A 1
-			TNT1 A 0 a_randomjump(rise2, 27)
-			TNT1 A 0 a_randomjump(rise3, 31)
-			TNT1 A 0 a_randomjump(rise4, 36)
-			TNT1 A 0 a_randomjump(rise5, 42)
-			TNT1 A 0 a_randomjump(rise6, 50)
-			TNT1 A 0 a_randomjump(rise7, 63)
-			TNT1 A 0 a_randomjump(rise8, 85)
-			TNT1 A 0 a_randomjump(rise9, 127)
-			goto rise1
-		rise1:
-			TNT1 A 1 a_spawnobject(250, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5)
-			goto spawn
-		rise2:
-			TNT1 A 1 a_spawnobject(250, 0.0, 42.0, 0.0, 0.0, 0.0, 0.0, 0.5)
-			goto spawn
-		rise3:
-			TNT1 A 1 a_spawnobject(250, 0.0, -42.0, 0.0, 0.0, 0.0, 0.0, 0.5)
-			goto spawn
-		rise4:
-			TNT1 A 1 a_spawnobject(250, 0.0, 0.0, 42.0, 0.0, 0.0, 0.0, 0.5)
-			goto spawn
-		rise5:
-			TNT1 A 1 a_spawnobject(250, 0.0, 0.0,-42.0, 0.0, 0.0, 0.0, 0.5)
-			goto spawn
-		rise6:
-			TNT1 A 1 a_spawnobject(250, 0.0, 42.0, 42.0, 0.0, 0.0, 0.0, 0.5)
-			goto spawn
-		rise7:
-			TNT1 A 1 a_spawnobject(250, 0.0, -42.0, 42.0, 0.0, 0.0, 0.0, 0.5)
-			goto spawn
-		rise8:
-			TNT1 A 1 a_spawnobject(250, 0.0, 42.0, -42.0, 0.0, 0.0, 0.0, 0.5)
-			goto spawn
-		rise9:
-			TNT1 A 1 a_spawnobject(250, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, 0.5)
-			goto spawn
+			TNT1 A 0 A_RandomJump(Rise2, 27)
+			TNT1 A 0 A_RandomJump(Rise3, 31)
+			TNT1 A 0 A_RandomJump(Rise4, 36)
+			TNT1 A 0 A_RandomJump(Rise5, 42)
+			TNT1 A 0 A_RandomJump(Rise6, 50)
+			TNT1 A 0 A_RandomJump(Rise7, 63)
+			TNT1 A 0 A_RandomJump(Rise8, 85)
+			TNT1 A 0 A_RandomJump(Rise9, 127)
+			Goto Rise1
+		Rise1:
+			TNT1 A 1 A_SpawnObject(250, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5)
+			Goto Spawn
+		Rise2:
+			TNT1 A 1 A_SpawnObject(250, 0.0, 42.0, 0.0, 0.0, 0.0, 0.0, 0.5)
+			Goto Spawn
+		Rise3:
+			TNT1 A 1 A_SpawnObject(250, 0.0, -42.0, 0.0, 0.0, 0.0, 0.0, 0.5)
+			Goto Spawn
+		Rise4:
+			TNT1 A 1 A_SpawnObject(250, 0.0, 0.0, 42.0, 0.0, 0.0, 0.0, 0.5)
+			Goto Spawn
+		Rise5:
+			TNT1 A 1 A_SpawnObject(250, 0.0, 0.0,-42.0, 0.0, 0.0, 0.0, 0.5)
+			Goto Spawn
+		Rise6:
+			TNT1 A 1 A_SpawnObject(250, 0.0, 42.0, 42.0, 0.0, 0.0, 0.0, 0.5)
+			Goto Spawn
+		Rise7:
+			TNT1 A 1 A_SpawnObject(250, 0.0, -42.0, 42.0, 0.0, 0.0, 0.0, 0.5)
+			Goto Spawn
+		Rise8:
+			TNT1 A 1 A_SpawnObject(250, 0.0, 42.0, -42.0, 0.0, 0.0, 0.0, 0.5)
+			Goto Spawn
+		Rise9:
+			TNT1 A 1 A_SpawnObject(250, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, 0.5)
+			Goto Spawn
 	}
 }
 
@@ -150,48 +154,50 @@ thing 250 "Ember"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+missile
-	+noblockmap
-	+nogravity
-	+translucent
-	states
+
+	+MISSILE
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+TRANSLUCENT
+
+	States
 	{
-		spawn:
+		Spawn:
 			TNT1 A 1
-			goto pick
-		pick:
+			Goto Pick
+		Pick:
 			TNT1 A 0 {
-			a_randomjump(type2,85)
-			a_randomjump(type3,127)
+			A_RandomJump(Type2, 85)
+			A_RandomJump(Type3, 127)
 			}
-			goto type1
-		type1:
-			SP98 EDCB 2 bright
-			SP98 A 10 bright a_removeflags(translucent)
-			SP98 BC 8 bright
-			SP98 C 6 bright a_addflags(translucent)
-			SP98 DE 6 bright
-			goto xdeath
-		type2:
-			SP98 JIHG 2 bright
-			SP98 F 13 bright a_removeflags(translucent)
-			SP98 GH 11 bright
-			SP98 H 9 bright a_addflags(translucent)
-			SP98 IJ 9 bright
-			goto xdeath
-		type3:
-			SP98 ONML 2 bright
-			SP98 K 16 bright a_removeflags(translucent)
-			SP98 LM 14 bright
-			SP98 M 12 bright a_addflags(translucent)
-			SP98 NO 12 bright
-			goto xdeath
-		death:
+			Goto Type1
+		Type1:
+			SP98 EDCB 2 Bright
+			SP98 A 10 Bright A_RemoveFlags(TRANSLUCENT)
+			SP98 BC 8 Bright
+			SP98 C 6 Bright A_AddFlags(TRANSLUCENT)
+			SP98 DE 6 Bright
+			Goto XDeath
+		Type2:
+			SP98 JIHG 2 Bright
+			SP98 F 13 Bright A_RemoveFlags(TRANSLUCENT)
+			SP98 GH 11 Bright
+			SP98 H 9 Bright A_AddFlags(TRANSLUCENT)
+			SP98 IJ 9 Bright
+			Goto XDeath
+		Type3:
+			SP98 ONML 2 Bright
+			SP98 K 16 Bright A_RemoveFlags(TRANSLUCENT)
+			SP98 LM 14 Bright
+			SP98 M 12 Bright A_AddFlags(TRANSLUCENT)
+			SP98 NO 12 Bright
+			Goto XDeath
+		Death:
 			TNT1 A 1
-			stop
-		xdeath:
+			Stop
+		XDeath:
 			TNT1 A 1
-			stop
+			Stop
 	}
 }
 
@@ -207,55 +213,57 @@ thing 251 "Rain"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+spawnceiling
-	+nogravity
-	states
+
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
 	{
-		spawn: 
+		Spawn: 
 			TNT1 A 34
-			TNT1 A 1 a_randomjump(fallpick,50)
-			TNT1 A 1 a_randomjump(fallpick,63)
-			TNT1 A 1 a_randomjump(fallpick,85)
-			TNT1 A 1 a_randomjump(fallpick,127)
-			goto fallpick
-		fallpick:
+			TNT1 A 1 A_RandomJump(FallPick, 50)
+			TNT1 A 1 A_RandomJump(FallPick, 63)
+			TNT1 A 1 A_RandomJump(FallPick, 85)
+			TNT1 A 1 A_RandomJump(FallPick, 127)
+			Goto FallPick
+		FallPick:
 			TNT1 A 1
-			TNT1 A 0 a_randomjump(fall2,27)
-			TNT1 A 0 a_randomjump(fall3,31)
-			TNT1 A 0 a_randomjump(fall4,36)
-			TNT1 A 0 a_randomjump(fall5,42)
-			TNT1 A 0 a_randomjump(fall6,50)
-			TNT1 A 0 a_randomjump(fall7,63)
-			TNT1 A 0 a_randomjump(fall8,85)
-			TNT1 A 0 a_randomjump(fall9,127)
-			goto fall1
-		fall1:
-			TNT1 A 1 a_spawnobject(252,0,0,0,0,0,0,-16)
-			goto spawn
-		fall2:
-			TNT1 A 1 a_spawnobject(252,0,42,0,0,0,0,-16)
-			goto spawn
-		fall3:
-			TNT1 A 1 a_spawnobject(252,0,-42,0,0,0,0,-16)
-			goto spawn
-		fall4:
-			TNT1 A 1 a_spawnobject(252,0,0,42,0,0,0,-16)
-			goto spawn
-		fall5:
-			TNT1 A 1 a_spawnobject(252,0,0,-42,0,0,0,-16)
-			goto spawn
-		fall6:
-			TNT1 A 1 a_spawnobject(252,0,42,42,0,0,0,-16)
-			goto spawn
-		fall7:
-			TNT1 A 1 a_spawnobject(252,0,-42,42,0,0,0,-16)
-			goto spawn
-		fall8:
-			TNT1 A 1 a_spawnobject(252,0,42,-42,0,0,0,-16)
-			goto spawn
-		fall9:
-			TNT1 A 1 a_spawnobject(252,0,-42,-42,0,0,0,-16)
-			goto spawn
+			TNT1 A 0 A_RandomJump(Fall2, 27)
+			TNT1 A 0 A_RandomJump(Fall3, 31)
+			TNT1 A 0 A_RandomJump(Fall4, 36)
+			TNT1 A 0 A_RandomJump(Fall5, 42)
+			TNT1 A 0 A_RandomJump(Fall6, 50)
+			TNT1 A 0 A_RandomJump(Fall7, 63)
+			TNT1 A 0 A_RandomJump(Fall8, 85)
+			TNT1 A 0 A_RandomJump(Fall9, 127)
+			Goto Fall1
+		Fall1:
+			TNT1 A 1 A_SpawnObject(252, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall2:
+			TNT1 A 1 A_SpawnObject(252, 0.0, 42.0,0.0,0.0,0.0,0.0,-16.0)
+			Goto Spawn
+		Fall3:
+			TNT1 A 1 A_SpawnObject(252, 0.0, -42.0, 0.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall4:
+			TNT1 A 1 A_SpawnObject(252, 0.0, 0.0, 42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall5:
+			TNT1 A 1 A_SpawnObject(252, 0.0, 0.0, -42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall6:
+			TNT1 A 1 A_SpawnObject(252, 0.0, 42.0, 42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall7:
+			TNT1 A 1 A_SpawnObject(252, 0.0, -42.0, 42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall8:
+			TNT1 A 1 A_SpawnObject(252, 0.0, 42.0, -42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall9:
+			TNT1 A 1 A_SpawnObject(252, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
 	}
 }
 
@@ -269,16 +277,18 @@ thing 252 "Raindrop"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+missile
-	+noblockmap
-	states
+
+	+MISSILE
+	+NOBLOCKMAP
+
+	States
 	{
-		spawn:
+		Spawn:
 			SP99 A 8
-			loop
-		death:
+			Loop
+		Death:
 			SP99 BCDEFGH 1
-			stop
+			Stop
 	}
 }
 
@@ -294,54 +304,56 @@ thing 253 "Ash"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+nogravity
-	states
+
+	+NOGRAVITY
+
+	States
 	{
-		spawn: 
+		Spawn: 
 			TNT1 A 69
-			TNT1 A 1 a_randomjump(risepick,50)
-			TNT1 A 1 a_randomjump(risepick,63)
-			TNT1 A 1 a_randomjump(risepick,85)
-			TNT1 A 1 a_randomjump(risepick,127)
-			goto risepick
-		risepick:
+			TNT1 A 1 A_RandomJump(RisePick, 50)
+			TNT1 A 1 A_RandomJump(RisePick, 63)
+			TNT1 A 1 A_RandomJump(RisePick, 85)
+			TNT1 A 1 A_RandomJump(RisePick, 127)
+			Goto RisePick
+		RisePick:
 			TNT1 A 1
-			TNT1 A 0 a_randomjump(rise2,27)
-			TNT1 A 0 a_randomjump(rise3,31)
-			TNT1 A 0 a_randomjump(rise4,36)
-			TNT1 A 0 a_randomjump(rise5,42)
-			TNT1 A 0 a_randomjump(rise6,50)
-			TNT1 A 0 a_randomjump(rise7,63)
-			TNT1 A 0 a_randomjump(rise8,85)
-			TNT1 A 0 a_randomjump(rise9,127)
-			goto rise1
-		rise1:
-			TNT1 A 1 a_spawnobject(254,0,0,0,0,1,0,1)
-			goto spawn
-		rise2:
-			TNT1 A 1 a_spawnobject(254,0,42,0,0,1,0,1)
-			goto spawn
-		rise3:
-			TNT1 A 1 a_spawnobject(254,0,-42,0,0,1,0,1)
-			goto spawn
-		rise4:
-			TNT1 A 1 a_spawnobject(254,0,0,42,0,1,0,1)
-			goto spawn
-		rise5:
-			TNT1 A 1 a_spawnobject(254,0,0,-42,0,1,0,1)
-			goto spawn
-		rise6:
-			TNT1 A 1 a_spawnobject(254,0,42,42,0,1,0,1)
-			goto spawn
-		rise7:
-			TNT1 A 1 a_spawnobject(254,0,-42,42,0,1,0,1)
-			goto spawn
-		rise8:
-			TNT1 A 1 a_spawnobject(254,0,42,-42,0,1,0,1)
-			goto spawn
-		rise9:
-			TNT1 A 1 a_spawnobject(254,0,-42,-42,0,1,0,1)
-			goto spawn
+			TNT1 A 0 A_RandomJump(Rise2, 27)
+			TNT1 A 0 A_RandomJump(Rise3, 31)
+			TNT1 A 0 A_RandomJump(Rise4, 36)
+			TNT1 A 0 A_RandomJump(Rise5, 42)
+			TNT1 A 0 A_RandomJump(Rise6, 50)
+			TNT1 A 0 A_RandomJump(Rise7, 63)
+			TNT1 A 0 A_RandomJump(Rise8, 85)
+			TNT1 A 0 A_RandomJump(Rise9, 127)
+			Goto Rise1
+		Rise1:
+			TNT1 A 1 A_SpawnObject(254, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0)
+			Goto Spawn
+		Rise2:
+			TNT1 A 1 A_SpawnObject(254, 0.0, 42.0, 0.0, 0.0, 1.0, 0.0, 1.0)
+			Goto Spawn
+		Rise3:
+			TNT1 A 1 A_SpawnObject(254, 0.0, -42.0, 0.0, 0.0, 1.0, 0.0, 1.0)
+			Goto Spawn
+		Rise4:
+			TNT1 A 1 A_SpawnObject(254, 0.0, 0.0, 42.0, 0.0, 1.0, 0.0, 1.0)
+			Goto Spawn
+		Rise5:
+			TNT1 A 1 A_SpawnObject(254, 0.0, 0.0, -42.0, 0.0, 1.0, 0.0, 1.0)
+			Goto Spawn
+		Rise6:
+			TNT1 A 1 A_SpawnObject(254, 0.0, 42.0, 42.0, 0.0, 1.0, 0.0, 1.0)
+			Goto Spawn
+		Rise7:
+			TNT1 A 1 A_SpawnObject(254, 0.0, -42.0, 42.0, 0.0, 1.0, 0.0, 1.0)
+			Goto Spawn
+		Rise8:
+			TNT1 A 1 A_SpawnObject(254, 0.0, 42.0, -42.0, 0.0, 1.0, 0.0, 1.0)
+			Goto Spawn
+		Rise9:
+			TNT1 A 1 A_SpawnObject(254, 0.0, -42.0, -42.0, 0.0, 1.0, 0.0, 1.0)
+			Goto Spawn
 	}
 }
 
@@ -355,48 +367,50 @@ thing 254 "Ash particle"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+nogravity
-	+noblockmap
-	+bounces
-	+translucent
-	states
+
+	+NOGRAVITY
+	+NOBLOCKMAP
+	+BOUNCES
+	+TRANSLUCENT
+
+	States
 	{
-		spawn:
+		Spawn:
 			TNT1 A 1
-			goto pick
-		pick:
+			Goto Pick
+		Pick:
 			TNT1 A 0 {
-			a_randomjump(type2,85)
-			a_randomjump(type3,127)
+			A_RandomJump(Type2, 85)
+			A_RandomJump(Type3, 127)
 			}
-			goto type1
-		type1:
-			SPA0 EDCB 2 bright
-			SPA0 A 10 bright a_removeflags(translucent)
-			SPA0 BC 8 bright
-			SPA0 C 6 bright a_addflags(translucent)
-			SPA0 DE 6 bright
-			goto xdeath
-		type2:
-			SPA0 JIHG 2 bright
-			SPA0 F 13 bright a_removeflags(translucent)
-			SPA0 GH 11 bright
-			SPA0 H 9 bright a_addflags(translucent)
-			SPA0 IJ 9 bright
-			goto xdeath
-		type3:
-			SPA0 ONML 2 bright
-			SPA0 K 16 bright a_removeflags(translucent)
-			SPA0 LM 14 bright
-			SPA0 M 12 bright a_addflags(translucent)
-			SPA0 NO 12 bright
-			goto xdeath
-		death:
+			Goto Type1
+		Type1:
+			SPA0 EDCB 2 Bright
+			SPA0 A 10 Bright A_RemoveFlags(TRANSLUCENT)
+			SPA0 BC 8 Bright
+			SPA0 C 6 Bright A_AddFlags(TRANSLUCENT)
+			SPA0 DE 6 Bright
+			Goto XDeath
+		Type2:
+			SPA0 JIHG 2 Bright
+			SPA0 F 13 Bright A_RemoveFlags(TRANSLUCENT)
+			SPA0 GH 11 Bright
+			SPA0 H 9 Bright A_AddFlags(TRANSLUCENT)
+			SPA0 IJ 9 Bright
+			Goto XDeath
+		Type3:
+			SPA0 ONML 2 Bright
+			SPA0 K 16 Bright A_RemoveFlags(TRANSLUCENT)
+			SPA0 LM 14 Bright
+			SPA0 M 12 Bright A_AddFlags(TRANSLUCENT)
+			SPA0 NO 12 Bright
+			Goto XDeath
+		Death:
 			TNT1 A 1
-			stop
-		xdeath:
+			Stop
+		XDeath:
 			TNT1 A 1
-			stop
+			Stop
 	}
 }
 
@@ -412,55 +426,57 @@ thing 255 "Blood drip"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+spawnceiling
-	+nogravity
-	states
+
+	+SPAWNCEILING
+	+NOGRAVITY
+
+	States
 	{
-		spawn: 
+		Spawn: 
 			TNT1 A 34
-			TNT1 A 1 a_randomjump(fallpick,50)
-			TNT1 A 1 a_randomjump(fallpick,63)
-			TNT1 A 1 a_randomjump(fallpick,85)
-			TNT1 A 1 a_randomjump(fallpick,127)
-			goto fallpick
-		fallpick:
+			TNT1 A 1 A_RandomJump(FallPick, 50)
+			TNT1 A 1 A_RandomJump(FallPick, 63)
+			TNT1 A 1 A_RandomJump(FallPick, 85)
+			TNT1 A 1 A_RandomJump(FallPick, 127)
+			Goto FallPick
+		FallPick:
 			TNT1 A 1
-			TNT1 A 0 a_randomjump(fall2,27)
-			TNT1 A 0 a_randomjump(fall3,31)
-			TNT1 A 0 a_randomjump(fall4,36)
-			TNT1 A 0 a_randomjump(fall5,42)
-			TNT1 A 0 a_randomjump(fall6,50)
-			TNT1 A 0 a_randomjump(fall7,63)
-			TNT1 A 0 a_randomjump(fall8,85)
-			TNT1 A 0 a_randomjump(fall9,127)
-			goto fall1
-		fall1:
-			TNT1 A 1 a_spawnobject(256,0,0,0,0,0,0,-16)
-			goto spawn
-		fall2:
-			TNT1 A 1 a_spawnobject(256,0,42,0,0,0,0,-16)
-			goto spawn
-		fall3:
-			TNT1 A 1 a_spawnobject(256,0,-42,0,0,0,0,-16)
-			goto spawn
-		fall4:
-			TNT1 A 1 a_spawnobject(256,0,0,42,0,0,0,-16)
-			goto spawn
-		fall5:
-			TNT1 A 1 a_spawnobject(256,0,0,-42,0,0,0,-16)
-			goto spawn
-		fall6:
-			TNT1 A 1 a_spawnobject(256,0,42,42,0,0,0,-16)
-			goto spawn
-		fall7:
-			TNT1 A 1 a_spawnobject(256,0,-42,42,0,0,0,-16)
-			goto spawn
-		fall8:
-			TNT1 A 1 a_spawnobject(256,0,42,-42,0,0,0,-16)
-			goto spawn
-		fall9:
-			TNT1 A 1 a_spawnobject(256,0,-42,-42,0,0,0,-16)
-			goto spawn
+			TNT1 A 0 A_RandomJump(Fall2, 27)
+			TNT1 A 0 A_RandomJump(Fall3, 31)
+			TNT1 A 0 A_RandomJump(Fall4, 36)
+			TNT1 A 0 A_RandomJump(Fall5, 42)
+			TNT1 A 0 A_RandomJump(Fall6, 50)
+			TNT1 A 0 A_RandomJump(Fall7, 63)
+			TNT1 A 0 A_RandomJump(Fall8, 85)
+			TNT1 A 0 A_RandomJump(Fall9, 127)
+			Goto Fall1
+		Fall1:
+			TNT1 A 1 A_SpawnObject(256, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall2:
+			TNT1 A 1 A_SpawnObject(256, 0.0, 42.0, 0.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall3:
+			TNT1 A 1 A_SpawnObject(256, 0.0, -42.0, 0.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall4:
+			TNT1 A 1 A_SpawnObject(256, 0.0, 0.0, 42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall5:
+			TNT1 A 1 A_SpawnObject(256, 0.0, 0.0, -42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall6:
+			TNT1 A 1 A_SpawnObject(256, 0.0, 42.0, 42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall7:
+			TNT1 A 1 A_SpawnObject(256, 0.0, -42.0, 42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall8:
+			TNT1 A 1 A_SpawnObject(256, 0.0, 42.0, -42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
+		Fall9:
+			TNT1 A 1 A_SpawnObject(256, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, -16.0)
+			Goto Spawn
 	}
 }
 
@@ -474,16 +490,18 @@ thing 256 "Blood droplet"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+missile
-	+noblockmap
-	states
+
+	+MISSILE
+	+NOBLOCKMAP
+
+	States
 	{
-		spawn:
+		Spawn:
 			SPA1 A 8
-			loop
-		death:
+			Loop
+		Death:
 			SPA1 BCDEFGH 1
-			stop
+			Stop
 	}
 }
 
@@ -499,54 +517,56 @@ thing 257 "Nukage burble"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+nogravity
-	states
+
+	+NOGRAVITY
+
+	States
 	{
-		spawn: 
+		Spawn: 
 			TNT1 A 105
-			TNT1 A 7 a_randomjump(risepick,50)
-			TNT1 A 7 a_randomjump(risepick,63)
-			TNT1 A 7 a_randomjump(risepick,85)
-			TNT1 A 7 a_randomjump(risepick,127)
-			goto risepick
-		risepick:
+			TNT1 A 7 A_RandomJump(RisePick, 50)
+			TNT1 A 7 A_RandomJump(RisePick, 63)
+			TNT1 A 7 A_RandomJump(RisePick, 85)
+			TNT1 A 7 A_RandomJump(RisePick, 127)
+			Goto RisePick
+		RisePick:
 			TNT1 A 1
-			TNT1 A 0 a_randomjump(rise2,27)
-			TNT1 A 0 a_randomjump(rise3,31)
-			TNT1 A 0 a_randomjump(rise4,36)
-			TNT1 A 0 a_randomjump(rise5,42)
-			TNT1 A 0 a_randomjump(rise6,50)
-			TNT1 A 0 a_randomjump(rise7,63)
-			TNT1 A 0 a_randomjump(rise8,85)
-			TNT1 A 0 a_randomjump(rise9,127)
-			goto rise1
-		rise1:
-			TNT1 A 1 a_spawnobject(258,0,0,0,0,0,0,2.5)
-			goto spawn
-		rise2:
-			TNT1 A 1 a_spawnobject(258,0,42,0,0,0,0,2.5)
-			goto spawn
-		rise3:
-			TNT1 A 1 a_spawnobject(258,0,-42,0,0,0,0,2.5)
-			goto spawn
-		rise4:
-			TNT1 A 1 a_spawnobject(258,0,0,42,0,0,0,2.5)
-			goto spawn
-		rise5:
-			TNT1 A 1 a_spawnobject(258,0,0,-42,0,0,0,2.5)
-			goto spawn
-		rise6:
-			TNT1 A 1 a_spawnobject(258,0,42,42,0,0,0,2.5)
-			goto spawn
-		rise7:
-			TNT1 A 1 a_spawnobject(258,0,-42,42,0,0,0,2.5)
-			goto spawn
-		rise8:
-			TNT1 A 1 a_spawnobject(258,0,42,-42,0,0,0,2.5)
-			goto spawn
-		rise9:
-			TNT1 A 1 a_spawnobject(258,0,-42,-42,0,0,0,2.5)
-			goto spawn
+			TNT1 A 0 A_RandomJump(Rise2, 27)
+			TNT1 A 0 A_RandomJump(Rise3, 31)
+			TNT1 A 0 A_RandomJump(Rise4, 36)
+			TNT1 A 0 A_RandomJump(Rise5, 42)
+			TNT1 A 0 A_RandomJump(Rise6, 50)
+			TNT1 A 0 A_RandomJump(Rise7, 63)
+			TNT1 A 0 A_RandomJump(Rise8, 85)
+			TNT1 A 0 A_RandomJump(Rise9, 127)
+			Goto Rise1
+		Rise1:
+			TNT1 A 1 A_SpawnObject(258, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.5)
+			Goto Spawn
+		Rise2:
+			TNT1 A 1 A_SpawnObject(258, 0.0, 42.0, 0.0, 0.0, 0.0, 0.0, 2.5)
+			Goto Spawn
+		Rise3:
+			TNT1 A 1 A_SpawnObject(258, 0.0, -42.0, 0.0, 0.0, 0.0, 0.0, 2.5)
+			Goto Spawn
+		Rise4:
+			TNT1 A 1 A_SpawnObject(258, 0.0, 0.0, 42.0, 0.0, 0.0, 0.0, 2.5)
+			Goto Spawn
+		Rise5:
+			TNT1 A 1 A_SpawnObject(258, 0.0, 0.0, -42.0, 0.0, 0.0, 0.0, 2.5)
+			Goto Spawn
+		Rise6:
+			TNT1 A 1 A_SpawnObject(258, 0.0, 42.0, 42.0, 0.0, 0.0, 0.0, 2.5)
+			Goto Spawn
+		Rise7:
+			TNT1 A 1 A_SpawnObject(258, 0.0, -42.0, 42.0, 0.0, 0.0, 0.0, 2.5)
+			Goto Spawn
+		Rise8:
+			TNT1 A 1 A_SpawnObject(258, 0.0, 42.0, -42.0, 0.0, 0.0, 0.0, 2.5)
+			Goto Spawn
+		Rise9:
+			TNT1 A 1 A_SpawnObject(258, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, 2.5)
+			Goto Spawn
 	}
 }
 
@@ -560,42 +580,44 @@ thing 258 "Nukage droplet"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+lograv
-	states
+
+	+LOGRAV
+
+	States
 	{
-		spawn:
+		Spawn:
 			TNT1 A 1
-			goto pick
-		pick:
+			Goto Pick
+		Pick:
 			TNT1 A 0 {
-			a_randomjump(type2,85)
-			a_randomjump(type3,127)
+			A_RandomJump(Type2, 85)
+			A_RandomJump(Type3, 127)
 			}
-			goto type1
-		type1:
+			Goto Type1
+		Type1:
 			SPA2 A 8
 			SPA2 BC 6
-			SPA2 C 5 a_addflags(translucent)
+			SPA2 C 5 A_AddFlags(TRANSLUCENT)
 			SPA2 DE 5
-			goto xdeath
-		type2:
+			Goto XDeath
+		Type2:
 			SPA2 F 8
 			SPA2 GH 6
-			SPA2 H 5 a_addflags(translucent)
+			SPA2 H 5 A_AddFlags(TRANSLUCENT)
 			SPA2 IJ 5
-			goto xdeath
-		type3:
+			Goto XDeath
+		Type3:
 			SPA2 K 8
 			SPA2 LM 6
-			SPA2 M 5 a_addflags(translucent)
+			SPA2 M 5 A_AddFlags(TRANSLUCENT)
 			SPA2 NO 5
-			goto xdeath
-		death:
+			Goto XDeath
+		Death:
 			TNT1 A 1
-			stop
-		xdeath:
+			Stop
+		XDeath:
 			TNT1 A 1
-			stop
+			Stop
 	}
 }
 
@@ -609,26 +631,28 @@ thing 259 "Rocket trail"
 	reactiontime 8
 	painchance 0
 	mass 100
-	+nogravity
-	+noblockmap
-	+translucent
-	states
+
+	+NOGRAVITY
+	+NOBLOCKMAP
+	+TRANSLUCENT
+
+	States
 	{
-		spawn:
+		Spawn:
 			TNT1 A 2
-			SPA3 A 2 bright
-			SPA3 B 2 bright {
-			a_randomjump(long1,85)
-			a_randomjump(long2,127)
+			SPA3 A 2 Bright
+			SPA3 B 2 Bright {
+			A_RandomJump(long1, 85)
+			A_RandomJump(long2, 127)
 			}
-			SPA3 CDEF 2 bright
-			stop
+			SPA3 CDEF 2 Bright
+			Stop
 		long1:
-			SPA3 CDEF 3 bright
-			stop
+			SPA3 CDEF 3 Bright
+			Stop
 		long2:
-			SPA3 CDEF 4 bright
-			stop
+			SPA3 CDEF 4 Bright
+			Stop
 	}
 }
 
@@ -662,35 +686,35 @@ thing 260 "Yellow plasma arc"
 			Stop
 		Spawn2:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 30, -30, 0, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(260, 0.0, 30.0, -30.0, 0.0, 0.0, 0.0, 0.0)
 			Goto Die
 		Spawn3:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, -30, -30, 0, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(260, 0.0, -30.0, -30.0, 0.0, 0.0, 0.0, 0.0)
 			Goto Die
 		Spawn4:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, 30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(260, 0.0, 0.0, 30.0, 30.0, 0.0, 0.0, 0.0)
 			Goto Die
 		Spawn5:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(260, 0.0, 0.0, 30.0, -30.0, 0.0, 0.0, 0.0)
 			Goto Die
 		Spawn6:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 30, 0, 30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(260, 0.0, 30.0, 0.0, 30.0, 0.0, 0.0, 0.0)
 			Goto Die
 		Spawn7:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, -30, 0, -30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(260, 0.0, -30.0, 0.0, -30.0, 0.0, 0.0, 0.0)
 			Goto Die
 		Spawn8:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(260, 0.0, 0.0, 30.0, -30.0, 0.0, 0.0, 0.0)
 			Goto Die
 		Spawn9:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(260, 0, 0, 30, -30, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(260, 0.0, 0.0, 30.0, -30.0, 0.0, 0.0, 0.0)
 			Goto Die
 		Die:
 			PLSE EDE 5 Bright
@@ -728,7 +752,7 @@ thing 261 "Green plasma arc"
 			Stop
 		Spawn2:
 			TNT1 A 1
-			TNT1 A 0 Bright A_SpawnObject(261, 0, 30, -30, 0, 0, 0, 0)
+			TNT1 A 0 Bright A_SpawnObject(261, 0.0, 30.0, -30.0, 0.0, 0.0, 0.0, 0.0)
 			Goto Die
 		Spawn3:
 			TNT1 A 1
@@ -864,13 +888,13 @@ thing 264 "Air bubbles"
 
 	States
 	{
-		spawn: 
+		Spawn: 
 			TNT1 A 30
-			TNT1 A 1 A_RandomJump(rise, 25)
-			loop
-		rise:
+			TNT1 A 1 A_RandomJump(Rise, 25)
+			Loop
+		Rise:
 			TNT1 A 1 A_SpawnObject(265, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
-			goto spawn
+			Goto Spawn
 	}
 }
 
@@ -891,19 +915,19 @@ thing 265 "Air bubble"
 
 	States
 	{
-		spawn:
-			TNT1 A 1 A_RandomJump(type2, 42)
-			Goto type1
-		type1:
+		Spawn:
+			TNT1 A 1 A_RandomJump(Type2, 42)
+			Goto Type1
+		Type1:
 			BUBB A 140
-			Goto xdeath
-		type2:
+			Goto XDeath
+		Type2:
 			GBUB A 105
-			Goto xdeath
-		death:
+			Goto XDeath
+		Death:
 			TNT1 A 1
 			Stop
-		xdeath:
+		XDeath:
 			TNT1 A 1
 			Stop
 	}
@@ -927,51 +951,51 @@ thing 266 "Snow"
 
 	States
 	{
-		spawn: 
+		Spawn: 
 			TNT1 A 34
-			TNT1 A 1 A_RandomJump(fallpick, 50)
-			TNT1 A 1 A_RandomJump(fallpick, 63)
-			TNT1 A 1 A_RandomJump(fallpick, 85)
-			TNT1 A 1 A_RandomJump(fallpick, 127)
-			Goto fallpick
-		fallpick:
+			TNT1 A 1 A_RandomJump(FallPick, 50)
+			TNT1 A 1 A_RandomJump(FallPick, 63)
+			TNT1 A 1 A_RandomJump(FallPick, 85)
+			TNT1 A 1 A_RandomJump(FallPick, 127)
+			Goto FallPick
+		FallPick:
 			TNT1 A 1
-			TNT1 A 0 A_RandomJump(fall2, 27)
-			TNT1 A 0 A_RandomJump(fall3, 31)
-			TNT1 A 0 A_RandomJump(fall4, 36)
-			TNT1 A 0 A_RandomJump(fall5, 42)
-			TNT1 A 0 A_RandomJump(fall6, 50)
-			TNT1 A 0 A_RandomJump(fall7, 63)
-			TNT1 A 0 A_RandomJump(fall8, 85)
-			TNT1 A 0 A_RandomJump(fall9, 127)
-			Goto fall1
-		fall1:
+			TNT1 A 0 A_RandomJump(Fall2, 27)
+			TNT1 A 0 A_RandomJump(Fall3, 31)
+			TNT1 A 0 A_RandomJump(Fall4, 36)
+			TNT1 A 0 A_RandomJump(Fall5, 42)
+			TNT1 A 0 A_RandomJump(Fall6, 50)
+			TNT1 A 0 A_RandomJump(Fall7, 63)
+			TNT1 A 0 A_RandomJump(Fall8, 85)
+			TNT1 A 0 A_RandomJump(Fall9, 127)
+			Goto Fall1
+		Fall1:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -4.0)
-			Goto spawn
-		fall2:
+			Goto Spawn
+		Fall2:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 42.0, 0.0, 0.0, -1.0, 0.0, -4.0)
-			Goto spawn
-		fall3:
+			Goto Spawn
+		Fall3:
 			TNT1 A 1 A_SpawnObject(267, 0.0, -42.0, 0.0, 0.0, 0.0, 1.0, -4.0)
-			Goto spawn
-		fall4:
+			Goto Spawn
+		Fall4:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 0.0, 42.0, 0.0, 0.0, -1.0, -4.0)
-			Goto spawn
-		fall5:
+			Goto Spawn
+		Fall5:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 0.0, -42.0, 0.0, 1.0, 1.0, -4.0)
-			Goto spawn
-		fall6:
+			Goto Spawn
+		Fall6:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 42.0, 42.0, 0.0, 1.0, -1.0, -4.0)
-			Goto spawn
-		fall7:
+			Goto Spawn
+		Fall7:
 			TNT1 A 1 A_SpawnObject(267, 0.0, -42.0, 42.0, 0.0, -1.0, 1.0, -4.0)
-			Goto spawn
-		fall8:
+			Goto Spawn
+		Fall8:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 42.0, -42.0, 0.0, -1.0, -1.0, -4.0)
-			Goto spawn
-		fall9:
+			Goto Spawn
+		Fall9:
 			TNT1 A 1 A_SpawnObject(267, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, -4.0)
-			Goto spawn
+			Goto Spawn
 	}
 }
 
@@ -990,22 +1014,22 @@ thing 267 "Snowflake"
 	+MISSILE
 	+NOBLOCKMAP
 
-	states
+	States
 	{
-		spawn:
-			TNT1 A 1 A_RandomJump(type3, 63)
-			TNT1 A 1 A_RandomJump(type2, 127)
-			Goto type1
-		type1:
+		Spawn:
+			TNT1 A 1 A_RandomJump(Type3, 63)
+			TNT1 A 1 A_RandomJump(Type2, 127)
+			Goto Type1
+		Type1:
 			SNOW A 175
 			Loop
-		type2:
+		Type2:
 			SNOW B 175
 			Loop
-		type3:
+		Type3:
 			SNOW C 175
 			Loop
-		death:
+		Death:
 			TNT1 A 1
 			Stop
 	}

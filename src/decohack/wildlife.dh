@@ -1,0 +1,151 @@
+/*****************************************************************************
+ * DECOHack Main Patch
+ * Wildlife
+ * 2025 Matthew DeCalzadilla
+ *****************************************************************************/
+
+#include <dsdhacked>
+
+thing 268 "Crow"
+{
+    //$category VFX/Wildlife
+    ednum 220
+
+    +NOBLOCKMAP
+
+    States
+    {
+        Spawn:
+            CRW1 A 5 A_Look
+            Loop
+        See:
+            CRW1 AAAAAAA 3 A_JumpIfTargetCloser(Turn, 256.0)
+            CRW1 A 0 {
+                A_RandomJump(PrePeck, 63)
+                A_RandomJump(Look, 31)
+            }
+            Loop
+        Look:
+            CRW1 EEEEEEEEEEE 5 A_JumpIfTargetCloser(Turn, 256.0)
+            Goto See
+        PrePeck:
+            CRW1 B 6 A_JumpIfTargetCloser(Turn, 256.0)
+            Goto Peck
+        Peck:
+            CRW1 C 6 A_JumpIfTargetCloser(Turn, 256.0)
+            CRW1 D 6 {
+                A_JumpIfTargetCloser(Turn, 256.0)
+                A_PlaySound("FRE035")
+            }
+            CRW1 C 6 A_RandomJump(Peck, 127)
+            Goto See
+        Turn:
+            CRW1 E 8 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            Goto Alert
+        Alert:
+            CRW1 E 1 A_RandomJump(Caw1, 127)
+            Goto Caw2
+        Caw1:
+            CRW1 E 1 A_PlaySound("FRE033")
+            Goto Fly
+        Caw2:
+            CRW1 E 1 A_PlaySound("FRE034")
+            Goto Fly
+        Fly:
+            TNT1 A 1 A_SpawnObject(269, 0.0, 0.0, 0.0, 0.0, 10.0, 0.0, 8.0)
+            Stop
+    }
+}
+
+thing 269 "Crow flying"
+{
+    +MISSILE
+    +NOBLOCKMAP
+    +NOGRAVITY
+
+    States
+    {
+        Spawn:
+            CRW1 F 3
+            CRW1 G 3 A_PlaySound("FRE035")
+            Loop
+        Death:
+            TNT1 A 1
+            Stop
+    }
+}
+
+thing 270 "Fly"
+{
+    //$category VFX/Wildlife
+    ednum 221
+
+    +NOBLOCKMAP
+
+    States
+    {
+        Spawn:
+            FLYA A 5 A_Look
+            Loop
+        See:
+            FLYA AAAAAAA 3 A_JumpIfTargetCloser(Turn, 256.0)
+            FLYA A 0 A_RandomJump(Buzz, 63)
+            Loop
+        Buzz:
+            FLYA BA 1 A_JumpIfTargetCloser(Turn, 256.0)
+            FLYA B 1 A_RandomJump(Buzz, 127)
+            Goto See
+        Turn:
+            FLYA B 1 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            Goto Alert
+        Alert:
+            TNT1 A 1 {
+                A_SpawnObject(271, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0, 4.0)
+                A_PlaySound("FRE036")
+            }
+            Stop
+    }
+}
+
+thing 271 "Fly flying"
+{
+    +MISSILE
+    +NOBLOCKMAP
+    +NOGRAVITY
+
+    States
+    {
+        Spawn:
+            FLYA AB 1
+            Loop
+        Death:
+            TNT1 A 1
+            Stop
+    }
+}
