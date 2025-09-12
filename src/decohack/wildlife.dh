@@ -32,11 +32,7 @@ thing 268 "Crow"
             CRW1 B 6 A_JumpIfTargetCloser(Turn, 256.0)
             Goto Peck
         Peck:
-            CRW1 C 6 A_JumpIfTargetCloser(Turn, 256.0)
-            CRW1 D 6 {
-                A_JumpIfTargetCloser(Turn, 256.0)
-                A_PlaySound("FRE035")
-            }
+            CRW1 CD 6 A_JumpIfTargetCloser(Turn, 256.0)
             CRW1 C 6 A_RandomJump(Peck, 127)
             Goto See
         Turn:
@@ -65,7 +61,7 @@ thing 268 "Crow"
             CRW1 E 1 A_PlaySound("FRE034")
             Goto Fly
         Fly:
-            TNT1 A 1 A_SpawnObject(269, 0.0, 0.0, 0.0, 0.0, 10.0, 0.0, 8.0)
+            TNT1 A 1 A_SpawnObject(269, 0.0, 0.0, 0.0, 0.0, 16.0, 0.0, 8.0)
             Stop
     }
 }
@@ -147,5 +143,105 @@ thing 271 "Fly flying"
         Death:
             TNT1 A 1
             Stop
+    }
+}
+
+thing 280 "Rat"
+{
+    //$category VFX/Wildlife
+    ednum 222
+
+    +NOBLOCKMAP
+
+    States
+    {
+        Spawn:
+            RATS A 5 A_Look
+            Loop
+        See:
+            RATS AAAAAA 3 A_JumpIfTargetCloser(Turn, 256.0)
+            RATS A 3 {
+                A_JumpIfTargetCloser(Turn, 256.0)
+                A_RandomJump(Squeak, 63)
+            }
+            Loop
+        Squeak:
+            RATS EA 8 A_JumpIfTargetCloser(Turn, 256.0)
+            RATS E 8 {
+                A_JumpIfTargetCloser(Turn, 256.0)
+                A_RandomJump(Squeak, 63)
+            }
+            Goto See
+        Turn:
+            RATS B 1 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            TNT1 A 0 A_RandomJump(Alert, 63)
+            TNT1 A 0 A_Turn(45)
+            Goto Alert
+        Alert:
+            TNT1 A 1 {
+                A_SpawnObject(281, 0.0, 0.0, 0.0, 0.0, 16.0, 0.0, 0.0)
+                A_PlaySound("FRE037")
+            }
+            Stop
+    }
+}
+
+thing 281 "Rat scurrying"
+{
+    +MISSILE
+    +NOBLOCKMAP
+
+    States
+    {
+        Spawn:
+            RATS BCDE 2
+            Loop
+        Death:
+            TNT1 A 1
+            Stop
+    }
+}
+
+thing 282 "Frog in water"
+{
+    //$category VFX/Wildlife
+    ednum 223
+
+    +NOBLOCKMAP
+
+    States
+    {
+        Spawn:
+            FRGA ABC 8 A_Look
+            Loop
+        See:
+            FRGA ABC 8 A_JumpIfTargetCloser(Submerge, 256.0)
+            Loop
+        Submerge:
+            FRGA D 2 A_PlaySound("FRE038")
+            FRGA EF 2
+            FRGA GHI 4
+            Goto Underwater
+        Underwater:
+            TNT1 A 70 A_RandomJump(Resurface, 64)
+            Loop
+        Resurface:
+            FRGA F 6 {
+                A_JumpIfTargetCloser(Underwater, 256.0)
+                A_PlaySound("FRE039")
+            }
+            FRGA ED 6
+            Goto See
     }
 }
