@@ -629,6 +629,13 @@ MALTR106
 MALTR107
 MALTR108
 
+SAWA1           Monolith Productions
+SAWA2           Sunstorm Interactive
+SAWA3
+SAWB1
+SAWB2
+SAWB3
+
 - FLATS -
 
 CITYF01         3D Realms
@@ -640,12 +647,12 @@ CITYF06
 CITYF07
 CITYF08
 
-NFBRIK36		Nick Baker
-NFPP01VT		From NiGHTMARE texture WAD 1 version 1.01 (NMTEXT1.wad)
+NFBRIK36        Nick Baker
+NFPP01VT        From NiGHTMARE texture WAD 1 version 1.01 (NMTEXT1.wad)
 NFSTEP05
 
-GATE4_B			id Software
-TLITE61B		Edits by Moustachio
+GATE4_B         id Software
+TLITE61B        Edits by Moustachio
 TLITE61D
 
 ASHFL1          valkiriforce
