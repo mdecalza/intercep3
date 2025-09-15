@@ -8,26 +8,6 @@
 
 #include "projectiles.dh"
 
-// Deals small amount of damage when very close
-thing 166 "Lava cauldron"
-{
-	//$category Hazards
-	ednum 6015
-
-	radius 24
-	height 24
-
-	+SOLID
-
-	States
-	{
-		Spawn:
-			SP15 A 16 Bright A_RadiusDamage(10, 48)
-			SP15 BC 16 Bright
-			Loop
-	}
-}
-
 // Flies around in a circle with a radius of 160 map units
 thing 219 "Skull mine"
 {
