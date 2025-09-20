@@ -240,8 +240,6 @@ weapon 8 "Incendiary shotgun"
 				A_WeaponProjectile(151)
 				A_WeaponProjectile(151, 10.0)
 				A_WeaponProjectile(151, -10.0)
-				A_WeaponProjectile(151, 0.0, 2.5)
-				A_WeaponProjectile(151, 0.0, -2.5)
 				A_GunFlashTo(Flash)
 				A_WeaponSound("FRE018")
 			}
