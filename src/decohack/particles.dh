@@ -1019,7 +1019,6 @@ thing 267 "Snowflake"
 	mass 1
 
 	+NOGRAVITY
-	+MISSILE
 	+NOBLOCKMAP
 
 	States
@@ -1029,13 +1028,13 @@ thing 267 "Snowflake"
 			TNT1 A 1 A_RandomJump(Type2, 127)
 			Goto Type1
 		Type1:
-			SNOW A 175
+			SNOW A 70 A_RandomJump(Death, 63)
 			Loop
 		Type2:
-			SNOW B 175
+			SNOW B 70 A_RandomJump(Death, 47)
 			Loop
 		Type3:
-			SNOW C 175
+			SNOW C 70 A_RandomJump(Death, 31)
 			Loop
 		Death:
 			TNT1 A 1
