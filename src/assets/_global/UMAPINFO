@@ -144,6 +144,7 @@ map MAP21
 	author = "AlexEightch"
 	label = "E2M1"
 	skytexture = "SKY-B06"
+	music = "D_E2M1"
 	partime = 0
 
 	next = "MAP31"
