@@ -133,12 +133,21 @@ map MAP13
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 
-	next = "MAP31"
+	next = "MAP21"
 }
 
 // EPISODE 2
 
+map MAP21
+{
+	levelname = "Sub-Sea Teleporter Research"
+	author = "AlexEightch"
+	label = "E2M1"
+	skytexture = "SKY-B06"
+	partime = 0
 
+	next = "MAP31"
+}
 
 // EPISODE 3
 
