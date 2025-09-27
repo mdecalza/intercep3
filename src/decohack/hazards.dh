@@ -47,20 +47,16 @@ thing 219 "Skull mine"
 }
 
 // Explodes on contact
-thing 238 "Mine"
+thing 238 "Mine hazard"
 {
-	//$category Hazards
-	ednum 6087
-
-	health 1000
+	health 10
 	radius 16
 	height 32
-	damage 20
-	mass 100
+	mass 300
 
-	+DROPOFF
-	+MISSILE
-	+BOUNCES
+	+SHOOTABLE
+	+NOBLOOD
+	+NOGRAVITY
 	+TOUCHY
 
 	deathsound "BAREXP"
@@ -68,11 +64,11 @@ thing 238 "Mine"
 	States
 	{
 		Spawn:
-			SP87 ABCDE 2
+			SP87 ABCDE 6
 			Loop
 		Death:
-			MISL B 8 A_Mushroom
-			MISL C 6
+			MISL B 8 A_Scream
+			MISL C 6 A_RadiusDamage(128, 256)
 			MISL D 4
 			Stop
 	}
@@ -130,5 +126,38 @@ thing 246 "Arrow turret"
 				A_SpawnObject(153, 0.0, 0.0, 0.0, 8.0, 25.0, 0.0, 0.0)
 			}
 			Loop
+	}
+}
+
+// Spawns the mine hazard above the ground so that it stays floating in the air
+thing 283 "Mine"
+{
+	//$category Hazards
+	ednum 6087
+
+	+NOBLOCKMAP
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP87 A 1
+			TNT1 A 0 A_SpawnObject(284, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0)
+			Stop
+	}
+}
+
+// Second mine spawner that lowers the mine back to its original height
+thing 284 "Mine 2"
+{
+	+NOBLOCKMAP
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			SP87 A 5
+			TNT1 A 0 A_SpawnObject(238, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, 0.0)
+			Stop
 	}
 }
