@@ -140,11 +140,23 @@ map MAP13
 
 map MAP21
 {
-	levelname = "Sub-Sea Teleporter Research"
-	author = "AlexEightch"
+	levelname = "UNTITLED"
+	author = "germicelli"
 	label = "E2M1"
 	skytexture = "SKY-B06"
 	music = "D_E2M1"
+	partime = 0
+
+	next = "MAP22"
+}
+
+map MAP22
+{
+	levelname = "Sub-Sea Teleporter Research"
+	author = "AlexEightch"
+	label = "E2M2"
+	skytexture = "SKY-B06"
+	music = "D_E2M2"
 	partime = 0
 
 	next = "MAP31"
