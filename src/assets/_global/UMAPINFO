@@ -1,13 +1,13 @@
 // SECRET/BONUS LEVELS
 
-map MAP00
+map MAP01
 {
 	levelname = "The Museum"  // MIDI: Casserole by LewkForce
 	author = "Moustachio"
-	label = clear
+	label = "Bonus"
 	levelpic = "CWILV00"
 	skytexture = "SKYM1"
-	music = "D_E0M0"
+	music = "D_RUNNIN"
 	partime = 0
 
 	intertext = "You're at the heart of the city.",
@@ -22,20 +22,7 @@ map MAP00
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP12"
-}
-
-map MAP01
-{
-	levelname = "Manifestation"
-	author = "sincity2100"
-	label = clear
-	levelpic = "CWILV01"
-	skytexture = "SKY-B02"
-	music = "D_RUNNIN"
-	partime = 0
-	
-	next = "MAP12"
+	next = "MAP13"
 }
 
 // EPISODE 1
@@ -83,34 +70,34 @@ map MAP11
 	interbackdrop = "TEXTPIC1"
 	intermusic = "D_TEXT01"
 
-	next = "MAP12"
+	next = "MAP13"
 	nextsecret = "MAP01"
 }
 
-map MAP12
+map MAP13
 {
 	levelname = "Corporate Hell II"  // MIDI: "The Hornet" by Jimmy (origin: TNT II: Devilution)
 	author = "sincity2100"
-	label = "E1M2"
-	levelpic = "CWILV12"
-	skytexture = "SKY1"
-	music = "D_E1M2"
+	label = "E1M3"
+	levelpic = "CWILV13"
+	skytexture = "CITYSKY1"
+	music = "D_E1M3"
 	partime = 0
 
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP13"
+	next = "MAP14"
 }
 
-map MAP13
+map MAP14
 {
 	levelname = "Die Garrison"  // MIDI: rendition of "Rave On" from Killer7 by Masafumi Takada
 	author = "Yisue"
-	label = "E1M3"
-	levelpic = "CWILV13"
-	skytexture = "SKY1"
-	music = "D_E1M3"
+	label = "E1M4"
+	levelpic = "CWILV14"
+	skytexture = "CITYSKY1"
+	music = "D_E1M4"
 	partime = 0
 
 	intertext = "Scouring every building for info...",
@@ -182,7 +169,20 @@ map MAP31
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 
-	next = "MAP51"
+	next = "MAP33"
+}
+
+map MAP33
+{
+	levelname = "Manifestation"
+	author = "sincity2100"
+	label = "E3M3"
+	levelpic = "CWILV33"
+	skytexture = "SKY-B02"
+	music = "D_E3M3"
+	partime = 0
+	
+	next = "MAP53"
 }
 
 // EPISODE 4
@@ -191,14 +191,14 @@ map MAP31
 
 // EPISODE 5
 
-map MAP51
+map MAP53
 {
 	levelname = "Terminated Bliss"  // MIDI: Aquifer by Snaxalotl
 	author = "Treehouseminis"
-	label = clear
-	levelpic = "CWILV51"
+	label = "E5M3"
+	levelpic = "CWILV53"
 	skytexture = "ALLBLACK"
-	music = "D_E5M1"
+	music = "D_E5M3"
 	partime = 2435
 
 	intertext = "You've entered the innermost pustule",
