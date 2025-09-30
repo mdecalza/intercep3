@@ -127,7 +127,7 @@ map MAP14
 
 map MAP21
 {
-	levelname = "UNTITLED"
+	levelname = "Force Majeure"
 	author = "germicelli"
 	label = "E2M1"
 	skytexture = "SKY-B06"
