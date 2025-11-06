@@ -206,7 +206,7 @@ thing 244 : thing 2 "Rocket zombie"
 	//$category Monsters/Fodder
 	ednum 6093
 
-	health 10
+	health 35
 
 	// MBF21 Flags (MBF21 feature set only)
 	+NORADIUSDMG
