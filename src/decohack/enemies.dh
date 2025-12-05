@@ -77,9 +77,15 @@ thing 242 : thing 11 "Incendiary zombie"
 		See:
 			SP91 AABBCCDD 3 {
 				A_Chase
-				A_JumpIfTargetCloser(Missile, 192.0)
+				A_JumpIfTargetInSight(RangeCheck, 160.0)
 			}
 			Loop
+		RangeCheck:
+			SP91 AABBCCDD 3 {
+				A_Chase
+				A_JumpIfTargetCloser(Missile, 192.0)
+			}
+			Goto See
 		Missile:
 			SP91 E 8 A_FaceTarget
 			SP91 E 0 A_RandomJump(Flip, 127)
