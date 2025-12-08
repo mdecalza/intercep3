@@ -667,6 +667,8 @@ thing 260 "Yellow plasma arc"
 	painchance 0
 	mass 100
 
+	splashgroup 1
+
 	+NOGRAVITY
 	+NOBLOCKMAP
 	+TRANSLUCENT
@@ -717,7 +719,7 @@ thing 260 "Yellow plasma arc"
 			TNT1 A 0 Bright A_SpawnObject(260, 0.0, 0.0, 30.0, -30.0, 0.0, 0.0, 0.0)
 			Goto Die
 		Die:
-			PLSE EDE 5 Bright
+			PLSE EDE 5 Bright A_RadiusDamage(4, 64)
 			Stop
 	}
 }
