@@ -6,18 +6,6 @@
 
 #include <dsdhacked>
 
-// Imp fireball spawns ashes
-state 97
-{
-	BAL1 A 4 Bright A_SpawnObject(254, 0.0, -8.0, 0.0, 0.0, 0.0, 0.0, 0.25)
-}
-
-// Caco fireball spawns ashes
-state 102
-{
-	BAL2 A 4 Bright A_SpawnObject(254, 0.0, -8.0, 0.0, 0.0, 0.0, 0.0, 0.25)
-}
-
 // Plasma impact spawns yellow arcs
 state 109
 {
@@ -51,12 +39,6 @@ state 120
 state 131
 {
 	TFOG B 6 Bright A_SpawnObject(263)
-}
-
-// Mancubus fireball spawns ashes
-state 357
-{
-	MANF A 4 Bright A_SpawnObject(254, 0.0, -8.0, 0.0, 0.0, 0.0, 0.0, 0.25)
 }
 
 // Baron/hell knight fireball spawns nukage droplet
@@ -219,13 +201,19 @@ thing 251 "Rain"
 
 	States
 	{
-		Spawn: 
-			TNT1 A 34
-			TNT1 A 1 A_RandomJump(FallPick, 50)
-			TNT1 A 1 A_RandomJump(FallPick, 63)
-			TNT1 A 1 A_RandomJump(FallPick, 85)
-			TNT1 A 1 A_RandomJump(FallPick, 127)
-			Goto FallPick
+		Spawn:
+			TNT1 A 35 A_Look
+			Loop
+		See:
+			TNT1 A 35 A_JumpIfTargetCloser(RandomDelay, 2048.0)
+			TNT1 A 35 A_RandomJump(FallPick, 72)
+			Loop
+		RandomDelay:
+			TNT1 A 5 A_RandomJump(FallPick, 50)
+			TNT1 A 3 A_RandomJump(FallPick, 63)
+			TNT1 A 4 A_RandomJump(FallPick, 85)
+			TNT1 A 10 A_RandomJump(FallPick, 127)
+			Goto See
 		FallPick:
 			TNT1 A 1
 			TNT1 A 0 A_RandomJump(Fall2, 27)
@@ -239,31 +227,31 @@ thing 251 "Rain"
 			Goto Fall1
 		Fall1:
 			TNT1 A 1 A_SpawnObject(252, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall2:
 			TNT1 A 1 A_SpawnObject(252, 0.0, 42.0,0.0,0.0,0.0,0.0,-16.0)
-			Goto Spawn
+			Goto See
 		Fall3:
 			TNT1 A 1 A_SpawnObject(252, 0.0, -42.0, 0.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall4:
 			TNT1 A 1 A_SpawnObject(252, 0.0, 0.0, 42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall5:
 			TNT1 A 1 A_SpawnObject(252, 0.0, 0.0, -42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall6:
 			TNT1 A 1 A_SpawnObject(252, 0.0, 42.0, 42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall7:
 			TNT1 A 1 A_SpawnObject(252, 0.0, -42.0, 42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall8:
 			TNT1 A 1 A_SpawnObject(252, 0.0, 42.0, -42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall9:
 			TNT1 A 1 A_SpawnObject(252, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 	}
 }
 
@@ -667,7 +655,7 @@ thing 260 "Yellow plasma arc"
 	painchance 0
 	mass 100
 
-	splashgroup 1
+	splashgroup 1  // Don't damage player
 
 	+NOGRAVITY
 	+NOBLOCKMAP
@@ -962,12 +950,18 @@ thing 266 "Snow"
 	States
 	{
 		Spawn: 
-			TNT1 A 34
-			TNT1 A 1 A_RandomJump(FallPick, 50)
-			TNT1 A 1 A_RandomJump(FallPick, 63)
-			TNT1 A 1 A_RandomJump(FallPick, 85)
-			TNT1 A 1 A_RandomJump(FallPick, 127)
-			Goto FallPick
+			TNT1 A 35 A_Look
+			Loop
+		See:
+			TNT1 A 35 A_JumpIfTargetCloser(RandomDelay, 2048.0)
+			TNT1 A 35 A_RandomJump(FallPick, 56)
+			Loop
+		RandomDelay:
+			TNT1 A 5 A_RandomJump(FallPick, 50)
+			TNT1 A 3 A_RandomJump(FallPick, 63)
+			TNT1 A 4 A_RandomJump(FallPick, 85)
+			TNT1 A 16 A_RandomJump(FallPick, 127)
+			Goto See
 		FallPick:
 			TNT1 A 1
 			TNT1 A 0 A_RandomJump(Fall2, 27)
@@ -981,31 +975,31 @@ thing 266 "Snow"
 			Goto Fall1
 		Fall1:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, -4.0)
-			Goto Spawn
+			Goto See
 		Fall2:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 42.0, 0.0, 0.0, -1.0, 0.0, -4.0)
-			Goto Spawn
+			Goto See
 		Fall3:
 			TNT1 A 1 A_SpawnObject(267, 0.0, -42.0, 0.0, 0.0, 0.0, 1.0, -4.0)
-			Goto Spawn
+			Goto See
 		Fall4:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 0.0, 42.0, 0.0, 0.0, -1.0, -4.0)
-			Goto Spawn
+			Goto See
 		Fall5:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 0.0, -42.0, 0.0, 1.0, 1.0, -4.0)
-			Goto Spawn
+			Goto See
 		Fall6:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 42.0, 42.0, 0.0, 1.0, -1.0, -4.0)
-			Goto Spawn
+			Goto See
 		Fall7:
 			TNT1 A 1 A_SpawnObject(267, 0.0, -42.0, 42.0, 0.0, -1.0, 1.0, -4.0)
-			Goto Spawn
+			Goto See
 		Fall8:
 			TNT1 A 1 A_SpawnObject(267, 0.0, 42.0, -42.0, 0.0, -1.0, -1.0, -4.0)
-			Goto Spawn
+			Goto See
 		Fall9:
 			TNT1 A 1 A_SpawnObject(267, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, -4.0)
-			Goto Spawn
+			Goto See
 	}
 }
 
