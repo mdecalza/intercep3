@@ -78,8 +78,12 @@ thing 249 "Embers"
 
 	States
 	{
-		Spawn: 
-			TNT1 A 69
+		Spawn:
+			TNT1 A 69 A_Look
+			TNT1 A 1 A_Turn(30)
+		See:
+			TNT1 A 69 A_JumpIfTargetCloser(RandomDelay, 3072.0)
+		RandomDelay:
 			TNT1 A 1 A_RandomJump(RisePick, 50)
 			TNT1 A 1 A_RandomJump(RisePick, 63)
 			TNT1 A 1 A_RandomJump(RisePick, 85)
@@ -202,7 +206,8 @@ thing 251 "Rain"
 	States
 	{
 		Spawn:
-			TNT1 A 35 A_Look
+			TNT1 A 34 A_Look
+			TNT1 A 1 A_Turn(30)
 			Loop
 		See:
 			TNT1 A 35 A_JumpIfTargetCloser(RandomDelay, 2048.0)
@@ -297,8 +302,14 @@ thing 253 "Ash"
 
 	States
 	{
-		Spawn: 
-			TNT1 A 69
+		Spawn:
+			TNT1 A 69 A_Look
+			TNT1 A 1 A_Turn(30)
+			Loop
+		See:
+			TNT1 A 69 A_JumpIfTargetCloser(3072.0)
+			Loop
+		RandomDelay:
 			TNT1 A 1 A_RandomJump(RisePick, 50)
 			TNT1 A 1 A_RandomJump(RisePick, 63)
 			TNT1 A 1 A_RandomJump(RisePick, 85)
@@ -420,8 +431,14 @@ thing 255 "Blood drip"
 
 	States
 	{
-		Spawn: 
-			TNT1 A 34
+		Spawn:
+			TNT1 A 34 A_Look
+			TNT1 A 1 A_Turn(30)
+			Loop
+		See:
+			TNT1 A 35 A_JumpIfTargetCloser(RandomDelay, 3072.0)
+			Loop
+		RandomDelay:
 			TNT1 A 1 A_RandomJump(FallPick, 50)
 			TNT1 A 1 A_RandomJump(FallPick, 63)
 			TNT1 A 1 A_RandomJump(FallPick, 85)
@@ -510,8 +527,14 @@ thing 257 "Nukage burble"
 
 	States
 	{
-		Spawn: 
-			TNT1 A 105
+		Spawn:
+			TNT1 A 34 A_Look
+			TNT1 A 1 A_Turn(30)
+			Loop
+		See:
+			TNT1 A 105 A_JumpIfTargetCloser(RandomDelay, 3072.0)
+			Loop
+		RandomDelay:
 			TNT1 A 7 A_RandomJump(RisePick, 50)
 			TNT1 A 7 A_RandomJump(RisePick, 63)
 			TNT1 A 7 A_RandomJump(RisePick, 85)
@@ -529,32 +552,32 @@ thing 257 "Nukage burble"
 			TNT1 A 0 A_RandomJump(Rise9, 127)
 			Goto Rise1
 		Rise1:
-			TNT1 A 1 A_SpawnObject(258, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.5)
-			Goto Spawn
+			TNT1 A 1 A_SpawnObject(258, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5, 2.5)
+			Goto See
 		Rise2:
 			TNT1 A 1 A_SpawnObject(258, 0.0, 42.0, 0.0, 0.0, 0.0, 0.0, 2.5)
-			Goto Spawn
+			Goto See
 		Rise3:
-			TNT1 A 1 A_SpawnObject(258, 0.0, -42.0, 0.0, 0.0, 0.0, 0.0, 2.5)
-			Goto Spawn
+			TNT1 A 1 A_SpawnObject(258, 0.0, -42.0, 0.0, 0.0, -0.5, 0.0, 2.5)
+			Goto See
 		Rise4:
 			TNT1 A 1 A_SpawnObject(258, 0.0, 0.0, 42.0, 0.0, 0.0, 0.0, 2.5)
-			Goto Spawn
+			Goto See
 		Rise5:
-			TNT1 A 1 A_SpawnObject(258, 0.0, 0.0, -42.0, 0.0, 0.0, 0.0, 2.5)
-			Goto Spawn
+			TNT1 A 1 A_SpawnObject(258, 0.0, 0.0, -42.0, 0.0, 0.5, 0.5, 2.5)
+			Goto See
 		Rise6:
-			TNT1 A 1 A_SpawnObject(258, 0.0, 42.0, 42.0, 0.0, 0.0, 0.0, 2.5)
-			Goto Spawn
+			TNT1 A 1 A_SpawnObject(258, 0.0, 42.0, 42.0, 0.0, 0.0, 0.25, 2.5)
+			Goto See
 		Rise7:
-			TNT1 A 1 A_SpawnObject(258, 0.0, -42.0, 42.0, 0.0, 0.0, 0.0, 2.5)
-			Goto Spawn
+			TNT1 A 1 A_SpawnObject(258, 0.0, -42.0, 42.0, 0.0, -0.75, 0.0, 2.5)
+			Goto See
 		Rise8:
-			TNT1 A 1 A_SpawnObject(258, 0.0, 42.0, -42.0, 0.0, 0.0, 0.0, 2.5)
-			Goto Spawn
+			TNT1 A 1 A_SpawnObject(258, 0.0, 42.0, -42.0, 0.0, 1.0, 1.0, 2.5)
+			Goto See
 		Rise9:
-			TNT1 A 1 A_SpawnObject(258, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, 2.5)
-			Goto Spawn
+			TNT1 A 1 A_SpawnObject(258, 0.0, -42.0, -42.0, 0.0, -1.0, -0.5, 2.5)
+			Goto See
 	}
 }
 
@@ -825,42 +848,42 @@ thing 263 "BFG particle 2"
 			TNT1 A 1 {
 				A_RandomJump(Die, 30)
 				A_SpawnObject(262, 0.0, 30.0, 30.0, -5.0, -1.0, 0.0, 0.0)
-				A_Turn(60)
+				A_Turn(45)
 			}
 			TNT1 A 1 {
 				A_RandomJump(Die, 60)
 				A_SpawnObject(262, 0.0, -30.0, -30.0, -5.0, -1.0, -1.0, 0.5)
-				A_Turn(60)
+				A_Turn(45)
 			}
 			TNT1 A 1 {
 				A_RandomJump(Die, 90)
 				A_SpawnObject(262, 0.0, 0.0, -30.0, 30.0, -1.0, 0.0, 0.0)
-				A_Turn(60)
+				A_Turn(45)
 			}
 			TNT1 A 1 {
 				A_RandomJump(Die, 120)
 				A_SpawnObject(262, 0.0, 0.0, 30.0, -30.0, -0.5, -1.0, 0.5)
-				A_Turn(60)
+				A_Turn(45)
 			}
 			TNT1 A 1 {
 				A_RandomJump(Die, 150)
 				A_SpawnObject(262, 0.0, 30.0, 0.0, 30.0, 1.0, -1.0, 0.0)
-				A_Turn(60)
+				A_Turn(45)
 			}
 			TNT1 A 1 {
 				A_RandomJump(Die, 180)
 				A_SpawnObject(262, 0.0, -30.0, 0.0, -30.0, 0.0, 1.0, 1.0)
-				A_Turn(60)
+				A_Turn(45)
 			}
 			TNT1 A 1 {
 				A_RandomJump(Die, 210)
 				A_SpawnObject(262, 0.0, 0.0, 30.0, -30.0, 1.0, -1.0, 0.0)
-				A_Turn(60)
+				A_Turn(45)
 			}
 			TNT1 A 1 {
 				A_RandomJump(Die, 240)
 				A_SpawnObject(262, 0.0, 0.0, -30.0, 30.0, -1.0, 1.0, 0.5)
-				A_Turn(60)
+				A_Turn(45)
 			}
 			Goto Die
 		Die:
@@ -886,10 +909,16 @@ thing 264 "Air bubbles"
 
 	States
 	{
-		Spawn: 
-			TNT1 A 30
-			TNT1 A 1 A_RandomJump(Rise, 25)
+		Spawn:
+			TNT1 A 34 A_Look
+			TNT1 A 1 A_Turn(30)
 			Loop
+		See:
+			TNT1 A 30 A_JumpIfTargetCloser(RandomDelay, 3072.0)
+			Loop
+		RandomDelay:
+			TNT1 A 1 A_RandomJump(Rise, 25)
+			Goto See
 		Rise:
 			TNT1 A 1 A_SpawnObject(265, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
 			Goto Spawn
@@ -949,8 +978,9 @@ thing 266 "Snow"
 
 	States
 	{
-		Spawn: 
-			TNT1 A 35 A_Look
+		Spawn:
+			TNT1 A 34 A_Look
+			TNT1 A 1 A_Turn(30)
 			Loop
 		See:
 			TNT1 A 35 A_JumpIfTargetCloser(RandomDelay, 2048.0)
