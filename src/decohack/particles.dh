@@ -83,6 +83,7 @@ thing 249 "Embers"
 			TNT1 A 1 A_Turn(30)
 		See:
 			TNT1 A 69 A_JumpIfTargetCloser(RandomDelay, 3072.0)
+			TNT1 A 69 A_RandomJump(RisePick, 64)
 		RandomDelay:
 			TNT1 A 1 A_RandomJump(RisePick, 50)
 			TNT1 A 1 A_RandomJump(RisePick, 63)
@@ -102,31 +103,31 @@ thing 249 "Embers"
 			Goto Rise1
 		Rise1:
 			TNT1 A 1 A_SpawnObject(250, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.5)
-			Goto Spawn
+			Goto See
 		Rise2:
 			TNT1 A 1 A_SpawnObject(250, 0.0, 42.0, 0.0, 0.0, 0.0, 0.0, 0.5)
-			Goto Spawn
+			Goto See
 		Rise3:
 			TNT1 A 1 A_SpawnObject(250, 0.0, -42.0, 0.0, 0.0, 0.0, 0.0, 0.5)
-			Goto Spawn
+			Goto See
 		Rise4:
 			TNT1 A 1 A_SpawnObject(250, 0.0, 0.0, 42.0, 0.0, 0.0, 0.0, 0.5)
-			Goto Spawn
+			Goto See
 		Rise5:
 			TNT1 A 1 A_SpawnObject(250, 0.0, 0.0,-42.0, 0.0, 0.0, 0.0, 0.5)
-			Goto Spawn
+			Goto See
 		Rise6:
 			TNT1 A 1 A_SpawnObject(250, 0.0, 42.0, 42.0, 0.0, 0.0, 0.0, 0.5)
-			Goto Spawn
+			Goto See
 		Rise7:
 			TNT1 A 1 A_SpawnObject(250, 0.0, -42.0, 42.0, 0.0, 0.0, 0.0, 0.5)
-			Goto Spawn
+			Goto See
 		Rise8:
 			TNT1 A 1 A_SpawnObject(250, 0.0, 42.0, -42.0, 0.0, 0.0, 0.0, 0.5)
-			Goto Spawn
+			Goto See
 		Rise9:
 			TNT1 A 1 A_SpawnObject(250, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, 0.5)
-			Goto Spawn
+			Goto See
 	}
 }
 
@@ -308,6 +309,7 @@ thing 253 "Ash"
 			Loop
 		See:
 			TNT1 A 69 A_JumpIfTargetCloser(3072.0)
+			TNT1 A 69 A_RandomJump(RisePick, 56)
 			Loop
 		RandomDelay:
 			TNT1 A 1 A_RandomJump(RisePick, 50)
@@ -328,31 +330,31 @@ thing 253 "Ash"
 			Goto Rise1
 		Rise1:
 			TNT1 A 1 A_SpawnObject(254, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0)
-			Goto Spawn
+			Goto See
 		Rise2:
 			TNT1 A 1 A_SpawnObject(254, 0.0, 42.0, 0.0, 0.0, 1.0, 0.0, 1.0)
-			Goto Spawn
+			Goto See
 		Rise3:
 			TNT1 A 1 A_SpawnObject(254, 0.0, -42.0, 0.0, 0.0, 1.0, 0.0, 1.0)
-			Goto Spawn
+			Goto See
 		Rise4:
 			TNT1 A 1 A_SpawnObject(254, 0.0, 0.0, 42.0, 0.0, 1.0, 0.0, 1.0)
-			Goto Spawn
+			Goto See
 		Rise5:
 			TNT1 A 1 A_SpawnObject(254, 0.0, 0.0, -42.0, 0.0, 1.0, 0.0, 1.0)
-			Goto Spawn
+			Goto See
 		Rise6:
 			TNT1 A 1 A_SpawnObject(254, 0.0, 42.0, 42.0, 0.0, 1.0, 0.0, 1.0)
-			Goto Spawn
+			Goto See
 		Rise7:
 			TNT1 A 1 A_SpawnObject(254, 0.0, -42.0, 42.0, 0.0, 1.0, 0.0, 1.0)
-			Goto Spawn
+			Goto See
 		Rise8:
 			TNT1 A 1 A_SpawnObject(254, 0.0, 42.0, -42.0, 0.0, 1.0, 0.0, 1.0)
-			Goto Spawn
+			Goto See
 		Rise9:
 			TNT1 A 1 A_SpawnObject(254, 0.0, -42.0, -42.0, 0.0, 1.0, 0.0, 1.0)
-			Goto Spawn
+			Goto See
 	}
 }
 
@@ -437,6 +439,7 @@ thing 255 "Blood drip"
 			Loop
 		See:
 			TNT1 A 35 A_JumpIfTargetCloser(RandomDelay, 3072.0)
+			TNT1 A 35 A_RandomJump(FallPick, 72)
 			Loop
 		RandomDelay:
 			TNT1 A 1 A_RandomJump(FallPick, 50)
@@ -457,31 +460,31 @@ thing 255 "Blood drip"
 			Goto Fall1
 		Fall1:
 			TNT1 A 1 A_SpawnObject(256, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall2:
 			TNT1 A 1 A_SpawnObject(256, 0.0, 42.0, 0.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall3:
 			TNT1 A 1 A_SpawnObject(256, 0.0, -42.0, 0.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall4:
 			TNT1 A 1 A_SpawnObject(256, 0.0, 0.0, 42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall5:
 			TNT1 A 1 A_SpawnObject(256, 0.0, 0.0, -42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall6:
 			TNT1 A 1 A_SpawnObject(256, 0.0, 42.0, 42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall7:
 			TNT1 A 1 A_SpawnObject(256, 0.0, -42.0, 42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall8:
 			TNT1 A 1 A_SpawnObject(256, 0.0, 42.0, -42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 		Fall9:
 			TNT1 A 1 A_SpawnObject(256, 0.0, -42.0, -42.0, 0.0, 0.0, 0.0, -16.0)
-			Goto Spawn
+			Goto See
 	}
 }
 
@@ -532,7 +535,8 @@ thing 257 "Nukage burble"
 			TNT1 A 1 A_Turn(30)
 			Loop
 		See:
-			TNT1 A 105 A_JumpIfTargetCloser(RandomDelay, 3072.0)
+			TNT1 A 105 A_JumpIfTargetCloser(RandomDelay, 2048.0)
+			TNT1 A 105 A_RandomJump(RisePick, 42)
 			Loop
 		RandomDelay:
 			TNT1 A 7 A_RandomJump(RisePick, 50)
@@ -914,14 +918,15 @@ thing 264 "Air bubbles"
 			TNT1 A 1 A_Turn(30)
 			Loop
 		See:
-			TNT1 A 30 A_JumpIfTargetCloser(RandomDelay, 3072.0)
+			TNT1 A 30 A_JumpIfTargetCloser(RandomDelay, 2048.0)
+			TNT1 A 35 A_RandomJump(RandomDelay, 56)
 			Loop
 		RandomDelay:
 			TNT1 A 1 A_RandomJump(Rise, 25)
 			Goto See
 		Rise:
 			TNT1 A 1 A_SpawnObject(265, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
-			Goto Spawn
+			Goto See
 	}
 }
 
