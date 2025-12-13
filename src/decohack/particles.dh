@@ -87,10 +87,10 @@ thing 249 "Embers"
 			TNT1 A 69 A_RandomJump(RisePick, 64)
 			Loop
 		RandomDelay:
-			TNT1 A 8 A_RandomJump(RisePick, 50)
-			TNT1 A 16 A_RandomJump(RisePick, 63)
-			TNT1 A 32 A_RandomJump(RisePick, 85)
-			TNT1 A 64 A_RandomJump(RisePick, 127)
+			TNT1 A 6 A_RandomJump(RisePick, 50)
+			TNT1 A 12 A_RandomJump(RisePick, 63)
+			TNT1 A 24 A_RandomJump(RisePick, 85)
+			TNT1 A 48 A_RandomJump(RisePick, 127)
 			Goto RisePick
 		RisePick:
 			TNT1 A 1
@@ -310,7 +310,7 @@ thing 253 "Ash"
 			TNT1 A 1 A_Turn(30)
 			Loop
 		See:
-			TNT1 A 69 A_JumpIfTargetCloser(RandomDelay, 2048.0)
+			TNT1 A 69 A_JumpIfTargetCloser(2048.0)
 			TNT1 A 69 A_RandomJump(RisePick, 56)
 			Loop
 		RandomDelay:
@@ -440,14 +440,14 @@ thing 255 "Blood drip"
 			TNT1 A 1 A_Turn(30)
 			Loop
 		See:
-			TNT1 A 35 A_JumpIfTargetCloser(RandomDelay, 2048.0)
+			TNT1 A 35 A_JumpIfTargetCloser(RandomDelay, 3072.0)
 			TNT1 A 35 A_RandomJump(FallPick, 72)
 			Loop
 		RandomDelay:
-			TNT1 A 35 A_RandomJump(FallPick, 50)
-			TNT1 A 70 A_RandomJump(FallPick, 63)
-			TNT1 A 105 A_RandomJump(FallPick, 85)
-			TNT1 A 140 A_RandomJump(FallPick, 127)
+			TNT1 A 1 A_RandomJump(FallPick, 50)
+			TNT1 A 1 A_RandomJump(FallPick, 63)
+			TNT1 A 1 A_RandomJump(FallPick, 85)
+			TNT1 A 1 A_RandomJump(FallPick, 127)
 			Goto FallPick
 		FallPick:
 			TNT1 A 1
@@ -541,10 +541,10 @@ thing 257 "Nukage burble"
 			TNT1 A 105 A_RandomJump(RisePick, 42)
 			Loop
 		RandomDelay:
-			TNT1 A 21 A_RandomJump(RisePick, 50)
-			TNT1 A 28 A_RandomJump(RisePick, 63)
-			TNT1 A 35 A_RandomJump(RisePick, 85)
-			TNT1 A 42 A_RandomJump(RisePick, 127)
+			TNT1 A 7 A_RandomJump(RisePick, 50)
+			TNT1 A 10 A_RandomJump(RisePick, 63)
+			TNT1 A 14 A_RandomJump(RisePick, 85)
+			TNT1 A 21 A_RandomJump(RisePick, 127)
 			Goto RisePick
 		RisePick:
 			TNT1 A 1
@@ -924,7 +924,7 @@ thing 264 "Air bubbles"
 			TNT1 A 35 A_RandomJump(RandomDelay, 56)
 			Loop
 		RandomDelay:
-			TNT1 A 35 A_RandomJump(Rise, 16)
+			TNT1 A 1 A_RandomJump(Rise, 25)
 			Goto Spawn
 		Rise:
 			TNT1 A 1 A_SpawnObject(265, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0)
@@ -990,7 +990,7 @@ thing 266 "Snow"
 			TNT1 A 1 A_Turn(30)
 			Loop
 		See:
-			TNT1 A 35 A_JumpIfTargetCloser(RandomDelay, 3072.0)
+			TNT1 A 35 A_JumpIfTargetCloser(RandomDelay, 2048.0)
 			TNT1 A 35 A_RandomJump(FallPick, 96)
 			Loop
 		RandomDelay:
@@ -1061,13 +1061,13 @@ thing 267 "Snowflake"
 			TNT1 A 1 A_RandomJump(Type2, 127)
 			Goto Type1
 		Type1:
-			SNOW A 70 A_RandomJump(Death, 176)
+			SNOW A 70 A_RandomJump(Death, 63)
 			Loop
 		Type2:
-			SNOW B 70 A_RandomJump(Death, 112)
+			SNOW B 70 A_RandomJump(Death, 47)
 			Loop
 		Type3:
-			SNOW C 70 A_RandomJump(Death, 48)
+			SNOW C 70 A_RandomJump(Death, 31)
 			Loop
 		Death:
 			TNT1 A 1
