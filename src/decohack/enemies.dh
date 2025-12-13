@@ -361,7 +361,7 @@ thing 247 : thing 12 "Gliding imp"
 		Death:
 			SP96 I 8
 			SP96 J 8 A_Scream
-			SP96 K 6
+			SP96 K 6 A_RemoveFlags(LOGRAV)
 			SP96 L 6 A_Fall
 			SP96 M 6
 			SP96 N -1
