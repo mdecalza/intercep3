@@ -182,12 +182,36 @@ map MAP33
 	music = "D_E3M3"
 	partime = 0
 	
-	next = "MAP53"
+	next = "MAP42"
 }
 
 // EPISODE 4
 
+map MAP42
+{
+	levelname = "Disputed Territory"  // MIDI: TBD
+	author = "AlexEightch"
+	label = "E4M2"
+	levelpic = "CWILV53"
+	skytexture = "ALLBLACK"
+	music = "D_RUNNIN"
+	partime = 2435
 
+	intertext = "You've entered the innermost pustule",
+		"of their wretched realm.",
+		"All you can to is grit your teeth,",
+		"and seethe in rage.",
+		"",
+		"For, up ahead, you see an all too",
+		"familiar figure hoisted over you",
+		"in chains, writhing,",
+		"",
+		"and grinning back at you..."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT02"
+	
+	next = "MAP53"
+}
 
 // EPISODE 5
 
