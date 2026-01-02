@@ -202,11 +202,7 @@ weapon 5 "Unlocked plasma gun"
 	}
 }
 
-weapon 6 "BFG9000.1"
-{
-	// MBF21 fields
-	ammopershot 50
-}
+weapon 6 "BFG9000.1" {}
 
 weapon 7 "Model 64 chainsaw"
 {

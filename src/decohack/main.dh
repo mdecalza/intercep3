@@ -41,14 +41,6 @@ ammo 0
 	pickup 8
 }
 
-// Raise cell pickups to
-// 25 per dropped/placed cell
-// 125 per cell charge
-ammo 2
-{
-	pickup 25
-}
-
 strings
 {
 	GOTCHAINGUN "You got the minigun!"
