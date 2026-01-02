@@ -238,8 +238,20 @@ map MAP53
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 	
-	next = "MAP11"
+	next = "MAP62"
 }
 
 // EPISODE 6
 
+map MAP62
+{
+	levelname = "Cosmic Factory"
+	author = "Blast98"
+	label = "E6M2"
+	levelpic = "CWILV62"
+	skytexture = "SKY4"
+	music = "D_E6M2"
+	partime = 0
+
+	next = "MAP11"
+}
