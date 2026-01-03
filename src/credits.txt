@@ -54,13 +54,13 @@ E2M2: SUB-SEA TELEPORTER RESEARCH by AlexEightch
  Detail: AlexEightch
  Testing: AlexEightch, Moustachio
 
-E3M1: ELEFTHERIA by Cannonball
+E3M1: ELEFTHERIA by cannonball
  Music: "Dream Dweller" by Brayden Hart (AD_79)
 
- Geometry: Cannonball
- Combat: Cannonball
- Detail: Cannonball
- Testing: Cannonball, Moustachio
+ Geometry: cannonball
+ Combat: cannonball
+ Detail: cannonball
+ Testing: cannonball, Moustachio
 
 E3M3: MANIFESTATION by sincity2100
  Music: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
