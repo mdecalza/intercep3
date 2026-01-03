@@ -4,10 +4,10 @@ RESOURCE CREDITS
 
 -= MUSIC =-
 
-TITLE SCREEN  * "If You Don't Intercept, No One Will" by Darman Macray
-INTERMISSION  * "Triumph of the Interception Guy" by Darman Macray
-STORY TEXT 1  * "Enter The Exposition" by Darman Macray
-STORY TEXT 2    Interception Theme by ForceTheDemo (origin: Interception I & II text screen)
+TITLE SCREEN * "If You Don't Intercept, No One Will" by Darman Macray
+INTERMISSION * "Triumph of the Interception Guy" by Darman Macray
+STORY TEXT 1 * "Enter The Exposition" by Darman Macray
+STORY TEXT 2    Story Theme from Interception by ForceTheDemo
 
 * This track was bespoke for Interception III.
 
@@ -20,47 +20,87 @@ E1M1: STATION TO STATION by Moustachio
  Geometry: Moustachio
  Combat: Moustachio
  Detail: Moustachio
- Testing: DFF, valkiriforce, General Rainbow Bacon
+ Testing: Moustachio, DFF, valkiriforce, General Rainbow Bacon
 
-E1M2: CORPORATE HELL II by sincity2100
+E1M3: CORPORATE HELL II by sincity2100
  Music: "The Hornet" by Jimmy (origin: TNT II: Devilution)
 
  Geometry: sincity2100
  Combat: sincity2100
  Detail: sincity2100
- Testing: Moustachio
+ Testing: sincity2100, Moustachio
 
-E1M3: DIE GARRISON by Yisue
+E1M4: DIE GARRISON by Yisue
  Music: "Bloody Skies" by Maxime Tondreau
 
  Geometry: Yisue
  Combat: Yisue
  Detail: Yisue
- Testing: Moustachio
+ Testing: Yisue, Moustachio
 
-E5M1: TERMINATED BLISS by Treehouseminis
+E2M1: FORCE MAJEURE by germicelli
+ Music: * "cardsoundcard" by germicelli
+
+ Geometry: germicelli
+ Combat: germicelli
+ Detail: germicelli
+ Testing: germicelli, Moustachio
+
+E2M2: SUB-SEA TELEPORTER RESEARCH by AlexEightch
+ Music: * "Statics" by AlexEightch
+
+ Geometry: AlexEightch
+ Combat: AlexEightch
+ Detail: AlexEightch
+ Testing: AlexEightch, Moustachio
+
+E3M1: ELEFTHERIA by Cannonball
+ Music: "Dream Dweller" by Brayden Hart (AD_79)
+
+ Geometry: Cannonball
+ Combat: Cannonball
+ Detail: Cannonball
+ Testing: Cannonball, Moustachio
+
+E3M3: MANIFESTATION by sincity2100
+ Music: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
+
+ Geometry: sincity2100
+ Combat: sincity2100
+ Detail: sincity2100
+ Testing: sincity2100, Moustachio
+
+E4M2: DISPUTED TERRITORY by AlexEightch
+ Music: TBD
+
+ Geometry: AlexEightch
+ Combat: AlexEightch
+ Detail: AlexEightch
+ Testing: AlexEightch, Moustachio
+
+E5M3: TERMINATED BLISS by Treehouseminis
  Music: "Aquifer" by Snaxalotl (origin: Abscission MAP02)
 
  Geometry: Treehouseminis
  Combat: Treehouseminis
  Detail: Treehouseminis
- Testing: Moustachio
+ Testing: Treehouseminis, Moustachio
 
-Secret 1: THE MUSEUM by Moustachio
+E6M2: COSMIC FACTORY by Blast98
+ Music: "Earthglow" by Tristan Clark (origin: Interception II MAP20)
+
+ Geometry: Blast98
+ Combat: Blast98
+ Detail: Blast98
+ Testing: Blast98, Moustachio, AlexEightch
+
+BONUS: THE MUSEUM by Moustachio
  Music: "Casserole" by LewkForce (origin: Interception II MAP20)
 
  Geometry: Moustachio
  Combat: Moustachio
  Detail: Moustachio
- Testing: DFF, valkiriforce, General Rainbow Bacon
-
-Secret 2: MANIFESTATION by sincity2100
- Music: "Kaguya﻿" by Brayden "AD_79" Hart (origin: Akeldama MAP26)
-
- Geometry: sincity2100
- Combat: sincity2100
- Detail: sincity2100
- Testing: Moustachio
+ Testing: Moustachio, DFF, valkiriforce, General Rainbow Bacon
 
 * This track was bespoke for Interception III.
 
@@ -309,11 +349,11 @@ TRASH CAN
 -= PARTICLE EFFECTS =-
 
 EMBERS
- DECOHack: Lina
+ DECOHack: Lina, Moustachio
  Sprites: Lina
 
 RAIN
- DECOHack: Lina
+ DECOHack: Lina, Moustachio
  Sprites: Gutawer
 
 SNOW
@@ -321,15 +361,15 @@ SNOW
  Sprites: Moustachio
 
 ASH
- DECOHack: Lina
+ DECOHack: Lina, Moustachio
  Sprites: Lina
 
 BLOOD DRIP
- DECOHack: Lina
+ DECOHack: Lina, Moustachio
  Sprites: Gutawer
 
 NUKAGE BURBLE
- DECOHack: Lina
+ DECOHack: Lina, Moustachio
  Sprites: Lina
 
 ROCKET TRAIL
