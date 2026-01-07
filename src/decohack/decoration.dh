@@ -645,15 +645,30 @@ thing 182 "Office chair"
 	//$category Decoration/Urban
 	ednum 6031
 
+	health 20
 	radius 16
-	height 16
+	height 32
+	painchance 256
+	mass 75
 
 	+SOLID
+	+NOBLOOD
+	+SHOOTABLE
+
+	deathsound "FRE040"
 
 	States
 	{
 		Spawn:
 			SP31 A -1
+			Stop
+		Pain:
+			SP31 A 1
+			Goto Spawn
+		Death:
+			SP31 A 2 A_Scream
+			SP31 B 0 A_Fall
+			SP31 B -1
 			Stop
 	}
 }
@@ -663,7 +678,7 @@ thing 183 "Toilet"
 	//$category Decoration/Urban
 	ednum 6032
 
-	health 5
+	health 35
 	radius 16
 	height 32
 	painchance 256
