@@ -1,11 +1,11 @@
 # Interception III
 
-by THE INTERCEPTORS (C) 2024-2025
+by THE INTERCEPTORS 2024-2026.
 
 ## What This Is
 
-This is the public git repo for Interception III. It was created with DoomTools by MTrop,
-and you can use DoomMake to build this repo into a fully working wad snapshot for testing.
+This is the public git repo for *Interception III*. It was created using MTrop's *DoomTools*,
+and you can use *DoomMake* to build this repo into a fully working wad snapshot for testing.
 
 Contributors can feel free to make pull requests to add features, make changes, or upload
 their maps into the wad.
