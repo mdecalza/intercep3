@@ -445,21 +445,6 @@ thing 170 "Crystal ball on column"
 	}
 }
 
-thing 171 "Extra thing 20"
-{
-	radius 16
-	height 160
-
-	+SOLID
-
-	States
-	{
-		Spawn:
-			SP20 A -1
-			Stop
-	}
-}
-
 thing 172 "Brown and gray tree"
 {
 	//$category Decoration/Nature
@@ -920,7 +905,7 @@ thing 193 "Blinking ceiling lamp"
 	}
 }
 
-thing 194 "Glass column"
+thing 194 "Glass techno column"
 {
 	//$category Decoration/Urban
 	ednum 6043
@@ -1881,7 +1866,7 @@ thing 277 "Tall clay pot"
 	}
 }
 
-thing 278 "Grey (gray) stalagmite"
+thing 278 "Gray (grey) stalagmite"
 {
 	//$category Decoration/Nature
 	ednum 6106
@@ -1899,7 +1884,7 @@ thing 278 "Grey (gray) stalagmite"
 	}
 }
 
-thing 279 "Hanging grey (gray) stalagmite"
+thing 279 "Hanging gray (grey) stalactite"
 {
 	//$category Decoration/Nature
 	ednum 6106

@@ -197,7 +197,7 @@ FORMER TANK
 GLIDING IMP
  DECOHack: Moustachio
  Sounds: id Software
- Sprites: Maelstrom
+ Sprites: Maelstrom, id Software
 
 SNAKE IMP
  DECOHack: Moustachio
@@ -236,7 +236,7 @@ ARROW
 
 -= DECORATIONS =-
 
-DEAD GENERAL
+DEAD ADMIRAL
  DECOHack: Moustachio
  Sprites: Scuba Steve
 
@@ -249,7 +249,7 @@ SHOOTABLE IMPALED ZOMBIES
  Sprites: id Software
  Sprite Edit: DeVloek
 
-GLASS TECHNO PILLAR
+GLASS TECHNO COLUMN
  DECOHack: Moustachio
  Sprites: id Software, Raven Software, Mor'ladim
  Sprite Edit: Mor'ladim
@@ -260,17 +260,12 @@ FLOOR LAMP VARIATIONS
  Sprites: Doom, Strife
  SpriteEdit: Captain Toenail
 
-HANGING LAMP
+HANGING LAMPS
  DECOHack: Moustachio
  Sprites: Id Software, Raven Software
  Sprite Edit: Captain Red
 
-FLOOR LANTERNS
- DECOHack: Moustachio
- Sprites: id Software
- Sprite Edit: Jimmy
-
-WORK LIGHTS
+CONSTRUCTION LIGHTS
  DECOHack: Moustachio
  Sprites: Based on Sketchfab.com models (tall light by user "ayoung93" and small
           light by "GabeTheSerrano")
@@ -286,7 +281,7 @@ BOX
  Sprites: Duke Nukem 3D by 3D Realms
  Sprite Edit: Captain Awesome
 
-ROCK
+ROCKS
  DECOHack: Moustachio
  Sprites: Captain Toenail
 
@@ -328,11 +323,12 @@ STREET LIGHT
  DECOHack: Moustachio
  Sprites: Midway
 
-PILE OF BONES
+LARGE PILE OF BONES
  DECOHack: Moustachio
- Sprites: 
+ Sprites: Raven Software
+ Sprite Edit: Captain Toenail, Gez
 
-MARBLE BRAZIER
+FIRE PIT
  DECOHack: Moustachio
  Sprites: Xaser, Jimmy, Minigunner, Gothic, id Software
 
@@ -344,6 +340,231 @@ TRASH CAN
  DECOHack: Moustachio
  Sprites: 3D Realms, Moustachio
  Sounds: Moustachio, JustinAmolsch, RutgerMuller
+
+TOILET
+ DECOHack: Moustachio
+ Sprites: 3D Realms, Las Rojas, Moustachio
+ Sounds: Moustachio, InspectorJ, meisterjaan, kyles
+
+OFFICE CHAIR
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sounds: Moustachio, kyles
+
+CHANDELIER
+ DECOHack: Moustachio
+ Sprites: Lobotomy Software, Raven Software
+ Sprite Edit: Gothic
+
+CHANDELIER 2
+ DECOHack: Moustachio
+ Sprites: Id Software, Raven Software
+ Sprite Edit: Captain Red
+
+HANGING SKULL LAMP
+ DECOHack: Moustachio
+ Sprites: Mor'ladim
+
+LARGE BROWN TREE 2
+ DECOHack: Moustachio
+ Sprites: Bloax
+
+LARGE BROWN TREE WITH SKULLS
+ DECOHack: Moustachio
+ Sprites: id Software, Raven Software
+
+LARGE GREEN TREE
+ DECOHack: Moustachio
+ Sprites: Necrodome
+
+BROWN AND GRAY TREE
+ DECOHack: Moustachio
+ Sprites: Raven Software
+
+BROWN AND GRAY TREE 2
+ DECOHack: Moustachio
+ Sprites: Raven Software
+
+BROWN AND GRAY TREE 3
+ DECOHack: Moustachio
+ Sprites: Raven Software
+ Sprite Edit: Ettingrinder, Software Creations
+
+BURNED-DOWN TREE
+ DECOHack: Moustachio
+ Sprites: Bloax
+
+HELL TREE
+ DECOHack: Moustachio
+ Sprites: Bloax
+
+MOSSY TREE
+ DECOHack: Moustachio
+ Sprites: Raven Software
+
+MOSSY TREE 2
+ DECOHack: Moustachio
+ Sprites: Raven Software
+
+MOSSY LOG
+ DECOHack: Moustachio
+ Sprites: Raven Software
+
+MOSSY STUMP
+ DECOHack: Moustachio
+ Sprites: Raven Software
+
+MOSSY ROOTS
+ DECOHack: Moustachio
+ Sprites: Raven Software
+
+HANGING VINES
+ DECOHack: Moustachio
+ Sprites: 3D Realms
+ Sprite Edit: Captain Awesome, Xaser
+
+LAVA CAULDRON
+ DECOHack: Moustachio
+ Sprites: Raven Software
+ Sprite Edit: Captain Toenail
+
+RED VASE
+ DECOHack: Moustachio
+ Sprites: Captain Toenail, Hexen
+ Sprite Edit: Captain Toenail
+
+CRYSTAL BALL ON COLUMN
+ DECOHack: Moustachio
+ Sprites: Hexx, id Software
+ Sprite Edit: Gothic, Infirnex
+
+STALAGMITE SKULLS
+ DECOHack: Moustachio
+ Sprites: Doom, Doom Beta
+ Sprite Edit: Captain Toenail
+
+SAFETY CONE
+ DECOHack: Moustachio
+ Sprites:  
+
+BLOODY HANGING HOOK
+ DECOHack: Moustachio
+ Sprites: Williams Entertainment
+
+BLINKING CEILING LAMP
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: Jimmy
+
+LARGE CRYSTALS
+ DECOHack: Moustachio 
+ Sprites: Captain Toenail
+
+RED/BROWN FLESHY MASSES
+ DECOHack: Moustachio
+ Sprites: Westwood Studios
+ Sprite Edit: Gothic
+
+SMALL FLESH MASS
+ DECOHack: Moustachio
+ Sprites: Monolith Productions, 3D Realms
+ Sprite Edit: Captain Awesome
+
+GREEN MARBLE COLUMN
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: Captain Toenail, Gez, ShadesMaster, Shtbag667
+
+GRAY MARBLE COLUMN
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: Captain Toenail, Gez, ShadesMaster, Shtbag667
+
+BLUE MARBLE COLUMN
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: Captain Toenail, Gez, ShadesMaster, Shtbag667
+
+SPIRAL MARBLE COLUMN
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: Captain Toenail, Gez, ShadesMaster, Shtbag667
+
+EXTRA TALL COLUMN
+ DECOHack: Moustachio
+ Sprites: Raven Software
+
+DESTROYED COLUMNS
+ DECOHack: Moustachio
+ Sprites: Raven Software
+
+BLUE PILLARS
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: Captain Toenail, Gez, ShadesMaster, Shtbag667
+
+DEMON STATUE
+ DECOHack: Moustachio
+ Sprites: Raven Software, id Software
+ Sprite Edit: JMAA, MagicWazard (Statues); Captain Toenail, Gez, ShadesMaster, Shtbag667 (Column Variants)
+
+IMPALED MARINE
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: Captain Toenail
+
+HANGING IMP
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: Captain Toenail
+
+IMPALED CYBERDEMON HEAD
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: Captain Toenail
+
+LARGE PILE OF CORPSES
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: Xaser, Jimmy, Minigunner
+
+HANGING BARON
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: KDiZD Team
+
+BURNING SACRIFICE
+ DECOHack: Moustachio
+ Sprites: id Software
+ Sprite Edit: zrrion the insect
+
+TALL BANNERS
+ DECOHack: Moustachio
+ Sprites: Raven Software (Hexen, Hexen 2), Psygnosis (Hexx)
+ Sprite Edit: ETTiNGRiNDER
+
+SEAWEED
+ DECOHack: Moustachio
+ Sprites: Captain Toenail
+ Sprite Edit: Captain Toenail
+
+GLOWING MUSHROOMS
+ DECOHack: Moustachio
+ Sprites: Raven Software
+ Sprite Edit: Captain Toenail
+
+CLAY POTS
+ DECOHack: Moustachio
+ Sprites: Hexen, Strife, Raven Software, Id Software, Rogue Entertainment.
+ Sprite Edit: Yuyu3
+
+ICY STALAGMITES
+ DECOHack: Moustachio
+ Sprites: Necrodome
+
+HANGING GRAY STALACTITE
+ DECOHack: Moustachio
+ Sprites:  
 
 
 -= PARTICLE EFFECTS =-
@@ -913,7 +1134,7 @@ agueres - SW1SHAU1; SW2SHAU1; SW1SHAU2; SW2SHAU2; SW1SHAU3; SW2SHAU3; TREE01; TR
 Amuscaria - FAN001; FAN002; FAN003; FAN004; FAN005; FAN006; FAN007; FAN008; FAN009; FAN010; FAN011; FAN012; FAN013; FAN014; FAN015; FAN016
 Blox - MARBST01; MARBST02; SPCDOOR5; VENT002; VENT013; VENT0014; VENT015
 BlueShadow - BLULITE1; BLULITE2; BLULITE3; BLULITE4; GRALITE1; GRALITE2; GRALITE3; GRALITE4; GRELITE1; GRELITE2; GRELITE3; GRELITE4; ORALITE1; ORALITE2; ORALITE3; ORALITE4; REDLITE1; REDLITE2; REDLITE3; REDLITE4; YELLITE1; YELLITE2; YELLITE3; YELLITE4
-CaptainToenail - MARBL-01; MARBL-02; MARBL-03; MARBL-04; MARBL-05; MARBL-06; MARBL-07; ROCK1-01; ROCK1-02
+Captain Toenail - MARBL-01; MARBL-02; MARBL-03; MARBL-04; MARBL-05; MARBL-06; MARBL-07; ROCK1-01; ROCK1-02
 Chickenlegz - TECH001; TECH002; TECH003; TECH004
 daWerecat - LITE008; LITE009; STARBR3; STARGR3; STARGR4; SUPPORT4; SUPPORT5; TECH006; TECH007; TECH008; TECH009
 Earthquake - COMP001; COMP002; COMP003; COMP004; CONC004; CONC005; CONC006; CONC008; CONC009; CONC010; CONC011 CONC012; CONC013; CONC014; CONC015; DOOR01; DOORHI01; DOORHI02; PIPEWAL3; PIPEWAL4; SIGN01; SIGN02; SIGN03; SIGN04; SIGN05; SIGN06; SIGN07; SIGN08; SIGN09; SIGN10; TECH005; VENT003; VENT004; VENT005
