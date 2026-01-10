@@ -7,19 +7,29 @@ Filename                : intercep3.WAD
 Release date            : Mnth. Day, Year
 Author                  : The Interceptors
 Other Files By Author   : intercep.wad, intercep2.wad
-Misc. Author Info       : The Interceptors are:
-                          Moustachio, Darman Macray, Treehouseminis,
-                          sincity2100, Yisue, PeccatumMihzamiz
+Misc. Author Info       : The Interceptors are (in alphabetical order):
+                          AlexEightch (maps, music, testing)
+                          Blast98 (map)
+                          cannonball (map)
+                          Darman Macray (music)
+                          germicelli (map, music)
+                          Lina (DECOHack, art, testing)
+                          Moustachio (project lead, DECOHack, maps, art,
+                            testing)
+                          PeccatumMihzamiz (art)
+                          sincity2100 (maps)
+                          Treehouseminis (map)
+                          Yisue (map)
 
 Description             : ADD DESCRIPTION HERE
 
 Additional Credits to   : Darman Macray for bespoke title, text, and
                           intermission themes.
 
+                          germicelli and AlexEightch for original music.
+
                           ForceTheDemo, AD_79, Snaxalotl, and LewkForce
                           for music sourced from other wads/music packs.
-						  
-						  Masafumi Takada for the track "Rave On" from killer7.
 
                           Lina for detailed feedback on the resource pack.
 
@@ -36,7 +46,7 @@ Sounds                  : Yes
 Music                   : Yes
 Graphics                : Yes
 Dehacked/BEX Patch      : DeHackEd Lump
-Demos                   : Yes
+Demos                   : No
 Other                   : 
 Other files required    : 
 
@@ -47,7 +57,7 @@ Game                    : Doom 2
 Map #                   : EXMY / MAPXX ...
 Single Player           : Designed for
 Cooperative 2-4 Player  : Designed for
-Deathmatch 2-4 Player   : Designed for / Player Starts Only / No
+Deathmatch 2-4 Player   : No
 Other game styles       : 
 Difficulty Settings     : Yes
 
@@ -58,9 +68,8 @@ Base                    : New from scratch
 Build Time              : 
 Editor(s) used          : DoomTools, DECOHack, SLADE, Ultimate Doom Builder
 Known Bugs              : None OR List bugs here...
-May Not Run With        : Non-MBF21-compatible ports.
-Tested With             : Engines/ports/EXEs used to test (include version
-                          numbers).
+May Not Run With        : Non-MBF21-compatible ports
+Tested With             : DSDA-Doom 0.29.3, UZDoom 4.14.3
 
 
 * Copyright / Permissions *
@@ -80,6 +89,6 @@ distribute your contributions under the same license as the original.
 
 * Where to get the file that this text file describes *
 
-The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+The Usual: 
 Web sites: 
 FTP sites: 
