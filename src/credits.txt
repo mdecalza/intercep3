@@ -1,6 +1,8 @@
 INTERCEPTION III
 RESOURCE CREDITS
 
+PROJECT LEAD    Moustachio
+
 
 -= MUSIC =-
 
@@ -1569,7 +1571,7 @@ COLORMAPS       from Big COLORMAP pack for Eternity Engine
                 "EECLRMPS.WAD"
 
 M_DOOM          Moustachio
-                franckFRAG
+                (based on the Interception M_DOOM by franckFRAG)
 
 STBAR           galileo31dos01
                 Moustachio
