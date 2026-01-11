@@ -448,6 +448,9 @@ thing 285 "Gliding imp left wing"
 	+TRANSLUCENT
 	+CORPSE
 
+	// MBF21 Flags (MBF21 feature set only)
+	+LOGRAV
+
 	States
 	{
 		Spawn:
@@ -467,6 +470,9 @@ thing 286 "Gliding imp right wing"
 	+NOBLOCKMAP
 	+TRANSLUCENT
 	+CORPSE
+
+	// MBF21 Flags (MBF21 feature set only)
+	+LOGRAV
 
 	States
 	{
