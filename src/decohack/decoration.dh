@@ -667,7 +667,7 @@ thing 183 "Toilet"
 	radius 16
 	height 32
 	painchance 256
-	mass 338
+	mass 100000
 
 	+SOLID
 	+NOBLOOD
