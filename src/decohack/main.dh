@@ -44,9 +44,11 @@ ammo 0
 strings
 {
 	GOTCHAINGUN "You got the minigun!"
-	GOTCHAINSAW "A Model 64 chainsaw! Put the devil to work!"
-	GOTSHOTGUN "You got the super slugger!"
+	GOTCHAINSAW "You got the Model 64 chainsaw!"
+	GOTSHOTGUN "You got the Super Slugger!"
 	GOTSHOTGUN2 "You got the incendiary shotgun!"
 	GOTPLASMA "You got the unlocked plasma rifle!"
 	GOTBFG9000 "You got the BFG9000.1! Kill 'em all!"
+
+	STSTR_CHOPPERS "Put the devil to work!"
 }
