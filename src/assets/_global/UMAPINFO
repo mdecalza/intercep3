@@ -146,6 +146,18 @@ map MAP22
 	music = "D_E2M2"
 	partime = 0
 
+	next = "MAP26"
+}
+
+map MAP26
+{
+	levelname = "Neptune's Castle"
+	author = "Bendža M."
+	label = "E2M6"
+	skytexture = "SKY-B06"
+	music = "D_E2M6"
+	partime = 0
+
 	next = "MAP31"
 }
 
@@ -251,6 +263,19 @@ map MAP62
 	levelpic = "CWILV62"
 	skytexture = "SKY4"
 	music = "D_E6M2"
+	partime = 0
+
+	next = "MAP63"
+}
+
+map MAP63
+{
+	levelname = "Moonquake"
+	author = "Salmon"
+	label = "E6M3"
+	levelpic = "CWILV63"
+	skytexture = "SKY4"
+	music = "D_E6M3"
 	partime = 0
 
 	next = "MAP11"
