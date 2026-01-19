@@ -25,7 +25,7 @@ E1M1: STATION TO STATION by Moustachio
  Testing: Moustachio, DFF, valkiriforce, General Rainbow Bacon
 
 E1M3: CORPORATE HELL II by sincity2100
- Music: "The Hornet" by Jimmy (origin: TNT II: Devilution)
+ Music: "TeNaciTy" by Jimmy
 
  Geometry: sincity2100
  Combat: sincity2100
