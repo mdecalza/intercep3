@@ -224,9 +224,6 @@ thing 244 : thing 2 "Rocket zombie"
 	// Extended Properties (Extended/DEHEXTRA feature set and later)
     dropitem 66  // Drops a rocket on death
 
-	// MBF21 Properties (MBF21 feature set and later)
-	splashgroup 0  // Immune to nitro rocket splash damage
-
 	States
 	{
 		Spawn:

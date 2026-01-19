@@ -686,6 +686,7 @@ thing 260 "Yellow plasma arc"
 	painchance 0
 	mass 100
 
+	// MBF21 Properties (MBF21 feature set and later)
 	splashgroup 1  // Don't damage player
 
 	+NOGRAVITY
