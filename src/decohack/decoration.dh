@@ -861,7 +861,7 @@ thing 191 "Construction light"
 	States
 	{
 		Spawn:
-			SP40 A -1
+			SP40 A -1 Bright
 			Stop
 	}
 }
@@ -879,7 +879,7 @@ thing 192 "Construction light 2"
 	States
 	{
 		Spawn:
-			SP41 A -1
+			SP41 A -1 Bright
 			Stop
 	}
 }
@@ -1527,7 +1527,7 @@ thing 230 "Burning sacrifice"
 	States
 	{
 		Spawn:
-			SP79 ABCD 4
+			SP79 ABCD 4 Bright
 			Loop
 	}
 }
