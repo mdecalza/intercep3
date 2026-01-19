@@ -97,7 +97,7 @@ E5M3: TERMINATED BLISS by Treehouseminis
  Testing: Treehouseminis, Moustachio
 
 E6M2: COSMIC FACTORY by Blast98
- Music: "Earthglow" by Tristan Clark (origin: Interception II MAP20)
+ Music: "Earthglow" by Tristan Clark
 
  Geometry: Blast98
  Combat: Blast98
