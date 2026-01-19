@@ -10,6 +10,13 @@
 
 /* Doom II projectiles */
 
+// Rocket in flight
+thing 34
+{
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 3
+}
+
 // Plasma projectile
 thing 35
 {
@@ -49,15 +56,9 @@ state 123
 	BFE2 A 8 Bright A_RadiusDamage(48, 128)
 }
 
-// Increase rocket explosion damage
-state 127
-{
-	MISL B 8 Bright A_RadiusDamage(192, 128)
-}
-
 /* New projectiles */
 
-thing 151 "Incendiary projectile"
+thing 151 "Incendiary shotgun fireball"
 {
 	health 1000
 	speed 25
@@ -70,12 +71,11 @@ thing 151 "Incendiary projectile"
 	+NOGRAVITY
 	+DROPOFF
 	+MISSILE
-	+TRANSLUCENT
 
 	// MBF21 Properties (MBF21 feature set and later)
 	splashgroup 1
 
-	deathsound "STNMOV"
+	deathsound "FIRXPL"
 
 	States
 	{
@@ -84,7 +84,10 @@ thing 151 "Incendiary projectile"
 				A_PlaySound("FIRSHT")
 				A_RadiusDamage(80, 56)
 			}
-			SP20 B 5 Bright A_RadiusDamage(72, 56)
+			SP20 B 5 Bright {
+				A_RadiusDamage(72, 56)
+				A_AddFlags(TRANSLUCENT)
+			}
 			SP20 C 5 Bright A_RadiusDamage(64, 56)
 			SP20 D 5 Bright A_RadiusDamage(56, 56)
 			Stop
@@ -124,6 +127,58 @@ thing 153 "Arrow"
 		Death:
 			SP00 B 4 A_Scream
 			SP00 CDE 4
+			Stop
+	}
+}
+
+thing 287 : thing 34 "Nitro rocket"
+{
+	speed 25
+
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 0
+
+	States
+	{
+		Spawn:
+			NMSL A 5 Bright A_SpawnObject(259, 0.0, -8.0, 0.0, 6.0, 8.0)
+			Loop
+		Death:
+			MISL B 8 Bright A_RadiusDamage(192, 128)
+			MISL C 6 Bright
+			MISL D 4 Bright
+			Stop
+	}
+}
+
+thing 288 : thing 151 "Incendiary zombie fireball"
+{
+	damage 2
+
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 2
+
+	States
+	{
+		Spawn:
+			SP20 A 5 Bright {
+				A_PlaySound("FIRSHT")
+				A_RadiusDamage(40, 56)
+			}
+			SP20 B 5 Bright {
+				A_RadiusDamage(35, 56)
+				A_AddFlags(TRANSLUCENT)
+			}
+			SP20 C 5 Bright A_RadiusDamage(30, 56)
+			SP20 D 5 Bright A_RadiusDamage(25, 56)
+			Stop
+		Death:
+			BAL1 C 8 Bright {
+				A_RadiusDamage(20, 64)
+				A_Scream
+			}
+			BAL1 D 6 Bright
+			BAL1 E 4 Bright
 			Stop
 	}
 }

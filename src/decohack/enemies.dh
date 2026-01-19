@@ -67,7 +67,7 @@ thing 242 : thing 11 "Incendiary zombie"
 
 	// MBF21 Properties (MBF21 feature set and later)
 	meleerange 192
-	splashgroup 1  // Immune to incendiary splash damage
+	splashgroup 2  // Immune to its own fireballs, but not the player's
 
 	States
 	{
@@ -93,39 +93,39 @@ thing 242 : thing 11 "Incendiary zombie"
 			}
 			SP91 E 0 A_RandomJump(Flip, 127)
 			SP91 F 3 Bright {
-				A_MonsterProjectile(151, -10.0)
+				A_MonsterProjectile(288, -10.0)
 				A_PlaySound("DSHTGN")
 			}
-			SP91 F 3 Bright A_MonsterProjectile(151, -6.0)
-			SP91 F 3 Bright A_MonsterProjectile(151, -2.0)
-			SP91 F 3 Bright A_MonsterProjectile(151, 2.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, -6.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, -2.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, 2.0)
 			SP91 F 3 Bright {
-				A_MonsterProjectile(151, 6.0)
+				A_MonsterProjectile(288, 6.0)
 				A_PlaySound("FLAME")
 			}
-			SP91 F 3 Bright A_MonsterProjectile(151, 10.0)
-			SP91 F 3 Bright A_MonsterProjectile(151, 6.0)
-			SP91 F 3 Bright A_MonsterProjectile(151, 2.0)
-			SP91 F 3 Bright A_MonsterProjectile(151, -2.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, 10.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, 6.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, 2.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, -2.0)
 			SP91 F 0 Bright A_PlaySound("SGCOCK")
 			SP91 C 12 A_FaceTarget
 			Goto See
 		Flip:
 			SP91 F 3 Bright {
-				A_MonsterProjectile(151, 10.0)
+				A_MonsterProjectile(288, 10.0)
 				A_PlaySound("DSHTGN")
 			}
-			SP91 F 3 Bright A_MonsterProjectile(151, 6.0)
-			SP91 F 3 Bright A_MonsterProjectile(151, 2.0)
-			SP91 F 3 Bright A_MonsterProjectile(151, -2.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, 6.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, 2.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, -2.0)
 			SP91 F 3 Bright {
-				A_MonsterProjectile(151, -6.0)
+				A_MonsterProjectile(288, -6.0)
 				A_PlaySound("FLAME")
 			}
-			SP91 F 3 Bright A_MonsterProjectile(151, -10.0)
-			SP91 F 3 Bright A_MonsterProjectile(151, -6.0)
-			SP91 F 3 Bright A_MonsterProjectile(151, -2.0)
-			SP91 F 3 Bright A_MonsterProjectile(151, 2.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, -10.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, -6.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, -2.0)
+			SP91 F 3 Bright A_MonsterProjectile(288, 2.0)
 			SP91 F 0 Bright A_PlaySound("SGCOCK")
 			SP91 E 12 A_FaceTarget
 			Goto See
@@ -221,14 +221,11 @@ thing 244 : thing 2 "Rocket zombie"
 
 	health 35
 
-	// MBF21 Flags (MBF21 feature set only)
-	+NORADIUSDMG
-
 	// Extended Properties (Extended/DEHEXTRA feature set and later)
     dropitem 66  // Drops a rocket on death
 
 	// MBF21 Properties (MBF21 feature set and later)
-	projectilegroup 1  // Immune to arachnotron plasma damage
+	splashgroup 3  // Immune to rocket splash damage
 
 	States
 	{
@@ -298,7 +295,6 @@ thing 245 : thing 20 "Former tank"
 	+NOBLOOD
 
 	// MBF21 Flags (MBF21 feature set only)
-	+NORADIUSDMG
 	-FULLVOLSOUNDS
 
 	seesound "FRE027"
@@ -307,6 +303,9 @@ thing 245 : thing 20 "Former tank"
 
 	// Extended Properties (Extended/DEHEXTRA feature set and later)
 	dropitem 65  // Drops a box of ammo on death
+
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 1  // Immune to BFG, player's plasma arcs, and player's incendiary fireballs
 
 	States
 	{
