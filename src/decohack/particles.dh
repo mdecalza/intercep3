@@ -283,7 +283,8 @@ thing 252 "Raindrop"
 			SP99 A 8
 			Loop
 		Death:
-			SP99 BCDEFGH 1
+			SP99 B 1 A_PlaySound("FRE044")
+			SP99 CDEFGH 1
 			Stop
 	}
 }
@@ -510,7 +511,8 @@ thing 256 "Blood droplet"
 			SPA1 A 8
 			Loop
 		Death:
-			SPA1 BCDEFGH 1
+			SPA1 B 1 A_PlaySound("FRE044")
+			SPA1 CDEFGH 1
 			Stop
 	}
 }
