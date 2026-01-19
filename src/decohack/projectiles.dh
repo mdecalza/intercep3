@@ -10,13 +10,6 @@
 
 /* Doom II projectiles */
 
-// Rocket in flight
-thing 34
-{
-	// MBF21 Properties (MBF21 feature set and later)
-	splashgroup 3
-}
-
 // Plasma projectile
 thing 35
 {
