@@ -2,7 +2,7 @@
 
 map MAP01
 {
-	levelname = "The Museum"  // MIDI: Casserole by LewkForce
+	levelname = "The Museum"  // MIDI: "Casserole" by LewkForce (origin: Interception II MAP20)
 	author = "Moustachio"
 	label = "Bonus"
 	levelpic = "CWILV00"
@@ -29,7 +29,7 @@ map MAP01
 
 map MAP11
 {
-	levelname = "Station to Station"  // MIDI: Diaphragm by AD_79
+	levelname = "Station to Station"  // MIDI: "Diaphragm" by AD_79
 	author = "Moustachio"
 	label = "E1M1"
 	levelpic = "CWILV11"
@@ -76,7 +76,7 @@ map MAP11
 
 map MAP13
 {
-	levelname = "Corporate Hell II"  // MIDI: "The Hornet" by Jimmy (origin: TNT II: Devilution)
+	levelname = "Corporate Hell II"  // MIDI: "TeNaciTy" by Jimmy (origin: TNT II: Devilution)
 	author = "sincity2100"
 	label = "E1M3"
 	levelpic = "CWILV13"
@@ -92,7 +92,7 @@ map MAP13
 
 map MAP14
 {
-	levelname = "Die Garrison"  // MIDI: rendition of "Rave On" from Killer7 by Masafumi Takada
+	levelname = "Die Garrison"  // MIDI: "Bloody Skies" by Maxime Tondreau
 	author = "Yisue"
 	label = "E1M4"
 	levelpic = "CWILV14"
@@ -127,7 +127,7 @@ map MAP14
 
 map MAP21
 {
-	levelname = "Force Majeure"
+	levelname = "Force Majeure"  // MIDI: "cardsoundcard" by germicelli (bespoke)
 	author = "germicelli"
 	label = "E2M1"
 	skytexture = "SKY-B06"
@@ -139,7 +139,7 @@ map MAP21
 
 map MAP22
 {
-	levelname = "Sub-Sea Teleporter Research"
+	levelname = "Sub-Sea Teleporter Research"  // MIDI: "Statics" by AlexEightch (bespoke)
 	author = "AlexEightch"
 	label = "E2M2"
 	skytexture = "SKY-B06"
@@ -151,7 +151,7 @@ map MAP22
 
 map MAP26
 {
-	levelname = "Neptune's Castle"
+	levelname = "Neptune's Castle"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
 	author = "Bendža M."
 	label = "E2M6"
 	skytexture = "SKY-B06"
@@ -165,7 +165,7 @@ map MAP26
 
 map MAP31
 {
-	levelname = "Eleftheria"
+	levelname = "Eleftheria"  // MIDI: "Dream Dweller" by Brayden Hart (AD_79)
 	author = "cannonball"
 	label = "E3M1"
 	levelpic = "CWILV31"
@@ -186,7 +186,7 @@ map MAP31
 
 map MAP33
 {
-	levelname = "Manifestation"
+	levelname = "Manifestation"  // MIDI: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
 	author = "sincity2100"
 	label = "E3M3"
 	levelpic = "CWILV33"
@@ -201,7 +201,7 @@ map MAP33
 
 map MAP42
 {
-	levelname = "Disputed Territory"  // MIDI: TBD
+	levelname = "Disputed Territory"  // MIDI: In-progress
 	author = "AlexEightch"
 	label = "E4M2"
 	levelpic = "CWILV53"
@@ -229,7 +229,7 @@ map MAP42
 
 map MAP53
 {
-	levelname = "Terminated Bliss"  // MIDI: Aquifer by Snaxalotl
+	levelname = "Terminated Bliss"  // MIDI: "Aquifer" by Snaxalotl (origin: Abscission MAP02)
 	author = "Treehouseminis"
 	label = "E5M3"
 	levelpic = "CWILV53"
@@ -257,7 +257,7 @@ map MAP53
 
 map MAP62
 {
-	levelname = "Cosmic Factory"
+	levelname = "Cosmic Factory"  // MIDI: "Earthglow" by Tristan Clark
 	author = "Blast98"
 	label = "E6M2"
 	levelpic = "CWILV62"
@@ -270,7 +270,7 @@ map MAP62
 
 map MAP63
 {
-	levelname = "Moonquake"
+	levelname = "Moonquake"  // MIDI: "Main Code" by Korp
 	author = "Salmon"
 	label = "E6M3"
 	levelpic = "CWILV63"
