@@ -56,6 +56,14 @@ E2M2: SUB-SEA TELEPORTER RESEARCH by AlexEightch
  Detail: AlexEightch
  Testing: AlexEightch, Moustachio
 
+E2M6: NEPTUNE'S CASTLE by Bendza M.
+ Music: "Engel" by Rammstein
+
+ Geometry: Bendža M.
+ Combat: Bendža M.
+ Detail: Bendža M.
+ Testing: Bendža M, ChaseDoesItRight﻿, Moustachio
+
 E3M1: ELEFTHERIA by cannonball
  Music: "Dream Dweller" by Brayden Hart (AD_79)
 
@@ -73,7 +81,7 @@ E3M3: MANIFESTATION by sincity2100
  Testing: sincity2100, Moustachio
 
 E4M2: DISPUTED TERRITORY by AlexEightch
- Music: TBD
+ Music: In-progress
 
  Geometry: AlexEightch
  Combat: AlexEightch
@@ -95,6 +103,14 @@ E6M2: COSMIC FACTORY by Blast98
  Combat: Blast98
  Detail: Blast98
  Testing: Blast98, Moustachio, AlexEightch
+
+E6M3: MOONQUAKE by Salmon
+ Music: "Main Code" by Korp
+
+ Geometry: Salmon
+ Combat: Salmon
+ Detail: Salmon
+ Testing: Salmon, Moustachio
 
 BONUS: THE MUSEUM by Moustachio
  Music: "Casserole" by LewkForce (origin: Interception II MAP20)
