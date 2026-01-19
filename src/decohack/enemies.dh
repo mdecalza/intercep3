@@ -87,7 +87,10 @@ thing 242 : thing 11 "Incendiary zombie"
 			}
 			Goto See
 		Missile:
-			SP91 E 8 A_FaceTarget
+			SP91 EE 8 {
+				A_FaceTarget
+				A_PlaySound("FLAME")
+			}
 			SP91 E 0 A_RandomJump(Flip, 127)
 			SP91 F 3 Bright {
 				A_MonsterProjectile(151, -10.0)
@@ -173,7 +176,11 @@ thing 243 : thing 3 "Plasma zombie"
 			SP92 AABBCCDD 3 A_Chase
 			Loop
 		Missile:
-			SP92 EEE 8 A_FaceTarget
+			SP92 E 8 {
+				A_FaceTarget
+				A_PlaySound("FRE041")
+			}
+			SP92 EE 8 A_FaceTarget
 			SP92 F 10 Bright {
 				A_MonsterProjectile(37, 6.0)
 				A_MonsterProjectile(37)
@@ -232,11 +239,23 @@ thing 244 : thing 2 "Rocket zombie"
 			SP93 AABBCCDD 3 A_Chase
 			Loop
 		Missile:
-			SP93 EE 5 Bright A_FaceTarget
+			SP93 E 5 Bright A_FaceTarget
+			SP93 E 5 Bright {
+				A_FaceTarget
+				A_PlaySound("FRE042")
+			}
 			SP93 EE 5 A_FaceTarget
-			SP93 EE 5 Bright A_FaceTarget
+			SP93 E 5 Bright A_FaceTarget
+			SP93 E 5 Bright {
+				A_FaceTarget
+				A_PlaySound("FRE042")
+			}
 			SP93 EE 5 A_FaceTarget
-			SP93 EE 5 Bright A_FaceTarget
+			SP93 E 5 Bright A_FaceTarget
+			SP93 E 5 Bright {
+				A_FaceTarget
+				A_PlaySound("FRE043")
+			}
 			SP93 F 10 Bright A_CyberAttack
 			SP93 E 10
 			Goto See
