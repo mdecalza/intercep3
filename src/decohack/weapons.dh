@@ -178,6 +178,7 @@ weapon 4 "Missile launcher"
 		Fire:
 			MISG B 8
 			MISG C 4 {
+				A_ConsumeAmmo
 				A_WeaponProjectile(287)
 				A_GunFlashTo(Flash)
 			}
