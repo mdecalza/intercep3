@@ -204,7 +204,7 @@ map MAP42
 	levelname = "Disputed Territory"  // MIDI: In-progress
 	author = "AlexEightch"
 	label = "E4M2"
-	levelpic = "CWILV53"
+	levelpic = "CWILV42"
 	skytexture = "ALLBLACK"
 	music = "D_RUNNIN"
 	partime = 2435
