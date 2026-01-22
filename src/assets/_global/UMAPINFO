@@ -10,18 +10,6 @@ map MAP01
 	music = "D_RUNNIN"
 	partime = 0
 
-	intertext = "You're at the heart of the city.",
-		"Up ahead you see the warped",
-		"silhouette of the UAC building.",
-		"",
-		"This has to be the source.",
-		"Never one to shy away from doing",
-		"what you must, you rush into",
-		"the near-unrecognizable edifice,",
-		"hoping to buy humanity some time."
-	interbackdrop = "ALLBLAKF"
-	intermusic = "D_TEXT01"
-
 	next = "MAP13"
 }
 
@@ -51,22 +39,6 @@ map MAP11
 		"going to have to go to the source.",
 		"Time to follow their accursed trail",
 		"and plug their entry portal."
-	intertextsecret = "Seems like the demonic forces",
-		"have corrupted Barbat-OS,",
-		"the UAC's watchful AI. Somehow,",
-		"they're using him to corrupt",
-		"huge chunks of Earth en masse.",
-		"",
-		"Could it be that our worlds are",
-		"colliding?",
-		"",
-		"It couldn't be. There's only one",
-		"being so foul, so vile, and with",
-		"the know-how to accomplish such",
-		"a dastardly act.",
-		"",
-		"Alright, hero. Time to get to the",
-		"bottom of this."
 	interbackdrop = "TEXTPIC1"
 	intermusic = "D_TEXT01"
 
@@ -84,8 +56,24 @@ map MAP13
 	music = "D_E1M3"
 	partime = 0
 
+	intertext = "Seems like the demonic forces",
+		"have corrupted BARBAT-OS,",
+		"the UAC's watchful AI. Somehow,",
+		"they're using him to corrupt",
+		"huge chunks of Earth en masse.",
+		"",
+		"Could it be that our worlds are",
+		"colliding again?",
+		"",
+		"It couldn't be. There's only one",
+		"being so foul and so vile with",
+		"the know-how to accomplish such",
+		"a dastardly act...",
+		"",
+		"Alright, hero. Time to get to the",
+		"bottom of this."
 	interbackdrop = "ALLBLAKF"
-	intermusic = "D_TEXT01"
+	intermusic = "D_TEXT02"
 
 	next = "MAP14"
 }
@@ -110,15 +98,15 @@ map MAP14
 		"underwater processing center.",
 		"",
 		"The UAC uses the bay water to cool",
-		"down the intense heat from Barbat-OS'",
+		"down the intense heat from BARBAT-OS'",
 		"logical processors. Outright flooding",
 		"each of the computer cores may disable",
-		"the possessed Barbat-OS.",
+		"the possessed BARBAT-OS.",
 		"",
 		"You'll crush every bone in your body,",
 		"but at least you'll save Earth doing it..."
 	interbackdrop = "ALLBLAKF"
-	intermusic = "D_TEXT02"
+	intermusic = "D_TEXT01"
 
 	next = "MAP21"
 }
@@ -130,6 +118,7 @@ map MAP21
 	levelname = "Force Majeure"  // MIDI: "cardsoundcard" by germicelli (bespoke)
 	author = "germicelli"
 	label = "E2M1"
+	levelpic = "CWILV21"
 	skytexture = "SKY-B06"
 	music = "D_E2M1"
 	partime = 0
@@ -142,6 +131,7 @@ map MAP22
 	levelname = "Sub-Sea Teleporter Research"  // MIDI: "Statics" by AlexEightch (bespoke)
 	author = "AlexEightch"
 	label = "E2M2"
+	levelpic = "CWILV22"
 	skytexture = "SKY-B06"
 	music = "D_E2M2"
 	partime = 0
@@ -154,9 +144,29 @@ map MAP26
 	levelname = "Neptune's Castle"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
 	author = "Bendža M."
 	label = "E2M6"
+	levelpic = "CWILV26"
 	skytexture = "SKY-B06"
 	music = "D_E2M6"
 	partime = 0
+
+	intertext = "You wake up in a small room. Looks",
+		"like a jail cell. You try the door.",
+		"Yep. It's a jail cell.",
+		"",
+		"BARBAT-OS must have sent you",
+		"somewhere far away. The building",
+		"you're in appears rustic, yet it",
+		"seems freshly built...",
+		"",
+		"Dust falls on your head as the",
+		"building shakes. Outside, you hear",
+		"voices shouting in an odd dialect",
+		"of English. You can make out just",
+		"one word: demons.",
+		"",
+		"Time to get the hell out of here."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT01"
 
 	next = "MAP31"
 }
@@ -173,11 +183,21 @@ map MAP31
 	music = "D_E3M1"
 	partime = 0
 
-	intertext = "You've found yourself in a dark realm",
+	intertext =
+		"Where the hell have you been sent?",
+		"It's certainly Earth, but where?",
+		"Aside from that jail, you've barely",
+		"seen any sign of civilization at all.",
+		"Maybe, the question isn't where you",
+		"were sent. Maybe, it's when.",
 		"",
-		"Escape from the dark heart of this",
-		"hell, and you may have a chance at",
-		"turning back the clock on Barbat-OS."
+		"You emerge onto a cliffside perch.",
+		"Way below, you spot a horde of demons",
+		"all marching in the same direction.",
+		"",
+		"If this really is the ancient past,",
+		"then their underground portal should",
+		"still be open. Time to follow them."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 
@@ -193,7 +213,7 @@ map MAP33
 	skytexture = "SKY-B02"
 	music = "D_E3M3"
 	partime = 0
-	
+
 	next = "MAP42"
 }
 
@@ -209,19 +229,17 @@ map MAP42
 	music = "D_RUNNIN"
 	partime = 2435
 
-	intertext = "You've entered the innermost pustule",
-		"of their wretched realm.",
-		"All you can to is grit your teeth,",
-		"and seethe in rage.",
+	intertext = "You've followed the demons to an",
+		"oppressive realm.",
 		"",
-		"For, up ahead, you see an all too",
-		"familiar figure hoisted over you",
-		"in chains, writhing,",
+		"The realm of souls.",
 		"",
-		"and grinning back at you..."
+		"Escape from the dark heart of this",
+		"hell, and you may have a chance at",
+		"turning back the clock on BARBAT-OS."
 	interbackdrop = "ALLBLAKF"
-	intermusic = "D_TEXT02"
-	
+	intermusic = "D_TEXT01"
+
 	next = "MAP53"
 }
 
@@ -238,18 +256,22 @@ map MAP53
 	partime = 2435
 
 	intertext = "You've entered the innermost pustule",
-		"of their wretched realm.",
-		"All you can to is grit your teeth,",
-		"and seethe in rage.",
+		"of their wretched realm, having",
+		"followed the demons back to",
+		"their origin point: a decimated",
+		"fortress, floating in the void.",
 		"",
-		"For, up ahead, you see an all too",
-		"familiar figure hoisted over you",
-		"in chains, writhing,",
+		"As you step inside, you realize",
+		"why. Suspended ahead is an all",
+		"too familiar demon hoisted up",
+		"in chains, it's body destroyed.",
+		"Just how you left it.",
 		"",
-		"and grinning back at you..."
+		"The demon is writhing...",
+		"and it's grinning at you."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
-	
+
 	next = "MAP62"
 }
 
