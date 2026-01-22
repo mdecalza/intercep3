@@ -63,12 +63,12 @@ map MAP13
 		"huge chunks of Earth en masse.",
 		"",
 		"Could it be that our worlds are",
-		"colliding?",
+		"colliding again?",
 		"",
 		"It couldn't be. There's only one",
 		"being so foul and so vile with",
 		"the know-how to accomplish such",
-		"a dastardly act.",
+		"a dastardly act...",
 		"",
 		"Alright, hero. Time to get to the",
 		"bottom of this."
@@ -118,6 +118,7 @@ map MAP21
 	levelname = "Force Majeure"  // MIDI: "cardsoundcard" by germicelli (bespoke)
 	author = "germicelli"
 	label = "E2M1"
+	levelpic = "CWILV21"
 	skytexture = "SKY-B06"
 	music = "D_E2M1"
 	partime = 0
@@ -130,6 +131,7 @@ map MAP22
 	levelname = "Sub-Sea Teleporter Research"  // MIDI: "Statics" by AlexEightch (bespoke)
 	author = "AlexEightch"
 	label = "E2M2"
+	levelpic = "CWILV22"
 	skytexture = "SKY-B06"
 	music = "D_E2M2"
 	partime = 0
@@ -142,6 +144,7 @@ map MAP26
 	levelname = "Neptune's Castle"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
 	author = "Bendža M."
 	label = "E2M6"
+	levelpic = "CWILV26"
 	skytexture = "SKY-B06"
 	music = "D_E2M6"
 	partime = 0
@@ -181,7 +184,7 @@ map MAP31
 	partime = 0
 
 	intertext =
-		"Where the hell have you been sent to?",
+		"Where the hell have you been sent?",
 		"It's certainly Earth, but where?",
 		"Aside from that jail, you've barely",
 		"seen any sign of civilization at all.",
@@ -253,7 +256,7 @@ map MAP53
 	partime = 2435
 
 	intertext = "You've entered the innermost pustule",
-		"of their wretched realm, having"
+		"of their wretched realm, having",
 		"followed the demons back to",
 		"their origin point: a decimated",
 		"fortress, floating in the void.",
@@ -261,7 +264,7 @@ map MAP53
 		"As you step inside, you realize",
 		"why. Suspended ahead is an all",
 		"too familiar demon hoisted up",
-		"in chains, it's body destroyed."
+		"in chains, it's body destroyed.",
 		"Just how you left it.",
 		"",
 		"The demon is writhing...",
