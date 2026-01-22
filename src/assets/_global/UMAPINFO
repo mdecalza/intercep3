@@ -73,7 +73,7 @@ map MAP13
 		"Alright, hero. Time to get to the",
 		"bottom of this."
 	interbackdrop = "ALLBLAKF"
-	intermusic = "D_TEXT01"
+	intermusic = "D_TEXT02"
 
 	next = "MAP14"
 }
@@ -106,7 +106,7 @@ map MAP14
 		"You'll crush every bone in your body,",
 		"but at least you'll save Earth doing it..."
 	interbackdrop = "ALLBLAKF"
-	intermusic = "D_TEXT02"
+	intermusic = "D_TEXT01"
 
 	next = "MAP21"
 }
@@ -162,6 +162,8 @@ map MAP26
 		"one word: demons.",
 		"",
 		"Time to get the hell out of here."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT01"
 
 	next = "MAP31"
 }
@@ -193,6 +195,8 @@ map MAP31
 		"If this really is the ancient past,",
 		"then their underground portal should",
 		"still be open. Time to follow them."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT02"
 
 	next = "MAP33"
 }
@@ -264,7 +268,7 @@ map MAP53
 		"and it's grinning at you."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
-	
+
 	next = "MAP62"
 }
 
