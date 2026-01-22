@@ -150,12 +150,12 @@ map MAP26
 	partime = 0
 
 	intertext = "You wake up in a small room. Looks",
-		"like a jail cell. You try the door.",
-		"Yep. It's a jail cell.",
+		"like a jail cell. You try the door,",
+		"but it won't budge.",
 		"",
 		"BARBAT-OS must have sent you",
 		"somewhere far away. The building",
-		"you're in appears rustic, yet it",
+		"you're in appears ancient, yet it",
 		"seems freshly built...",
 		"",
 		"Dust falls on your head as the",
