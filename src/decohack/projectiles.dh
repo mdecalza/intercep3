@@ -136,7 +136,7 @@ thing 287 : thing 34 "Nitro rocket"
 	speed 25
 
 	// MBF21 Properties (MBF21 feature set and later)
-	splashgroup 0
+	splashgroup 3
 
 	States
 	{
