@@ -241,8 +241,6 @@ thing 244 : thing 2 "Rocket zombie"
 				A_FaceTarget
 				A_PlaySound("FRE042")
 			}
-			SP93 EE 5 A_FaceTarget
-			SP93 E 5 Bright A_FaceTarget
 			SP93 E 5 Bright {
 				A_FaceTarget
 				A_PlaySound("FRE042")
