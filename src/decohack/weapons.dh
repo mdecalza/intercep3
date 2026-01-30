@@ -107,7 +107,7 @@ weapon 1 "Model 1887"
 	}
 }
 
-weapon 2 "Super slugger"
+weapon 2 "Super slug rifle"
 {
 	// MBF21 fields
 	ammopershot 2
@@ -117,7 +117,9 @@ weapon 2 "Super slugger"
 		Fire:
 			SHTG F 3 Bright {
 				A_ConsumeAmmo
-				A_WeaponBulletAttack(0.0, 0.0, 3, 80, 2)
+				A_WeaponBulletAttack(0.0, 0.0, 1, 80, 2)
+				A_WeaponBulletAttack(0.0, 0.0, 1, 44, 2)
+				A_WeaponBulletAttack(0.0, 0.0, 1, 13, 5)
 				A_GunFlashTo(Flash)
 				A_WeaponSound("FRE021")
 			}
