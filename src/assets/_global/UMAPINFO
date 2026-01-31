@@ -17,12 +17,12 @@ map MAP01
 
 map MAP11
 {
-	levelname = "Station to Station"  // MIDI: "Diaphragm" by AD_79
+	levelname = "Station to Station"
 	author = "Moustachio"
 	label = "E1M1"
 	levelpic = "CWILV11"
 	skytexture = "CITYSKY1"
-	music = "D_E1M1"
+	music = "D_E1M1"  // MIDI: "Diaphragm" by AD_79
 	partime = 95
 
 	episode = clear
@@ -43,17 +43,17 @@ map MAP11
 	intermusic = "D_TEXT01"
 
 	next = "MAP13"
-	nextsecret = "MAP01"
+	nextsecret = "MAP17"
 }
 
 map MAP13
 {
-	levelname = "Corporate Hell II"  // MIDI: "TeNaciTy" by Jimmy (origin: TNT II: Devilution)
+	levelname = "Corporate Hell II"
 	author = "sincity2100"
 	label = "E1M3"
 	levelpic = "CWILV13"
 	skytexture = "CITYSKY1"
-	music = "D_E1M3"
+	music = "D_E1M3"  // MIDI: "TeNaciTy" by Jimmy (origin: TNT II: Devilution)
 	partime = 0
 
 	intertext = "Seems like the demonic forces",
@@ -80,12 +80,12 @@ map MAP13
 
 map MAP14
 {
-	levelname = "Die Garrison"  // MIDI: "Bloody Skies" by Maxime Tondreau
+	levelname = "Die Garrison"
 	author = "Yisue"
 	label = "E1M4"
 	levelpic = "CWILV14"
 	skytexture = "CITYSKY1"
-	music = "D_E1M4"
+	music = "D_E1M4"  // MIDI: "Bloody Skies" by Maxime Tondreau
 	partime = 0
 
 	intertext = "Scouring every building for info...",
@@ -111,16 +111,28 @@ map MAP14
 	next = "MAP21"
 }
 
+map MAP17
+{
+	levelname = "Arch-District"
+	author = "rafael_farofa"
+	label = "E1S2"
+	levelpic = "CWILV17"
+	skytexture = "SKY2"
+	music = "D_RUNNIN"  // MIDI: Using "Casserole" by LewkForce as placeholder
+
+	next = "MAP13"
+}
+
 // EPISODE 2
 
 map MAP21
 {
-	levelname = "Force Majeure"  // MIDI: "cardsoundcard" by germicelli (bespoke)
+	levelname = "Force Majeure"
 	author = "germicelli"
 	label = "E2M1"
 	levelpic = "CWILV21"
 	skytexture = "SKY-B06"
-	music = "D_E2M1"
+	music = "D_E2M1"  // MIDI: "cardsoundcard" by germicelli (bespoke)
 	partime = 0
 
 	next = "MAP22"
@@ -128,12 +140,12 @@ map MAP21
 
 map MAP22
 {
-	levelname = "Sub-Sea Teleporter Research"  // MIDI: "Statics" by AlexEightch (bespoke)
+	levelname = "Sub-Sea Teleporter Research"
 	author = "AlexEightch"
 	label = "E2M2"
 	levelpic = "CWILV22"
 	skytexture = "SKY-B06"
-	music = "D_E2M2"
+	music = "D_E2M2"  // MIDI: "Statics" by AlexEightch (bespoke)
 	partime = 0
 
 	next = "MAP26"
@@ -141,12 +153,12 @@ map MAP22
 
 map MAP26
 {
-	levelname = "Neptune's Castle"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
+	levelname = "Neptune's Castle"
 	author = "Bendža M."
 	label = "E2M6"
 	levelpic = "CWILV26"
 	skytexture = "SKY-B06"
-	music = "D_E2M6"
+	music = "D_E2M6"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
 	partime = 0
 
 	intertext = "You wake up in a small room. Looks",
@@ -175,12 +187,12 @@ map MAP26
 
 map MAP31
 {
-	levelname = "Eleftheria"  // MIDI: "Dream Dweller" by Brayden Hart (AD_79)
+	levelname = "Eleftheria"
 	author = "cannonball"
 	label = "E3M1"
 	levelpic = "CWILV31"
 	skytexture = "SKY-B02"
-	music = "D_E3M1"
+	music = "D_E3M1"  // MIDI: "Dream Dweller" by Brayden Hart (AD_79)
 	partime = 0
 
 	intertext =
@@ -206,12 +218,12 @@ map MAP31
 
 map MAP33
 {
-	levelname = "Manifestation"  // MIDI: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
+	levelname = "Manifestation"
 	author = "sincity2100"
 	label = "E3M3"
 	levelpic = "CWILV33"
 	skytexture = "SKY-B02"
-	music = "D_E3M3"
+	music = "D_E3M3"  // MIDI: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
 	partime = 0
 
 	next = "MAP42"
@@ -221,12 +233,12 @@ map MAP33
 
 map MAP42
 {
-	levelname = "Disputed Territory"  // MIDI: In-progress
+	levelname = "Disputed Territory"
 	author = "AlexEightch"
 	label = "E4M2"
 	levelpic = "CWILV42"
 	skytexture = "ALLBLACK"
-	music = "D_RUNNIN"
+	music = "D_RUNNIN"  // MIDI: In-progress (using "Casserole" by LewkForce as placeholder)
 	partime = 2435
 
 	intertext = "You've followed the demons to an",
@@ -247,12 +259,12 @@ map MAP42
 
 map MAP53
 {
-	levelname = "Terminated Bliss"  // MIDI: "Aquifer" by Snaxalotl (origin: Abscission MAP02)
+	levelname = "Terminated Bliss"
 	author = "Treehouseminis"
 	label = "E5M3"
 	levelpic = "CWILV53"
 	skytexture = "ALLBLACK"
-	music = "D_E5M3"
+	music = "D_E5M3"  // MIDI: "Aquifer" by Snaxalotl (origin: Abscission MAP02)
 	partime = 2435
 
 	intertext = "You've entered the innermost pustule",
@@ -279,12 +291,12 @@ map MAP53
 
 map MAP62
 {
-	levelname = "Cosmic Factory"  // MIDI: "Earthglow" by Tristan Clark
+	levelname = "Cosmic Factory"
 	author = "Blast98"
 	label = "E6M2"
 	levelpic = "CWILV62"
 	skytexture = "SKY4"
-	music = "D_E6M2"
+	music = "D_E6M2"  // MIDI: "Earthglow" by Tristan Clark
 	partime = 0
 
 	next = "MAP63"
@@ -292,12 +304,12 @@ map MAP62
 
 map MAP63
 {
-	levelname = "Moonquake"  // MIDI: "Main Code" by Korp
+	levelname = "Moonquake"
 	author = "Salmon"
 	label = "E6M3"
 	levelpic = "CWILV63"
 	skytexture = "SKY4"
-	music = "D_E6M3"
+	music = "D_E6M3"  // MIDI: "Main Code" by Korp
 	partime = 0
 
 	next = "MAP11"
