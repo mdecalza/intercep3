@@ -39,6 +39,7 @@ map MAP11
 		"going to have to go to the source.",
 		"Time to follow their accursed trail",
 		"and plug their entry portal."
+	intertextsecret = clear
 	interbackdrop = "TEXTPIC1"
 	intermusic = "D_TEXT01"
 
@@ -119,6 +120,20 @@ map MAP17
 	levelpic = "CWILV17"
 	skytexture = "SKY2"
 	music = "D_RUNNIN"  // MIDI: Using "Casserole" by LewkForce as placeholder
+
+	intertext = "There's a mysterious infection",
+		"spreading through the city, and it's",
+		"turning everyone into the same fiends",
+		"you fought ages ago.",
+		"",
+		"You thought you had wiped them out...",
+		"",
+		"If you want to stop a flood, you\'re",
+		"going to have to go to the source.",
+		"Time to follow their accursed trail",
+		"and plug their entry portal."
+	interbackdrop = "TEXTPIC1"
+	intermusic = "D_TEXT01"
 
 	next = "MAP13"
 }
