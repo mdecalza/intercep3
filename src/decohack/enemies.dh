@@ -87,11 +87,11 @@ thing 242 : thing 11 "Incendiary zombie"
 			}
 			Goto See
 		Missile:
-			SP91 EE 8 {
+			SP91 FF 10 Bright {
 				A_FaceTarget
 				A_PlaySound("FLAME")
 			}
-			SP91 E 0 A_RandomJump(Flip, 127)
+			SP91 F 0 Bright A_RandomJump(Flip, 127)
 			SP91 F 3 Bright {
 				A_MonsterProjectile(288, -10.0)
 				A_PlaySound("DSHTGN")
