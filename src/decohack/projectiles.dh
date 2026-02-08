@@ -10,13 +10,6 @@
 
 /* Doom II projectiles */
 
-// Rocket in flight
-thing 34
-{
-	// MBF21 Properties (MBF21 feature set and later)
-	splashgroup 0
-}
-
 // Plasma projectile
 thing 35
 {
@@ -135,9 +128,6 @@ thing 287 : thing 34 "Nitro rocket"
 {
 	speed 25
 
-	// MBF21 Properties (MBF21 feature set and later)
-	splashgroup 3
-
 	States
 	{
 		Spawn:
@@ -181,4 +171,10 @@ thing 288 : thing 151 "Incendiary zombie fireball"
 			BAL1 E 4 Bright
 			Stop
 	}
+}
+
+thing 289 : thing 287 "Rocket zombie rocket"
+{
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 3
 }
