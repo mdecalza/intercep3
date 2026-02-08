@@ -118,7 +118,7 @@ weapon 2 "Super slug rifle"
 			SHTG F 3 Bright {
 				A_ConsumeAmmo
 				A_WeaponBulletAttack(0.0, 0.0, 1, 80, 2)
-				A_WeaponBulletAttack(0.0, 0.0, 1, 44, 2)
+				A_WeaponBulletAttack(0.0, 0.0, 1, 70, 2)
 				A_WeaponBulletAttack(0.0, 0.0, 1, 13, 5)
 				A_GunFlashTo(Flash)
 				A_WeaponSound("FRE021")
