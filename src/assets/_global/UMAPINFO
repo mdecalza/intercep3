@@ -109,6 +109,18 @@ map MAP14
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
+	next = "MAP16"
+}
+
+map MAP16
+{
+	levelname = "220 kPa Above and Below"
+	author = "Frank Harper"
+	label = "E1M6"
+	levelpic = "CWILV16"
+	skytexture = "SKY-B02"
+	music = "D_E1M6"  // MIDI: "Prototype - Extended" by James Paddock and Stuart Rynn
+
 	next = "MAP21"
 }
 
@@ -118,7 +130,7 @@ map MAP17
 	author = "rafael_farofa"
 	label = "E1S2"
 	levelpic = "CWILV17"
-	skytexture = "SKY2"
+	skytexture = "CITYSKY1"
 	music = "D_RUNNIN"  // MIDI: Using "Casserole" by LewkForce as placeholder
 
 	intertext = "There's a mysterious infection",
