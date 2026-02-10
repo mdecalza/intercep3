@@ -181,7 +181,7 @@ map MAP22
 map MAP26
 {
 	levelname = "Neptune's Castle"
-	author = "Bendža M."
+	author = "Bendza M."
 	label = "E2M6"
 	levelpic = "CWILV26"
 	skytexture = "SKY-B06"
@@ -340,4 +340,16 @@ map MAP63
 	partime = 0
 
 	next = "MAP11"
+}
+
+map MAP67
+{
+	levelname = "The Plutonium Is Gone!"
+	author = "Bendza M."
+	label = "E6S1"
+	levelpic = "CWILV67"
+	skytexture = "SKY4"
+	music = "D_E6M7"  // MIDI: "Liquid Luck" by Jimmy (origin: BTSX)
+
+	next = "MAP62"
 }
