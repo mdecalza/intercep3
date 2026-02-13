@@ -953,7 +953,8 @@ thing 265 "Air bubble"
 	States
 	{
 		Spawn:
-			TNT1 A 1 A_RandomJump(Type2, 42)
+			TNT1 A 1
+			TNT1 A 0 A_RandomJump(Type2, 42)
 			Goto Type1
 		Type1:
 			BUBB A 140
@@ -1060,7 +1061,8 @@ thing 267 "Snowflake"
 	States
 	{
 		Spawn:
-			TNT1 A 1 A_RandomJump(Type3, 63)
+			TNT1 A 1
+			TNT1 A 0 A_RandomJump(Type3, 63)
 			TNT1 A 1 A_RandomJump(Type2, 127)
 			Goto Type1
 		Type1:
