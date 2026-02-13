@@ -73,7 +73,8 @@ thing 151 "Incendiary shotgun fireball"
 	States
 	{
 		Spawn:
-			SP20 A 5 Bright {
+			SP20 A 1 Bright
+			SP20 A 4 Bright {
 				A_PlaySound("FIRSHT")
 				A_RadiusDamage(80, 56)
 			}
@@ -131,7 +132,8 @@ thing 287 : thing 34 "Nitro rocket"
 	States
 	{
 		Spawn:
-			NMSL A 5 Bright A_SpawnObject(259, 0.0, -8.0, 0.0, 6.0, 8.0)
+			NMSL A 1 Bright
+			NMSL A 4 Bright A_SpawnObject(259, 0.0, -20.0, 0.0, 6.0, 8.0)
 			Loop
 		Death:
 			MISL B 8 Bright A_RadiusDamage(192, 128)
@@ -151,7 +153,8 @@ thing 288 : thing 151 "Incendiary zombie fireball"
 	States
 	{
 		Spawn:
-			SP20 A 5 Bright {
+			SP20 A 1 Bright
+			SP20 A 4 Bright {
 				A_PlaySound("FIRSHT")
 				A_RadiusDamage(40, 56)
 			}
