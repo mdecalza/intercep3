@@ -139,7 +139,7 @@ weapon 2 "Super slug rifle"
 	}
 }
 
-weapon 3 "Minigun"
+weapon 3 "Super chaingun"
 {
 	// MBF21 fields
 	ammopershot 2
@@ -173,7 +173,7 @@ weapon 3 "Minigun"
 	}
 }
 
-weapon 4 "Missile launcher"
+weapon 4 "Nitro missile launcher"
 {
 	States
 	{
@@ -194,7 +194,7 @@ weapon 4 "Missile launcher"
 	}
 }
 
-weapon 5 "Unlocked plasma gun"
+weapon 5 "Unlocked plasma rifle"
 {
 	States
 	{

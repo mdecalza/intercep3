@@ -1,0 +1,11 @@
+[enu default]
+
+TAG_FIST = "Fists";
+TAG_CHAINSAW = "Model 64";
+TAG_PISTOL = "Model 1887";
+TAG_SHOTGUN = "Super Slug Rifle";
+TAG_SUPERSHOTGUN = "Incendiary Shotgun";
+TAG_CHAINGUN = "Super Chaingun";
+TAG_ROCKETLAUNCHER = "Nitro Missile Launcher";
+TAG_PLASMARIFLE = "Unlocked Plasma Rifle";
+TAG_BFG9000 = "BFG 9000.1";
