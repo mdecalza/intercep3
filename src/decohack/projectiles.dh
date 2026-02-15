@@ -57,7 +57,7 @@ thing 151 "Incendiary shotgun fireball"
 	speed 25
 	radius 13
 	height 8
-	damage 3
+	damage 5
 	painchance 0
 
 	+NOBLOCKMAP
@@ -79,15 +79,15 @@ thing 151 "Incendiary shotgun fireball"
 				A_RadiusDamage(80, 56)
 			}
 			SP20 B 5 Bright {
-				A_RadiusDamage(72, 56)
+				A_RadiusDamage(76, 56)
 				A_AddFlags(TRANSLUCENT)
 			}
-			SP20 C 5 Bright A_RadiusDamage(64, 56)
-			SP20 D 5 Bright A_RadiusDamage(56, 56)
+			SP20 C 5 Bright A_RadiusDamage(68, 56)
+			SP20 D 5 Bright A_RadiusDamage(60, 56)
 			Stop
 		Death:
 			BAL1 C 8 Bright {
-				A_RadiusDamage(96, 64)
+				A_RadiusDamage(100, 64)
 				A_Scream
 			}
 			BAL1 D 6 Bright
@@ -139,39 +139,6 @@ thing 287 : thing 34 "Nitro rocket"
 			MISL B 8 Bright A_RadiusDamage(192, 128)
 			MISL C 6 Bright
 			MISL D 4 Bright
-			Stop
-	}
-}
-
-thing 288 : thing 151 "Incendiary zombie fireball"
-{
-	damage 2
-
-	// MBF21 Properties (MBF21 feature set and later)
-	splashgroup 2
-
-	States
-	{
-		Spawn:
-			SP20 A 1 Bright
-			SP20 A 4 Bright {
-				A_PlaySound("FIRSHT")
-				A_RadiusDamage(40, 56)
-			}
-			SP20 B 5 Bright {
-				A_RadiusDamage(35, 56)
-				A_AddFlags(TRANSLUCENT)
-			}
-			SP20 C 5 Bright A_RadiusDamage(30, 56)
-			SP20 D 5 Bright A_RadiusDamage(25, 56)
-			Stop
-		Death:
-			BAL1 C 8 Bright {
-				A_RadiusDamage(20, 64)
-				A_Scream
-			}
-			BAL1 D 6 Bright
-			BAL1 E 4 Bright
 			Stop
 	}
 }
