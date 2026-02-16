@@ -109,17 +109,17 @@ map MAP14
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP16"
+	next = "MAP15"
 }
 
-map MAP16
+map MAP15
 {
 	levelname = "220 kPa Above and Below"
 	author = "Frank Harper"
-	label = "E1M6"
-	levelpic = "CWILV16"
+	label = "E1M5"
+	levelpic = "CWILV15"
 	skytexture = "SKY-B02"
-	music = "D_E1M6"  // MIDI: "Prototype - Extended" by James Paddock and Stuart Rynn
+	music = "D_E1M5"  // MIDI: "Prototype - Extended" by James Paddock and Stuart Rynn
 
 	next = "MAP21"
 }
