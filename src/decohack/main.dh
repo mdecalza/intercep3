@@ -43,9 +43,9 @@ ammo 0
 
 strings
 {
-	GOTCHAINGUN "You got the minigun!"
+	GOTCHAINGUN "You got the super chaingun!"
 	GOTCHAINSAW "You got the Model 64 chainsaw!"
-	GOTSHOTGUN "You got the Super Slug Rifle!"
+	GOTSHOTGUN "You got the super slug rifle!"
 	GOTSHOTGUN2 "You got the incendiary shotgun!"
 	GOTPLASMA "You got the unlocked plasma rifle!"
 	GOTBFG9000 "You got the BFG9000.1! Kill 'em all!"
