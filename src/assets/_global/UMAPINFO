@@ -314,6 +314,20 @@ map MAP53
 	next = "MAP62"
 }
 
+map MAP56
+{
+	levelname = "The Void Hates You"
+	author = "AlexEightch"
+	label = "E5S1"
+	levelpic = "CWILV56"
+	skytexture = "ALLBLACK"
+	music = "D_E5M6"  // MIDI: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
+	partime = 2435
+
+	next = "MAP62"
+}
+
+
 // EPISODE 6
 
 map MAP62
