@@ -9,14 +9,18 @@ Author                  : The Interceptors
 Other Files By Author   : intercep.wad, intercep2.wad
 Misc. Author Info       : The Interceptors are (in alphabetical order):
                           AlexEightch (maps, music, testing)
+                          Bendža M. (maps)
                           Blast98 (map)
                           cannonball (map)
                           Darman Macray (music)
+                          Frank Harper (map)
                           germicelli (map, music)
-                          Lina (DECOHack, art, testing)
+                          Lina (DECOHack, sprites, testing)
                           Moustachio (project lead, DECOHack, maps, art,
                             testing)
-                          PeccatumMihzamiz (art)
+                          PeccatumMihzamiz (ENDOOM)
+                          rafael_farofa (map)
+                          Salmon (map)
                           sincity2100 (maps)
                           Treehouseminis (map)
                           Yisue (map)
@@ -28,10 +32,15 @@ Additional Credits to   : Darman Macray for bespoke title, text, and
 
                           germicelli and AlexEightch for original music.
 
-                          ForceTheDemo, AD_79, Snaxalotl, and LewkForce
-                          for music sourced from other wads/music packs.
+                          ForceTheDemo, Snaxalotl, LewkForce, Thyrbse,
+                          James Paddock, Stuart Rynn, Maxime Tondreau,
+                          Rammstein, Brayden Hart, Tristan Clark, and
+                          Korp for music from other sources.
 
                           Lina for detailed feedback on the resource pack.
+
+                          DFF and valkiriforce for feedback during the
+                          planning phase.
 
                           Doomers Board for DBP37 resources.
                           Esselfortium & CC4 Team for cc4-tex.
