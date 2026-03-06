@@ -175,6 +175,19 @@ map MAP22
 	music = "D_E2M2"  // MIDI: "Statics" by AlexEightch (bespoke)
 	partime = 0
 
+	next = "MAP23"
+}
+
+map MAP23
+{
+	levelname = "Benthic Refinery"
+	author = "Blast98"
+	label = "E2M3"
+	levelpic = "CWILV23"
+	skytexture = "SKY-B06"
+	music = "D_E2M3"  // MIDI: 
+	partime = 0
+
 	next = "MAP26"
 }
 
