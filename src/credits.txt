@@ -209,7 +209,7 @@ ROCKET ZOMBIE
 FORMER TANK
  DECOHack: Moustachio
  Sounds: Rogue Entertainment, id Software, Moustachio
- Sprites: Id Software, 3DRealms
+ Sprites: Id Software, 3D Realms
  Sprite Edit: Enjay, Moustachio
 
 GLIDING IMP
@@ -235,7 +235,7 @@ NITRO BARREL
 FLYING SKULL MINE
  DECOHack: Moustachio
  Sounds: id Software
- Sprites: 3DRealms, Id Software, Amuscaria
+ Sprites: 3D Realms, Id Software, Amuscaria
  Sprite Edit: Gothic
 
 DEMONIC TURRET
@@ -582,7 +582,68 @@ ICY STALAGMITES
 
 HANGING GRAY STALACTITE
  DECOHack: Moustachio
- Sprites:  
+ Sprites: 
+
+PARKING METER
+ DECOHack: Moustachio
+ Sprites: 3D Realms, Moustachio
+
+FIRE EXTINGUISHER
+ DECOHack: Moustachio
+ Sprites: 3D Realms
+ Sounds: Moustachio, id Software
+
+DRINK GLASS
+ DECOHack: Moustachio
+ Sprites: 3D Realms
+
+SMALL BOTTLE
+ DECOHack: Moustachio
+ Sprites: 3D Realms
+
+LARGE BOTTLE
+ DECOHack: Moustachio
+ Sprites: 3D Realms
+
+LARGE BOTTLE 2
+ DECOHack: Moustachio
+ Sprites: 3D Realms
+
+PILL BOTTLE
+ DECOHack: Moustachio
+ Sprites: 3D Realms
+
+SMALL BAG
+ DECOHack: Moustachio
+ Sprites: Raven Software
+
+COFFEE CUP
+ DECOHack: Moustachio
+ Sprites: 3D Realms
+
+DESK LAMP
+ DECOHack: Moustachio
+ Sprites: Banjo Software
+
+SMALL CANDELABRA
+ DECOHack: Moustachio
+ Sprites: Banjo Software, Moustachio
+
+WET FLOOR SIGN
+ DECOHack: Moustachio
+ Sprites: 3D Realms
+
+BAR STOOL
+ DECOHack: Moustachio
+ Sprites: 3D Realms, Jark
+
+MOP IN BUCKET
+ DECOHack: Moustachio
+ Sprites: 3D Realms, Jark, Moustachio
+
+SMALL FOUNTAIN
+ DECOHack: Moustachio
+ Sprites: 3D Realms, Moustachio
 
 
 -= PARTICLE EFFECTS =-
@@ -1538,6 +1599,8 @@ Astolfo Alter (HOME - Resonance MIDI), Lobo, Ketmar Dark, jazzisthebestformofmus
 xvertigox, gokuma, LoneAlpha2401, nootrac4571, doom_dude, Gez, Gifty, Solmyr, Dusk, Reactor, Realm667, MrZzul, stxvile, katarn11, MeowgiTV, 
 Colossus_afps, ozymandias81, skepticist, grrfield, galileo31dos01, P41R47, VanaheimRanger, hakros, memfis, and all of you reading this because you all deserve more credit.
 Thank you for your support!
+
+Some sprites were modified by Jark to better match Doomguy's height.
 
 
 DBP36 RESOURCE CREDITS (from dbp36.txt)
