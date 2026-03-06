@@ -1,4 +1,4 @@
-// SECRET/BONUS LEVELS
+// NON-CAMPAIGN LEVELS
 
 map MAP01
 {
@@ -26,7 +26,7 @@ map MAP11
 	partime = 95
 
 	episode = clear
-	episode = "M_CAMP", "Campaign", "c"
+	episode = "", "The Far Future", "f"
 
 	intertext = "There's a mysterious infection",
 		"spreading through the city, and it's",
@@ -235,6 +235,8 @@ map MAP31
 	music = "D_E3M1"  // MIDI: "Dream Dweller" by Brayden Hart (AD_79)
 	partime = 0
 
+	episode = "", "The Ancient Past", "a"
+
 	intertext =
 		"Where the hell have you been sent?",
 		"It's certainly Earth, but where?",
@@ -337,9 +339,10 @@ map MAP56
 	music = "D_E5M6"  // MIDI: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
 	partime = 2435
 
-	next = "MAP62"
-}
+	episode = "", "The Realm of Souls", "r"
 
+	next = "MAP53"
+}
 
 // EPISODE 6
 
@@ -377,6 +380,8 @@ map MAP67
 	levelpic = "CWILV67"
 	skytexture = "SKY4"
 	music = "D_E6M7"  // MIDI: "Liquid Luck" by Jimmy (origin: BTSX)
+
+	episode = "", "The Moon of Saturn", "m"
 
 	next = "MAP62"
 }
