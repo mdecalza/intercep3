@@ -10,7 +10,7 @@ Other Files By Author   : intercep.wad, intercep2.wad
 Misc. Author Info       : The Interceptors are (in alphabetical order):
                           AlexEightch (maps, music, testing)
                           Bendža M. (maps)
-                          Blast98 (map)
+                          Blast98 (maps)
                           cannonball (map)
                           Darman Macray (music)
                           Frank Harper (map)
