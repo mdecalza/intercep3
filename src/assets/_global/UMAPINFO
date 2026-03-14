@@ -25,9 +25,6 @@ map MAP11
 	music = "D_E1M1"  // MIDI: "Diaphragm" by AD_79
 	partime = 95
 
-	episode = clear
-	episode = "M_EPI1", "The Far Future", "f"
-
 	intertext = "There's a mysterious infection",
 		"spreading through the city, and it's",
 		"turning everyone into the same fiends",
@@ -42,6 +39,9 @@ map MAP11
 	intertextsecret = clear
 	interbackdrop = "TEXTPIC1"
 	intermusic = "D_TEXT01"
+
+	episode = clear
+	episode = "M_EPI1", "The Far Future", "f"
 
 	next = "MAP13"
 	nextsecret = "MAP17"
@@ -162,6 +162,8 @@ map MAP21
 	music = "D_E2M1"  // MIDI: "cardsoundcard" by germicelli (bespoke)
 	partime = 0
 
+	episode = "M_EPI2", "Sea Lab 2121", "f"
+
 	next = "MAP22"
 }
 
@@ -191,14 +193,14 @@ map MAP23
 	next = "MAP26"
 }
 
-map MAP26
+map MAP25
 {
 	levelname = "Neptune's Castle"
 	author = "Bendza M."
-	label = "E2M6"
-	levelpic = "CWILV26"
+	label = "E2M5"
+	levelpic = "CWILV25"
 	skytexture = "SKY-B06"
-	music = "D_E2M6"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
+	music = "D_E2M5"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
 	partime = 0
 
 	intertext = "You wake up in a small room. Looks",
@@ -223,6 +225,19 @@ map MAP26
 	next = "MAP31"
 }
 
+map MAP26
+{
+	levelname = "Hydro Compactor"
+	author = "FlamingoGazzoline"
+	label = "E2S1"
+	levelpic = "CWILV26"
+	skytexture = "SKY-B06"
+	music = "D_E2M6"  // MIDI: "InBrain" by FlamingoGazzoline
+	partime = 0
+
+	next = "MAP25"
+}
+
 // EPISODE 3
 
 map MAP31
@@ -234,8 +249,6 @@ map MAP31
 	skytexture = "SKY-B02"
 	music = "D_E3M1"  // MIDI: "Dream Dweller" by Brayden Hart (AD_79)
 	partime = 0
-
-	episode = "M_EPI2", "The Distant Past", "d"
 
 	intertext =
 		"Where the hell have you been sent?",
@@ -254,6 +267,8 @@ map MAP31
 		"still be open. Time to follow them."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
+
+	episode = "M_EPI3", "The Distant Past", "d"
 
 	next = "MAP33"
 }
@@ -294,6 +309,8 @@ map MAP42
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
+	episode = "M_EPI4", "Underearth", "d"
+
 	next = "MAP53"
 }
 
@@ -326,7 +343,9 @@ map MAP53
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 
-	next = "MAP62"
+	episode = "M_EPI5", "The Realm of Souls", "r"
+
+	next = "MAP56"
 }
 
 map MAP56
@@ -339,9 +358,7 @@ map MAP56
 	music = "D_E5M6"  // MIDI: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
 	partime = 2435
 
-	episode = "M_EPI3", "The Realm of Souls", "r"
-
-	next = "MAP53"
+	next = "MAP67"
 }
 
 // EPISODE 6
@@ -381,7 +398,7 @@ map MAP67
 	skytexture = "SKY4"
 	music = "D_E6M7"  // MIDI: "Liquid Luck" by Jimmy (origin: BTSX)
 
-	episode = "M_EPI4", "The Moon of Saturn", "m"
+	episode = "M_EPI6", "Enceladus", "m"
 
 	next = "MAP62"
 }
