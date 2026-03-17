@@ -190,7 +190,20 @@ map MAP23
 	music = "D_E2M3"  // MIDI: "Underground Lake" by Stuart Rynn (stewboy)
 	partime = 0
 
-	next = "MAP26"
+	next = "MAP24"
+}
+
+map MAP24
+{
+	levelname = "Hydro Compactor"
+	author = "FlamingoGazzoline"
+	label = "E2M4"
+	levelpic = "CWILV24"
+	skytexture = "SKY-B06"
+	music = "D_E2M4"  // MIDI: "InBrain" by FlamingoGazzoline
+	partime = 0
+
+	next = "MAP25"
 }
 
 map MAP25
@@ -223,19 +236,6 @@ map MAP25
 	intermusic = "D_TEXT01"
 
 	next = "MAP31"
-}
-
-map MAP26
-{
-	levelname = "Hydro Compactor"
-	author = "FlamingoGazzoline"
-	label = "E2S1"
-	levelpic = "CWILV26"
-	skytexture = "SKY-B06"
-	music = "D_E2M6"  // MIDI: "InBrain" by FlamingoGazzoline
-	partime = 0
-
-	next = "MAP25"
 }
 
 // EPISODE 3
