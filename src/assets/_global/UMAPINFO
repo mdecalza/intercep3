@@ -121,7 +121,7 @@ map MAP15
 	skytexture = "SKY-B02"
 	music = "D_E1M5"  // MIDI: "Prototype - Extended" by James Paddock and Stuart Rynn
 
-	next = "MAP21"
+	endpic = "CREDIT"
 }
 
 map MAP17
@@ -235,7 +235,7 @@ map MAP25
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP31"
+	endpic = "CREDIT"
 }
 
 // EPISODE 3
@@ -283,7 +283,7 @@ map MAP33
 	music = "D_E3M3"  // MIDI: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
 	partime = 0
 
-	next = "MAP41"
+	endpic = "CREDIT"
 }
 
 // EPISODE 4
@@ -324,7 +324,7 @@ map MAP42
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP53"
+	endpic = "CREDIT"
 }
 
 // EPISODE 5
@@ -371,7 +371,7 @@ map MAP56
 	music = "D_E5M6"  // MIDI: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
 	partime = 2435
 
-	next = "MAP67"
+	endpic = "CREDIT"
 }
 
 // EPISODE 6
@@ -399,7 +399,7 @@ map MAP63
 	music = "D_E6M3"  // MIDI: "Main Code" by Korp
 	partime = 0
 
-	next = "MAP11"
+	endcast = true
 }
 
 map MAP67
