@@ -1,4 +1,4 @@
-// NON-CAMPAIGN LEVELS
+// NON-CAMPAIGN LEVELS (IDCLEV ONLY)
 
 map MAP01
 {
@@ -10,7 +10,7 @@ map MAP01
 	music = "D_RUNNIN"
 	partime = 0
 
-	next = "MAP13"
+	next = "MAP11"
 }
 
 // EPISODE 1
@@ -36,7 +36,6 @@ map MAP11
 		"going to have to go to the source.",
 		"Time to follow their accursed trail",
 		"and plug their entry portal."
-	intertextsecret = clear
 	interbackdrop = "TEXTPIC1"
 	intermusic = "D_TEXT01"
 
@@ -121,7 +120,13 @@ map MAP15
 	skytexture = "SKY-B02"
 	music = "D_E1M5"  // MIDI: "Prototype - Extended" by James Paddock and Stuart Rynn
 
-	next = "MAP21"
+	intertext = ""
+	intertextsecret = clear
+
+	next = "MAP01"
+
+	endgame = true
+	endpic = "CREDIT"
 }
 
 map MAP17
@@ -235,7 +240,10 @@ map MAP25
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP31"
+	next = "MAP21"
+
+	endgame = true
+	endpic = "CREDIT"
 }
 
 // EPISODE 3
@@ -265,6 +273,7 @@ map MAP31
 		"If this really is the ancient past,",
 		"then their underground portal should",
 		"still be open. Time to follow them."
+	intertextsecret = clear
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 
@@ -283,7 +292,12 @@ map MAP33
 	music = "D_E3M3"  // MIDI: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
 	partime = 0
 
-	next = "MAP41"
+	intertext = ""
+
+	next = "MAP31"
+
+	endgame = true
+	endpic = "CREDIT"
 }
 
 // EPISODE 4
@@ -324,7 +338,10 @@ map MAP42
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP53"
+	next = "MAP41"
+
+	endgame = true
+	endpic = "CREDIT"
 }
 
 // EPISODE 5
@@ -371,7 +388,12 @@ map MAP56
 	music = "D_E5M6"  // MIDI: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
 	partime = 2435
 
-	next = "MAP67"
+	intertext = ""
+
+	next = "MAP53"
+
+	endgame = true
+	endpic = "CREDIT"
 }
 
 // EPISODE 6
@@ -399,7 +421,12 @@ map MAP63
 	music = "D_E6M3"  // MIDI: "Main Code" by Korp
 	partime = 0
 
-	next = "MAP11"
+	intertext = ""
+
+	next = "MAP67"
+
+	endgame = true
+	endcast = true
 }
 
 map MAP67
