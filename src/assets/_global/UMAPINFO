@@ -162,7 +162,7 @@ map MAP21
 	music = "D_E2M1"  // MIDI: "cardsoundcard" by germicelli (bespoke)
 	partime = 0
 
-	episode = "M_EPI2", "Sea Lab 2121", "f"
+	episode = "M_EPI2", "Sea Lab 2121", "s"
 
 	next = "MAP22"
 }
@@ -283,10 +283,25 @@ map MAP33
 	music = "D_E3M3"  // MIDI: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
 	partime = 0
 
-	next = "MAP42"
+	next = "MAP41"
 }
 
 // EPISODE 4
+
+map MAP41
+{
+	levelname = "Bury Picasso"
+	author = "FlamingoGazzoline"
+	label = "E4M1"
+	levelpic = "CWILV41"
+	skytexture = "SKY5"
+	music = "D_E4M1"
+	partime = 0
+
+	episode = "M_EPI4", "Under-Earth", "u"
+
+	next = "MAP42"
+}
 
 map MAP42
 {
@@ -308,8 +323,6 @@ map MAP42
 		"turning back the clock on BARBAT-OS."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
-
-	episode = "M_EPI4", "Underearth", "d"
 
 	next = "MAP53"
 }
@@ -398,7 +411,7 @@ map MAP67
 	skytexture = "SKY4"
 	music = "D_E6M7"  // MIDI: "Liquid Luck" by Jimmy (origin: BTSX)
 
-	episode = "M_EPI6", "Enceladus", "m"
+	episode = "M_EPI6", "Enceladus", "e"
 
 	next = "MAP62"
 }
