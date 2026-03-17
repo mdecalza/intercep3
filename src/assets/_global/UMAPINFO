@@ -121,6 +121,8 @@ map MAP15
 	skytexture = "SKY-B02"
 	music = "D_E1M5"  // MIDI: "Prototype - Extended" by James Paddock and Stuart Rynn
 
+	intertext = clear
+
 	endpic = "CREDIT"
 }
 
@@ -283,6 +285,8 @@ map MAP33
 	music = "D_E3M3"  // MIDI: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
 	partime = 0
 
+	intertext = clear
+
 	endpic = "CREDIT"
 }
 
@@ -371,6 +375,8 @@ map MAP56
 	music = "D_E5M6"  // MIDI: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
 	partime = 2435
 
+	intertext = clear
+
 	endpic = "CREDIT"
 }
 
@@ -398,6 +404,8 @@ map MAP63
 	skytexture = "SKY4"
 	music = "D_E6M3"  // MIDI: "Main Code" by Korp
 	partime = 0
+
+	intertext = clear
 
 	endcast = true
 }
