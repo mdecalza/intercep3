@@ -403,7 +403,7 @@ map MAP56
 
 	intertext = ""
 
-	next = "MAP53"
+	next = "MAP51"
 
 	endgame = true
 	endpic = "CREDIT"
