@@ -346,6 +346,21 @@ map MAP42
 
 // EPISODE 5
 
+map MAP51
+{
+	levelname = "Tempest Sepulcher"
+	author = "Blast98"
+	label = "E5M1"
+	levelpic = "CWILV51"
+	skytexture = "SKY6"
+	music = "D_E5M1"  // MIDI: "Drunken Jesus" by James Paddock (Jimmy)
+	partime = 0
+
+	episode = "M_EPI5", "The Realm of Souls", "r"
+
+	next = "MAP53"
+}
+
 map MAP53
 {
 	levelname = "Terminated Bliss"
@@ -372,8 +387,6 @@ map MAP53
 		"and it's grinning at you."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
-
-	episode = "M_EPI5", "The Realm of Souls", "r"
 
 	next = "MAP56"
 }
