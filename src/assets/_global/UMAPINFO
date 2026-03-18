@@ -200,7 +200,7 @@ map MAP23
 
 map MAP24
 {
-	levelname = "Hydro Compactor"
+	levelname = "Hydro-Compactor"
 	author = "FlamingoGazzoline"
 	label = "E2M4"
 	levelpic = "CWILV24"
