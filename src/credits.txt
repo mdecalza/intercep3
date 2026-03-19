@@ -40,6 +40,22 @@ E1M4: DIE GARRISON by Yisue
  Detail: Yisue
  Testing: Yisue, Moustachio
 
+E1M5: 220 KPA ABOVE AND BELOW by Frank Harper
+ Music: "Prototype - Extended" by James Paddock and Stuart Rynn
+
+ Geometry: Frank Harper
+ Combat: Frank Harper
+ Detail: Frank Harper
+ Testing: Frank Harper, Moustachio
+
+E1S2: ARCH-DISTRICT by rafael_farofa
+ Music: "Casserole" by LewkForce (origin: Interception II MAP20)
+
+ Geometry: rafael_farofa
+ Combat: rafael_farofa
+ Detail: rafael_farofa
+ Testing: rafael_farofa, Moustachio
+
 E2M1: FORCE MAJEURE by germicelli
  Music: * "cardsoundcard" by germicelli
 
@@ -56,13 +72,29 @@ E2M2: SUB-SEA TELEPORTER RESEARCH by AlexEightch
  Detail: AlexEightch
  Testing: AlexEightch, Moustachio
 
-E2M6: NEPTUNE'S CASTLE by Bendza M.
- Music: "Engel" by Rammstein
+E2M3: BENTHIC REFINERY by Blast98
+ Music: "Underground Lake" by Stuart Rynn (stewboy)
+
+ Geometry: Blast98
+ Combat: Blast98
+ Detail: Blast98
+ Testing: Blast98, Moustachio
+
+E2M4: HYDRO-COMPACTOR by FlamingoGazzoline
+ Music: "InBrain" by FlamingoGazzoline
+
+ Geometry: FlamingoGazzoline
+ Combat: FlamingoGazzoline
+ Detail: FlamingoGazzoline
+ Testing: FlamingoGazzoline, Moustachio
+
+E2M5: NEPTUNE'S CASTLE by Bendža M.
+ Music: "Engel" by Rammstein (origin: Sehnsucht)
 
  Geometry: Bendža M.
  Combat: Bendža M.
  Detail: Bendža M.
- Testing: Bendža M, ChaseDoesItRight﻿, Moustachio
+ Testing: Bendža M, ChaseDoesItRight, Moustachio
 
 E3M1: ELEFTHERIA by cannonball
  Music: "Dream Dweller" by Brayden Hart (AD_79)
@@ -80,6 +112,14 @@ E3M3: MANIFESTATION by sincity2100
  Detail: sincity2100
  Testing: sincity2100, Moustachio
 
+E4M1: BURY PICASSO by FlamingoGazzoline
+ Music: "Too Many Spaghetti" by FlamingoGazzoline
+
+ Geometry: FlamingoGazzoline
+ Combat: FlamingoGazzoline
+ Detail: FlamingoGazzoline
+ Testing: FlamingoGazzoline, Moustachio
+
 E4M2: DISPUTED TERRITORY by AlexEightch
  Music: In-progress
 
@@ -88,6 +128,14 @@ E4M2: DISPUTED TERRITORY by AlexEightch
  Detail: AlexEightch
  Testing: AlexEightch, Moustachio
 
+E5M1: TEMPEST SEPULCHER by Blast98
+ Music: "Drunken Jesus" by James Paddock (Jimmy)
+
+ Geometry: Blast98
+ Combat: Blast98
+ Detail: Blast98
+ Testing: Blast98, Moustachio
+
 E5M3: TERMINATED BLISS by Treehouseminis
  Music: "Aquifer" by Snaxalotl (origin: Abscission MAP02)
 
@@ -95,6 +143,14 @@ E5M3: TERMINATED BLISS by Treehouseminis
  Combat: Treehouseminis
  Detail: Treehouseminis
  Testing: Treehouseminis, Moustachio
+
+E5S1: THE VOID HATES YOU by AlexEightch
+ Music: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
+
+ Geometry: AlexEightch
+ Combat: AlexEightch
+ Detail: AlexEightch
+ Testing: AlexEightch, Moustachio
 
 E6M2: COSMIC FACTORY by Blast98
  Music: "Earthglow" by Tristan Clark
@@ -111,6 +167,14 @@ E6M3: MOONQUAKE by Salmon
  Combat: Salmon
  Detail: Salmon
  Testing: Salmon, Moustachio
+
+E6S1: THE PLUTONIUM IS GONE! by Bendža M.
+ Music: "Liquid Luck" by Jimmy (origin: BTSX)
+
+ Geometry: Bendža M.
+ Combat: Bendža M.
+ Detail: Bendža M.
+ Testing: Bendža M., Moustachio
 
 BONUS: THE MUSEUM by Moustachio
  Music: "Casserole" by LewkForce (origin: Interception II MAP20)

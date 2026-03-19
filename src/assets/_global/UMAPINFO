@@ -309,7 +309,7 @@ map MAP41
 	label = "E4M1"
 	levelpic = "CWILV41"
 	skytexture = "SKY5"
-	music = "D_E4M1"
+	music = "D_E4M1"  // MIDI: "Too Many Spaghetti" by FlamingoGazzoline
 	partime = 0
 
 	episode = "M_EPI4", "Under-Earth", "u"

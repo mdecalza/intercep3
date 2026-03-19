@@ -13,11 +13,12 @@ Misc. Author Info       : The Interceptors are (in alphabetical order):
                           Blast98 (maps)
                           cannonball (map)
                           Darman Macray (music)
+                          FlamingoGazzoline (maps, music)
                           Frank Harper (map)
                           germicelli (map, music)
                           Lina (DECOHack, sprites, testing)
                           Moustachio (project lead, DECOHack, maps, art,
-                            testing)
+                           testing)
                           PeccatumMihzamiz (ENDOOM)
                           rafael_farofa (map)
                           Salmon (map)
