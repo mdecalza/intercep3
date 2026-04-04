@@ -42,8 +42,12 @@ jobs:
 
     - name: Re-zip files
       run: |
-        rm ${{ github.workspace }}/dist/intercep3.zip
-        zip ${{ github.workspace }}/dist/intercep3-${{ env.NOW }}.zip ${{ github.workspace }}/build/intercep3.wad ${{ github.workspace }}/build/intercep3.txt ${{ github.workspace }}/src/credits.txt ${{ github.workspace }}/intercep3_texturesets.cfg
+        rm dist/intercep3.zip
+        mv build/intercep3.wad intercep3.wad
+        mv build/intercep3.txt intercep3.txt
+        mv src/credits.txt credits.txt
+        cd ${{ github.workspace }}
+        zip intercep3-${{ env.NOW }}.zip intercep3.wad intercep3.txt credits.txt intercep3_texturesets.cfg
 
     - name: Create Release
       id: create_release
@@ -63,6 +67,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ${{ github.workspace }}/dist/intercep3-${{ env.NOW }}.zip
+        asset_path: dist/intercep3-${{ env.NOW }}.zip
         asset_name: intercep3-${{ env.NOW }}.zip
         asset_content_type: application/zip
