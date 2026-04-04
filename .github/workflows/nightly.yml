@@ -19,11 +19,18 @@ jobs:
 
     - name: Set reusable strings
       # Turn repeated input strings (such as the build output directory) into step outputs. These step outputs can be used throughout the workflow file.
-      id: strings
-      shell: bash
       run: |
         echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
 
+    - name: Set up DoomMake
+      run: |
+        curl -L https://github.com/MTrop/DoomTools/releases/download/2026.03.27-RELEASE/doomtools-bash-2026.03.27.012840705.tar.gz
+        tar -xf doomtools-bash-2026.03.27.012840705.tar.gz
+        chmod +x doommake
+        sudo mv doommake /usr/local/bin/
+
     - name: Build
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
-      run: doommake make
+      run: |
+        cd ${{github.workspace}}/src
+        doommake make
