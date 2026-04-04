@@ -8,29 +8,49 @@ on:
 
 jobs:
   build:
-    runs-on: [ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
 
     strategy:
       # Set fail-fast to false to ensure that feedback is delivered for all matrix combinations. Consider changing this to true when your workflow is stable.
       fail-fast: false
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v2
 
-    - name: Set reusable strings
-      # Turn repeated input strings (such as the build output directory) into step outputs. These step outputs can be used throughout the workflow file.
+    - name: Get current date
       run: |
-        echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
+        echo "NOW=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
     - name: Set up DoomMake
       run: |
         curl -L https://github.com/MTrop/DoomTools/releases/download/2026.03.27-RELEASE/doomtools-bash-2026.03.27.012840705.tar.gz
-        tar -xf doomtools-bash-2026.03.27.012840705.tar.gz
-        chmod +x doommake
-        sudo mv doommake /usr/local/bin/
+        tar -xvf doomtools-bash-2026.03.27.012840705.tar.gz -C ${{ github.workspace }}/.doommake
+        chmod +x ${{ github.workspace }}/.doommake/doommake
+        sudo mv ${{ github.workspace }}/.doommake/doommake /usr/local/bin/
 
     - name: Build
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
       run: |
         cd ${{github.workspace}}/src
         doommake make
+
+    - name: Deploy
+      id: deploy
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.run_id }}
+        release_name: Nightly Build ${{ github.run_id }}
+        draft: false
+        prerelease: true
+
+    - name: Upload
+      id: upload
+      uses: Fhwang0926/upload-release-asset@v1.1.17
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.deploy.outputs.upload_url }}
+        asset_name: ./intercep3_${{ env.NOW }}
+        asset_label: nightly
