@@ -41,16 +41,16 @@ jobs:
       run: |
         doommake make
 
-    - name: Deploy
-      id: deploy
+    - name: Create Release
+      id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.run_id }}
-        release_name: Nightly Build ${{ github.run_id }}
+        tag_name: ${{ github.ref }}
+        release_name: Nightly Build ${{ github.ref }}
         draft: false
-        prerelease: true
+        prerelease: false
 
     - name: Upload
       id: upload
@@ -58,6 +58,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        upload_url: ${{ steps.deploy.outputs.upload_url }}
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_name: ./intercep3_${{ env.NOW }}
         asset_label: nightly
