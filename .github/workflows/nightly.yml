@@ -1,10 +1,8 @@
 name: DoomMake
 run-name: ${{ github.actor }} is generating a nightly build.
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  schedule:
+    - cron: "0 6 * * *"
 
 jobs:
   build:
