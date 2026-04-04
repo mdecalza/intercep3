@@ -22,7 +22,7 @@ jobs:
 
     - name: Set up DoomMake
       run: |
-        curl -L https://github.com/MTrop/DoomTools/releases/download/2026.03.27-RELEASE/doomtools-bash-2026.03.27.012840705.tar.gz
+        wget https://github.com/MTrop/DoomTools/releases/download/2026.03.27-RELEASE/doomtools-bash-2026.03.27.012840705.tar.gz
         tar -xvf doomtools-bash-2026.03.27.012840705.tar.gz -C ${{ github.workspace }}/.doommake
         chmod +x ${{ github.workspace }}/.doommake/doommake
         sudo mv ${{ github.workspace }}/.doommake/doommake /usr/local/bin/
