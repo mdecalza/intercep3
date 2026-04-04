@@ -43,10 +43,9 @@ jobs:
     - name: Re-zip files
       run: |
         rm dist/intercep3.zip
-        mv build/intercep3.wad intercep3.wad
-        mv build/intercep3.txt intercep3.txt
+        mv build/intercep3.wad intercep3-${{ env.NOW }}.wad
+        mv build/intercep3.txt intercep3-${{ env.NOW }}.txt
         mv src/credits.txt credits.txt
-        cd ${{ github.workspace }}
         zip -j intercep3-${{ env.NOW }}.zip intercep3.wad intercep3.txt credits.txt intercep3_texturesets.cfg
 
     - name: Create Release
