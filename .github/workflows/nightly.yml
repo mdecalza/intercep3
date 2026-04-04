@@ -38,8 +38,12 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
+      run: doommake make
+
+    - name: Re-zip files
       run: |
-        doommake make
+        rm ${{ github.workspace }}/dist/intercep3.zip
+        zip ${{ github.workspace }}/dist/intercep3-${{ env.NOW }}.zip ${{ github.workspace }}/build/intercep3.wad ${{ github.workspace }}/build/intercep3.txt ${{ github.workspace }}/src/credits.txt ${{ github.workspace }}/intercep3_texturesets.cfg
 
     - name: Create Release
       id: create_release
@@ -52,12 +56,12 @@ jobs:
         draft: false
         prerelease: false
 
-    - name: Upload
+    - name: Upload wad zip
       id: upload
       uses: Fhwang0926/upload-release-asset@v1.1.17
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_name: ./intercep3_${{ env.NOW }}
+        asset_name: ${{ github.workspace }}/dist/intercep3-${{ env.NOW }}.zip
         asset_label: nightly
