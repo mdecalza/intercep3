@@ -26,7 +26,7 @@ jobs:
         tar -xvf doomtools-bash-2026.03.27.012840705.tar.gz
         chmod +x doommake
         sudo mv doommake /usr/local/bin/
-        sudo mv jar/doomtools-2026.03.27.012840705.jar /usr/local/bin/
+        sudo mv jar/doomtools-2026.03.27.012840705.jar /usr/local/bin/jar/
 
     - name: Build
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
