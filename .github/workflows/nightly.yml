@@ -1,0 +1,69 @@
+name: DoomMake
+run-name: ${{ github.actor }} is generating a nightly build.
+on:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      # Set fail-fast to false to ensure that feedback is delivered for all matrix combinations. Consider changing this to true when your workflow is stable.
+      fail-fast: false
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Get current date
+      run: echo "NOW=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+    - name : Set up Freedoom
+      run: |
+        wget https://github.com/freedoom/freedoom/releases/download/v0.13.0/freedoom-0.13.0.zip
+        unzip freedoom-0.13.0.zip
+        sudo mv freedoom-0.13.0/freedoom2.wad /home/runner/work/_temp/
+
+    - name: Set up DoomMake
+      run: |
+        wget https://github.com/MTrop/DoomTools/releases/download/2026.03.27-RELEASE/doomtools-bash-2026.03.27.012840705.tar.gz
+        tar -xvf doomtools-bash-2026.03.27.012840705.tar.gz
+        chmod +x doommake
+        sudo mv doommake /usr/local/bin/
+        sudo mv dimgconv /usr/local/bin/
+        mkdir /usr/local/bin/jar
+        sudo mv jar/doomtools-2026.03.27.012840705.jar /usr/local/bin/jar/
+
+    - name: Build
+      # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
+      run: doommake make
+
+    - name: Re-zip files
+      run: |
+        rm dist/intercep3.zip
+        mv build/intercep3.wad intercep3-${{ env.NOW }}.wad
+        mv build/intercep3.txt intercep3-${{ env.NOW }}.txt
+        mv src/credits.txt credits.txt
+        zip -j intercep3-${{ env.NOW }}.zip intercep3.wad intercep3.txt credits.txt intercep3_texturesets.cfg
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ env.NOW }}
+        release_name: Nightly Build (${{ env.NOW }})
+        draft: true
+        prerelease: true
+
+    - name: Upload wad zip
+      id: upload
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: intercep3-${{ env.NOW }}.zip
+        asset_name: intercep3-${{ env.NOW }}.zip
+        asset_content_type: application/zip
