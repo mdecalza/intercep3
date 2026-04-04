@@ -53,15 +53,16 @@ jobs:
       with:
         tag_name: ${{ env.NOW }}
         release_name: Nightly Build (${{ env.NOW }})
-        draft: false
-        prerelease: false
+        draft: true
+        prerelease: true
 
     - name: Upload wad zip
       id: upload
-      uses: Fhwang0926/upload-release-asset@v1.1.17
+      uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_name: ${{ github.workspace }}/dist/intercep3-${{ env.NOW }}.zip
-        asset_label: nightly
+        asset_path: ${{ github.workspace }}/dist/intercep3-${{ env.NOW }}.zip
+        asset_name: intercep3-${{ env.NOW }}.zip
+        asset_content_type: application/zip
