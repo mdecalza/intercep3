@@ -23,9 +23,11 @@ jobs:
     - name: Set up DoomMake
       run: |
         wget https://github.com/MTrop/DoomTools/releases/download/2026.03.27-RELEASE/doomtools-bash-2026.03.27.012840705.tar.gz
+        mkdir ${{ github.workspace }}/.doommake
         tar -xvf doomtools-bash-2026.03.27.012840705.tar.gz -C ${{ github.workspace }}/.doommake
         chmod +x ${{ github.workspace }}/.doommake/doommake
         sudo mv ${{ github.workspace }}/.doommake/doommake /usr/local/bin/
+        rm -rf ${{ github.workspace }}/.doommake
 
     - name: Build
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
