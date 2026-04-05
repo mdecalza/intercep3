@@ -62,10 +62,10 @@ jobs:
         draft: false
         prerelease: true
 
-    - name: Remove old nightly build
-      uses: liudonghua123/delete-release-action@v1
-      with:
-        release_name: Nightly Build (${{ env.YESTER }})
+    - name: Remove previous nightly build
+      run: gh release delete ${{ env.YESTER }} --cleanup-tag
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload wad zip
       id: upload
