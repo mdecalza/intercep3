@@ -3,6 +3,12 @@ run-name: ${{ github.actor }} is generating a nightly build.
 on:
   schedule:
     - cron: "0 11 * * *"
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Pushes out a pre-release build'
+        required: true
+        default: 'Daily'
 
 jobs:
   build:
