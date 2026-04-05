@@ -2,7 +2,7 @@ name: DoomMake
 run-name: ${{ github.actor }} is generating a nightly build.
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 11 * * *"
 
 jobs:
   build:
@@ -17,6 +17,9 @@ jobs:
 
     - name: Get current date
       run: echo "NOW=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+    - name: Get yesterday's date
+      run: echo "YESTER=$(date -d "yesterday" +'%Y-%m-%d')" >> $GITHUB_ENV
 
     - name : Set up Freedoom
       run: |
@@ -46,9 +49,9 @@ jobs:
         mv build/intercep3.wad intercep3-${{ env.NOW }}.wad
         mv build/intercep3.txt intercep3-${{ env.NOW }}.txt
         mv src/credits.txt credits.txt
-        zip -j intercep3-${{ env.NOW }}.zip intercep3.wad intercep3.txt credits.txt intercep3_texturesets.cfg
+        zip -j intercep3-${{ env.NOW }}.zip intercep3-${{ env.NOW }}.wad intercep3-${{ env.NOW }}.txt credits.txt intercep3_texturesets.cfg
 
-    - name: Create Release
+    - name: Create release
       id: create_release
       uses: actions/create-release@v1
       env:
@@ -56,8 +59,13 @@ jobs:
       with:
         tag_name: ${{ env.NOW }}
         release_name: Nightly Build (${{ env.NOW }})
-        draft: true
+        draft: false
         prerelease: true
+
+    - name: Remove old nightly build
+      uses: liudonghua123/delete-release-action@v1
+      with:
+        release_name: Nightly Build (${{ env.YESTER }})
 
     - name: Upload wad zip
       id: upload
