@@ -314,15 +314,28 @@ map MAP41
 
 	episode = "M_EPI4", "Under-Earth", "u"
 
-	next = "MAP42"
+	next = "MAP41"
 }
 
 map MAP42
 {
-	levelname = "Disputed Territory"
-	author = "AlexEightch"
+	levelname = "Hell's Dens"
+	author = "Bendza M."
 	label = "E4M2"
 	levelpic = "CWILV42"
+	skytexture = "SKY5"
+	music = "D_E4M2"  // MIDI: "Pluto's Gate" by numsOic
+	partime = 0
+
+	next = "MAP43"
+}
+
+map MAP43
+{
+	levelname = "Disputed Territory"
+	author = "AlexEightch"
+	label = "E4M3"
+	levelpic = "CWILV43"
 	skytexture = "ALLBLACK"
 	music = "D_RUNNIN"  // MIDI: In-progress (using "Casserole" by LewkForce as placeholder)
 	partime = 2435
