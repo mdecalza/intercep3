@@ -314,7 +314,7 @@ map MAP41
 
 	episode = "M_EPI4", "Under-Earth", "u"
 
-	next = "MAP41"
+	next = "MAP42"
 }
 
 map MAP42
