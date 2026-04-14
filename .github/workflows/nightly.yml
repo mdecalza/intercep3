@@ -55,7 +55,7 @@ jobs:
         mv build/intercep3.wad intercep3-${{ env.NOW }}.wad
         mv build/intercep3.txt intercep3-${{ env.NOW }}.txt
         mv src/credits.txt credits.txt
-        zip -j intercep3-${{ env.NOW }}.zip intercep3-${{ env.NOW }}.wad intercep3-${{ env.NOW }}.txt credits.txt intercep3_texturesets.cfg
+        zip -j intercep3-${{ env.NOW }}.zip intercep3-${{ env.NOW }}.wad intercep3-${{ env.NOW }}.txt credits.txt
 
     - name: Create release
       id: create_release
