@@ -287,6 +287,11 @@ SNAKE IMP
  Sprites: Id Software, Raven Software
  Sprite Edit: Cyb, Vader, ItsNatureToDie
 
+THE DUKE
+ DECOHack: Moustachio
+ Sounds: Raven Software, Monolith Productions, DBThanatos
+ Sprites: Amuscaria, Raven Software
+
 
 -= HAZARDS =-
 

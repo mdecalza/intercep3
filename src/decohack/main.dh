@@ -12,7 +12,6 @@
 #include "hazards.dh"
 #include "decoration.dh"
 #include "wildlife.dh"
-#include "cutsceneprops.dh"
 
 // make all of the hanging bodies non-solid
 each thing from 129 to 134

@@ -40,16 +40,63 @@ thing 21
 
 /* New enemies */
 
-// Boss monster
-thing 206 "Behemoth"
+// E4 boss
+thing 206 "The Duke"
 {
-	radius 16
-	height 16
+	//$category Monsters/Boss
+	ednum 6055
+
+	health 25000
+	radius 40
+	height 160
+	speed 10
+	painchance 8
+	mass 2000
+
+	+SOLID
+	+SHOOTABLE
+
+	States
+	{
+		Spawn:
+			DUKE AB 5 A_Look
+			Loop
+		See:
+			DUKE AABBCCDD 5 A_Chase
+			Loop
+		Pain:
+			DUKE G 10
+			Goto See
+		Death:
+			DUKE HIJKLMN 12 Bright
+			DUKE O 12 Bright A_Fall
+			DUKE P -1
+	}
 }
 
-// Final boss monster
+// E5 boss
+thing 207 "An unlikely ally..."
+{
+	//$category Monsters/Boss
+	// ednum 6056
+
+	radius 96
+	height 192
+
+	States
+	{
+		Spawn:
+			TNT1 A 1
+			Loop
+	}
+}
+
+// E6 boss (final)
 thing 208 "Barbat-OS"
 {
+	//$category Monsters/Boss
+	// ednum 6057
+
 	radius 16
 	height 16
 }
