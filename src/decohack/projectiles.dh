@@ -14,6 +14,8 @@
 thing 35
 {
 	damage 8
+
+	seesound "FRE045"
 }
 
 // BFG projectile
@@ -147,4 +149,154 @@ thing 289 : thing 287 "Rocket zombie rocket"
 {
 	// MBF21 Properties (MBF21 feature set and later)
 	splashgroup 3
+}
+
+thing 305 : thing 153 "Hell duke arrow"
+{
+	speed 15
+	damage 3
+
+	States
+	{
+		Spawn:
+			SP00 A 1 Bright
+			SP00 A 1 Bright A_SeekTracer(0.0, 104.0)
+			Loop
+		Death:
+			SP00 B 4 Bright A_Scream
+			SP00 CDE 4 Bright
+			Stop
+	}
+}
+
+thing 306 "Rotten grenade"
+{
+	radius 8
+	height 16
+	health 10
+	speed 20
+	mass 200
+
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 4
+
+	+DROPOFF
+	+SHOOTABLE
+	+BOUNCES
+	+TOUCHY
+
+	States
+	{
+		Spawn:
+			RGRN A 1 Bright
+			RGRN ABABABABABABA 5 Bright {
+				A_RadiusDamage(16, 256)
+				A_PlaySound("BOSCUB")
+			}
+			RGRN BABABABABABAB 5 Bright {
+				A_RadiusDamage(16, 256)
+				A_PlaySound("BOSCUB")
+			}
+			RGRN ABABABABABABA 5 Bright {
+				A_RadiusDamage(16, 256)
+				A_PlaySound("BOSCUB")
+			}
+			RGRN BABABABABABAB 5 Bright {
+				A_RadiusDamage(16, 256)
+				A_PlaySound("BOSCUB")
+			}
+			RGRN ABABABABABABA 5 Bright {
+				A_RadiusDamage(16, 256)
+				A_PlaySound("BOSCUB")
+			}
+			Goto Death
+		Death:
+			BAL2 B 1 Bright A_SpawnObject(311)
+			Stop
+	}
+}
+
+thing 307 "Hell duke flame"
+{
+	mass 100
+
+	// MBF21 Properties (MBF21 feature set and later)
+	splashgroup 4
+
+	States
+	{
+		Spawn:
+			FIRE A 1 Bright
+			FIRE A 5 Bright A_PlaySound("FLAME")
+			FIRE BCDEFG 6 Bright A_RadiusDamage(96, 96)
+			Goto Death
+		Death:
+			FIRE H 6 Bright A_RadiusDamage(24, 96)
+			Stop
+	}
+}
+
+thing 308 "Flame spawning projectile"
+{
+	speed 8
+	damage 4
+
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+DROPOFF
+	+MISSILE
+
+	States
+	{
+		Spawn:
+			TNT1 A 1
+			TNT1 A 8 A_SpawnObject(307)
+			Loop
+		Death:
+			TNT1 A 1
+			Stop
+	}
+}
+
+thing 309 : thing 37 "Plasma zombie projectile"
+{
+	seesound "FRE045"
+}
+
+thing 310 "Rotten grenade spawner"
+{
+	speed 20
+	damage 0
+
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+DROPOFF
+	+MISSILE
+
+	States
+	{
+		Spawn:
+			TNT1 A 1
+			TNT1 A 1 A_SpawnObject(306, 0.0, 0.0, 0.0, 0.0, 25.0, 0.0, 10.0)
+			Stop
+		Death:
+			TNT1 A 1 A_SpawnObject(306)
+			Stop
+	}
+}
+
+thing 311 "Dying rotten grenade"
+{
+	deathsound "BAREXP"
+
+	States
+	{
+		Spawn:
+			BAL2 B 1 Bright
+			BAL2 A 1 Bright A_Scream
+			BAL2 C 6 Bright A_RadiusDamage(128, 128)
+			BAL2 D 8 Bright
+			BAL2 E 10 Bright
+			Stop
+	}
 }

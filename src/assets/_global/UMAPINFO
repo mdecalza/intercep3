@@ -357,6 +357,16 @@ map MAP43
 	endpic = "CREDIT"
 }
 
+map MAP45
+{
+	levelname = "The Duke of Hell"
+	author = "AlexEightch & Moustachio"
+	label = "Boss"
+	levelpic = "CWILV45"
+	skytexture = "ALLBLACK"
+	music = "D_E4M5"
+}
+
 // EPISODE 5
 
 map MAP51
