@@ -289,7 +289,7 @@ SNAKE IMP
 
 THE DUKE
  DECOHack: Moustachio
- Sounds: Raven Software, Monolith Productions, DBThanatos
+ Sounds: Raven Software, Monolith Productions, DBThanatos, mitchanary, artninja, Moustachio
  Sprites: Amuscaria, Raven Software
 
 
