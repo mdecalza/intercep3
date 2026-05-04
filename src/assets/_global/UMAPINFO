@@ -340,14 +340,36 @@ map MAP43
 	music = "D_RUNNIN"  // MIDI: In-progress (using "Casserole" by LewkForce as placeholder)
 	partime = 2435
 
-	intertext = "You've followed the demons to an",
+	next = "MAP45"
+}
+
+map MAP45
+{
+	levelname = "The Demons' Portal"
+	author = "AlexEightch & Moustachio"
+	label = "E4M5"
+	levelpic = "CWILV45"
+	skytexture = "ALLBLACK"
+	music = "D_E4M5"
+
+	bossaction = Deh_Actor_205, 15394, 4
+
+	intertext = "After defeating The Duke of Hell,",
+		"you follow the demons to an",
 		"oppressive realm.",
 		"",
-		"The realm of souls.",
+		"A familiar realm.",
 		"",
-		"Escape from the dark heart of this",
-		"hell, and you may have a chance at",
-		"turning back the clock on BARBAT-OS."
+		"The Realm of Souls.",
+		"",
+		"This place exists outside of time and",
+		"space. The mere thought of it makes",
+		"your skin crawl, but this may provide",
+		"a way back to your time. Is that thing",
+		"in there actually trying to help you?",
+		"",
+		"Perhaps, you and the demons have a common",
+		"enemy in Barbat.OS..."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
@@ -355,16 +377,6 @@ map MAP43
 
 	endgame = true
 	endpic = "CREDIT"
-}
-
-map MAP45
-{
-	levelname = "The Duke of Hell"
-	author = "AlexEightch & Moustachio"
-	label = "Boss"
-	levelpic = "CWILV45"
-	skytexture = "ALLBLACK"
-	music = "D_E4M5"
 }
 
 // EPISODE 5
