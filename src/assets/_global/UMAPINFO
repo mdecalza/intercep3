@@ -123,7 +123,7 @@ map MAP15
 	intertext = ""
 	intertextsecret = clear
 
-	next = "MAP01"
+	next = "MAP21"
 
 	endgame = true
 	endpic = "CREDIT"
@@ -133,7 +133,7 @@ map MAP17
 {
 	levelname = "Arch-District"
 	author = "rafael_farofa"
-	label = "E1S2"
+	label = "E1M7"
 	levelpic = "CWILV17"
 	skytexture = "CITYSKY1"
 	music = "D_RUNNIN"  // MIDI: Using "Casserole" by LewkForce as placeholder
@@ -240,7 +240,7 @@ map MAP25
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP21"
+	next = "MAP31"
 
 	endgame = true
 	endpic = "CREDIT"
@@ -294,7 +294,7 @@ map MAP33
 
 	intertext = ""
 
-	next = "MAP31"
+	next = "MAP41"
 
 	endgame = true
 	endpic = "CREDIT"
@@ -373,7 +373,7 @@ map MAP45
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP41"
+	next = "MAP51"
 
 	endgame = true
 	endpic = "CREDIT"
@@ -419,6 +419,7 @@ map MAP54
 	music = "D_E5M4"  // MIDI: "Frosty" by Grimosaur (origin: You Do Voodoo)
 	partime = 0
 
+	next = "MAP62"
 	nextsecret = "MAP56"
 
 	intertext = "You've entered the innermost pustule",
@@ -446,13 +447,13 @@ map MAP56
 {
 	levelname = "The Void Hates You"
 	author = "AlexEightch"
-	label = "E5S1"
+	label = "E5M6"
 	levelpic = "CWILV56"
 	skytexture = "ALLBLACK"
 	music = "D_E5M6"  // MIDI: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
 	partime = 2435
 
-	next = "MAP51"
+	next = "MAP62"
 
 	endgame = true
 	endpic = "CREDIT"
@@ -495,12 +496,12 @@ map MAP67
 {
 	levelname = "The Plutonium Is Gone!"
 	author = "Bendza M."
-	label = "E6S1"
+	label = "E6M7"
 	levelpic = "CWILV67"
 	skytexture = "SKY4"
 	music = "D_E6M7"  // MIDI: "Liquid Luck" by Jimmy (origin: BTSX)
 
 	episode = "M_EPI6", "Enceladus", "e"
 
-	next = "MAP62"
+	next = "MAP01"
 }
