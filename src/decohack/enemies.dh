@@ -41,25 +41,24 @@ thing 21
 /* New enemies */
 
 // E4 boss
-thing 206 "The Duke"
+thing 206 "The Duke of Hell"
 {
 	//$category Monsters/Boss
 	ednum 6055
 
-	health 15000
+	health 25000
 	radius 40
-	height 160
+	height 112
 	speed 10
-	painchance 8
+	painchance 5
 	mass 2000
-
-	// MBF21 Properties (MBF21 feature set and later)
-	splashgroup 4
 
 	+SOLID
 	+SHOOTABLE
+	+COUNTKILL
 
 	// MBF21 Flags (MBF21 feature set only)
+	+NORADIUSDMG
 	+FULLVOLSOUNDS
 
 	seesound "FRE048"
@@ -77,12 +76,16 @@ thing 206 "The Duke"
 			Goto Chase
 		Chase:
 			DUKE A 5 {
-				A_JumpIfTargetCloser(Melee, 192.0)
-				A_RandomJump(Missile2, 32)
+				A_JumpIfTargetCloser(Melee, 160.0)
+				A_RandomJump(Missile2, 56)
+				A_RandomJump(Missile3, 16)
 				A_Hoof
 			}
 			DUKE ABB 5 A_Chase
-			DUKE C 5 A_Hoof
+			DUKE C 5 {
+				A_JumpIfTargetCloser(Melee, 160.0)
+				A_Hoof
+			}
 			DUKE CDD 5 A_Chase
 			Loop
 		Melee:
@@ -103,27 +106,44 @@ thing 206 "The Duke"
 			}
 			Goto Chase
 		Missile:
-			DUKE EEEEEE 2 A_FaceTarget
-			DUKE FFFFFFFFFF 2 Bright {
-				A_MonsterProjectile(305)
-				A_PlaySound("FRE050")
-			}
-			Goto Chase
-		Missile2:
-			DUKE QQQQQQ 2 A_FaceTarget
+			DUKE QQQQQQ 4 A_FaceTarget
 			DUKE R 10 Bright {
-				A_MonsterProjectile(310)
+				A_MonsterProjectile(306, -1.0, -10.0, -20.0, 40.0)
 				A_PlaySound("FRE018")
 			}
 			Goto Chase
-		Pain:
-			DUKE G 5
-			DUKE G 10 A_Pain
+		Missile2:
+			DUKE EEEEEE 2 A_FaceTarget
+			DUKE FFFFFFFFFF 2 Bright {
+				A_MonsterProjectile(305, -1.0, 0.0, -20.0, 20.0)
+				A_PlaySound("FRE050")
+			}
 			Goto Chase
+		Missile3:
+			DUKE UUU 10 A_FaceTarget
+			DUKE T 5 A_FaceTarget
+			DUKE S 10 Bright {
+				A_PlaySound("FRE049")
+				A_SpawnObject(310, 0.0, 0.0, 0.0, 128.0, 0.0, 0.0, 0.0)
+				A_SpawnObject(310, 0.0, 0.0, 128.0, 0.0, 0.0, 0.0, 0.0)
+				A_SpawnObject(310, 0.0, 0.0, -128.0, 0.0, 0.0, 0.0, 0.0)
+			}
+			DUKE SSSSS 10 Bright A_FaceTarget
+			DUKE T 5 Bright A_FaceTarget
+			DUKE U 10 Bright A_FaceTarget
+			DUKE U 10 {
+				A_FaceTarget
+				A_PlaySound("FRE046")
+			}
+			Goto Chase
+		Pain:
+			DUKE G 25 A_Pain
+			Goto Melee
 		Death:
 			DUKE H 12 Bright A_Scream
-			DUKE IJKLMN 12 Bright
-			DUKE O 12 Bright A_Fall
+			DUKE IJKLM 12 Bright
+			DUKE N 12 Bright A_Fall
+			DUKE O 12 Bright A_BossDeath
 			DUKE P -1
 	}
 }
