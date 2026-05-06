@@ -120,13 +120,29 @@ E4M1: BURY PICASSO by FlamingoGazzoline
  Detail: FlamingoGazzoline
  Testing: FlamingoGazzoline, Moustachio
 
-E4M2: DISPUTED TERRITORY by AlexEightch
+E4M3: DISPUTED TERRITORY by AlexEightch
  Music: In-progress
 
  Geometry: AlexEightch
  Combat: AlexEightch
  Detail: AlexEightch
  Testing: AlexEightch, Moustachio
+
+E4M3: DISPUTED TERRITORY by AlexEightch
+ Music: In-progress
+
+ Geometry: AlexEightch
+ Combat: AlexEightch
+ Detail: AlexEightch
+ Testing: AlexEightch, Moustachio
+
+E4M5: THE DEMONS' PORTAL by AlexEightch & Moustachio
+ Music: ""
+
+ Geometry: AlexEightch
+ Combat: Moustachio
+ Detail: AlexEightch
+ Testing: Moustachio, AlexEightch
 
 E5M1: TEMPEST SEPULCHER by Blast98
  Music: "Drunken Jesus" by James Paddock (Jimmy)
@@ -255,14 +271,14 @@ INCENDIARY ZOMBIE
  Sounds: id Software
  Sprites: Id Software, Eriance, 3D Realms
  Sprite Edit: ItsNatureToDie, neoworm, Captain Toenail, Xim, Ghastly_dragon,
-              scalliano
+  scalliano
 
 PLASMA ZOMBIE
  DECOHack: Moustachio
  Sounds: id Software
  Sprites: id Software
  Sprite Edit: Ghastly Dragon, Xim, Fuzzballfox, Tormentor667, MagicWazard,
-              Moustachio
+  Moustachio
 
 ROCKET ZOMBIE
  DECOHack: Moustachio
@@ -287,7 +303,7 @@ SNAKE IMP
  Sprites: Id Software, Raven Software
  Sprite Edit: Cyb, Vader, ItsNatureToDie
 
-THE DUKE
+THE DUKE OF HELL (PHASES I & II)
  DECOHack: Moustachio
  Sounds: Raven Software, Monolith Productions, DBThanatos, mitchanary, artninja, Moustachio
  Sprites: Amuscaria, Raven Software
@@ -314,11 +330,27 @@ DEMONIC TURRET
 
 ARROW
  DECOHack: Moustachio
- Sounds: Bethesda (TES: Morrowind & Oblivion)
- Sprites: Bethesda (Daggerfall), Raven Software (Hexen),
-          DonaldDuck (widescreen bow), Neoworm, Zrrion the insect (extra hands),
-          Gothic (new pickups)
+ Sounds: Bethesda Softworks
+ Sprites: Bethesda Softworks, Raven Software, DonaldDuck, Neoworm,
+  Zrrion the insect, Gothic
  Sprite Edit: Gothic
+
+ETHEREAL SOUL
+ DECOHack: Moustachio
+ Sounds: Moustachio
+ Sprites: id Software
+
+HELL DUKE ARROW
+ DECOHack: Moustachio
+ Sounds: Bethesda Softworks, Moustachio
+ Sprites: Bethesda Softworks, Raven Software, DonaldDuck, Neoworm,
+  Zrrion the insect, Gothic
+ Sprite Edit: Gothic
+
+HELL DUKE FLAME
+ DECOHack: Moustachio
+ Sounds: id Software
+ Sprites: id Software
 
 
 -= DECORATIONS =-
