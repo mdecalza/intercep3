@@ -414,7 +414,6 @@ map MAP54
 	levelname = "Fear of Light"
 	author = "FlamingoGazzoline"
 	label = "E5M4"
-	next = "MAP11"
 	skytexture = "ALLBLACK"
 	music = "D_E5M4"  // MIDI: "Frosty" by Grimosaur (origin: You Do Voodoo)
 	partime = 0
