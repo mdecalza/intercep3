@@ -1,0 +1,40 @@
+/*****************************************************************************
+ * DECOHack Patch File
+ * Music changers
+ * 2026 Matthew DeCalzadilla
+ ****************************************************************************/
+
+#include <dsdhacked>
+
+thing 315 "Music changer 1"
+{
+    //$category Music
+    ednum 14100
+
+    health 10
+    radius 8
+    height 16
+    mass 100
+
+    +SHOOTABLE
+}
+
+thing 316 : thing 315 "Music changer 2"
+{
+    ednum 14101
+}
+
+thing 317 : thing 315 "Music changer 3"
+{
+    ednum 14102
+}
+
+thing 318 : thing 315 "Music changer 4"
+{
+    ednum 14103
+}
+
+thing 319 : thing 315 "Music changer 5"
+{
+    ednum 14104
+}
