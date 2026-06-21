@@ -60,7 +60,22 @@ jobs:
         mv src/credits.txt credits.txt
         zip -j intercep3-${{ env.NOW }}.zip intercep3-${{ env.NOW }}.wad intercep3-${{ env.NOW }}.txt credits.txt
 
-    - name: Create release
+    - name: Check if previous nightly build exists and delete build if so
+      id: check_release
+      run: |
+        if gh release view ${{ env.YESTER }} > /dev/null 2>&1; then
+          gh release delete ${{ env.YESTER }} --cleanup-tag;
+          echo "exists=true" >> $GITHUB_OUTPUT
+        elif gh release view ${{ env.NOW }} > /dev/null 2>&1; then
+          gh release delete ${{ env.NOW }} --cleanup-tag;
+          echo "exists=true" >> $GITHUB_OUTPUT
+        else
+          echo "exists=false" >> $GITHUB_OUTPUT
+        fi
+      env:
+        GH_TOKEN: ${{ github.token }}
+
+    - name: Create new nightly release
       id: create_release
       uses: actions/create-release@v1
       env:
@@ -81,18 +96,3 @@ jobs:
         asset_path: intercep3-${{ env.NOW }}.zip
         asset_name: intercep3-${{ env.NOW }}.zip
         asset_content_type: application/zip
-
-    - name: Check if previous nightly build exists and delete build if so
-      id: check_release
-      run: |
-        if gh release view ${{ env.YESTER }} > /dev/null 2>&1; then
-          gh release delete ${{ env.YESTER }} --cleanup-tag;
-          echo "exists=true" >> $GITHUB_OUTPUT
-        elif gh release view ${{ env.NOW }} > /dev/null 2>&1; then
-          gh release delete ${{ env.NOW }} --cleanup-tag;
-          echo "exists=true" >> $GITHUB_OUTPUT
-        else
-          echo "exists=false" >> $GITHUB_OUTPUT
-        fi
-      env:
-        GH_TOKEN: ${{ github.token }}
