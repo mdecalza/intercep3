@@ -86,13 +86,13 @@ jobs:
       id: check_release
       run: |
         if gh release view ${{ env.YESTER }} > /dev/null 2>&1; then
-          echo "EXISTS='today'" >> $GITHUB_ENV;
-          gh release delete ${{ env.YESTER }} --cleanup-tag
+          gh release delete ${{ env.YESTER }} --cleanup-tag;
+          echo "exists=true" >> $GITHUB_OUTPUT
         elif gh release view ${{ env.NOW }} > /dev/null 2>&1; then
-          echo "EXISTS='today'" >> $GITHUB_ENV;
-          gh release delete ${{ env.NOW }} --cleanup-tag
+          gh release delete ${{ env.NOW }} --cleanup-tag;
+          echo "exists=true" >> $GITHUB_OUTPUT
         else
-          echo "EXISTS='today'" >> $GITHUB_OUTPUT
+          echo "exists=false" >> $GITHUB_OUTPUT
         fi
       env:
         GH_TOKEN: ${{ github.token }}
