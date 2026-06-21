@@ -82,19 +82,17 @@ jobs:
         asset_name: intercep3-${{ env.NOW }}.zip
         asset_content_type: application/zip
 
-    - name: Check if previous nightly build exists
+    - name: Check if previous nightly build exists and delete build if so
       id: check_release
       run: |
         if gh release view ${{ env.YESTER }} > /dev/null 2>&1; then
-          echo "exists=true" >> $GITHUB_OUTPUT
+          echo "EXISTS='today'" >> $GITHUB_ENV;
+          gh release delete ${{ env.YESTER }} --cleanup-tag
+        elif gh release view ${{ env.NOW }} > /dev/null 2>&1; then
+          echo "EXISTS='today'" >> $GITHUB_ENV;
+          gh release delete ${{ env.NOW }} --cleanup-tag
         else
-          echo "exists=false" >> $GITHUB_OUTPUT
+          echo "EXISTS='today'" >> $GITHUB_OUTPUT
         fi
       env:
         GH_TOKEN: ${{ github.token }}
-
-    - name: Remove previous nightly build and tag
-      if: steps.check_release.outputs.exists == 'true'
-      run: gh release delete ${{ env.YESTER }} --cleanup-tag
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
