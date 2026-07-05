@@ -300,6 +300,19 @@ map MAP33
 	endpic = "CREDIT"
 }
 
+map MAP36
+{
+	levelname = "Arx Tempore Perdita"
+	author = "Moustachio"
+	label = "E3M6"
+	levelpic = "CWILV36"
+	skytexture = "SKY5B"
+	music = "D_E3M6"
+	partime = 0
+
+	next = "MAP41"
+}
+
 // EPISODE 4
 
 map MAP41
