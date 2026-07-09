@@ -292,6 +292,19 @@ map MAP33
 	music = "D_E3M3"  // MIDI: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
 	partime = 0
 
+	next = "MAP35"
+}
+
+map MAP35
+{
+	levelname = "Rotten Core"
+	author = "Razzmatazz!"
+	label = "E3M5"
+	levelpic = "CWILV35"
+	skytexture = "SKY-O01"
+	music = "D_E3M5"  // MIDI: "The Veil of Dawn" by Razzmatazz! (bespoke)
+	partime = 0
+
 	intertext = ""
 
 	next = "MAP41"
