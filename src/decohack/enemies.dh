@@ -69,7 +69,7 @@ thing 311 "The Duke of Hell I"
 	States
 	{
 		Spawn:
-			DUKE AB 5 A_Look
+			DUKE AB 12 A_Look
 			Loop
 		See:
 			DUKE AA 17 A_FaceTarget
