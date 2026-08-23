@@ -46,14 +46,14 @@ map MAP11
 	nextsecret = "MAP17"
 }
 
-map MAP13
+map MAP12
 {
 	levelname = "Corporate Hell II"
 	author = "sincity2100"
-	label = "E1M3"
-	levelpic = "CWILV13"
+	label = "E1M2"
+	levelpic = "CWILV12"
 	skytexture = "CITYSKY1"
-	music = "D_E1M3"  // MIDI: "TeNaciTy" by Jimmy (origin: TNT II: Devilution)
+	music = "D_E1M2"  // MIDI: "TeNaciTy" by Jimmy (origin: TNT II: Devilution)
 	partime = 0
 
 	intertext = "Seems like the demonic forces",
@@ -75,17 +75,17 @@ map MAP13
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 
-	next = "MAP14"
+	next = "MAP13"
 }
 
-map MAP14
+map MAP13
 {
 	levelname = "Die Garrison"
 	author = "Yisue"
-	label = "E1M4"
-	levelpic = "CWILV14"
+	label = "E1M3"
+	levelpic = "CWILV13"
 	skytexture = "CITYSKY1"
-	music = "D_E1M4"  // MIDI: "Bloody Skies" by Maxime Tondreau
+	music = "D_E1M3"  // MIDI: "Bloody Skies" by Maxime Tondreau
 	partime = 0
 
 	intertext = "Scouring every building for info...",
