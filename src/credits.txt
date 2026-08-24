@@ -24,7 +24,7 @@ E1M1: STATION TO STATION by Moustachio
  Detail: Moustachio
  Testing: Moustachio, DFF, valkiriforce, General Rainbow Bacon
 
-E1M3: CORPORATE HELL II by sincity2100
+E1M2: CORPORATE HELL II by sincity2100
  Music: "TeNaciTy" by Jimmy
 
  Geometry: sincity2100
@@ -32,13 +32,21 @@ E1M3: CORPORATE HELL II by sincity2100
  Detail: sincity2100
  Testing: sincity2100, Moustachio
 
-E1M4: DIE GARRISON by Yisue
+E1M3: DIE GARRISON by Yisue
  Music: "Bloody Skies" by Maxime Tondreau
 
  Geometry: Yisue
  Combat: Yisue
  Detail: Yisue
  Testing: Yisue, Moustachio
+
+E1M4: CONTAINMENT FAILURE by Lina and AlexEightch
+ Music: "Curse of The Avenger" by Varis Alpha
+
+ Geometry: Lina, AlexEightch
+ Combat: Lina, AlexEightch
+ Detail: Lina, AlexEightch
+ Testing: Lina, AlexEightch, Moustachio
 
 E1M5: 220 KPA ABOVE AND BELOW by Frank Harper
  Music: "Prototype - Extended" by James Paddock and Stuart Rynn
@@ -48,7 +56,7 @@ E1M5: 220 KPA ABOVE AND BELOW by Frank Harper
  Detail: Frank Harper
  Testing: Frank Harper, Moustachio
 
-E1S2: ARCH-DISTRICT by rafael_farofa
+E1M6: ARCH-DISTRICT by rafael_farofa
  Music: "Casserole" by LewkForce (origin: Interception II MAP20)
 
  Geometry: rafael_farofa
@@ -160,7 +168,15 @@ E5M3: TERMINATED BLISS by Treehouseminis
  Detail: Treehouseminis
  Testing: Treehouseminis, Moustachio
 
-E5S1: THE VOID HATES YOU by AlexEightch
+E5M5: AN UNLIKELY ALLY by Moustachio
+ Music: "Interceptor" by Razzmatazz!
+
+ Geometry: Moustachio
+ Combat: Moustachio
+ Detail: Moustachio
+ Testing: Moustachio
+
+E5M6: THE VOID HATES YOU by AlexEightch
  Music: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
 
  Geometry: AlexEightch
@@ -184,7 +200,7 @@ E6M3: MOONQUAKE by Salmon
  Detail: Salmon
  Testing: Salmon, Moustachio
 
-E6S1: THE PLUTONIUM IS GONE! by Bendža M.
+E6M7: THE PLUTONIUM IS GONE! by Bendža M.
  Music: "Liquid Luck" by Jimmy (origin: BTSX)
 
  Geometry: Bendža M.
@@ -303,10 +319,21 @@ SNAKE IMP
  Sprites: Id Software, Raven Software
  Sprite Edit: Cyb, Vader, ItsNatureToDie
 
-THE DUKE OF HELL (PHASES I & II)
+
+-= BOSSES =-
+
+THE DUKE OF HELL
  DECOHack: Moustachio
  Sounds: Raven Software, Monolith Productions, DBThanatos, mitchanary, artninja, Moustachio
  Sprites: Amuscaria, Raven Software
+
+
+-= ALLIES =-
+
+BAPHOMET
+ DECOHack: Moustachio
+ Sounds: Blizzard (Diablo), Moustachio, EverydayEldritch
+ Sprites: Vader, DBThanatos, Moustachio
 
 
 -= HAZARDS =-
