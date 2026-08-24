@@ -3,8 +3,8 @@ Advanced engine needed  : Engine compatible w/ UMAPINFO, MBF21, & DSDHACKED
 Primary purpose         : Single play + Co-op
 ===========================================================================
 Title                   : Interception III
-Filename                : intercep3.WAD
-Release date            : Mnth. Day, Year
+Filename                : intercep3.wad
+Release date            : August 23, 2026
 Author                  : The Interceptors
 Other Files By Author   : intercep.wad, intercep2.wad
 Misc. Author Info       : The Interceptors are (in alphabetical order):
@@ -16,27 +16,49 @@ Misc. Author Info       : The Interceptors are (in alphabetical order):
                           FlamingoGazzoline (maps, music)
                           Frank Harper (map)
                           germicelli (map, music)
-                          Lina (DECOHack, sprites, testing)
+                          Lina (DECOHack, sprites, testing, map)
                           Moustachio (project lead, DECOHack, maps, art,
                            testing)
                           PeccatumMihzamiz (ENDOOM)
                           rafael_farofa (map)
+                          Razzmatazz! (map, music)
                           Salmon (map)
                           sincity2100 (maps)
+                          Stuart "stewboy" Rynn (music)
                           Treehouseminis (map)
+                          XenoNemesis (music)
                           Yisue (map)
 
-Description             : ADD DESCRIPTION HERE
+Description             : Interception III started development privately on
+                          August 19, 2021. To mark 5 years of work on this
+                          project, I've compiled a snapshot build of *most* of
+                          the work that's gone into this wad.
+
+                          I say most because some mappers are still working out
+                          their contributions. Think of this as an open beta
+                          or early release rather than a release candidate.
+
+                          The wad stands at 36 levels, including secret and
+                          bonus levels. This behemoth will likely take you
+                          hours to complete on a first playthrough and gets
+                          tough as hell.
+
+                          That being said, I think the strengths of this
+                          project far outshine the difficulty and length.
+                          Here stands a wad that embraces magnum opus syndrome,
+                          asking you, the player, to invest a fair bit of time.
 
 Additional Credits to   : Darman Macray for bespoke title, text, and
                           intermission themes.
 
-                          germicelli and AlexEightch for original music.
+                          germicelli, AlexEightch, Razzmatazz!, numsOic,
+                          XenoNemesis, and stewboy for original level music.
 
                           ForceTheDemo, Snaxalotl, LewkForce, Thyrbse,
                           James Paddock, Stuart Rynn, Maxime Tondreau,
-                          Rammstein, Brayden Hart, Tristan Clark, and
-                          Korp for music from other sources.
+                          Brayden Hart, Tristan Clark, Korp, FlamingoGazzoline,
+                          Varis Alpha, Cammy, Grimosaur, Psyrus, and LewkForce,
+                          for music from other sources.
 
                           Lina for detailed feedback on the resource pack.
 
@@ -51,35 +73,36 @@ Additional Credits to   : Darman Macray for bespoke title, text, and
 ===========================================================================
 * What is included *
 
-New levels              : Number of levels
+New levels              : 36
 Sounds                  : Yes
 Music                   : Yes
 Graphics                : Yes
 Dehacked/BEX Patch      : DeHackEd Lump
 Demos                   : No
-Other                   : 
-Other files required    : 
+Other                   : credits.txt
+Other files required    : None
 
 
 * Play Information *
 
 Game                    : Doom 2
-Map #                   : EXMY / MAPXX ...
+Map #                   : E1M1-E6M7, MAP01
 Single Player           : Designed for
 Cooperative 2-4 Player  : Designed for
-Deathmatch 2-4 Player   : No
-Other game styles       : 
+Deathmatch 2-4 Player   : No, see intercep3_DM.wad
+Other game styles       : Maybe
 Difficulty Settings     : Yes
 
 
 * Construction *
 
-Base                    : New from scratch
-Build Time              : 
+Base                    : Maps from scratch, textures and sprites pulled from
+                          many different sources - see credits.txt for details
+Build Time              : 5 years from Thursday, August 19, 2021, 2:29:05 AM
 Editor(s) used          : DoomTools, DECOHack, SLADE, Ultimate Doom Builder
-Known Bugs              : None OR List bugs here...
+Known Bugs              : Lots - see Project Planner for details
 May Not Run With        : Non-MBF21-compatible ports
-Tested With             : DSDA-Doom 0.29.3, UZDoom 4.14.3
+Tested With             : DSDA-Doom 0.29.4, UZDoom 4.14.3
 
 
 * Copyright / Permissions *

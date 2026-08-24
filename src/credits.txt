@@ -97,7 +97,7 @@ E2M4: HYDRO-COMPACTOR by FlamingoGazzoline
  Testing: FlamingoGazzoline, Moustachio
 
 E2M5: NEPTUNE'S CASTLE by Bendža M.
- Music: "Engel" by Rammstein (origin: Sehnsucht)
+ Music: * "Angel" by Razzmatazz!
 
  Geometry: Bendža M.
  Combat: Bendža M.
@@ -120,6 +120,22 @@ E3M3: MANIFESTATION by sincity2100
  Detail: sincity2100
  Testing: sincity2100, Moustachio
 
+E3M5: ROTTEN CORE by Razzmatazz!
+ Music: * "The Veil of Dawn" by Razzmatazz!
+
+ Geometry: Razzmatazz!
+ Combat: Razzmatazz!
+ Detail: Razzmatazz!
+ Testing: Razzmatazz!, Moustachio
+
+E3M6: ARX TEMPORE PERDITA by Moustachio
+ Music: * "Mystics and Machines" by XenoNemesis
+
+ Geometry: Moustachio
+ Combat: Moustachio
+ Detail: Moustachio
+ Testing: Moustachio
+
 E4M1: BURY PICASSO by FlamingoGazzoline
  Music: "Too Many Spaghetti" by FlamingoGazzoline
 
@@ -128,24 +144,24 @@ E4M1: BURY PICASSO by FlamingoGazzoline
  Detail: FlamingoGazzoline
  Testing: FlamingoGazzoline, Moustachio
 
+E4M2: HELL'S DENS by Bendža M.
+ Music: * "Pluto's Gate" by numsOic
+
+ Geometry: Bendža M.
+ Combat: Bendža M.
+ Detail: Bendža M.
+ Testing: Bendža M, Moustachio
+
 E4M3: DISPUTED TERRITORY by AlexEightch
- Music: In-progress
+ Music: * "Variations on a Sleeping Paralysis Demon" by Stuart Rynn (stewboy)
 
  Geometry: AlexEightch
  Combat: AlexEightch
  Detail: AlexEightch
  Testing: AlexEightch, Moustachio
 
-E4M3: DISPUTED TERRITORY by AlexEightch
- Music: In-progress
-
- Geometry: AlexEightch
- Combat: AlexEightch
- Detail: AlexEightch
- Testing: AlexEightch, Moustachio
-
-E4M5: THE DEMONS' PORTAL by AlexEightch & Moustachio
- Music: ""
+E4M5: BARBATOS' PORTAL by AlexEightch & Moustachio
+ Music: "Infimum" by Zachary "Ribbiks" Stephens (origin: Plutonia MIDI Pack MAP27)
 
  Geometry: AlexEightch
  Combat: Moustachio
@@ -167,6 +183,14 @@ E5M3: TERMINATED BLISS by Treehouseminis
  Combat: Treehouseminis
  Detail: Treehouseminis
  Testing: Treehouseminis, Moustachio
+
+E5M4: FEAR OF LIGHT by FlamingoGazzoline
+ Music: "Frosty" by Grimosaur (origin: You Do Voodoo)
+
+ Geometry: FlamingoGazzoline
+ Combat: FlamingoGazzoline
+ Detail: FlamingoGazzoline
+ Testing: FlamingoGazzoline, Moustachio
 
 E5M5: AN UNLIKELY ALLY by Moustachio
  Music: "Interceptor" by Razzmatazz!
@@ -208,7 +232,7 @@ E6M7: THE PLUTONIUM IS GONE! by Bendža M.
  Detail: Bendža M.
  Testing: Bendža M., Moustachio
 
-BONUS: THE MUSEUM by Moustachio
+BONUS LEVEL: THE MUSEUM by Moustachio
  Music: "Casserole" by LewkForce (origin: Interception II MAP20)
 
  Geometry: Moustachio
