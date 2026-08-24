@@ -458,9 +458,6 @@ map MAP54
 	music = "D_E5M4"  // MIDI: "Frosty" by Grimosaur (origin: You Do Voodoo)
 	partime = 0
 
-	next = "MAP62"
-	nextsecret = "MAP56"
-
 	intertext = "You've entered the innermost pustule",
 		"of their wretched realm, having",
 		"followed the demons back to",
@@ -478,8 +475,30 @@ map MAP54
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 
+	next = "MAP55"
+	nextsecret = "MAP56"
+
 	endgame = true
 	endpic = "CREDIT"
+}
+
+map MAP55
+{
+	levelname = "An Unlikely Ally"
+	author = "Moustachio"
+	label = "E5M5"
+	levelpic = "CWILV55"
+	skytexture = "SKY6"
+	music = "D_E5M5_0"  // MIDI: "Interceptor" by Razzmatazz!
+	partime = 0
+
+	intertext = ""
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT01"
+
+	next = "MAP62"
+
+	endgame = true
 }
 
 map MAP56
@@ -492,7 +511,7 @@ map MAP56
 	music = "D_E5M6"  // MIDI: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
 	partime = 2435
 
-	next = "MAP62"
+	next = "MAP55"
 
 	endgame = true
 	endpic = "CREDIT"

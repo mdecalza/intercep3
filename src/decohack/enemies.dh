@@ -41,7 +41,7 @@ thing 21
 /* New enemies */
 
 // E4 boss (phase I)
-thing 311 "The Duke of Hell I"
+thing 311 "The Duke of Hell"
 {
 	//$category Monsters/Boss
 	ednum 6055
@@ -270,19 +270,214 @@ thing 206 "The Duke of Hell II"
 	}
 }
 
-// E5 boss
-thing 207 "An unlikely ally..."
+// E5 boss (phase 1)
+thing 312 "Baphomet Heart"
 {
 	//$category Monsters/Boss
-	// ednum 6056
+	ednum 6056
 
-	radius 96
-	height 192
+	health 21021
+	radius 64
+	height 128
+	speed 0
+	painchance 0
+	mass 4000
+
+	+SOLID
+	+SHOOTABLE
+
+	// MBF21 Flags (MBF21 feature set only)
+	+NORADIUSDMG
+	+FULLVOLSOUNDS
+
+	seesound "FRE051"
+	deathsound "FRE053"
 
 	States
 	{
 		Spawn:
-			TNT1 A 1
+			BAPH P 35 A_Look
+			BAPH Q 6 {
+				A_PlaySound("FRE055")
+				A_Look
+			}
+			BAPH R 6 A_Look
+			Loop
+		See:
+			BAPH P 35
+			BAPH QR 6
+			BAPH P 35
+			BAPH QR 6
+			BAPH P 35
+			BAPH QR 6
+			BAPH P 35
+			BAPH QR 6
+			Goto Beating
+		Pain:
+		Beating:
+			BAPH P 35
+			BAPH Q 6 A_PlaySound("FRE055")
+			BAPH R 6
+			BAPH R 0 A_RandomJump(ActiveSound, 33)
+			Loop
+		ActiveSound:
+			BAPH P 35 A_PlaySound("FRE052")
+			BAPH Q 6
+			BAPH R 6
+			BAPH P 35
+			BAPH Q 6
+			BAPH R 6
+			Goto Beating
+		Death:
+			BAPH P 70 A_PlaySound("FRE054")
+			BAPH P 0 A_SpawnObject(313)
+			Stop
+	}
+}
+
+// E5 boss (phase 2)
+thing 313 "Baphomet Skeleton"
+{
+	health 21021
+	radius 64
+	height 192
+	speed 0
+	painchance 0
+	mass 4000
+
+	+SOLID
+	+SHOOTABLE
+
+	// MBF21 Flags (MBF21 feature set only)
+	+NORADIUSDMG
+	+FULLVOLSOUNDS
+
+	States
+	{
+		Spawn:
+			BAPH S 1
+			BAPH S 69 A_PlaySound("FRE053")
+			Goto See
+		Pain:
+		See:
+			BAPH S 35
+			BAPH S 0 A_RandomJump(ActiveSound, 33)
+			Loop
+		ActiveSound:
+			BAPH S 1 A_PlaySound("FRE052")
+			Goto See
+		Death:
+			BAPH S 70 A_PlaySound("FRE054")
+			BAPH S 0 A_SpawnObject(314)
+			Stop
+	}
+}
+
+// E5 boss (phase 3)
+thing 314 "Baphomet Corpse"
+{
+	health 21021
+	radius 64
+	height 192
+	speed 0
+	painchance 0
+	mass 4000
+
+	+SOLID
+	+SHOOTABLE
+
+	// MBF21 Flags (MBF21 feature set only)
+	+NORADIUSDMG
+	+FULLVOLSOUNDS
+
+	States
+	{
+		Spawn:
+			BAPH T 1
+			BAPH T 69 A_PlaySound("FRE053")
+			Goto Look
+		Look:
+			BAPH T 6 A_Look
+			Loop
+		Pain:
+		See:
+			BAPH T 35 A_FaceTarget
+			BAPH T 0 A_RandomJump(ActiveSound, 33)
+			Loop
+		ActiveSound:
+			BAPH T 1 A_PlaySound("FRE052")
+			Goto See
+		Death:
+			BAPH T 70 A_PlaySound("FRE054")
+			BAPH U 70 A_PlaySound("FRE053")
+			BAPH VWX 2
+			BAPH Y 25
+			BAPH B 5
+			BAPH A 70 A_PlaySound("FRE053")
+			BAPH A 0 {
+				A_SpawnObject(207)
+				A_LineEffect(112, 556)
+			}
+			Stop
+	}
+}
+
+// E5 boss (phase 4)
+thing 207 "Baphomet"
+{
+	health 21021
+	radius 64
+	height 192
+	speed 0
+	painchance 256
+	mass 4000
+
+	+SOLID
+	+SHOOTABLE
+
+	// MBF21 Flags (MBF21 feature set only)
+	+NORADIUSDMG
+	+FULLVOLSOUNDS
+
+	seesound "FRE053"
+	painsound "FRE054"
+	activesound "FRE052"
+
+	States
+	{
+		Spawn:
+			BAPH AABB 6 A_Look
+			Loop
+		See:
+			BAPH AAB 6 A_FaceTarget
+			BAPH B 6 {
+				A_FaceTarget
+				A_JumpIfTargetCloser(LevelEnd, 384.0)
+				A_RandomJump(ActiveSound, 33)
+			}
+			Loop
+		ActiveSound:
+			BAPH A 1 A_PlaySound("FRE052")
+			Goto See
+		Pain:
+			BAPH EFG 6
+			BAPH G 12
+			BAPH G 6 A_VileAttack
+			Goto LevelEnd
+		Death:
+			BAPH B 1
+			TNT1 A 0 A_SpawnObject(207)
+			Stop
+		LevelEnd:
+			BAPH GF 6
+			BAPH E 6 A_Pain
+			BAPH E 12
+			BAPH E 6 A_LineEffect(115, 25)
+			BAPH E 12
+			BAPH F 6
+			Goto LevelEndLoop
+		LevelEndLoop:
+			BAPH AABB 6 A_FaceTarget
 			Loop
 	}
 }
@@ -745,6 +940,27 @@ thing 286 "Gliding imp right wing"
 			RWNG ABCD 6
 			RWNG EF 10
 			RWNG G -1
+			Stop
+	}
+}
+
+thing 320 "Demonic turret"
+{
+	//$category Hazards
+	ednum 6121
+
+	health 1000
+	radius 16
+	height 72
+	mass 100000
+
+	+SOLID
+	+SHOOTABLE
+
+	States
+	{
+		Spawn:
+			SP95 A -1
 			Stop
 	}
 }
