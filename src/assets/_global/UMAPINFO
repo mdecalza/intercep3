@@ -88,6 +88,19 @@ map MAP13
 	music = "D_E1M3"  // MIDI: "Bloody Skies" by Maxime Tondreau
 	partime = 0
 
+	next = "MAP14"
+}
+
+map MAP14
+{
+	levelname = "Containment Failure"  // "Curse of The Avenger" by Varis Alpha
+	author = "Lina and AlexEightch"
+	label = "E1M4"
+	levelpic = "CWILV14"
+	skytexture = "CITYSKY1"
+	music = "D_E1M4"
+	partime = 0
+
 	intertext = "Scouring every building for info...",
 		"and demons.",
 		"",
@@ -109,6 +122,7 @@ map MAP13
 	intermusic = "D_TEXT01"
 
 	next = "MAP15"
+	nextsecret = "MAP15"
 }
 
 map MAP15
@@ -122,6 +136,8 @@ map MAP15
 
 	intertext = ""
 	intertextsecret = clear
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT02"
 
 	next = "MAP21"
 
@@ -232,13 +248,11 @@ map MAP25
 		"",
 		"Dust falls on your head as the",
 		"building shakes. Outside, you hear",
-		"voices shouting in an odd dialect",
-		"of English. You can make out just",
-		"one word: demons.",
+		"one thing going on: pandemonium.",
 		"",
 		"Time to get the hell out of here."
 	interbackdrop = "ALLBLAKF"
-	intermusic = "D_TEXT01"
+	intermusic = "D_TEXT02"
 
 	next = "MAP31"
 
