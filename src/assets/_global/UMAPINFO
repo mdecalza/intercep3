@@ -42,7 +42,7 @@ map MAP11
 	episode = clear
 	episode = "M_EPI1", "The Far Future", "f"
 
-	next = "MAP13"
+	next = "MAP12"
 	nextsecret = "MAP16"
 }
 
