@@ -250,7 +250,7 @@ map MAP25
 	music = "D_E2M5"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
 	partime = 0
 
-	intertext = "As BARBAT.OS powers up his machine,"
+	intertext = "As BARBAT.OS powers up his machine,",
 		"the windows to the sea floor shatter,",
 		"sealing BARBAT.OS' fate...",
 		"and your own.",
@@ -369,7 +369,7 @@ map MAP34
 	intertextsecret = "The air around you grows cold",
 		"as you scale the immense mountains.",
 		"At the summit, you discover",
-		"a curious palace, left in ruins."
+		"a curious palace, left in ruins.",
 		"",
 		"This castle has a curious aura.",
 		"You can't place it, but there is",
@@ -447,7 +447,7 @@ map MAP36
 		"",
 		"There is hope for the future yet."
 
-	next = "MAP41"
+	next = "MAP35"
 }
 
 // EPISODE 4
