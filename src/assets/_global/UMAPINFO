@@ -57,7 +57,7 @@ map MAP12
 	partime = 0
 
 	intertext = "Seems like the demonic forces",
-		"have corrupted BARBAT-OS,",
+		"have corrupted BARBAT.OS,",
 		"the UAC's watchful AI. Somehow,",
 		"they're using him to corrupt",
 		"huge chunks of Earth en masse.",
@@ -111,10 +111,10 @@ map MAP14
 		"underwater processing center.",
 		"",
 		"The UAC uses the bay water to cool",
-		"down the intense heat from BARBAT-OS'",
+		"down the intense heat from BARBAT.OS'",
 		"logical processors. Outright flooding",
 		"each of the computer cores may disable",
-		"the possessed BARBAT-OS.",
+		"the possessed BARBAT.OS.",
 		"",
 		"You'll crush every bone in your body,",
 		"but at least you'll save Earth doing it..."
@@ -134,7 +134,20 @@ map MAP15
 	skytexture = "SKY-B02"
 	music = "D_E1M5"  // MIDI: "Prototype - Extended" by James Paddock and Stuart Rynn
 
-	intertext = ""
+	intertext = "Deep underneath the bayside waters,",
+		"you scour the base for a way to reach",
+		"the UAC's seafloor research facility",
+		"where BARBAT.OS' processing cores are.",
+		"",
+		"In the marine life studies wing, you",
+		"find an open submersible with some",
+		"remains inside. Looks like Jo isn't",
+		"coming home tonight...",
+		"",
+		"With no time to wipe the rig down,",
+		"and no space to carry your loadout,",
+		"you leave your weapons behind and",
+		"set out for BARBAT.OS' lair."
 	intertextsecret = clear
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
@@ -237,18 +250,22 @@ map MAP25
 	music = "D_E2M5"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
 	partime = 0
 
-	intertext = "You wake up in a small room. Looks",
-		"like a jail cell. You try the door,",
-		"but it won't budge.",
+	intertext = "As BARBAT.OS powers up his machine,",
+		"the windows to the sea floor shatter,",
+		"sealing BARBAT.OS' fate...",
+		"and your own.",
 		"",
-		"BARBAT-OS must have sent you",
-		"somewhere far away. The building",
+		"Suddenly, you awake in a small cell.",
+		"You try the door, but it won't budge.",
+		"",
+		"BARBAT.OS' machine must have sent you",
+		"to some far off place. The building",
 		"you're in appears ancient, yet it",
 		"seems freshly built...",
 		"",
-		"Dust falls on your head as the",
-		"building shakes. Outside, you hear",
-		"one thing going on: pandemonium.",
+		"Dust falls from the ceiling as the",
+		"ground shakes. Outside, you hear",
+		"pandemonium. Seems demons came with.",
 		"",
 		"Time to get the hell out of here."
 	interbackdrop = "ALLBLAKF"
@@ -272,8 +289,7 @@ map MAP31
 	music = "D_E3M1"  // MIDI: "Dream Dweller" by Brayden Hart (AD_79)
 	partime = 0
 
-	intertext =
-		"Where the hell have you been sent?",
+	intertext = "Where the hell have you been sent?",
 		"It's certainly Earth, but where?",
 		"Aside from that jail, you've barely",
 		"seen any sign of civilization at all.",
@@ -282,16 +298,29 @@ map MAP31
 		"",
 		"You emerge onto a cliffside perch.",
 		"Way below, you spot a horde of demons",
-		"all marching in the same direction.",
+		"all marching towards something...",
 		"",
-		"If this really is the ancient past,",
-		"then their underground portal should",
-		"still be open. Time to follow them."
+		"As the sun rises, you spot a large",
+		"structure far out on the horizon.",
+		"Quietly, you trail the demons ahead."
 	intertextsecret = clear
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT02"
 
 	episode = "M_EPI3", "The Distant Past", "d"
+
+	next = "MAP32"
+}
+
+map MAP32
+{
+	levelname = "Sacred Mysteries"
+	author = "Salmon"
+	label = "E3M2"
+	levelpic = "CWILV32"
+	skytexture = "SKYM1"
+	music = "REMEMBER"  // MIDI: "Remember when the land was barren" by LPad (origin: Nostalgia Zero)
+	partime = 0
 
 	next = "MAP33"
 }
@@ -306,7 +335,56 @@ map MAP33
 	music = "D_E3M3"  // MIDI: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
 	partime = 0
 
+	next = "MAP34"
+}
+
+map MAP34
+{
+	levelname = "Luceum"
+	author = "FlamingoGazzoline"
+	label = "E3M4"
+	levelpic = "CWILV34"
+	skytexture = "SKYM1"
+	music = "D_E3M4"  // MIDI: "its_cold_up_here.mid" by Ribbiks
+	partime = 0
+
+	intertext = "For countless days, you've followed",
+		"the demons' trail. With every step,",
+		"You wonder what their aim is.",
+		"",
+		"Judging from the ruins left in the",
+		"wake of their destruction, it seems",
+		"that BARBAT.OS has somehow sent you",
+		"to the distant past.",
+		"",
+		"As you lament the impossibility of",
+		"returning to your time, you realize",
+		"where the demons must be heading:",
+		"",
+		"The underground necropolis. The one",
+		"housing the portal to The Realm of",
+		"Souls, a realm beyond time...",
+		"",
+		"There is hope for the future yet."
+	intertextsecret = "The air around you grows cold",
+		"as you scale the immense mountains.",
+		"At the summit, you discover",
+		"a curious palace, left in ruins.",
+		"",
+		"This castle has a curious aura.",
+		"You can't place it, but there is",
+		"something anomalous about it,",
+		"unlike anything you've",
+		"encountered before...",
+		"",
+		"Eager to make a memorable entrance,",
+		"you crank the lever on your shotgun",
+		"and head in."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT01"
+
 	next = "MAP35"
+	nextsecret = "MAP36"
 }
 
 map MAP35
@@ -319,12 +397,29 @@ map MAP35
 	music = "D_E3M5"  // MIDI: "The Veil of Dawn" by Razzmatazz! (bespoke)
 	partime = 0
 
-	intertext = ""
-
-	next = "MAP41"
+	intertext = "The air chills, growing foul as you",
+		"approach the underground necropolis.",
+		"",
+		"The openings have thinned so that",
+		"the only weapon you've been able to",
+		"carry along is your trusty shotgun.",
+		"",
+		"At the end of a long cave, you find a",
+		"metal cage suspended by chains.",
+		"It seems that you're meant to enter.",
+		"",
+		"It's certainly a warmer welcome",
+		"than on your first visit.",
+		"Way back when.",
+		"",
+		"You enter and begin your descent."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT02"
 
 	endgame = true
 	endpic = "CREDIT"
+
+	next = "MAP41"
 }
 
 map MAP36
@@ -337,7 +432,22 @@ map MAP36
 	music = "D_E3M6"
 	partime = 0
 
-	next = "MAP41"
+	intertext = "The ruins around you confirm your",
+		"worst fear. It seems that BARBAT.OS",
+		"has somehow transported you",
+		"to the distant past.",
+		"",
+		"As you lament the impossibility of",
+		"returning to your time, you realize",
+		"where the demons must be heading:",
+		"",
+		"The underground necropolis. The one",
+		"housing the portal to The Realm of",
+		"Souls, a realm beyond time...",
+		"",
+		"There is hope for the future yet."
+
+	next = "MAP35"
 }
 
 // EPISODE 4
@@ -351,6 +461,18 @@ map MAP41
 	skytexture = "SKY5"
 	music = "D_E4M1"  // MIDI: "Too Many Spaghetti" by FlamingoGazzoline
 	partime = 0
+
+	intertext =
+		"Warm sand sifts beneath your feet",
+		"as you retrace your steps, trying to",
+		"recall the path to The Realm of Souls.",
+		"",
+		"The surrounding caverns grow brighter",
+		"and brighter until you are blinded by",
+		"the unforgettable brilliance of",
+		"the Earth's core",
+		"",
+		"This must be the way forward."
 
 	episode = "M_EPI4", "Under-Earth", "u"
 
@@ -395,21 +517,15 @@ map MAP45
 	bossaction = Deh_Actor_205, 15394, 4
 
 	intertext = "After defeating The Duke of Hell,",
-		"you follow the demons to an",
-		"oppressive realm.",
+		"you enter The Realm of Souls.",
 		"",
-		"A familiar realm.",
+		"Though the mere thought of your",
+		"returning here sickens you, it may be",
+		"your only way back home.",
 		"",
-		"The Realm of Souls.",
-		"",
-		"This place exists outside of time and",
-		"space. The mere thought of it makes",
-		"your skin crawl, but this may provide",
-		"a way back to your time. Is that thing",
-		"in there actually trying to help you?",
-		"",
-		"Perhaps, you and the demons have a common",
-		"enemy in Barbat.OS..."
+		"As you step through the void, you",
+		"relinquish your arsenal once more.",
+		"Get ready to fight for your life."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
@@ -464,11 +580,10 @@ map MAP54
 		"their origin point: a decimated",
 		"fortress, floating in the void.",
 		"",
-		"As you step inside, you realize",
-		"why. Suspended ahead is an all",
-		"too familiar demon hoisted up",
-		"in chains, it's body destroyed.",
-		"Just how you left it.",
+		"As you step inside, you see,",
+		"suspended before you, an all too",
+		"familiar demon. As its body decays,",
+		"its heart continues beating.",
 		"",
 		"The demon is writhing...",
 		"and it's grinning at you."
@@ -477,9 +592,6 @@ map MAP54
 
 	next = "MAP55"
 	nextsecret = "MAP56"
-
-	endgame = true
-	endpic = "CREDIT"
 }
 
 map MAP55
@@ -492,13 +604,29 @@ map MAP55
 	music = "D_E5M5_0"  // MIDI: "Interceptor" by Razzmatazz!
 	partime = 0
 
-	intertext = ""
+	intertext =
+		"Your worst foe stands living before",
+		"you: Baphomet, in the flesh.",
+		"",
+		"As you open your mouth to speak,",
+		"words begin to flood your mind.",
+		"",
+		"\"I know already what you seek,",
+		"human. I'll help you return home,",
+		"if you return the favor.\"",
+		"",
+		"Your blood boils at the thought of",
+		"helping your greatest nemesis, but",
+		"what choice do you have? You accept",
+		"Baphomet's deal. You must put an end",
+		"to BARBAT.OS' reign and save Earth."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
 	next = "MAP62"
 
 	endgame = true
+	endpic = "CREDIT"
 }
 
 map MAP56
@@ -511,10 +639,23 @@ map MAP56
 	music = "D_E5M6"  // MIDI: "The Pyramid" by Thyrbse (origin: Hell Revealed 2 MAP28)
 	partime = 2435
 
-	next = "MAP55"
+	intertext =
+		"Having barely escaped the demons'",
+		"stronghold alive, you find",
+		"a decimated fortress,",
+		"floating in the void.",
+		"",
+		"As you step inside, you see,",
+		"suspended before you, an all too",
+		"familiar demon. As its body decays,",
+		"its heart continues beating.",
+		"",
+		"The demon is writhing...",
+		"and it's grinning at you."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT02"
 
-	endgame = true
-	endpic = "CREDIT"
+	next = "MAP55"
 }
 
 // EPISODE 6
@@ -528,6 +669,8 @@ map MAP62
 	skytexture = "SKY4"
 	music = "D_E6M2"  // MIDI: "Earthglow" by Tristan Clark
 	partime = 0
+
+	episode = "M_EPI6", "Enceladus", "e"
 
 	next = "MAP63"
 }
@@ -545,9 +688,6 @@ map MAP63
 	intertext = ""
 
 	next = "MAP67"
-
-	endgame = true
-	endcast = true
 }
 
 map MAP67
@@ -559,7 +699,8 @@ map MAP67
 	skytexture = "SKY4"
 	music = "D_E6M7"  // MIDI: "Liquid Luck" by Jimmy (origin: BTSX)
 
-	episode = "M_EPI6", "Enceladus", "e"
-
 	next = "MAP01"
+
+	endgame = true
+	endcast = true
 }
