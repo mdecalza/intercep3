@@ -429,7 +429,7 @@ map MAP36
 	label = "E3M6"
 	levelpic = "CWILV36"
 	skytexture = "SKY5B"
-	music = "D_E3M6"
+	music = "D_E3M6"  // MIDI: "Mystics and Machines" by XenoNemesis [WIP]
 	partime = 0
 
 	intertext = "The ruins around you confirm your",
@@ -499,7 +499,7 @@ map MAP43
 	label = "E4M3"
 	levelpic = "CWILV43"
 	skytexture = "ALLBLACK"
-	music = "D_RUNNIN"  // MIDI: In-progress (using "Casserole" by LewkForce as placeholder)
+	music = "D_E4M3"  // MIDI: "Variations on a Sleep Paralysis Demon" by Stuart Rynn (stewboy) [WIP]
 	partime = 2435
 
 	next = "MAP45"
