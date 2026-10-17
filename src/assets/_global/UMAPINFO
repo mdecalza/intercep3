@@ -295,7 +295,7 @@ map MAP25
 	label = "E2M5"
 	levelpic = "CWILV25"
 	skytexture = "SKY-B06"
-	music = "D_E2M5"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
+	music = "D_E2M5"  // MIDI: "Angel" by Razzmatazz! (remix of Rammstein - "Engel" from Sehnsucht) [bespoke]
 	partime = 0
 
 	intertext = "As BARBAT.OS powers up his machine,",
@@ -477,7 +477,7 @@ map MAP36
 	label = "E3M6"
 	levelpic = "CWILV36"
 	skytexture = "SKY5B"
-	music = "D_E3M6"  // MIDI: "Mystics and Machines" by XenoNemesis [WIP]
+	music = "D_E3M6"  // MIDI: "Mystics and Machines" by XenoNemesis (bespoke)
 	partime = 0
 
 	intertext = "The ruins around you confirm your",
@@ -534,7 +534,7 @@ map MAP42
 	label = "E4M2"
 	levelpic = "CWILV42"
 	skytexture = "SKY5"
-	music = "D_E4M2"  // MIDI: "Pluto's Gate" by numsOic
+	music = "D_E4M2"  // MIDI: "Pluto's Gate" by numsOic (bespoke)
 	partime = 0
 
 	next = "MAP43"
@@ -547,7 +547,7 @@ map MAP43
 	label = "E4M3"
 	levelpic = "CWILV43"
 	skytexture = "ALLBLACK"
-	music = "D_E4M3"  // MIDI: "Variations on a Sleep Paralysis Demon" by Stuart Rynn (stewboy) [WIP]
+	music = "D_E4M3"  // MIDI: "Variations on a Sleep Paralysis Demon" by Stuart Rynn (stewboy) [bespoke]
 	partime = 2435
 
 	next = "MAP45"
@@ -596,6 +596,19 @@ map MAP51
 	partime = 0
 
 	episode = "M_EPI5", "The Realm of Souls", "r"
+
+	next = "MAP52"
+}
+
+map MAP52
+{
+	levelname = "Void Madness"
+	author = "CBM, Amiga Angel, and Moustachio"
+	label = "E5M2"
+	levelpic = "CWILV52"
+	skytexture = "ALLBLACK"
+	music = "D_E5M2"  // MIDI: "Hexen Guitar Theme" by XenoNemesis (bespoke)
+	partime = 0
 
 	next = "MAP53"
 }
@@ -671,7 +684,7 @@ map MAP55
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP62"
+	next = "MAP61"
 
 	endgame = true
 	endpic = "CREDIT"
@@ -715,7 +728,7 @@ map MAP61
 	label = "E6M1"
 	levelpic = "CWILV61"
 	skytexture = "SKY4"
-	music = "D_E6M1"
+	music = "D_E6M1"  // MIDI: "HeadBangrr" by FlamingoGazzoline
 	partime = 0
 
 	episode = "M_EPI6", "Enceladus", "e"
