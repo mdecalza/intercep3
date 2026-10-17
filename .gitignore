@@ -54,6 +54,7 @@ doommake.properties
 # Windows
 Desktop.ini
 thumbs.db
+*.lnk
 
 # OSX/MacOS
 *.DS_Store
