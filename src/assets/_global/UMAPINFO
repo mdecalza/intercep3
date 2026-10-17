@@ -36,6 +36,12 @@ map MAP11
 		"going to have to go to the source.",
 		"Time to follow their accursed trail",
 		"and plug their entry portal."
+	intertextsecret = "You've found yourself at",
+		"street level. Looks like Hell's forces",
+		"are protecting something.",
+		"",
+		"And you've got the jump on them.",
+		"This may just be your lucky day."
 	interbackdrop = "TEXTPIC1"
 	intermusic = "D_TEXT01"
 
@@ -118,11 +124,20 @@ map MAP14
 		"",
 		"You'll crush every bone in your body,",
 		"but at least you'll save Earth doing it..."
+	intertextsecret = "You've found yourself in the",
+		"underbelly of the city.",
+		"Smells like shit.",
+		"",
+		"This neighborhood has likely been",
+		"evacutated by now. Or worse...",
+		"",
+		"You tread carefully through the quiet",
+		"tunnels as the sun sets up above."
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
 	next = "MAP15"
-	nextsecret = "MAP15"
+	nextsecret = "MAP17"
 }
 
 map MAP15
@@ -182,6 +197,39 @@ map MAP16
 	intermusic = "D_TEXT01"
 
 	next = "MAP12"
+}
+
+map MAP17
+{
+	levelname = "Neo-Feudal"
+	author = "Jark"
+	label = "E1M7"
+	levelpic = "CWILV17"
+	skytexture = "SKY-ST01"
+	music = "JRKMID01"
+	partime = 0
+
+	intertext = "Scouring every building for info...",
+		"and demons.",
+		"",
+		"Peering out from atop a tall skyscraper,",
+		"you spot a mountain of flesh and blood",
+		"at the edge of the bay, enveloping",
+		"the Union Aerospace Corporation's",
+		"underwater processing center.",
+		"",
+		"The UAC uses the bay water to cool",
+		"down the intense heat from BARBAT.OS'",
+		"logical processors. Outright flooding",
+		"each of the computer cores may disable",
+		"the possessed BARBAT.OS.",
+		"",
+		"You'll crush every bone in your body,",
+		"but at least you'll save Earth doing it..."
+	interbackdrop = "ALLBLAKF"
+	intermusic = "D_TEXT01"
+
+	next = "MAP15"
 }
 
 // EPISODE 2
@@ -247,7 +295,7 @@ map MAP25
 	label = "E2M5"
 	levelpic = "CWILV25"
 	skytexture = "SKY-B06"
-	music = "D_E2M5"  // MIDI: "Engel" by Rammstein (origin: Sehnsucht)
+	music = "D_E2M5"  // MIDI: "Angel" by Razzmatazz! (remix of Rammstein - "Engel" from Sehnsucht) [bespoke]
 	partime = 0
 
 	intertext = "As BARBAT.OS powers up his machine,",
@@ -429,7 +477,7 @@ map MAP36
 	label = "E3M6"
 	levelpic = "CWILV36"
 	skytexture = "SKY5B"
-	music = "D_E3M6"  // MIDI: "Mystics and Machines" by XenoNemesis [WIP]
+	music = "D_E3M6"  // MIDI: "Mystics and Machines" by XenoNemesis (bespoke)
 	partime = 0
 
 	intertext = "The ruins around you confirm your",
@@ -486,7 +534,7 @@ map MAP42
 	label = "E4M2"
 	levelpic = "CWILV42"
 	skytexture = "SKY5"
-	music = "D_E4M2"  // MIDI: "Pluto's Gate" by numsOic
+	music = "D_E4M2"  // MIDI: "Pluto's Gate" by numsOic (bespoke)
 	partime = 0
 
 	next = "MAP43"
@@ -499,7 +547,7 @@ map MAP43
 	label = "E4M3"
 	levelpic = "CWILV43"
 	skytexture = "ALLBLACK"
-	music = "D_E4M3"  // MIDI: "Variations on a Sleep Paralysis Demon" by Stuart Rynn (stewboy) [WIP]
+	music = "D_E4M3"  // MIDI: "Variations on a Sleep Paralysis Demon" by Stuart Rynn (stewboy) [bespoke]
 	partime = 2435
 
 	next = "MAP45"
@@ -548,6 +596,19 @@ map MAP51
 	partime = 0
 
 	episode = "M_EPI5", "The Realm of Souls", "r"
+
+	next = "MAP52"
+}
+
+map MAP52
+{
+	levelname = "Void Madness"
+	author = "CBM, Amiga Angel, and Moustachio"
+	label = "E5M2"
+	levelpic = "CWILV52"
+	skytexture = "ALLBLACK"
+	music = "D_E5M2"  // MIDI: "Hexen Guitar Theme" by XenoNemesis (bespoke)
+	partime = 0
 
 	next = "MAP53"
 }
@@ -623,7 +684,7 @@ map MAP55
 	interbackdrop = "ALLBLAKF"
 	intermusic = "D_TEXT01"
 
-	next = "MAP62"
+	next = "MAP61"
 
 	endgame = true
 	endpic = "CREDIT"
@@ -660,6 +721,21 @@ map MAP56
 
 // EPISODE 6
 
+map MAP61
+{
+	levelname = "Port Hub"
+	author = "FlamingoGazzoline"
+	label = "E6M1"
+	levelpic = "CWILV61"
+	skytexture = "SKY4"
+	music = "D_E6M1"  // MIDI: "HeadBangrr" by FlamingoGazzoline
+	partime = 0
+
+	episode = "M_EPI6", "Enceladus", "e"
+
+	next = "MAP62"
+}
+
 map MAP62
 {
 	levelname = "Cosmic Factory"
@@ -669,8 +745,6 @@ map MAP62
 	skytexture = "SKY4"
 	music = "D_E6M2"  // MIDI: "Earthglow" by Tristan Clark
 	partime = 0
-
-	episode = "M_EPI6", "Enceladus", "e"
 
 	next = "MAP63"
 }

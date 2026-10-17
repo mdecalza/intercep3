@@ -1796,6 +1796,7 @@ TITLEPIC        Moustachio
 PLAYPAL &       WorldMachine
 COLORMAP        from DOOM+ v0.4
                 "DOOM+ v0.4.WAD"
+                Edited by Lina
 
 ALTERNATE       DRON12261
 COLORMAPS       from Big COLORMAP pack for Eternity Engine
