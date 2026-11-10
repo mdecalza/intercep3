@@ -840,7 +840,19 @@ WANDERING SPIRITS
  DECOHack: Moustachio
  Sprites: Doom, unsplash.com, Captain Toenail
 
-Projectile particle DECOHack by Moustachio and Lina.
+YELLOW EMBER TRAIL
+ DECOHack: Lina
+ Sprites: Lina, Raven Software, Amuscaria (from Hell Forged)
+
+GREEN EMBER TRAIL
+ DECOHack: Lina
+ Sprites: Lina, Raven Software, Amuscaria (from Hell Forged)
+
+ORANGE EMBER TRAIL
+ DECOHack: Lina
+ Sprites: Lina, Raven Software, Amuscaria (from Hell Forged)
+
+Projectile particle DECOHack by Lina and Moustachio.
 
 
 -= WILDLIFE =-
