@@ -268,7 +268,7 @@ INCENDIARY SHOTGUN
 INCENDIARY PROJECTILE
  DECOHack: Moustachio
  Sounds: id Software
- Sprites: Amuscaria, id Software
+ Sprites: Lina
 
 SUPER SLUGGER
  DECOHack: Moustachio
