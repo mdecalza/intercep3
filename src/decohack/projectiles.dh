@@ -76,16 +76,20 @@ thing 151 "Incendiary shotgun fireball"
 	{
 		Spawn:
 			SP20 A 1 Bright
-			SP20 A 4 Bright {
+			SP20 A 2 Bright {
 				A_PlaySound("FIRSHT")
 				A_RadiusDamage(80, 56)
 			}
-			SP20 B 5 Bright {
+			SP20 B 2 Bright
+			SP20 C 3 Bright {
 				A_RadiusDamage(76, 56)
 				A_AddFlags(TRANSLUCENT)
 			}
-			SP20 C 5 Bright A_RadiusDamage(68, 56)
-			SP20 D 5 Bright A_RadiusDamage(60, 56)
+			SP20 D 2 Bright
+			SP20 E 3 Bright A_RadiusDamage(68, 56)
+			SP20 F 2 Bright
+			SP20 G 3 Bright A_RadiusDamage(60, 56)
+			SP20 H 2 Bright
 			Stop
 		Death:
 			BAL1 C 8 Bright {
