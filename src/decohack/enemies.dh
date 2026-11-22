@@ -964,3 +964,36 @@ thing 320 "Demonic turret"
 			Stop
 	}
 }
+
+thing 330 : thing 26 "One-Shot of Sin"
+{
+	//$category Monsters/Boss
+	ednum 6122
+
+	health 1
+
+	States
+	{
+		Death:
+			BBRN B 100 A_BrainScream
+			BBRN B 10 A_LineEffect(27762, 2006)
+			BBRN B 10 A_LineEffect(27810, 2001)
+			Stop
+	}
+}
+
+thing 331 : thing 27 "Icon of Sin Eyes"
+{
+	//$category Monsters/Boss
+	ednum 6123
+
+	States
+	{
+		Spawn:
+			TNT1 A 10 A_Look
+			Loop
+		See:
+			TNT1 A 100 A_PlaySound("BOSSIT", 1)
+			Stop
+	}
+}
