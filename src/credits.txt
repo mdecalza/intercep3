@@ -44,9 +44,9 @@ E1M4: CONTAINMENT FAILURE by Lina and AlexEightch
  Music: "Curse of The Avenger" by Varis Alpha
 
  Geometry: Lina, AlexEightch
- Combat: Lina, AlexEightch
- Detail: Lina, AlexEightch
- Testing: Lina, AlexEightch, Moustachio
+ Combat: AlexEightch, Lina
+ Detail: AlexEightch, Lina
+ Testing: AlexEightch, Moustachio, Lina
 
 E1M5: 220 KPA ABOVE AND BELOW by Frank Harper
  Music: "Prototype - Extended" by James Paddock and Stuart Rynn
@@ -63,6 +63,26 @@ E1M6: ARCH-DISTRICT by rafael_farofa
  Combat: rafael_farofa
  Detail: rafael_farofa
  Testing: rafael_farofa, Moustachio
+
+E1M7: NEO-FEUDAL by Jark
+ Music: "In the Walls" by Saige <3
+        "Mech" by Psyrus_
+        "What is Love?" by Haddaway, Sequencer unknown, Edited by Jark
+        "Halfway" by Dial-up for Murder
+        "bluenipple" by Fookerton
+        "Subterranean Homesick Alien" by Radiohead, sequencer unknown
+        "You're Winner" by Lippeth
+        "SNES Jurassic Park Elevator Music" by Jon Dunn, sequenced by Sam Wolff, Edited by Jark
+        "jazzy2" by Fookerton
+        "Arthropod Machine" by Immorpher
+        "Easel" by Jimmy (origin: SIGIL)
+        "Brutal Schism" by Jimmy (origin: Eviternity)
+        "Pathogen" by Jimmy (origin: Jenesis)
+
+ Geometry: Jark
+ Combat: Jark
+ Detail: Jark
+ Testing: Jark, Moustachio
 
 E2M1: FORCE MAJEURE by germicelli
  Music: * "cardsoundcard" by germicelli
@@ -112,6 +132,14 @@ E3M1: ELEFTHERIA by cannonball
  Detail: cannonball
  Testing: cannonball, Moustachio
 
+E3M2: SACRED MYSTERIES by Salmon
+ Music: "Remember when the land was barren" by LPad (origin: Nostalgia Zero)
+
+ Geometry: Salmon
+ Combat: Salmon
+ Detail: Salmon
+ Testing: Salmon, Moustachio
+
 E3M3: MANIFESTATION by sincity2100
  Music: "Kaguya" by Brayden Hart (AD_79) (origin: Akeldama MAP26)
 
@@ -119,6 +147,14 @@ E3M3: MANIFESTATION by sincity2100
  Combat: sincity2100
  Detail: sincity2100
  Testing: sincity2100, Moustachio
+
+E3M4: AMONG ANTHILLS by FlamingoGazzoline
+ Music: "its_cold_up_here.mid" by Ribbiks
+
+ Geometry: FlamingoGazzoline
+ Combat: FlamingoGazzoline
+ Detail: FlamingoGazzoline
+ Testing: FlamingoGazzoline, Moustachio
 
 E3M5: ROTTEN CORE by Razzmatazz!
  Music: * "The Veil of Dawn" by Razzmatazz!
@@ -163,8 +199,8 @@ E4M3: DISPUTED TERRITORY by AlexEightch
 E4M5: BARBATOS' PORTAL by AlexEightch & Moustachio
  Music: "Infimum" by Zachary "Ribbiks" Stephens (origin: Plutonia MIDI Pack MAP27)
 
- Geometry: AlexEightch
- Combat: Moustachio
+ Geometry: AlexEightch, Moustachio
+ Combat: Moustachio, AlexEightch
  Detail: AlexEightch
  Testing: Moustachio, AlexEightch
 
@@ -175,6 +211,14 @@ E5M1: TEMPEST SEPULCHER by Blast98
  Combat: Blast98
  Detail: Blast98
  Testing: Blast98, Moustachio
+
+E5M2: VOID MADNESS by CBM, Amiga Angel, and Moustachio
+ Music: "Hexen Guitar Theme" by XenoNemesis
+
+ Geometry: CBM & Amiga Angel, Moustachio
+ Combat: Moustachio, CBM & Amiga Angel
+ Detail: CBM & Amiga Angel, Moustachio
+ Testing: Moustachio, CBM & Amiga Angel
 
 E5M3: TERMINATED BLISS by Treehouseminis
  Music: "Aquifer" by Snaxalotl (origin: Abscission MAP02)
@@ -208,6 +252,14 @@ E5M6: THE VOID HATES YOU by AlexEightch
  Detail: AlexEightch
  Testing: AlexEightch, Moustachio
 
+E6M1: TICKET TO THE MOON by FlamingoGazzoline
+ Music: "HeadBangrr" by FlamingoGazzoline
+
+ Geometry: FlamingoGazzoline
+ Combat: FlamingoGazzoline
+ Detail: FlamingoGazzoline
+ Testing: FlamingoGazzoline
+
 E6M2: COSMIC FACTORY by Blast98
  Music: "Earthglow" by Tristan Clark
 
@@ -223,6 +275,14 @@ E6M3: MOONQUAKE by Salmon
  Combat: Salmon
  Detail: Salmon
  Testing: Salmon, Moustachio
+
+E6M4: Unfinished, untitled map by Beubeu
+ Music: "In the Walls" by Saige <3
+
+ Geometry: Beubeu
+ Combat: Beubeu
+ Detail: Beubeu
+ Testing: Beubeu
 
 E6M7: THE PLUTONIUM IS GONE! by Bendža M.
  Music: "Liquid Luck" by Jimmy (origin: BTSX)
@@ -268,7 +328,7 @@ INCENDIARY SHOTGUN
 INCENDIARY PROJECTILE
  DECOHack: Moustachio
  Sounds: id Software
- Sprites: Amuscaria, id Software
+ Sprites: Lina
 
 SUPER SLUGGER
  DECOHack: Moustachio
@@ -1800,6 +1860,47 @@ CELTIC TEXTURES (celticsh.wad) by Crista Forest, aka "CD Warrior"
 
 PSYREN TEXTURES (psytex.wad) by J.S.Graham (aka psyren)
 
+:)
+
+
+
+Neo-Feudal related credits:
+
+Fonts used and edited into textures:
+
+Neon by Fenotype
+Streetwear by Artimasa (http://www.artimasa.com)
+Highway Gothic by Tom Oetken
+PROPAGANDA by Matthew Welch
+Funky by Kong Font (https://fontkong.com/)
+Aseprite by Igara Studio
+Olde English by Dieter Steffmann
+Sister Spray by ImageX
+Relidux by Chequered Ink
+
+
+Graphics:
+
+Austinado for face usage (sensation poster), permission obtained from Austinado
+
+Dragonfly tag + QR, collab with Joshua O'Sullivan (Dragonfly)
+
+Auger;Zenith TITLEPIC, check out Auger;Zenith, or not - your loss:
+https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/dbp37_augzen
+
+Art work by 97th Century Fox, permission obtained to edit and use from author
+The following textures:
+97CENFOX
+
+SIGIL TITLEPIC by Christopher Lovell, permission obtained from John Romero to edit and use in the map Neo-Feudal.
+Check out SIGIL, it's pretty neat:
+https://www.doomworld.com/idgames/levels/doom/Ports/s-u/sigil_v1_23
+
+Eviternity TITLEPIC and M_DOOM by Cage, permission obtained from project lead Dragonfly to edit and use in the map Neo-Feudal.
+Check out Eviternity, it's pretty solid: https://www.doomworld.com/idgames/levels/doom2/Ports/megawads/eviternity
+
+Jenesis TITLEPIC and sequel M_DOOM, permission obtained from Jimmy
+
 
 -= GRAPHICS =-
 
@@ -1828,9 +1929,9 @@ ENDOOM          PeccatumMihzamiz
 -= PROGRAMS USED =-
 
 Ultimate Doom Builder for Level Design
-SLADE 3.2.4 for .wad File Compilation
+SLADE for .wad File Compilation
 Doom Text File Generator by Linguica for Text File/WADINFO
 Doom Text Generator by eevee for CWILV lumps
-paint.net & SLADE 3.2.4 for Graphics
-FL Studio 20 & Audacity for sound fx
+paint.net & SLADE for Graphics
+FL Studio 20 & Audacity for sound effects
 Space Engine for Saturn render & size reference

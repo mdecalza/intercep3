@@ -2,32 +2,37 @@
 Advanced engine needed  : Engine compatible w/ UMAPINFO, MBF21, & DSDHACKED
 Primary purpose         : Single play + Co-op
 ===========================================================================
-Title                   : Interception III
-Filename                : intercep3.wad
-Release date            : August 23, 2026
+Title                   : Interception III [WIP]
+Filename                : intercep3-WIP.wad
+Release date            : December 21, 2026
 Author                  : The Interceptors
 Other Files By Author   : intercep.wad, intercep2.wad
 Misc. Author Info       : The Interceptors are (in alphabetical order):
-                          AlexEightch (maps, music, testing)
-                          Bendža M. (maps)
-                          Blast98 (maps)
-                          cannonball (map)
+                          AlexEightch (mapping, testing, music)
+                          Amiga Angel (mapping)
+                          Bendža M. (mapping)
+                          Beubeu (mapping)
+                          Blast98 (mapping)
+                          cannonball (mapping)
+                          CBM (mapping)
                           Darman Macray (music)
-                          FlamingoGazzoline (maps, music)
-                          Frank Harper (map)
-                          germicelli (map, music)
-                          Lina (DECOHack, sprites, testing, map)
-                          Moustachio (project lead, DECOHack, maps, art,
-                           testing)
+                          FlamingoGazzoline (mapping, textures, music)
+                          Frank Harper (mapping)
+                          germicelli (mapping, music)
+                          Jark (mapping, textures, sprites)
+                          Lina (DECOHack, sprites, testing, mapping)
+                          Moustachio (project lead, DECOHack, mapping,
+                           graphics, sprites, testing)
+                          numsOic (music)
                           PeccatumMihzamiz (ENDOOM)
-                          rafael_farofa (map)
-                          Razzmatazz! (map, music)
-                          Salmon (map)
-                          sincity2100 (maps)
+                          rafael_farofa (mapping)
+                          Razzmatazz! (mapping, music)
+                          Salmon (mapping)
+                          sincity2100 (mapping)
                           Stuart "stewboy" Rynn (music)
-                          Treehouseminis (map)
+                          Treehouseminis (mapping)
                           XenoNemesis (music)
-                          Yisue (map)
+                          Yisue (mapping)
 
 Description             : Interception III started development privately on
                           August 19, 2021. To mark 5 years of work on this
@@ -73,24 +78,25 @@ Additional Credits to   : Darman Macray for bespoke title, text, and
 ===========================================================================
 * What is included *
 
-New levels              : 36
+New levels              : 33
 Sounds                  : Yes
 Music                   : Yes
 Graphics                : Yes
-Dehacked/BEX Patch      : DeHackEd Lump
-Demos                   : No
-Other                   : credits.txt
+Dehacked/BEX Patch      : DSDHackEd Lump + MBF21 features
+Demos                   : Yes
+Other                   : UMAPINFO, credits.txt
 Other files required    : None
 
 
 * Play Information *
 
 Game                    : Doom 2
-Map #                   : E1M1-E6M7, MAP01
+Map #                   : MAP01, MAP02, MAP11-MAP17, MAP21-MAP25, MAP31-MAP36
+                          MAP41-MAP43, MAP45, MAP51-MAP56, MAP61-MAP63, MAP67
 Single Player           : Designed for
 Cooperative 2-4 Player  : Designed for
-Deathmatch 2-4 Player   : No, see intercep3_DM.wad
-Other game styles       : Maybe
+Deathmatch 2-4 Player   : No
+Other game styles       : Single-player/co-op-based
 Difficulty Settings     : Yes
 
 
@@ -98,7 +104,8 @@ Difficulty Settings     : Yes
 
 Base                    : Maps from scratch, textures and sprites pulled from
                           many different sources - see credits.txt for details
-Build Time              : 5 years from Thursday, August 19, 2021, 2:29:05 AM
+Build Time              : Started Thursday, August 19, 2021, 2:29:05 AM
+                          Releasing Monday, December 21, 2026
 Editor(s) used          : DoomTools, DECOHack, SLADE, Ultimate Doom Builder
 Known Bugs              : Lots - see Project Planner for details
 May Not Run With        : Non-MBF21-compatible ports
