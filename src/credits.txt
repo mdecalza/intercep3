@@ -276,6 +276,14 @@ E6M3: MOONQUAKE by Salmon
  Detail: Salmon
  Testing: Salmon, Moustachio
 
+E6M4: Unfinished, untitled map by Beubeu
+ Music: "In the Walls" by Saige <3
+
+ Geometry: Beubeu
+ Combat: Beubeu
+ Detail: Beubeu
+ Testing: Beubeu
+
 E6M7: THE PLUTONIUM IS GONE! by Bendža M.
  Music: "Liquid Luck" by Jimmy (origin: BTSX)
 
