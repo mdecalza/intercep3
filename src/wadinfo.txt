@@ -3,22 +3,27 @@ Advanced engine needed  : Engine compatible w/ UMAPINFO, MBF21, & DSDHACKED
 Primary purpose         : Single play + Co-op
 ===========================================================================
 Title                   : Interception III [WIP]
-Filename                : intercep3-wip.wad
+Filename                : intercep3-WIP.wad
 Release date            : December 21, 2026
 Author                  : The Interceptors
 Other Files By Author   : intercep.wad, intercep2.wad
 Misc. Author Info       : The Interceptors are (in alphabetical order):
-                          AlexEightch (mapping, music, testing)
+                          AlexEightch (mapping, testing, music)
+                          Amiga Angel (mapping)
                           Bendža M. (mapping)
+                          Beubeu (mapping)
                           Blast98 (mapping)
                           cannonball (mapping)
+                          CBM (mapping)
                           Darman Macray (music)
-                          FlamingoGazzoline (mapping, music)
+                          FlamingoGazzoline (mapping, textures, music)
                           Frank Harper (mapping)
                           germicelli (mapping, music)
+                          Jark (mapping, textures, sprites)
                           Lina (DECOHack, sprites, testing, mapping)
-                          Moustachio (project lead, DECOHack, mapping, art,
-                           testing)
+                          Moustachio (project lead, DECOHack, mapping,
+                           graphics, sprites, testing)
+                          numsOic (music)
                           PeccatumMihzamiz (ENDOOM)
                           rafael_farofa (mapping)
                           Razzmatazz! (mapping, music)
